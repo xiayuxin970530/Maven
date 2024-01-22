@@ -1,1 +1,1862 @@
-[{"ModuleName":"Tables/700账套使用","ModuleType":22},{"ModuleName":"Table/CurrentStockbad","ModuleType":7},{"ModuleName":"TableView/U8冻结批次清单zt700","ModuleType":23},{"ModuleName":"TableView/发货单不过滤zt700","ModuleType":23},{"ModuleName":"TableView/存仓库货位扫码扣减结余zt700","ModuleType":23},{"ModuleName":"TableView/拣货建议zt700","ModuleType":23},{"ModuleName":"TableView/拣货汇总zt700","ModuleType":23},{"ModuleName":"TableView/条码档案zt700","ModuleType":23},{"ModuleName":"TableView/货位存量表U8zt700","ModuleType":23},{"ModuleName":"TableView/货位存量表zt700","ModuleType":23},{"ModuleName":"Tables/其他功能","ModuleType":22},{"ModuleName":"Table/客户信息crm更新临时","ModuleType":7},{"ModuleName":"Table/更新客户联系人属性","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/更新属性","ModuleType":7},{"ModuleName":"Tables/拣货","ModuleType":22},{"ModuleName":"Tables/拣货/数据表","ModuleType":22},{"ModuleName":"Table/PICK","ModuleType":7},{"ModuleName":"Table/PICKS","ModuleType":7},{"ModuleName":"Table/scandetail","ModuleType":7},{"ModuleName":"Table/任务绑定明细","ModuleType":7},{"ModuleName":"Table/发货拣货核销表","ModuleType":7},{"ModuleName":"Table/存货档案同步","ModuleType":7},{"ModuleName":"TableView/车号未完成任务汇总","ModuleType":23},{"ModuleName":"TableView/货位存量表U8","ModuleType":23},{"ModuleName":"TableView/货位存量表","ModuleType":23},{"ModuleName":"TableView/货位存量","ModuleType":23},{"ModuleName":"TableView/核销后已拣货合计","ModuleType":23},{"ModuleName":"TableView/核销后已扫描总数","ModuleType":23},{"ModuleName":"TableView/条码档案","ModuleType":23},{"ModuleName":"TableView/条码拣货库存对照表","ModuleType":23},{"ModuleName":"TableView/拣货汇总","ModuleType":23},{"ModuleName":"TableView/拣货核销视图","ModuleType":23},{"ModuleName":"TableView/拣货建议汇总","ModuleType":23},{"ModuleName":"TableView/需发货视图","ModuleType":23},{"ModuleName":"TableView/拣货建议1","ModuleType":23},{"ModuleName":"TableView/扫码结果汇总","ModuleType":23},{"ModuleName":"TableView/扫码任务","ModuleType":23},{"ModuleName":"TableView/扫描货位批次汇总","ModuleType":23},{"ModuleName":"TableView/扫描核销余额","ModuleType":23},{"ModuleName":"TableView/库存不足计数","ModuleType":23},{"ModuleName":"TableView/发货单明细已扫描","ModuleType":23},{"ModuleName":"TableView/发货单不过滤","ModuleType":23},{"ModuleName":"TableView/包材物料差异查询","ModuleType":23},{"ModuleName":"TableView/任务绑定汇总","ModuleType":23},{"ModuleName":"TableView/任务扫码合计","ModuleType":23},{"ModuleName":"Table/pickpostionquit","ModuleType":7},{"ModuleName":"TableView/拣货任务","ModuleType":23},{"ModuleName":"TableView/需发货视图明细","ModuleType":23},{"ModuleName":"Tables/整理","ModuleType":22},{"ModuleName":"TableView/ComputationUnit","ModuleType":23},{"ModuleName":"TableView/替代bom参照","ModuleType":23},{"ModuleName":"TableView/未下达拣货明细","ModuleType":23},{"ModuleName":"TableView/未出库配料领料申请","ModuleType":23},{"ModuleName":"TableView/未出库领料申请明细","ModuleType":23},{"ModuleName":"TableView/未完成配料生产订单","ModuleType":23},{"ModuleName":"Table/材料扫码记录","ModuleType":7},{"ModuleName":"TableView/每日发货明细","ModuleType":23},{"ModuleName":"Table/物料需求计算结果","ModuleType":7},{"ModuleName":"Table/物料齐套分析","ModuleType":7},{"ModuleName":"TableView/特殊仓库可用量汇总","ModuleType":23},{"ModuleName":"TableView/特殊仓库库存含生产未领用","ModuleType":23},{"ModuleName":"TableView/特殊仓库库存含生产未领用119和120","ModuleType":23},{"ModuleName":"TableView/生产订单历史工艺","ModuleType":23},{"ModuleName":"TableView/生产订单子件扫码领用出库分析","ModuleType":23},{"ModuleName":"TableView/生产订单视图","ModuleType":23},{"ModuleName":"Table/生成材料出库记录","ModuleType":7},{"ModuleName":"Table/真实扫码记录","ModuleType":7},{"ModuleName":"Table/配料单可用仓库","ModuleType":7},{"ModuleName":"Table/配料单工艺","ModuleType":7},{"ModuleName":"TableView/配料单打印的人员信息","ModuleType":23},{"ModuleName":"TableView/配料历史记录","ModuleType":23},{"ModuleName":"Table/配料可用仓库","ModuleType":7},{"ModuleName":"Table/销售同步采购类型","ModuleType":7},{"ModuleName":"TableView/领料申请单视图","ModuleType":23},{"ModuleName":"TableView/验料任务合计","ModuleType":23},{"ModuleName":"TableView/验料任务表","ModuleType":23},{"ModuleName":"Table/验料密码","ModuleType":7},{"ModuleName":"Table/验货记录","ModuleType":7},{"ModuleName":"TableView/齐套分析汇总","ModuleType":23},{"ModuleName":"Table/更新授信表","ModuleType":7},{"ModuleName":"TableView/齐套分析结果","ModuleType":23},{"ModuleName":"TableView/拣货出库前校验","ModuleType":23},{"ModuleName":"TableView/批次货位仓库实际存量","ModuleType":23},{"ModuleName":"TableView/inventoryclass","ModuleType":23},{"ModuleName":"Table/mom_motype","ModuleType":7},{"ModuleName":"Table/mom_order","ModuleType":7},{"ModuleName":"Table/pld_m","ModuleType":7},{"ModuleName":"Table/pld_t","ModuleType":7},{"ModuleName":"Table/RdRecord01","ModuleType":7},{"ModuleName":"Table/rdrecords01","ModuleType":7},{"ModuleName":"Table/scanmianquit","ModuleType":7},{"ModuleName":"TableView/U8冻结批次清单","ModuleType":23},{"ModuleName":"Table/Warehouse","ModuleType":7},{"ModuleName":"TableView/产品齐套分析包材","ModuleType":23},{"ModuleName":"TableView/产品齐套分析汇总","ModuleType":23},{"ModuleName":"TableView/产品齐套分析结果","ModuleType":23},{"ModuleName":"TableView/产品齐套分析结果包材","ModuleType":23},{"ModuleName":"TableView/产品齐套需求明细","ModuleType":23},{"ModuleName":"Table/人员验料职责","ModuleType":7},{"ModuleName":"Table/仓库同步对照表","ModuleType":7},{"ModuleName":"Table/任务分配并发控制","ModuleType":7},{"ModuleName":"TableView/半成品净可用库存","ModuleType":23},{"ModuleName":"TableView/半成品虚拟库存页面视图","ModuleType":23},{"ModuleName":"Table/发货同步采购","ModuleType":7},{"ModuleName":"Table/同步分类属性","ModuleType":7},{"ModuleName":"TableView/存仓库货位扫码扣减结余","ModuleType":23},{"ModuleName":"Table/存货验料属性","ModuleType":7},{"ModuleName":"TableView/工艺记录历史","ModuleType":23},{"ModuleName":"Table/打印记录","ModuleType":7},{"ModuleName":"TableView/扫码任务id合计","ModuleType":23},{"ModuleName":"TableView/扫码出库实际库存对照表","ModuleType":23},{"ModuleName":"Table/批次日期控制","ModuleType":7},{"ModuleName":"TableView/批次货位仓库需出库","ModuleType":23},{"ModuleName":"TableView/齐套需求明细","ModuleType":23},{"ModuleName":"Tables/签证对接","ModuleType":22},{"ModuleName":"Tables/签证对接/u8获取数据到主子表","ModuleType":22},{"ModuleName":"Table/任务主表","ModuleType":7},{"ModuleName":"Table/任务子表","ModuleType":7},{"ModuleName":"Tables/签证对接/客户回执的表和视图","ModuleType":22},{"ModuleName":"TableView/e签宝客户回执动态表格","ModuleType":23},{"ModuleName":"TableView/e签宝客户回执发起任务id","ModuleType":23},{"ModuleName":"TableView/e签宝手动插入数据到签章任务","ModuleType":23},{"ModuleName":"TableView/e签宝查询客户回执主表信息","ModuleType":23},{"ModuleName":"TableView/e签宝查询客户回执主表信息所有数据","ModuleType":23},{"ModuleName":"TableView/e签宝获取自动发起客户参数数据","ModuleType":23},{"ModuleName":"Table/业务员联系方式","ModuleType":7},{"ModuleName":"TableView/客户回执参数数据","ModuleType":23},{"ModuleName":"TableView/获取700和800中对账单和发货回执单接收人","ModuleType":23},{"ModuleName":"Tables/签证对接/对账单视图","ModuleType":22},{"ModuleName":"Tables/签证对接/对账单视图/700","ModuleType":22},{"ModuleName":"Table/Customer700","ModuleType":7},{"ModuleName":"Table/Person700","ModuleType":7},{"ModuleName":"Tables/签证对接/对账单视图/800","ModuleType":22},{"ModuleName":"Table/Customer800","ModuleType":7},{"ModuleName":"Table/Person800","ModuleType":7},{"ModuleName":"TableView/e签宝对账单主表数据视图","ModuleType":23},{"ModuleName":"TableView/e签宝对账单动态表格","ModuleType":23},{"ModuleName":"TableView/对账单获取应收余额小数点后两位","ModuleType":23},{"ModuleName":"TableView/对账客户参照","ModuleType":23},{"ModuleName":"Tables/签证对接/运输协议表和视图","ModuleType":22},{"ModuleName":"TableView/e签宝查询物流协议主表信息","ModuleType":23},{"ModuleName":"TableView/e签宝运输协议动态表格","ModuleType":23},{"ModuleName":"TableView/e签宝运输协议参数数据","ModuleType":23},{"ModuleName":"TableView/e签宝运输协议发起任务id","ModuleType":23},{"ModuleName":"TableView/e签宝运输协议自动发起参数数据","ModuleType":23},{"ModuleName":"Table/物流公司信息","ModuleType":7},{"ModuleName":"Tables/签证对接/通用表和视图","ModuleType":22},{"ModuleName":"Table/e签宝动态表格表头","ModuleType":7},{"ModuleName":"TableView/e签宝定时查询接口状态","ModuleType":23},{"ModuleName":"TableView/e签宝错误信息返回","ModuleType":23},{"ModuleName":"Table/token","ModuleType":7},{"ModuleName":"TableView/去掉重复的调用记录","ModuleType":23},{"ModuleName":"Table/授权印章ID","ModuleType":7},{"ModuleName":"Table/接口发起日志","ModuleType":7},{"ModuleName":"Table/签章API对照表","ModuleType":7},{"ModuleName":"Table/签章任务","ModuleType":7},{"ModuleName":"Table/签章任务子表","ModuleType":7},{"ModuleName":"Table/调用参数","ModuleType":7},{"ModuleName":"Table/调用记录","ModuleType":7},{"ModuleName":"Tables/签证对接/销售合同表和视图","ModuleType":22},{"ModuleName":"TableView/e签宝销售合同发起任务","ModuleType":23},{"ModuleName":"TableView/e签宝销售年合同动态表格参数","ModuleType":23},{"ModuleName":"TableView/e签宝销售年合同所有数据","ModuleType":23},{"ModuleName":"TableView/e签宝销售年合同自动发起参数","ModuleType":23},{"ModuleName":"Table/合同模板主表","ModuleType":7},{"ModuleName":"Table/合同模板子表","ModuleType":7},{"ModuleName":"Table/客户回执和销售合同时间戳计算","ModuleType":7},{"ModuleName":"Tables/配料用","ModuleType":22},{"ModuleName":"Table/inventory","ModuleType":7},{"ModuleName":"TableView/配料非填充","ModuleType":23},{"ModuleName":"Table/配料后修改","ModuleType":7},{"ModuleName":"Table/配料单子表","ModuleType":7},{"ModuleName":"Table/配料单主表","ModuleType":7},{"ModuleName":"Table/配料仓库对照表","ModuleType":7},{"ModuleName":"Table/表1","ModuleType":7},{"ModuleName":"TableView/未配料余额表","ModuleType":23},{"ModuleName":"TableView/批次分配视图","ModuleType":23},{"ModuleName":"TableView/批次分配结果视图","ModuleType":23},{"ModuleName":"TableView/应领配料出库明细1","ModuleType":23},{"ModuleName":"TableView/锁定库存明细","ModuleType":23},{"ModuleName":"TableView/应领配料出库明细","ModuleType":23},{"ModuleName":"TableView/已配料合计","ModuleType":23},{"ModuleName":"Table/审核关键词","ModuleType":7},{"ModuleName":"TableView/实物分配批次结果视图","ModuleType":23},{"ModuleName":"TableView/千克换算","ModuleType":23},{"ModuleName":"TableView/分配已出库","ModuleType":23},{"ModuleName":"TableView/净可用库存","ModuleType":23},{"ModuleName":"Table/PLMX","ModuleType":7},{"ModuleName":"TableView/PLD可用仓库","ModuleType":23},{"ModuleName":"Table/mom_orderdetail","ModuleType":7},{"ModuleName":"Table/mom_moallocate","ModuleType":7},{"ModuleName":"TableView/库存视图","ModuleType":23},{"ModuleName":"TableView/锁定库存汇总","ModuleType":23},{"ModuleName":"Table/OM_MOMain","ModuleType":7},{"ModuleName":"TableView/业务员邮箱","ModuleType":23},{"ModuleName":"Table/委外可用仓库","ModuleType":7,"ExclusiveType":0},{"ModuleName":"Table/委外配料记录","ModuleType":7,"ExclusiveType":0},{"ModuleName":"TableView/未完全出库","ModuleType":23},{"ModuleName":"Table/邮件通知记录","ModuleType":7},{"ModuleName":"Pages/内建页面","ModuleType":6},{"ModuleName":"PCPage/FGC_401页面","ModuleType":1},{"ModuleName":"PCPage/FGC_修改密码","ModuleType":1},{"ModuleName":"PCPage/FGC_忘记密码","ModuleType":1},{"ModuleName":"PCPage/FGC_邮件订阅","ModuleType":1},{"ModuleName":"PCPage/FGC_维护中","ModuleType":1},{"ModuleName":"PCPage/FGC_两步验证_扫码页面","ModuleType":1},{"ModuleName":"PCPage/FGC_两步验证_验证页面","ModuleType":1},{"ModuleName":"PCPage/FGC_修改用户信息","ModuleType":1},{"ModuleName":"PCPage/FGC_重置密码","ModuleType":1},{"ModuleName":"PCPage/FGC_重置密码发送邮件成功","ModuleType":1},{"ModuleName":"PCPage/FGC_登录","ModuleType":1},{"ModuleName":"Pages/内建手机页面","ModuleType":6},{"ModuleName":"MobilePage/FGC_401页面_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_修改密码_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_忘记密码_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_邮件订阅_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_维护中_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_两步验证_扫码页面_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_两步验证_验证页面_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_修改用户信息_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_重置密码发送邮件成功_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_重置密码_手机版","ModuleType":2},{"ModuleName":"MobilePage/FGC_登录_手机版","ModuleType":2},{"ModuleName":"Pages/配料","ModuleType":6},{"ModuleName":"PCPage/配料单列表bad","ModuleType":1},{"ModuleName":"PCPage/配料单明细","ModuleType":1},{"ModuleName":"PCPage/待配料","ModuleType":1},{"ModuleName":"PCPage/已配料未审核","ModuleType":1},{"ModuleName":"PCPage/配料后更改","ModuleType":1},{"ModuleName":"PCPage/库存参照","ModuleType":1},{"ModuleName":"PCPage/选择可用仓库","ModuleType":1},{"ModuleName":"PCPage/原配料单","ModuleType":1},{"ModuleName":"PCPage/配料单审核","ModuleType":1},{"ModuleName":"PCPage/配料单复核","ModuleType":1},{"ModuleName":"PCPage/工艺增加","ModuleType":1},{"ModuleName":"PCPage/配料单已复核打印","ModuleType":1},{"ModuleName":"PCPage/配料单已复核打印备注","ModuleType":1},{"ModuleName":"PCPage/配料打印模板bad","ModuleType":1},{"ModuleName":"PCPage/配料历史","ModuleType":1},{"ModuleName":"PCPage/配料打印模板材料","ModuleType":1},{"ModuleName":"PCPage/配料打印模板工艺","ModuleType":1},{"ModuleName":"PCPage/打印物料流转卡","ModuleType":1},{"ModuleName":"PCPage/包材打印","ModuleType":1},{"ModuleName":"PCPage/包材打印模板材料","ModuleType":1},{"ModuleName":"PCPage/原料虚拟库存","ModuleType":1},{"ModuleName":"PCPage/配料净可用库存明细","ModuleType":1},{"ModuleName":"PCPage/半成品齐套分析","ModuleType":1},{"ModuleName":"PCPage/存货参照","ModuleType":1},{"ModuleName":"PCPage/当日全部配料","ModuleType":1},{"ModuleName":"PCPage/待配料 (2)","ModuleType":1},{"ModuleName":"PCPage/已配料未复核","ModuleType":1},{"ModuleName":"PCPage/配料单打印","ModuleType":1},{"ModuleName":"PCPage/配料历史 (备份)","ModuleType":1},{"ModuleName":"PCPage/齐套分析 (2)","ModuleType":1},{"ModuleName":"PCPage/产品齐套分析","ModuleType":1},{"ModuleName":"PCPage/配料单审核未复核","ModuleType":1},{"ModuleName":"PCPage/配料单审核未复核 (2)","ModuleType":1},{"ModuleName":"PCPage/原料虚拟库存 (2)","ModuleType":1},{"ModuleName":"PCPage/包材齐套分析备份","ModuleType":1},{"ModuleName":"PCPage/包材齐套分析","ModuleType":1},{"ModuleName":"PCPage/产品齐套分析 (2)","ModuleType":1},{"ModuleName":"PCPage/半成品齐套分析 (2)","ModuleType":1},{"ModuleName":"PCPage/已配料未审核 (2)","ModuleType":1},{"ModuleName":"PCPage/107原料虚拟库存","ModuleType":1},{"ModuleName":"PCPage/半成品齐套分析 (3)","ModuleType":1},{"ModuleName":"PCPage/半成品虚拟库存","ModuleType":1},{"ModuleName":"PCPage/原料虚拟库存 (半成品)","ModuleType":1},{"ModuleName":"PCPage/119和120原料虚拟库存","ModuleType":1},{"ModuleName":"PCPage/原料虚拟库存 (备份)","ModuleType":1},{"ModuleName":"Pages/bad","ModuleType":6},{"ModuleName":"PCPage/发货任务清单bad","ModuleType":1},{"ModuleName":"PCPage/页面1","ModuleType":1},{"ModuleName":"Pages/备份","ModuleType":6},{"ModuleName":"MobilePage/扫码备份","ModuleType":2},{"ModuleName":"MobilePage/车辆拣货任务备份","ModuleType":2},{"ModuleName":"Pages/发货任务","ModuleType":6},{"ModuleName":"PCPage/发货任务明细","ModuleType":1},{"ModuleName":"PCPage/发货任务参照BAD","ModuleType":1},{"ModuleName":"PCPage/所有拣货记录","ModuleType":1},{"ModuleName":"Pages/拣货单","ModuleType":6},{"ModuleName":"PCPage/拣货单列表","ModuleType":1},{"ModuleName":"PCPage/拣货单明细","ModuleType":1},{"ModuleName":"PCPage/拣货建议带货位批号","ModuleType":1},{"ModuleName":"PCPage/拣货建议不带批号","ModuleType":1},{"ModuleName":"PCPage/任务打印","ModuleType":1},{"ModuleName":"PCPage/任务打印列表","ModuleType":1},{"ModuleName":"PCPage/任务打印列表打印","ModuleType":1},{"ModuleName":"PCPage/拣货建议账套700","ModuleType":1},{"ModuleName":"PCPage/所有绑定任务输出","ModuleType":1},{"ModuleName":"PCPage/拣货建议带货位批号 (2)","ModuleType":1},{"ModuleName":"PCPage/拣货建议账套700 (2)","ModuleType":1},{"ModuleName":"Pages/扫码拣货","ModuleType":6},{"ModuleName":"MobilePage/扫码","ModuleType":2},{"ModuleName":"MobilePage/扫码700","ModuleType":2},{"ModuleName":"PCPage/扫描记录","ModuleType":1},{"ModuleName":"MobilePage/车辆拣货任务","ModuleType":2},{"ModuleName":"MobilePage/扫码记录","ModuleType":2},{"ModuleName":"MobilePage/扫码记录备份","ModuleType":2},{"ModuleName":"MobilePage/主页车号任务","ModuleType":2},{"ModuleName":"MobilePage/设置","ModuleType":2},{"ModuleName":"MobilePage/快捷任务","ModuleType":2},{"ModuleName":"PCPage/控制设置quit","ModuleType":1},{"ModuleName":"MobilePage/扫码备份0109","ModuleType":2},{"ModuleName":"MobilePage/扫码 备份0110","ModuleType":2},{"ModuleName":"Pages/扫码拣货/扫码材料出库","ModuleType":6},{"ModuleName":"MobilePage/未出库任务","ModuleType":2},{"ModuleName":"MobilePage/出库验料","ModuleType":2},{"ModuleName":"MobilePage/任务明细","ModuleType":2},{"ModuleName":"MobilePage/扫码明细","ModuleType":2},{"ModuleName":"MobilePage/未出库任务 (2)","ModuleType":2},{"ModuleName":"MobilePage/未出库生产订单","ModuleType":2},{"ModuleName":"MobilePage/未下达拣货明细弹出","ModuleType":2},{"ModuleName":"MobilePage/测试","ModuleType":2},{"ModuleName":"Pages/便捷查询","ModuleType":6},{"ModuleName":"PCPage/包材差异查询","ModuleType":1},{"ModuleName":"PCPage/生产订单扫码出库分析","ModuleType":1},{"ModuleName":"Pages/其他","ModuleType":6},{"ModuleName":"PCPage/条码用","ModuleType":1},{"ModuleName":"PCPage/跳转导航","ModuleType":1},{"ModuleName":"PCPage/历史工艺","ModuleType":1},{"ModuleName":"PCPage/历史工艺 弹出","ModuleType":1},{"ModuleName":"Pages/基础设置","ModuleType":6},{"ModuleName":"PCPage/批改价格","ModuleType":1},{"ModuleName":"PCPage/参数设置","ModuleType":1},{"ModuleName":"PCPage/发货同步采购参数","ModuleType":1},{"ModuleName":"PCPage/更新授信","ModuleType":1},{"ModuleName":"MobilePage/页面2","ModuleType":2},{"ModuleName":"MobilePage/验料","ModuleType":2},{"ModuleName":"MobilePage/验料设置","ModuleType":2},{"ModuleName":"MobilePage/验料任务","ModuleType":2},{"ModuleName":"MobilePage/验料任务 (2)","ModuleType":2},{"ModuleName":"PCPage/页面3","ModuleType":1},{"ModuleName":"PCPage/配料仓库对照表_详情页面","ModuleType":1},{"ModuleName":"PCPage/配料仓库对照表_列表页面","ModuleType":1},{"ModuleName":"Pages/签证对接","ModuleType":6},{"ModuleName":"PCPage/签证对接任务明细","ModuleType":1},{"ModuleName":"PCPage/运输协议页面","ModuleType":1},{"ModuleName":"PCPage/客户回执页面","ModuleType":1},{"ModuleName":"PCPage/对账单页面","ModuleType":1},{"ModuleName":"PCPage/销售合同任务列表","ModuleType":1},{"ModuleName":"PCPage/签章设置","ModuleType":1},{"ModuleName":"PCPage/业务员信息","ModuleType":1},{"ModuleName":"PCPage/签章任务列表 (2)","ModuleType":1},{"ModuleName":"Pages/签证对接/对账清单","ModuleType":6},{"ModuleName":"PCPage/对账单列表","ModuleType":1},{"ModuleName":"PCPage/对账单明细","ModuleType":1},{"ModuleName":"PCPage/页面4","ModuleType":1},{"ModuleName":"PCPage/对账单明细 (2)","ModuleType":1},{"ModuleName":"PCPage/信息提示","ModuleType":1},{"ModuleName":"PCPage/对账单明细日版","ModuleType":1},{"ModuleName":"PCPage/信息提示日版","ModuleType":1},{"ModuleName":"PCPage/对账单明细日版 (2)","ModuleType":1},{"ModuleName":"PCPage/22-23.8.17对账模板 (年终模板)","ModuleType":1},{"ModuleName":"PCPage/委外配料","ModuleType":1},{"ModuleName":"MasterPCPage/FGC_母版页","ModuleType":3},{"ModuleName":"MasterPCPage/网页母板","ModuleType":3},{"ModuleName":"MasterMobilePage/手机母板","ModuleType":4},{"ModuleName":"MasterMobilePage/手机母板 (2)","ModuleType":4},{"ModuleName":"MasterMobilePage/母版页1","ModuleType":4},{"ModuleName":"MasterMobilePage/手机母板材料验货","ModuleType":4},{"ModuleName":"MasterMobilePage/手机母板材料出库","ModuleType":4},{"ModuleName":"ServerCommand/查找符合条件拣货单","ModuleType":15},{"ModuleName":"ServerCommandPrivate/e签宝token","ModuleType":27},{"ModuleName":"ServerCommandPrivate/查询流程接口状态","ModuleType":27},{"ModuleName":"ServerCommands/e签宝正式接口","ModuleType":20},{"ModuleName":"ServerCommands/e签宝正式接口/发货回执","ModuleType":20},{"ModuleName":"ServerCommandPrivate/添加客户回执签章任务","ModuleType":27},{"ModuleName":"ServerCommandPrivate/添加客户回执签章任务手动插入","ModuleType":27},{"ModuleName":"ServerCommandPrivate/添加历史客户回执到签章任务","ModuleType":27},{"ModuleName":"ServerCommand/动态表格接口客户回执自动签署","ModuleType":15},{"ModuleName":"ServerCommandPrivate/自动发起客户回执接口自动签署","ModuleType":27},{"ModuleName":"ServerCommands/e签宝正式接口/销售合同","ModuleType":20},{"ModuleName":"ServerCommand/自动签署动态表格接口","ModuleType":15},{"ModuleName":"ServerCommandPrivate/自动签署销售合同接口","ModuleType":27},{"ModuleName":"ServerCommands/e签宝正式接口/物流运输","ModuleType":20},{"ModuleName":"ServerCommandPrivate/添加运输协议签章任务","ModuleType":27},{"ModuleName":"ServerCommand/动态表格接口运输协议","ModuleType":15},{"ModuleName":"ServerCommandPrivate/自动发起动态表格运输协议","ModuleType":27},{"ModuleName":"ServerCommands/e签宝正式接口/对账单","ModuleType":20},{"ModuleName":"ServerCommand/对账单自动签署接口","ModuleType":15},{"ModuleName":"ServerCommand/对账单自动签署接口日版","ModuleType":15},{"ModuleName":"ServerCommand/添加对账单数据到签章任务","ModuleType":15},{"ModuleName":"ServerCommand/添加对账单数据到签章任务日版","ModuleType":15},{"ModuleName":"ServerCommands/e签宝正式接口/撤销接口","ModuleType":20},{"ModuleName":"ServerCommand/撤销接口发起流程","ModuleType":15},{"ModuleName":"ServerCommands/e签宝正式接口/定时获取主子表","ModuleType":20},{"ModuleName":"ServerCommand/定时获取主子表数据","ModuleType":15},{"ModuleName":"ServerCommands/接口备份","ModuleType":20},{"ModuleName":"ServerCommands/接口备份/新版服务端命令备份","ModuleType":20},{"ModuleName":"ServerCommand/动态表格接口客户回执自动签署不保存错误版本","ModuleType":15},{"ModuleName":"ServerCommandPrivate/自动发起客户回执接口自动签署不保存错误版本","ModuleType":27},{"ModuleName":"ServerCommand/自动签署动态表格接口不保存错误信息","ModuleType":15},{"ModuleName":"ServerCommandPrivate/自动签署销售合同接口不保存错误信息","ModuleType":27},{"ModuleName":"ServerCommand/动态表格接口运输协议不保存错误信息","ModuleType":15},{"ModuleName":"ServerCommandPrivate/自动发起动态表格运输协议不保存错误信息","ModuleType":27},{"ModuleName":"ServerCommand/对账单自动签署接口不保存错误信息","ModuleType":15},{"ModuleName":"ServerCommand/对账单自动签署接口日版不保存错误信息","ModuleType":15},{"ModuleName":"ServerCommand/crm单号发起历史回执数据不保存错误信息","ModuleType":15},{"ModuleName":"ServerCommandPrivate/自动发起动态表格运输协议3","ModuleType":27},{"ModuleName":"ServerCommandPrivate/自动发起动态表格运输协议2","ModuleType":27},{"ModuleName":"ServerCommand/对账单自动签署接口1","ModuleType":15},{"ModuleName":"ServerCommandPrivate/自动签署销售合同接口1","ModuleType":27},{"ModuleName":"ServerCommandPrivate/自动发起动态表格运输协议备份","ModuleType":27},{"ModuleName":"ServerCommandPrivate/自动发起动态表格运输协议4","ModuleType":27},{"ModuleName":"ServerCommand/对账单自动签署接口日版测试签章位置","ModuleType":15},{"ModuleName":"ServerCommands/接口备份/旧版服务端命令备份","ModuleType":20},{"ModuleName":"ServerCommand/添加合同模块的数据1","ModuleType":15},{"ModuleName":"ServerCommand/crm单号发起历史回执数据备份","ModuleType":15},{"ModuleName":"ServerCommand/添加合同模块的数据备份","ModuleType":15},{"ModuleName":"ServerCommandPrivate/e签宝token1","ModuleType":27},{"ModuleName":"ServerCommandPrivate/查询流程接口状态备份","ModuleType":27},{"ModuleName":"ServerCommands/e签宝测试接口","ModuleType":20},{"ModuleName":"ServerCommand/动态表格接口运输协议判断条件备份","ModuleType":15},{"ModuleName":"ServerCommand/对账单自动签署接口测试","ModuleType":15},{"ModuleName":"ServerCommand/对账单自动签署接口日版Test","ModuleType":15},{"ModuleName":"ServerCommands/crm接口","ModuleType":20},{"ModuleName":"ServerCommand/添加合同模块的数据","ModuleType":15},{"ModuleName":"ServerCommand/crm单号发起历史回执数据","ModuleType":15},{"ModuleName":"ServerCommand/e签宝调用撤销接口","ModuleType":15},{"ModuleName":"ServerCommand/crm添加客户回执签章任务","ModuleType":15},{"ModuleName":"ServerCommand/导出pdf","ModuleType":15},{"ModuleName":"ServerCommand/邮件发送","ModuleType":15},{"ModuleName":"SchedulerTasks/e签宝自动发起接口","ModuleType":21},{"ModuleName":"SchedulerTasks/e签宝自动发起接口/定时查询接口状态","ModuleType":21},{"ModuleName":"TaskScheduler/定时查询状态","ModuleType":16},{"ModuleName":"SchedulerTasks/e签宝自动发起接口/执行日志","ModuleType":21},{"ModuleName":"TaskScheduler/手动发起接口日志","ModuleType":16},{"ModuleName":"TaskScheduler/自动发起的接口日志","ModuleType":16},{"ModuleName":"SchedulerTasks/e签宝自动发起接口/自动发起签署流程接口","ModuleType":21},{"ModuleName":"TaskScheduler/定时获取token","ModuleType":16},{"ModuleName":"TaskScheduler/自动发起客户回执","ModuleType":16},{"ModuleName":"TaskScheduler/自动发起运输协议","ModuleType":16},{"ModuleName":"TaskScheduler/自动发起销售合同","ModuleType":16},{"ModuleName":"SchedulerTasks/e签宝自动发起接口/自动添加数据到签章任务","ModuleType":21},{"ModuleName":"TaskScheduler/添加客户回执到签章任务","ModuleType":16},{"ModuleName":"TaskScheduler/添加运输协议到签章任务","ModuleType":16},{"ModuleName":"TaskScheduler/800发货生成700采购入库","ModuleType":16},{"ModuleName":"TaskScheduler/zt700自动销售出库","ModuleType":16},{"ModuleName":"TaskScheduler/刷新可用量","ModuleType":16},{"ModuleName":"TaskScheduler/刷新可配料生产订单","ModuleType":16},{"ModuleName":"TaskScheduler/同步存货档案","ModuleType":16},{"ModuleName":"TaskScheduler/定时获取主子表数据","ModuleType":16},{"ModuleName":"TaskScheduler/扫码材料出库","ModuleType":16},{"ModuleName":"TaskScheduler/更新发货单备注","ModuleType":16},{"ModuleName":"TaskScheduler/清除历史数据","ModuleType":16},{"ModuleName":"TaskScheduler/生成生产批号","ModuleType":16},{"ModuleName":"TaskScheduler/生成销售出库单","ModuleType":16},{"ModuleName":"TaskScheduler/邮件通知对账单","ModuleType":16},{"ModuleName":"ApplicationSetting","ModuleType":8},{"ModuleName":"Theme","ModuleType":9},{"ModuleName":"image/内置图片","ModuleType":37},{"ModuleName":"Image/fgc_loading.gif","ModuleType":38},{"ModuleName":"Image/fgc_logo_dark.png","ModuleType":38},{"ModuleName":"Image/fgc_logo_light.png","ModuleType":38},{"ModuleName":"UserService","ModuleType":11},{"ModuleName":"CustomLibrary","ModuleType":12},{"ModuleName":"MapJsonFile","ModuleType":14},{"ModuleName":"DataContectionSet","ModuleType":25},{"ModuleName":"Upload","ModuleType":26},{"ModuleName":"PublishConfiguration","ModuleType":39},{"ModuleName":"Plugin","ModuleType":40},{"ModuleName":"PublishSetting","ModuleType":41}]
+[
+  {
+    "ModuleName": "Tables/700账套使用",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/CurrentStockbad",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/U8冻结批次清单zt700",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/发货单不过滤zt700",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/存仓库货位扫码扣减结余zt700",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/拣货建议zt700",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/拣货汇总zt700",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/条码档案zt700",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/货位存量表U8zt700",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/货位存量表zt700",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Tables/其他功能",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/客户信息crm更新临时",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/更新客户联系人属性",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/更新属性",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/拣货",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Tables/拣货/数据表",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/PICK",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/PICKS",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/scandetail",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/任务绑定明细",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/发货拣货核销表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/存货档案同步",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/车号未完成任务汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/货位存量表U8",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/货位存量表",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/货位存量",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/核销后已拣货合计",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/核销后已扫描总数",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/条码档案",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/条码拣货库存对照表",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/拣货汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/拣货核销视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/拣货建议汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/需发货视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/拣货建议1",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/扫码结果汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/扫码任务",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/扫描货位批次汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/扫描核销余额",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/库存不足计数",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/发货单明细已扫描",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/发货单不过滤",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/包材物料差异查询",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/任务绑定汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/任务扫码合计",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/pickpostionquit",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/拣货任务",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/需发货视图明细",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Tables/整理",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/ComputationUnit",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/替代bom参照",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/未下达拣货明细",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/未出库配料领料申请",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/未出库领料申请明细",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/未完成配料生产订单",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/材料扫码记录",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/每日发货明细",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/物料需求计算结果",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/物料齐套分析",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/特殊仓库可用量汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/特殊仓库库存含生产未领用",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/特殊仓库库存含生产未领用119和120",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/生产订单历史工艺",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/生产订单子件扫码领用出库分析",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/生产订单视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/生成材料出库记录",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/真实扫码记录",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/配料单可用仓库",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/配料单工艺",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/配料单打印的人员信息",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/配料历史记录",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/配料可用仓库",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/销售同步采购类型",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/领料申请单视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/验料任务合计",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/验料任务表",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/验料密码",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/验货记录",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/齐套分析汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/更新授信表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/齐套分析结果",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/拣货出库前校验",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/批次货位仓库实际存量",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/inventoryclass",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/mom_motype",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/mom_order",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/pld_m",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/pld_t",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/RdRecord01",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/rdrecords01",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/scanmianquit",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/U8冻结批次清单",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/Warehouse",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/产品齐套分析包材",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/产品齐套分析汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/产品齐套分析结果",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/产品齐套分析结果包材",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/产品齐套需求明细",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/人员验料职责",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/仓库同步对照表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/任务分配并发控制",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/半成品净可用库存",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/半成品虚拟库存页面视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/发货同步采购",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/同步分类属性",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/存仓库货位扫码扣减结余",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/存货验料属性",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/工艺记录历史",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/打印记录",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/扫码任务id合计",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/扫码出库实际库存对照表",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/批次日期控制",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/批次货位仓库需出库",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/齐套需求明细",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Tables/签证对接",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Tables/签证对接/u8获取数据到主子表",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/任务主表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/任务子表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/签证对接/客户回执的表和视图",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/e签宝客户回执动态表格",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝客户回执发起任务id",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝手动插入数据到签章任务",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝查询客户回执主表信息",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝查询客户回执主表信息所有数据",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝获取自动发起客户参数数据",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/业务员联系方式",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/客户回执参数数据",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/获取700和800中对账单和发货回执单接收人",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Tables/签证对接/对账单视图",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Tables/签证对接/对账单视图/700",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/Customer700",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/Person700",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/签证对接/对账单视图/800",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/Customer800",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/Person800",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/e签宝对账单主表数据视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝对账单动态表格",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/对账单获取应收余额小数点后两位",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/对账客户参照",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Tables/签证对接/运输协议表和视图",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/e签宝查询物流协议主表信息",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝运输协议动态表格",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝运输协议参数数据",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝运输协议发起任务id",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝运输协议自动发起参数数据",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/物流公司信息",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/签证对接/通用表和视图",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/e签宝动态表格表头",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/e签宝定时查询接口状态",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝错误信息返回",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/token",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/去掉重复的调用记录",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/授权印章ID",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/接口发起日志",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/签章API对照表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/签章任务",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/签章任务子表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/调用参数",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/调用记录",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/签证对接/销售合同表和视图",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "TableView/e签宝销售合同发起任务",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝销售年合同动态表格参数",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝销售年合同所有数据",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/e签宝销售年合同自动发起参数",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/合同模板主表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/合同模板子表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/客户回执和销售合同时间戳计算",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Tables/配料用",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/inventory",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/配料非填充",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/配料后修改",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/配料单子表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/配料单主表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/配料仓库对照表",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/表1",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/未配料余额表",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/批次分配视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/批次分配结果视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/应领配料出库明细1",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/锁定库存明细",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/应领配料出库明细",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/已配料合计",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/审核关键词",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/实物分配批次结果视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/千克换算",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/分配已出库",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/净可用库存",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/PLMX",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/PLD可用仓库",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/mom_orderdetail",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/mom_moallocate",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/库存视图",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "TableView/锁定库存汇总",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/OM_MOMain",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "TableView/业务员邮箱",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/委外可用仓库",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/委外配料记录",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "TableView/未完全出库",
+    "ModuleType": 23
+  },
+  {
+    "ModuleName": "Table/邮件通知记录",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Pages/内建页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/FGC_401页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_修改密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_忘记密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_邮件订阅",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_维护中",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_两步验证_扫码页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_两步验证_验证页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_修改用户信息",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_重置密码",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_重置密码发送邮件成功",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_登录",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/内建手机页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/FGC_401页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_修改密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_忘记密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_邮件订阅_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_维护中_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_两步验证_扫码页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_两步验证_验证页面_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_修改用户信息_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_重置密码发送邮件成功_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_重置密码_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_登录_手机版",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/配料",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/配料单列表bad",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料单明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/待配料",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/已配料未审核",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料后更改",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/库存参照",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/选择可用仓库",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/原配料单",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料单审核",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料单复核",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/工艺增加",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料单已复核打印",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料单已复核打印备注",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料打印模板bad",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料历史",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料打印模板材料",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料打印模板工艺",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/打印物料流转卡",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/包材打印",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/包材打印模板材料",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/原料虚拟库存",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T08:45:53.7217443+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\配料\\原料虚拟库存.json"
+    ]
+  },
+  {
+    "ModuleName": "PCPage/配料净可用库存明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/半成品齐套分析",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/存货参照",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/当日全部配料",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/待配料 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/已配料未复核",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料单打印",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料历史 (备份)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/齐套分析 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/产品齐套分析",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料单审核未复核",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料单审核未复核 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/原料虚拟库存 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/包材齐套分析备份",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/包材齐套分析",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/产品齐套分析 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/半成品齐套分析 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/已配料未审核 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/107原料虚拟库存",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/半成品齐套分析 (3)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/半成品虚拟库存",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/原料虚拟库存 (半成品)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/119和120原料虚拟库存",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/原料虚拟库存 (备份)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/bad",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/发货任务清单bad",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/页面1",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/备份",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/扫码备份",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/车辆拣货任务备份",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/发货任务",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/发货任务明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/发货任务参照BAD",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/所有拣货记录",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/拣货单",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/拣货单列表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/拣货单明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/拣货建议带货位批号",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/拣货建议不带批号",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/任务打印",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/任务打印列表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/任务打印列表打印",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/拣货建议账套700",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/所有绑定任务输出",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/拣货建议带货位批号 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/拣货建议账套700 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/扫码拣货",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/扫码",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/扫码700",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/扫描记录",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MobilePage/车辆拣货任务",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/扫码记录",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/扫码记录备份",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/主页车号任务",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/设置",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/快捷任务",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/控制设置quit",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MobilePage/扫码备份0109",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/扫码 备份0110",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/扫码拣货/扫码材料出库",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/未出库任务",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/出库验料",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/任务明细",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/扫码明细",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/未出库任务 (2)",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/未出库生产订单",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/未下达拣货明细弹出",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/测试",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/便捷查询",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/包材差异查询",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/生产订单扫码出库分析",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/其他",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/条码用",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/跳转导航",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/历史工艺",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/历史工艺 弹出",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/基础设置",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/批改价格",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/参数设置",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/发货同步采购参数",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/更新授信",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MobilePage/页面2",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/验料",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/验料设置",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/验料任务",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/验料任务 (2)",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/页面3",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料仓库对照表_详情页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/配料仓库对照表_列表页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/签证对接",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/签证对接任务明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/运输协议页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/客户回执页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/对账单页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/销售合同任务列表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/签章设置",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/业务员信息",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/签章任务列表 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/签证对接/对账清单",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/对账单列表",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/对账单明细",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/页面4",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/对账单明细 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/信息提示",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/对账单明细日版",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/信息提示日版",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/对账单明细日版 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/22-23.8.17对账模板 (年终模板)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/委外配料",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MasterPCPage/FGC_母版页",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/网页母板",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterMobilePage/手机母板",
+    "ModuleType": 4
+  },
+  {
+    "ModuleName": "MasterMobilePage/手机母板 (2)",
+    "ModuleType": 4
+  },
+  {
+    "ModuleName": "MasterMobilePage/母版页1",
+    "ModuleType": 4
+  },
+  {
+    "ModuleName": "MasterMobilePage/手机母板材料验货",
+    "ModuleType": 4
+  },
+  {
+    "ModuleName": "MasterMobilePage/手机母板材料出库",
+    "ModuleType": 4
+  },
+  {
+    "ModuleName": "ServerCommand/查找符合条件拣货单",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/e签宝token",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/查询流程接口状态",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommands/e签宝正式接口",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommands/e签宝正式接口/发货回执",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/添加客户回执签章任务",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/添加客户回执签章任务手动插入",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/添加历史客户回执到签章任务",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommand/动态表格接口客户回执自动签署",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动发起客户回执接口自动签署",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommands/e签宝正式接口/销售合同",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/自动签署动态表格接口",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动签署销售合同接口",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommands/e签宝正式接口/物流运输",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/添加运输协议签章任务",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommand/动态表格接口运输协议",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动发起动态表格运输协议",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommands/e签宝正式接口/对账单",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/对账单自动签署接口",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/对账单自动签署接口日版",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/添加对账单数据到签章任务",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/添加对账单数据到签章任务日版",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/e签宝正式接口/撤销接口",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/撤销接口发起流程",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/e签宝正式接口/定时获取主子表",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/定时获取主子表数据",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/接口备份",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommands/接口备份/新版服务端命令备份",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/动态表格接口客户回执自动签署不保存错误版本",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动发起客户回执接口自动签署不保存错误版本",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommand/自动签署动态表格接口不保存错误信息",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动签署销售合同接口不保存错误信息",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommand/动态表格接口运输协议不保存错误信息",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动发起动态表格运输协议不保存错误信息",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommand/对账单自动签署接口不保存错误信息",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/对账单自动签署接口日版不保存错误信息",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/crm单号发起历史回执数据不保存错误信息",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动发起动态表格运输协议3",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动发起动态表格运输协议2",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommand/对账单自动签署接口1",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动签署销售合同接口1",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动发起动态表格运输协议备份",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/自动发起动态表格运输协议4",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommand/对账单自动签署接口日版测试签章位置",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/接口备份/旧版服务端命令备份",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/添加合同模块的数据1",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/crm单号发起历史回执数据备份",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/添加合同模块的数据备份",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/e签宝token1",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommandPrivate/查询流程接口状态备份",
+    "ModuleType": 27
+  },
+  {
+    "ModuleName": "ServerCommands/e签宝测试接口",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/动态表格接口运输协议判断条件备份",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/对账单自动签署接口测试",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/对账单自动签署接口日版Test",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommands/crm接口",
+    "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/添加合同模块的数据",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/crm单号发起历史回执数据",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/e签宝调用撤销接口",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/crm添加客户回执签章任务",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/导出pdf",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/邮件发送",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "SchedulerTasks/e签宝自动发起接口",
+    "ModuleType": 21
+  },
+  {
+    "ModuleName": "SchedulerTasks/e签宝自动发起接口/定时查询接口状态",
+    "ModuleType": 21
+  },
+  {
+    "ModuleName": "TaskScheduler/定时查询状态",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "SchedulerTasks/e签宝自动发起接口/执行日志",
+    "ModuleType": 21
+  },
+  {
+    "ModuleName": "TaskScheduler/手动发起接口日志",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/自动发起的接口日志",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "SchedulerTasks/e签宝自动发起接口/自动发起签署流程接口",
+    "ModuleType": 21
+  },
+  {
+    "ModuleName": "TaskScheduler/定时获取token",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/自动发起客户回执",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/自动发起运输协议",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/自动发起销售合同",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "SchedulerTasks/e签宝自动发起接口/自动添加数据到签章任务",
+    "ModuleType": 21
+  },
+  {
+    "ModuleName": "TaskScheduler/添加客户回执到签章任务",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/添加运输协议到签章任务",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/800发货生成700采购入库",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/zt700自动销售出库",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/刷新可用量",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/刷新可配料生产订单",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/同步存货档案",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/定时获取主子表数据",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/扫码材料出库",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/更新发货单备注",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/清除历史数据",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/生成生产批号",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/生成销售出库单",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "TaskScheduler/邮件通知对账单",
+    "ModuleType": 16
+  },
+  {
+    "ModuleName": "ApplicationSetting",
+    "ModuleType": 8
+  },
+  {
+    "ModuleName": "Theme",
+    "ModuleType": 9
+  },
+  {
+    "ModuleName": "image/内置图片",
+    "ModuleType": 37
+  },
+  {
+    "ModuleName": "Image/fgc_loading.gif",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_dark.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_light.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "UserService",
+    "ModuleType": 11
+  },
+  {
+    "ModuleName": "CustomLibrary",
+    "ModuleType": 12
+  },
+  {
+    "ModuleName": "MapJsonFile",
+    "ModuleType": 14
+  },
+  {
+    "ModuleName": "DataContectionSet",
+    "ModuleType": 25
+  },
+  {
+    "ModuleName": "Upload",
+    "ModuleType": 26
+  },
+  {
+    "ModuleName": "PublishConfiguration",
+    "ModuleType": 39
+  },
+  {
+    "ModuleName": "Plugin",
+    "ModuleType": 40
+  },
+  {
+    "ModuleName": "PublishSetting",
+    "ModuleType": 41
+  }
+]

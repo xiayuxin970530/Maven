@@ -1,0 +1,530 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 84.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      39
+    ],
+    "Count": 40
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0,
+          "IsHidden": true
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 116.0,
+          "IsHidden": true
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      32,
+      33,
+      34
+    ],
+    "Count": 35
+  },
+  "Values": {
+    "4,1": "参照",
+    "4,25": "保存",
+    "39,13": "%CurrentUser.FullName%"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "modid",
+        "GUID": "c61f5966-321c-45ac-924c-b120682741a7",
+        "RelationBinding": {
+          "RelatedTable": "mom_orderdetail",
+          "RelatedColumn": "MoDId",
+          "DisplayColumn": "MoId",
+          "NextRelationBinding": {
+            "RelatedTable": "mom_order",
+            "RelatedColumn": "MoId",
+            "DisplayColumn": "MoCode"
+          }
+        }
+      }
+    },
+    "1,8": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "modid",
+        "GUID": "a6da0ea8-588f-4426-bcdf-cb348f1e73e1",
+        "RelationBinding": {
+          "RelatedTable": "mom_orderdetail",
+          "RelatedColumn": "MoDId",
+          "DisplayColumn": "InvCode"
+        }
+      }
+    },
+    "1,17": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "modid",
+        "GUID": "10d5362f-a5a7-4aa6-b5ae-a7fdfffbcf56",
+        "RelationBinding": {
+          "RelatedTable": "mom_orderdetail",
+          "RelatedColumn": "MoDId",
+          "DisplayColumn": "InvCode",
+          "NextRelationBinding": {
+            "RelatedTable": "inventory",
+            "RelatedColumn": "cInvCode",
+            "DisplayColumn": "cInvName"
+          }
+        }
+      }
+    },
+    "1,25": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "modid",
+        "GUID": "e6b4d1a5-7dee-4c1e-a841-7675446a3bbf",
+        "RelationBinding": {
+          "RelatedTable": "mom_orderdetail",
+          "RelatedColumn": "MoDId",
+          "DisplayColumn": "InvCode",
+          "NextRelationBinding": {
+            "RelatedTable": "inventory",
+            "RelatedColumn": "cInvCode",
+            "DisplayColumn": "cInvStd"
+          }
+        }
+      }
+    },
+    "4,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "历史工艺",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工艺增加!I2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=历史工艺!B2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工艺增加!R2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=历史工艺!K2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工艺增加!Z2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=历史工艺!T2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工艺增加!Z40"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=历史工艺!C34"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工艺增加!C40"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=历史工艺!AB34"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "参照",
+        "TemplateKey": "样式5"
+      }
+    },
+    "4,8": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "modid",
+        "GUID": "df9e71c1-3efd-4b70-a5e0-9e0339c20125",
+        "RelationBinding": {
+          "RelatedTable": "mom_orderdetail",
+          "RelatedColumn": "MoDId",
+          "DisplayColumn": "MoLotCode"
+        }
+      }
+    },
+    "4,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=工艺增加!Z40"
+                      }
+                    ]
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "配料单工艺",
+                    "UpdateType": "add",
+                    "ShowConfirm": false
+                  }
+                ],
+                "ID": "de76a05d-47b7-4f7d-9afb-b2cfbf861c57"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=工艺增加!Z40"
+                      }
+                    ]
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "配料单工艺",
+                    "ShowConfirm": false
+                  }
+                ],
+                "ID": "5aed37a1-7b3a-4710-b9dc-a3c351905d89"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ReloadData": true,
+            "PassQueryCondition": true
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "样式5"
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "工艺说明",
+        "GUID": "27d54ff4-70d5-4280-a00c-21a2d90c3a18"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "BreakLineWithEnter": false,
+        "TemplateKey": "样式1"
+      }
+    },
+    "39,2": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "modid",
+        "GUID": "3f7cb6c2-91c5-46ec-a613-e7cf0fd45fd7"
+      }
+    },
+    "39,13": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "负责人员",
+        "GUID": "f0c8f065-1955-4d86-b377-cb2f87948a1c"
+      },
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "Columns": 1,
+        "TemplateKey": "样式1",
+        "CellDefaultValue": "%CurrentUser.FullName%"
+      }
+    },
+    "39,22": {
+      "BindingInfo": {
+        "TableName": "mom_orderdetail",
+        "ColumnName": "MoDId",
+        "GUID": "5b983489-fc0f-4945-9229-751d6910692b"
+      }
+    },
+    "39,25": {
+      "BindingInfo": {
+        "TableName": "配料单工艺",
+        "ColumnName": "tecID",
+        "GUID": "4664d83a-3c2a-4aa9-ba09-b93120b53f0b"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "WordWrap": true
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Formatter": 3,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 4,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "black",
+        "Center",
+        "@",
+        "Top"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,16": 0,
+      "1,17": 1,
+      "1,24": 0,
+      "1,25": 1,
+      "2,1": 2,
+      "2,2": 2,
+      "2,3": 2,
+      "2,4": 2,
+      "2,5": 2,
+      "2,6": 2,
+      "2,7": 0,
+      "2,8": 2,
+      "2,9": 2,
+      "2,10": 2,
+      "2,11": 2,
+      "2,12": 2,
+      "2,13": 2,
+      "2,14": 2,
+      "2,15": 2,
+      "2,16": 0,
+      "2,17": 2,
+      "2,18": 2,
+      "2,19": 2,
+      "2,20": 2,
+      "2,21": 2,
+      "2,22": 2,
+      "2,23": 2,
+      "2,24": 0,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 2,
+      "2,28": 2,
+      "2,29": 2,
+      "2,30": 2,
+      "4,1": 3,
+      "4,7": 4,
+      "4,8": 4,
+      "4,23": 4,
+      "5,7": 4,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "5,19": 2,
+      "5,20": 2,
+      "5,21": 2,
+      "5,22": 2,
+      "7,1": 5,
+      "38,1": 6,
+      "38,2": 6,
+      "38,3": 6,
+      "38,4": 6,
+      "38,5": 6,
+      "38,6": 6,
+      "38,7": 6,
+      "38,8": 6,
+      "38,9": 6,
+      "38,10": 6,
+      "38,11": 6,
+      "38,12": 6,
+      "38,13": 6,
+      "38,14": 6,
+      "38,15": 6,
+      "38,16": 6,
+      "38,17": 6,
+      "38,18": 6,
+      "38,19": 6,
+      "38,20": 6,
+      "38,21": 6,
+      "38,22": 6,
+      "38,23": 6,
+      "38,24": 6,
+      "38,25": 6,
+      "38,26": 6,
+      "38,27": 6,
+      "38,28": 6,
+      "38,29": 6,
+      "38,30": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,1,2,6",
+    "1,8,2,8",
+    "1,17,2,7",
+    "1,25,2,6",
+    "4,1,2,6",
+    "4,8,2,15",
+    "4,25,2,6",
+    "7,1,31,30",
+    "39,2,1,8",
+    "39,13,1,8",
+    "39,22,1,2",
+    "39,25,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+        "CurrentRowInfo": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "mom_orderdetail",
+            "ColumnName": "MoDId",
+            "GUID": "b4104b90-ebb2-44cf-a4ea-97b7d428ad63"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工艺增加!W40"
+          }
+        }
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=工艺增加!Z40"
+                  }
+                ]
+              },
+              "compareType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+                "CurrentRowInfo": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "配料单工艺",
+                    "ColumnName": "tecID",
+                    "GUID": "bcd6a39a-56a6-4808-a9b3-c0792188f126"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=工艺增加!Z40"
+                  }
+                }
+              }
+            ],
+            "ID": "d929793a-5cec-4e2c-87a7-8f4d8fc9ab16"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "Administrator",
+            "配料操作",
+            "配料单审核",
+            "配料单复核"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//jhhTTnNzTorA3k+dsPTIcRyMoX1yYox7noEGaVtvitdEGDLMO27OabpHd4G4PD/6DcbAWC7sRzP3WeISWRKNOgycRWYaGPpXazBO+qOLCzSxDCMSQPShFyrR51Qjec7zQN3Z44/87rmjlUaBdgg4e9MASLV5AcEPCjphArBH0IQbkrEdJn5ve208krHQmoMVpTCJVG1j/i9IHkySUNkXca0HQveuKUVy+MtL2VdFKzvY32cyYKNNz7zmaxC4/9Iw+7c2P1gmqhryYGVs5bVstCHR6vQWK3v0txPFQOZiVGPqLudTDci9T6eWmOgx5gaBkBNNWdJtXInIcHuAr54M5Yv+K8AqRbdPlGnbYO7eqZZ7bQT7PYeb4AZVbTLsKElsWsavlArEYRX30L7aPskfSJHX14i8sS3Ymvo5i2grymzjfYJnJS2FG2mSdZmoJhpheM1m/4j7cSAtceEqTle/IJbDhPcYPm+/OwrJmwXBTKFuATREnRy2Wgval3PniUh6HimkUiaB6ZfaOlOmMNH/moxQzIx92V3+cc5GNw2oBMuCVtJV1g/yBaHx6TRF1DmiMalhitMtYxsruS1irv8RnScvXlBsZcRc18Py3ULoCSRf0e33xbgg9kwW63EVaqS8Th7LPiBjVUKKKAeQgo9NmahmApZR9zfMWx1TkZIgjCKqOZxw+jsDkDi8NJh6P/mIi5JLm27mT4lsLiVhXkVa26B3bqntAYy7+hUMLVHbB9VTImFexf5ZoqFPujNFHV7cDz0FCGsWQu8szv3o0aKqmyeWvESaHyvhhCI1IBK7r5Zjrsqp1e37LOQS0UWEGsvay3jou9PDCdgRbYYMIGYmCheCr9eelsYrtWFfgjYB4gOktT5AOq6v3xV3RlrNuD84nIlt0NpiZtecCxGCznPHCg==|920

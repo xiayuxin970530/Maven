@@ -1,0 +1,285 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      12,
+      13
+    ],
+    "Count": 14
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      }
+    },
+    "Count": 27
+  },
+  "Values": {
+    "1,8": "信息提示",
+    "4,2": "已签署过，是否重新发起",
+    "9,1": "取消",
+    "9,20": "确认"
+  },
+  "AttachInfos": {
+    "9,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "样式2"
+      }
+    },
+    "9,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "任务主表",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "任务主表",
+                "ColumnName": "任务主表ID",
+                "GUID": "042994ae-492c-4bc0-afc0-85cfcfe69451"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=信息提示!B13"
+              }
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "任务主表",
+                  "ColumnName": "发起电子对账日期",
+                  "GUID": "a2fd645d-9790-4548-9fba-44dd61df0cbb"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=NOW()"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "对账单自动签署接口",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "任务主表ID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=信息提示!B13"
+                }
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "data"
+            },
+            "ResultMessageTo": {
+              "SerializeProperty": "res"
+            },
+            "ReturnPropertiesTo": [
+              {
+                "ResultPropertyName": "任务id"
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=信息提示!data"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowNotification, ElementUI",
+                    "Title": "提示",
+                    "Message": "发送成功！",
+                    "Type": "success",
+                    "Duration": 4500,
+                    "Position": "top-right"
+                  }
+                ],
+                "ID": "c648e19a-87f1-4020-ad0c-ef68daedc1bb"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "ElementUI.Commands.ShowNotification, ElementUI",
+                    "Title": "提示",
+                    "Message": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=信息提示!res"
+                    },
+                    "Type": "error",
+                    "Duration": 4500,
+                    "Position": "top-right"
+                  }
+                ],
+                "ID": "09af984b-ff6b-49fc-ae52-3c4b4e918877"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "确认",
+        "TemplateKey": "样式4"
+      }
+    },
+    "12,1": {
+      "CellComment": {
+        "Comments": "任务主键id\r\n"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontWeight": 0,
+        "Foreground": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#FF0070C0",
+        "Center",
+        "Text 1 0",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,8": 0,
+      "4,2": 1,
+      "12,1": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "1,8,3,11",
+    "4,2,4,23",
+    "9,1,1,5",
+    "9,20,1,5",
+    "12,1,2,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "1ca0f1e6-12e1-4502-bcb5-36c41f2848b2.png",
+      "DisplayName": "背景图1",
+      "StyleInfo": {
+        "Fill": "Background 1 -5"
+      },
+      "IsAutomaticFill": false,
+      "Size": "531,284"
+    },
+    {
+      "Name": "522f4499-ab53-4d86-9ae0-b233aa8df99f.png",
+      "DisplayName": "背景图2",
+      "StyleInfo": {
+        "CornerRadius": 10.0,
+        "Fill": "Background 1 0"
+      },
+      "IsAutomaticFill": false,
+      "Location": "16,16",
+      "Size": "499,212"
+    }
+  ]
+}//cXYf9pub+1a/olSwLyk+i56iKY6Pik6PR6VQjEem4od0+3TDp+vMwtkcF/MX9IySzL7J8OEmJv/a5gsRdK7TjwEXnlyqkAKlAL5q5AmCAgoE4v0mRKcRhEydS+jSu6IGJHdWoOVXq9wLwIpu9Q8MoZ4pj81KbUGtFboN3a/NrbfSpjwl8JWF6JpITVmh9OQHxAKC3aksjNy+SgjXCRgOrGHkdsQxzYN/24jYw8HMsfkW2wVc6aThBdckheqUz/kdRSkTaInkBPOSKXm+UUxrZTxHU+BAIZASkpQTjPKPmmCOmD9l7qyjscq6A4LpQj7iSqd5aEH8JKBwVFz7a0Qw1g+2OZWf4Zya0puY4ryvwl+19kr4WxuaiQT3SMO5QCaalFUOfmHuduqKtGxeFoyZIsuDyw8ix5e+WCW/CKGXxidmtM65lefSxd0fD8UG03YILuAam2OkvDD9YQDN94jsFct/n5Vr5p3yot4P4agYOWuCt7Y9HJVs7eQ1y04ZDtlaBA1pa1/N7Ha+mtrHlvIWUvURN2wnydZZtCXUNjd9SRzrgBQT1DOsgTdUOSk9AI+LlLUpviv4enr47ivqimbstUCE/5ZmZf8ScHa0Fbfy9oBmSfoH6Uqwm38UzRoHmPRp9zU4NRhkjYGjphAfNJCxKEX+Uyl2wcZKxGA2yANPvxBI+wwiL5FADQpHF8TNowkcWn8Ga4iZIYR3xDuXwcu3RsTm50OfgZieP3kntWckQt3fswSij82g4LBiop+V8147kKGPU6+rcGzPh2IywqW7iu0tQfxdfr+ub0PX0cu0bV03D93sYeO8HnsU4L9UbbzbjHowStr+9NZyMJuRLdTMUwG3hjtCidgSkTbdjEg8PWxw9dGV7qXruPvY32FJ4k4nrs1vGXSJcY8W/p/u6Yu12w==|920

@@ -1,0 +1,72 @@
+{
+  "Name": "工艺记录历史",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "invcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "ZYZD",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "date",
+      "MaxLength": -1,
+      "Name": "ddate",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "invstd",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "unitcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "invname",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "工艺记录历史",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT DISTINCT invcode, ZYZD, MAX(ddate) AS ddate, invstd, unitcode, invname\r\nFROM      UFDATA_800_2018.dbo.pld_m\r\nWHERE   (ZYZD IS NOT NULL) AND (ZYZD <> '')\r\nGROUP BY invcode, ZYZD, invstd, unitcode, invname\r\n\r\nunion \r\n\r\nselect    distinct  m.InvCode, a.工艺说明,cast(FGC_CreateDate as date),b.cInvStd,b.cCAComUnitCode,b.cInvName       from  UFDATA_800_2018.dbo.配料单工艺 as\r\n\r\na left join UFDATA_800_2018.dbo.mom_moallocate as m on a.modid=m.MoDId\r\nleft  join \r\nUFDATA_800_2018.dbo.Inventory as b  on m.InvCode=b.cInvCode",
+    "ViewInfo": {
+      "ViewName": "工艺记录历史",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": [
+    {
+      "PrimarySchema": null,
+      "PrimaryTable": "inventory",
+      "PrimaryColumn": "cInvCode",
+      "ForeignSchema": null,
+      "ForeignTable": "工艺记录历史",
+      "ForeignColumn": "invcode",
+      "RelationTypeOnDelete": 0,
+      "RelationTypeOnUpdate": 0,
+      "IsDetailTableRelation": false
+    }
+  ]
+}

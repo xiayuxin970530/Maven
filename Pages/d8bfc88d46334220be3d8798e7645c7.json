@@ -1,0 +1,112 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 4,
+    "DefaultSize": 5.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 54.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 9
+  },
+  "Values": {
+    "1,5": "余"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "TemplateCellSource": "cInvName"
+    },
+    "1,6": {
+      "TemplateCellSource": "未下达余额"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Accent 1 0",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,5": 1,
+      "1,6": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "1,1,2,4",
+    "1,5,2,1",
+    "1,6,2,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "未下达拣货明细弹出",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//90vYQ1GkZVavM38y6wAxUPxkhbxvb2xKg/Vb8GU8qavb4d1En8RvUEAaWq756lrtIbPkqRFJkyus0r4CtjgZ2U6fVLPpBmMxRxAJXvLz5fl5rKxIK55rCdFbYtuqIRs8lmj6wdutTsJaOMuRKbwq5qIMTgId8XXfaDdqg7p9TqOaYC2j0pxryuSllf5PK4rnWG376Ee3/hYPTNUX5FbECOcEZcsx4v4mypMlat5YNr0t6G0KQalsUmOO+0BRNRqIhtrJyec6R2qhl9M9M+Rsq1KY9Rh6NlfrqoqtYVRNLDE2Kj/nBt/r7ZA+sFfIlCmOZyvWFUcTwafSUBsciDXrI+Cyr/CVc3tllJ4KT62hvqPSBJf7Sqwjqwl5dQnVimcFZvEqHykwEnEgApj98j19q7ZtisSX1rUKL8ecxyNWiLxwH8EEsX/ouuPfSbkPFvWsNi5XWSDWX3yPduDiZvknNpJPx9FZgMgOT6JAqCxXxiQJ1tzT+W9hfVAoapDFMxD566cnmXtd0A49gtkIi3lfQLdnWYf6DNcA1LydiEOAJugp4SV253Olz69oUgIJ637VgS4X2UUO8xM4CRJPklOBpn0yxcByukL+tp1rEtTY/qn3uzgp+hP5gnTMlT57ogOHxP5HFe0T67PeAsw7wkvHcI3lFRv/0ibvsEE43VOcaX5hU20ElDif0ePz4gGIudP3HbVns6AfC7W1l6SA4KhbBSoh2gbV4xuMfKRyW7Qmqkwn4zY3FBVmpDBERjUdX1uCz5IHr+Tz+FTkoh/vITPsTyr+kD4f7AA23mLwxCb11NZLhF9NYosiTE/VOp1vzIadCI8OG6zES3SyHZBIxuqprdroUQrjWfDOITbs7DnWXtf46hjG01Gvsupnm4NuFRDNFujA9WA8iRMobC+HC5H3SA==|920

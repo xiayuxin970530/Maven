@@ -1,0 +1,81 @@
+{
+  "Name": "锁定库存明细",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "CBATCH",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "占用库存",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "ALID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "CINVCODE",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cwhcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "锁定库存明细",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "占用库存, a.ALID, a.CINVCODE, a.cwhcode\r\nFROM      (SELECT  p.CBATCH, ISNULL(SUM(p.有效数), 0) AS 有效数, p.ALID, p.CINVCODE, p.cwhcode\r\n                   FROM       UFDATA_800_2018.dbo.PLMX AS p LEFT OUTER JOIN\r\n                                      UFDATA_800_2018.dbo.mom_orderdetail AS m ON p.MODID = m.MoDId\r\n                   WHERE    (m.Status = 3)\r\n                   GROUP BY p.CBATCH, p.ALID, p.CINVCODE, p.cwhcode) AS a LEFT OUTER JOIN\r\n                   dbo.分配已出库 AS b ON a.ALID = b.iMPoIds AND ISNULL(a.CBATCH, 0) = ISNULL(b.cBatch, 0)\r\n",
+    "UserSetQueryColumns": [
+      "ALID"
+    ],
+    "ViewInfo": {
+      "ViewName": "锁定库存明细",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "ALID"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": [
+    {
+      "PrimarySchema": null,
+      "PrimaryTable": "inventory",
+      "PrimaryColumn": "cInvCode",
+      "ForeignSchema": null,
+      "ForeignTable": "锁定库存明细",
+      "ForeignColumn": "CINVCODE",
+      "RelationTypeOnDelete": 0,
+      "RelationTypeOnUpdate": 0,
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimarySchema": null,
+      "PrimaryTable": "mom_moallocate",
+      "PrimaryColumn": "AllocateId",
+      "ForeignSchema": null,
+      "ForeignTable": "锁定库存明细",
+      "ForeignColumn": "ALID",
+      "RelationTypeOnDelete": 0,
+      "RelationTypeOnUpdate": 0,
+      "IsDetailTableRelation": false
+    }
+  ]
+}

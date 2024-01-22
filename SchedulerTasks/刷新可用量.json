@@ -1,0 +1,26 @@
+{
+  "Name": "刷新可用量",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 3.0,
+      "TimeUnit": 1,
+      "StartDateTime": 44985.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "刷新可用量",
+      "DisplayNameInDesigner": "[dbo].[刷新可用量]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "31b182a9d68d4cd5a981f2eb1c52de00"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "ConnectionString": "Data Source=10.1.10.99;Initial Catalog=UFDATA_800_2018;Persist Security Info=True;User ID=sa;Password=Aa123",
+    "DataBaseType": 1,
+    "ID": "U8800"
+  },
+  {
+    "ConnectionString": "Data Source=10.1.10.99;Initial Catalog=PLD;Persist Security Info=True;User ID=sa;Password=Aa123",
+    "DataBaseType": 1,
+    "ID": "pld"
+  },
+  {
+    "ConnectionString": "Data Source=10.1.10.99;Initial Catalog=UFDATA_700_2020;Persist Security Info=True;User ID=sa;Password=Aa123",
+    "DataBaseType": 1,
+    "ID": "u8700"
+  }
+]

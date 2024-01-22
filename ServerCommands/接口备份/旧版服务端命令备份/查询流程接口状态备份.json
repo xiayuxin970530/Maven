@@ -1,0 +1,814 @@
+{
+  "Name": "查询流程接口状态备份",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.InvokeTrigger, ServerDesignerCommon",
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+      "PostData": {
+        "DataItemType": 1,
+        "Data": {
+          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+          "Data": [
+            {
+              "Name": "appId",
+              "DataItemType": 0,
+              "Data": 5111834261
+            },
+            {
+              "Name": "secret",
+              "DataItemType": 0,
+              "Data": "461f4026da0dd843d1d67f9288f70d76"
+            },
+            {
+              "Name": "grantType",
+              "DataItemType": 0,
+              "Data": "client_credentials"
+            }
+          ]
+        }
+      },
+      "WebUrl": "https://openapi.esign.cn/v1/oauth2/access_token",
+      "Method": "GET",
+      "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+      "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+      "NewParameter": "tokenjson",
+      "Header": [],
+      "Timeout": 100.0
+    },
+    {
+      "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+      "BianmaMsg": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=tokenjson"
+      },
+      "JsonLu": "data",
+      "Noobj": true,
+      "FanHuiMsg": "data"
+    },
+    {
+      "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+      "BianmaMsg": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=data"
+      },
+      "JsonLu": "token",
+      "FanHuiMsg": "token"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "获取流程id",
+      "TableValue": {
+        "TableName": "e签宝定时查询接口状态",
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "e签宝定时查询接口状态",
+              "ColumnName": "发起流程ID",
+              "GUID": "81959d35-0700-4428-86bb-b082f81885f1"
+            },
+            "ColumnName": "发起流程ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "e签宝定时查询接口状态",
+              "ColumnName": "crm单号",
+              "GUID": "fd3a5498-121e-4dbe-97a0-66c1647c5689"
+            },
+            "ColumnName": "crm单号"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "e签宝定时查询接口状态",
+              "ColumnName": "crm合同id",
+              "GUID": "8ce3b321-1148-4616-9bca-c8edf4f75437"
+            },
+            "ColumnName": "crm合同id"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "e签宝定时查询接口状态",
+              "ColumnName": "签章任务ID",
+              "GUID": "40defcca-d59a-43f0-8bf6-2e3733d9bfde"
+            },
+            "ColumnName": "签章任务ID"
+          }
+        ]
+      },
+      "ID": "ff3f4c11e7b54588b3a5d69486bc7e5f"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "查询连接",
+      "ParameterValue": "https://openapi.esign.cn/v3/sign-flow/",
+      "ID": "00b2a472c1f8493c93d4883cddc548b4"
+    },
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=获取流程id"
+        },
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.crm单号"
+                      }
+                    },
+                    "value": "%Null%",
+                    "compareType": 1
+                  },
+                  {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.crm单号"
+                      }
+                    },
+                    "compareType": 1
+                  }
+                ],
+                "RelationType": 1
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "流程查询地址",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=查询连接&Item.发起流程ID"
+                  },
+                  "ID": "72276abfb17240c998fa474c0eebf545"
+                },
+                {
+                  "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                  "PostData": {
+                    "DataItemType": 1,
+                    "Data": {
+                      "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                      "Data": []
+                    }
+                  },
+                  "WebUrl": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=流程查询地址"
+                  },
+                  "Method": "GET",
+                  "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                  "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                  "NewParameter": "流程状态",
+                  "Header": [
+                    {
+                      "Type": "X-Tsign-Open-App-Id",
+                      "Value": "5111834261"
+                    },
+                    {
+                      "Type": "X-Tsign-Open-Token",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=token"
+                      }
+                    },
+                    {
+                      "Type": "Content-Type",
+                      "Value": "application/json"
+                    }
+                  ],
+                  "Timeout": 100.0
+                },
+                {
+                  "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                  "BianmaMsg": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=流程状态"
+                  },
+                  "JsonLu": "data",
+                  "Noobj": true,
+                  "FanHuiMsg": "流程状态data"
+                },
+                {
+                  "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                  "BianmaMsg": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=流程状态data"
+                  },
+                  "JsonLu": "signFlowStatus",
+                  "FanHuiMsg": "signFlowStatus"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=signFlowStatus"
+                          }
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "还在签署中_1",
+                          "ParameterValue": "1",
+                          "ID": "85c04df1dd5b41dc920c0b93cadeee61"
+                        }
+                      ],
+                      "ID": "8ef543c1-82c7-4abd-b5d2-1ea84abaa100"
+                    },
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=signFlowStatus"
+                          }
+                        },
+                        "value": "1",
+                        "compareType": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "签章任务",
+                          "ShowConfirm": false,
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "签章任务ID",
+                              "GUID": "6e6868a6-f6e8-4242-8a4b-0d9291a1ac11"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=Item.签章任务ID"
+                            }
+                          },
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务",
+                                "ColumnName": "接口发起状态",
+                                "GUID": "93b04a89-aec0-4452-a168-cf6c1b85032b"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=signFlowStatus"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "定时接口查询返回值",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "定时接口查询返回值",
+                                "ColumnName": "返回值",
+                                "GUID": "ae19c4a1-98ac-42a3-9d98-527f08a96439"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=signFlowStatus"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "定时接口查询返回值",
+                                "ColumnName": "流程id",
+                                "GUID": "068f3947-747f-446c-977a-e1a42d73652c"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Item.发起流程ID"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "定时接口查询返回值",
+                                "ColumnName": "crm单号",
+                                "GUID": "4b8de503-2443-4b14-bd2d-38614ccab72c"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Item.crm单号"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "定时接口查询返回值",
+                                "ColumnName": "合同id",
+                                "GUID": "1b99792c-b7e7-4bf7-b3b7-05bb192c7f57"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Item.crm合同id"
+                              }
+                            }
+                          ],
+                          "Disabled": true
+                        },
+                        {
+                          "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                          "PostData": {
+                            "DataItemType": 1,
+                            "Data": {
+                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                              "IsStringify": true,
+                              "Data": [
+                                {
+                                  "Name": "param",
+                                  "DataItemType": 1,
+                                  "Data": {
+                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                    "Data": [
+                                      {
+                                        "Name": "status",
+                                        "DataItemType": 0,
+                                        "Data": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=signFlowStatus"
+                                        }
+                                      },
+                                      {
+                                        "Name": "fhdCode",
+                                        "DataItemType": 0,
+                                        "Data": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=Item.crm单号"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "WebUrl": "http://221.1.80.188:32001/api/app.php?s=App.FhdErpToCrm.ChangeStatus",
+                          "Method": "POST",
+                          "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                          "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                          "Header": [],
+                          "Timeout": 100.0
+                        }
+                      ],
+                      "ID": "37869654-88c2-4840-883a-8672b3374537"
+                    }
+                  ]
+                }
+              ],
+              "ID": "09ccb2e0-4bad-4246-be26-987378be4260"
+            },
+            {
+              "Condition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.crm合同id"
+                      }
+                    },
+                    "value": "%Null%",
+                    "compareType": 1
+                  },
+                  {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.crm合同id"
+                      }
+                    },
+                    "compareType": 1
+                  }
+                ],
+                "RelationType": 1
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "销售流程查询地址",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=查询连接&Item.发起流程ID"
+                  },
+                  "ID": "590cee9ea1414377bce00ff5e859214e"
+                },
+                {
+                  "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                  "PostData": {
+                    "DataItemType": 1,
+                    "Data": {
+                      "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                      "Data": []
+                    }
+                  },
+                  "WebUrl": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=销售流程查询地址"
+                  },
+                  "Method": "GET",
+                  "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                  "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                  "NewParameter": "销售流程状态",
+                  "Header": [
+                    {
+                      "Type": "X-Tsign-Open-App-Id",
+                      "Value": "5111834261"
+                    },
+                    {
+                      "Type": "X-Tsign-Open-Token",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=token"
+                      }
+                    },
+                    {
+                      "Type": "Content-Type",
+                      "Value": "application/json"
+                    }
+                  ],
+                  "Timeout": 100.0
+                },
+                {
+                  "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                  "BianmaMsg": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=销售流程状态"
+                  },
+                  "JsonLu": "data",
+                  "Noobj": true,
+                  "FanHuiMsg": "销售流程状态data"
+                },
+                {
+                  "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                  "BianmaMsg": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=销售流程状态data"
+                  },
+                  "JsonLu": "signFlowStatus",
+                  "FanHuiMsg": "销售signFlowStatus"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=销售signFlowStatus"
+                          }
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "还在签署中",
+                          "ParameterValue": "1",
+                          "ID": "d9c38f202173446b8cda7fda926af903"
+                        }
+                      ],
+                      "ID": "11c624d5-65dd-4be5-a807-ab4014f1418e"
+                    },
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=销售signFlowStatus"
+                          }
+                        },
+                        "value": "1",
+                        "compareType": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "合同模板主表",
+                          "ShowConfirm": false,
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "ID",
+                              "GUID": "6a838e0b-094a-4e2d-a5e5-5d5b4e5ce4dd"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=Item.签章任务ID"
+                            }
+                          },
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "合同模板主表",
+                                "ColumnName": "接口状态",
+                                "GUID": "1a28a075-604e-4183-b74a-c0d50a16ecf6"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=销售signFlowStatus"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "定时接口查询返回值",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "定时接口查询返回值",
+                                "ColumnName": "返回值",
+                                "GUID": "5ee822e4-1c12-4543-a936-5b6449ddf821"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=销售signFlowStatus"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "定时接口查询返回值",
+                                "ColumnName": "流程id",
+                                "GUID": "778a7307-549a-4441-bf2c-cdbc1487d4b7"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Item.发起流程ID"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "定时接口查询返回值",
+                                "ColumnName": "crm单号",
+                                "GUID": "c0855a6b-d46f-4ee5-bd5e-310a12bd2640"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Item.crm单号"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "定时接口查询返回值",
+                                "ColumnName": "合同id",
+                                "GUID": "54a170fe-90fb-4eb6-b8e3-5a0f6e3ccc62"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Item.crm合同id"
+                              }
+                            }
+                          ],
+                          "Disabled": true
+                        },
+                        {
+                          "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                          "PostData": {
+                            "DataItemType": 1,
+                            "Data": {
+                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                              "IsStringify": true,
+                              "Data": [
+                                {
+                                  "Name": "param",
+                                  "DataItemType": 1,
+                                  "Data": {
+                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                    "Data": [
+                                      {
+                                        "Name": "status",
+                                        "DataItemType": 0,
+                                        "Data": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=signFlowStatus"
+                                        }
+                                      },
+                                      {
+                                        "Name": "id",
+                                        "DataItemType": 0,
+                                        "Data": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=Item.crm合同id"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "WebUrl": "http://221.1.80.188:32001/api/app.php?s=App.ApproveErpToCrm.ChangeStatus",
+                          "Method": "POST",
+                          "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                          "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                          "Header": [],
+                          "Timeout": 100.0
+                        }
+                      ],
+                      "ID": "63fbc5c2-b904-4e76-b6b4-9477c27e90b6"
+                    }
+                  ]
+                }
+              ],
+              "ID": "09055fc0-b4b9-41a4-9fd4-0039dcb3d29d"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "物流流程查询地址",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=查询连接&Item.发起流程ID"
+                  },
+                  "ID": "cca288ed08b048ba9ec88502f284ac16"
+                },
+                {
+                  "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                  "PostData": {
+                    "DataItemType": 1,
+                    "Data": {
+                      "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                      "Data": []
+                    }
+                  },
+                  "WebUrl": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=物流流程查询地址"
+                  },
+                  "Method": "GET",
+                  "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                  "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                  "NewParameter": "流程状态",
+                  "Header": [
+                    {
+                      "Type": "X-Tsign-Open-App-Id",
+                      "Value": "5111834261"
+                    },
+                    {
+                      "Type": "X-Tsign-Open-Token",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=token"
+                      }
+                    },
+                    {
+                      "Type": "Content-Type",
+                      "Value": "application/json"
+                    }
+                  ],
+                  "Timeout": 100.0
+                },
+                {
+                  "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                  "BianmaMsg": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=流程状态"
+                  },
+                  "JsonLu": "data",
+                  "Noobj": true,
+                  "FanHuiMsg": "流程状态data"
+                },
+                {
+                  "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                  "BianmaMsg": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=流程状态data"
+                  },
+                  "JsonLu": "signFlowStatus",
+                  "FanHuiMsg": "signFlowStatus"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=signFlowStatus"
+                          }
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "还在签署中_2",
+                          "ParameterValue": "1",
+                          "ID": "e7da1ce58a5c40e7bc9ff6119764948b"
+                        }
+                      ],
+                      "ID": "b8dc369b-d7f8-4460-b3b3-0511443e0d6a"
+                    },
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=signFlowStatus"
+                          }
+                        },
+                        "value": "1",
+                        "compareType": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "签章任务",
+                          "ShowConfirm": false,
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "签章任务ID",
+                              "GUID": "c8f8fe97-f05e-4acb-801f-428c65661d3c"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=Item.签章任务ID"
+                            }
+                          },
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务",
+                                "ColumnName": "接口发起状态",
+                                "GUID": "da80b4f3-edff-4fdd-9607-fb4779d53add"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=signFlowStatus"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "8240465d-d121-4d41-8f93-2663a7029895"
+                    }
+                  ]
+                }
+              ],
+              "ID": "6701a7c6-8def-471e-9ad2-ad0c7c0299e5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

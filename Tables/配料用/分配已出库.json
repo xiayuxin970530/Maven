@@ -1,0 +1,39 @@
+{
+  "Name": "分配已出库",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "iMPoIds",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cBatch",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "合计出库",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "分配已出库",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  a.iMPoIds, a.cBatch, SUM(a.iQuantity) AS 合计出库\r\nFROM      UFDATA_800_2018.dbo.rdrecords11 AS a LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.mom_orderdetail AS m ON a.iMPoIds = m.MoDId\r\nWHERE   (a.iMPoIds IS NOT NULL) AND (a.ID > '1000274452') AND (ISNULL(m.Status, 0) = 3)\r\nGROUP BY a.iMPoIds, a.cBatch",
+    "ViewInfo": {
+      "ViewName": "分配已出库",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

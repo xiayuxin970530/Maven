@@ -1,0 +1,26 @@
+{
+  "Name": "扫码材料出库",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 2.0,
+      "TimeUnit": 1,
+      "StartDateTime": 44933.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "生成材料出库单集合",
+      "DisplayNameInDesigner": "[dbo].[生成材料出库单集合]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "f43817ada9894b449f4607a6d98e04e1"
+    }
+  ]
+}

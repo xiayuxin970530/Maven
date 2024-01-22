@@ -1,0 +1,3283 @@
+{
+  "Name": "自动发起动态表格运输协议2",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.InvokeTrigger, ServerDesignerCommon",
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+      "TryCommandPart": {
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "token",
+                "TableValue": {
+                  "TableName": "token",
+                  "OnlyGetValue": true,
+                  "TableValueType": 0,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "token",
+                        "ColumnName": "token",
+                        "GUID": "33d4ed76-2c9e-4a3e-83ca-ca47e7f19e66"
+                      },
+                      "ColumnName": "token"
+                    }
+                  ]
+                },
+                "ID": "135a015a074440c39742bdf474077f03"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "是否有发起的运输协议",
+                "TableValue": {
+                  "TableName": "e签宝运输协议自动发起参数数据",
+                  "TableValueType": 3
+                },
+                "ID": "23cf3fd5dc704f768e138650355f680d"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "协议参数数据",
+                "TableValue": {
+                  "TableName": "e签宝运输协议自动发起参数数据",
+                  "TableValueType": 1,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "签章任务ID",
+                        "GUID": "ba58498a-94bb-447f-973b-d200fe936583"
+                      },
+                      "ColumnName": "签章任务ID"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "任务主表id",
+                        "GUID": "92d75389-8f69-4f6b-826c-e90b3fec9b4a"
+                      },
+                      "ColumnName": "任务主表id"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "我方签署人",
+                        "GUID": "33ce5b6a-314f-4ab5-9e84-9a15b6ccd039"
+                      },
+                      "ColumnName": "我方签署人"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "我方电话",
+                        "GUID": "7a997686-46da-4280-ac25-2ad1b3c9af06"
+                      },
+                      "ColumnName": "我方电话"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "对方签署人",
+                        "GUID": "96e1c0cd-dd4c-477e-89b3-5d8a5a461a3e"
+                      },
+                      "ColumnName": "对方签署人"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "对方电话",
+                        "GUID": "e64ab1a6-a8de-4a32-937b-928bb8babd87"
+                      },
+                      "ColumnName": "对方电话"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "签章内容",
+                        "GUID": "6eae0ba9-1909-4113-a9fa-772c2c2f92a4"
+                      },
+                      "ColumnName": "签章内容"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "匹配模板id",
+                        "GUID": "b2410146-a14f-464b-b4dc-5492d24869ff"
+                      },
+                      "ColumnName": "匹配模板id"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "匹配模板名称",
+                        "GUID": "3ef83a5a-696e-4949-ab76-6c897e96ba35"
+                      },
+                      "ColumnName": "匹配模板名称"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "任务类型",
+                        "GUID": "e897d44c-21f5-49b0-a457-6ffe1226b73c"
+                      },
+                      "ColumnName": "任务类型"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "承运方",
+                        "GUID": "a07e8de5-edd0-4106-83f7-5d5862ff4181"
+                      },
+                      "ColumnName": "承运方"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "客户名称",
+                        "GUID": "2dc0417b-8138-4ec2-bf8a-49d41ec3bc79"
+                      },
+                      "ColumnName": "客户名称"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "客户地址",
+                        "GUID": "0b519bef-4f4e-4d69-9cbd-487d54af0e8a"
+                      },
+                      "ColumnName": "客户地址"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "发货日期",
+                        "GUID": "0c9c2fcc-8944-4598-910f-2b350fb9e109"
+                      },
+                      "ColumnName": "发货日期"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "备注",
+                        "GUID": "b2f28992-8791-47e1-a656-c5441afebd2d"
+                      },
+                      "ColumnName": "备注"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "数量合计",
+                        "GUID": "7109bbc1-197f-4a31-b1d1-93e6251f812a"
+                      },
+                      "ColumnName": "数量合计"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "运费合计",
+                        "GUID": "32f823ba-cf67-4ce9-b4af-e297ae680c15"
+                      },
+                      "ColumnName": "运费合计"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "发运人1",
+                        "GUID": "3d675f94-8678-4991-94ed-a47cae7e4bf3"
+                      },
+                      "ColumnName": "发运人1"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "发运人手机号1",
+                        "GUID": "dc42a6ca-d9db-482d-838c-4b598455b7bc"
+                      },
+                      "ColumnName": "发运人手机号1"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "发运人2",
+                        "GUID": "d618f596-e9c0-48e9-b6c9-8999e4d37476"
+                      },
+                      "ColumnName": "发运人2"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "发运人手机号2",
+                        "GUID": "364f143c-1547-410f-b1d6-11becd56ffea"
+                      },
+                      "ColumnName": "发运人手机号2"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "发运人3",
+                        "GUID": "1e1bce52-f674-40a8-8cef-1743021601d5"
+                      },
+                      "ColumnName": "发运人3"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "发运人手机号3",
+                        "GUID": "78d06e1d-3577-4415-a763-2a8045148cae"
+                      },
+                      "ColumnName": "发运人手机号3"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "法人1",
+                        "GUID": "e02b8446-005e-45cc-8286-10a7ed40e9b7"
+                      },
+                      "ColumnName": "法人1"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "法人手机号1",
+                        "GUID": "ab8c8cd2-6e38-45bd-8906-96a4358e3530"
+                      },
+                      "ColumnName": "法人手机号1"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "法人2",
+                        "GUID": "522fdcc3-39bf-4aaf-986d-e2a46f2c12ac"
+                      },
+                      "ColumnName": "法人2"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "法人手机号2",
+                        "GUID": "ded3bce6-ef8c-4806-8cd5-5326637553f0"
+                      },
+                      "ColumnName": "法人手机号2"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "法人3",
+                        "GUID": "83efcdf8-dcb9-4eff-a841-6aa78cd8f832"
+                      },
+                      "ColumnName": "法人3"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "法人手机号3",
+                        "GUID": "83998846-376c-4c18-8791-c999f4fb1a2d"
+                      },
+                      "ColumnName": "法人手机号3"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "仓管1",
+                        "GUID": "50b3c1f2-68e9-4963-aa2a-bcac219b1be1"
+                      },
+                      "ColumnName": "仓管1"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "仓管手机人1",
+                        "GUID": "5fc151c8-42ad-4edb-803e-1910a833378e"
+                      },
+                      "ColumnName": "仓管手机人1"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "仓管2",
+                        "GUID": "78f53668-a251-486a-8d21-688f17e95cf8"
+                      },
+                      "ColumnName": "仓管2"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "仓管手机号2",
+                        "GUID": "d11d9425-e2e2-4a68-a0b8-5c7d7fbd28b5"
+                      },
+                      "ColumnName": "仓管手机号2"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "仓管3",
+                        "GUID": "03518505-185d-4295-bb7e-6f13cd43d824"
+                      },
+                      "ColumnName": "仓管3"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "仓管手机号3",
+                        "GUID": "75f24866-f583-47f1-95ee-e6397f6bce30"
+                      },
+                      "ColumnName": "仓管手机号3"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "车牌号",
+                        "GUID": "3f8cec03-2c35-4c25-bea0-7d30efcdd2e3"
+                      },
+                      "ColumnName": "车牌号"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "托运方",
+                        "GUID": "e6966145-6423-4b86-9ef9-e668f3711466"
+                      },
+                      "ColumnName": "托运方"
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "e签宝运输协议自动发起参数数据",
+                        "ColumnName": "接口发起状态",
+                        "GUID": "5ad46d6a-2c0e-4849-9010-d66af81b80d9"
+                      },
+                      "ColumnName": "接口发起状态"
+                    }
+                  ],
+                  "TopCount": "1",
+                  "OrderBySqlCondition": {
+                    "OrderByColumns": [
+                      {
+                        "ColumnBindingInfo": {
+                          "TableName": "e签宝运输协议自动发起参数数据",
+                          "ColumnName": "任务主表id",
+                          "GUID": "9f8c3d27-4408-468a-b43b-045bdb2ced43"
+                        },
+                        "Order": 0
+                      }
+                    ]
+                  }
+                },
+                "ID": "c4d1acb6f5bb4624a848138fda607a3e"
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=是否有发起的运输协议"
+                        }
+                      },
+                      "value": "0",
+                      "compareType": 1
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "CollectionOperationKit.ServerSideArrayOp, CollectionOperationKit",
+                        "OutParamaterName": "resarray"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "setinsertRow",
+                        "ParameterValue": "true",
+                        "ID": "5ac4ef452e214ddb9321681cd85002e7"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "表格数据",
+                        "TableValue": {
+                          "TableName": "e签宝运输协议动态表格",
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column1",
+                                "GUID": "6fec4394-f60c-41d9-af41-0153716ea943"
+                              },
+                              "ColumnName": "column1"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column2",
+                                "GUID": "f6cc5eca-c3d9-47b6-b38d-9af57795d2d4"
+                              },
+                              "ColumnName": "column2"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column3",
+                                "GUID": "9d4577be-83ef-4648-b175-a64961485873"
+                              },
+                              "ColumnName": "column3"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column4",
+                                "GUID": "699fbac0-767c-4449-9972-34eb4fbee709"
+                              },
+                              "ColumnName": "column4"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column5",
+                                "GUID": "92f1bf1e-1b01-45da-93bf-fe49af5203c8"
+                              },
+                              "ColumnName": "column5"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column6",
+                                "GUID": "e688b9f3-c15e-4055-8ef3-3120b5d1066b"
+                              },
+                              "ColumnName": "column6"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column7",
+                                "GUID": "70f01d83-e552-4bba-b40f-9353593457df"
+                              },
+                              "ColumnName": "column7"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column8",
+                                "GUID": "7767407e-d41a-4f48-92a4-af8dac9cc4fa"
+                              },
+                              "ColumnName": "column8"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column9",
+                                "GUID": "c67d061c-3287-40ad-9246-2a77c2e77111"
+                              },
+                              "ColumnName": "column9"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝运输协议动态表格",
+                                "ColumnName": "column10",
+                                "GUID": "9e625beb-3f76-4f91-9d3b-517b21f15340"
+                              },
+                              "ColumnName": "column10"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "e签宝运输协议动态表格",
+                              "ColumnName": "任务主表id",
+                              "GUID": "5e04a1ff-b3ca-412e-afae-e98c60094530"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=协议参数数据.任务主表id"
+                            }
+                          }
+                        },
+                        "ID": "432fb8ffbdf9489a848bde3b26c2dfd8"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "固定列数值",
+                        "TableValue": {
+                          "TableName": "e签宝动态表格表头",
+                          "TableValueType": 1,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column1",
+                                "GUID": "88b86b4f-97d1-45d4-8ee9-0c5ba6bece4a"
+                              },
+                              "ColumnName": "column1"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column2",
+                                "GUID": "245d4fb1-b39e-4880-a738-a97bfefa9094"
+                              },
+                              "ColumnName": "column2"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column3",
+                                "GUID": "ca0834e4-cdcf-4a02-bf98-673908011784"
+                              },
+                              "ColumnName": "column3"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column4",
+                                "GUID": "e20f1f82-6359-46c1-822e-c811cd99a150"
+                              },
+                              "ColumnName": "column4"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column5",
+                                "GUID": "f213ed02-fb83-4ab8-a020-180a0ee9f726"
+                              },
+                              "ColumnName": "column5"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column6",
+                                "GUID": "de4a1a48-5311-4ab8-b205-968e8cf179ae"
+                              },
+                              "ColumnName": "column6"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column7",
+                                "GUID": "b338a5f9-c0c5-43a7-8b44-bacd83130263"
+                              },
+                              "ColumnName": "column7"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column8",
+                                "GUID": "bbfdc8c2-964a-49a7-95da-07fd7612b01e"
+                              },
+                              "ColumnName": "column8"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column9",
+                                "GUID": "214c4538-45c6-419f-bd2c-b3e786d4c564"
+                              },
+                              "ColumnName": "column9"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝动态表格表头",
+                                "ColumnName": "column10",
+                                "GUID": "f18ac9b9-f7ec-463e-88fc-50fbd0c26ef6"
+                              },
+                              "ColumnName": "column10"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "e签宝动态表格表头",
+                              "ColumnName": "模板类型",
+                              "GUID": "c9c39409-b5a5-4472-811c-3a3ec54d6983"
+                            },
+                            "Value": "运输协议"
+                          }
+                        },
+                        "ID": "56b26a8a0ab64e9ebc9bdbf35078bdd1"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "获取合计数据",
+                        "TableValue": {
+                          "TableName": "签章任务子表",
+                          "TableValueType": 1,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column1",
+                                "GUID": "fb3e11fc-f5ea-4e4d-bed6-889bddce8f70"
+                              },
+                              "ColumnName": "column1"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column2",
+                                "GUID": "f7973cb6-bcb8-4676-96b3-f96d2221d768"
+                              },
+                              "ColumnName": "column2"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column3",
+                                "GUID": "61ba0d98-5e6e-4ee8-84b0-8e274593b16a"
+                              },
+                              "ColumnName": "column3"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column4",
+                                "GUID": "ad596808-3fda-4f62-a6d0-2c8548b209be"
+                              },
+                              "ColumnName": "column4"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column5",
+                                "GUID": "c45f1e6b-f0fd-4566-820f-8775a279d572"
+                              },
+                              "ColumnName": "column5"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column6",
+                                "GUID": "e646bada-71cf-49b7-9b1c-5f31acf275ef"
+                              },
+                              "ColumnName": "column6"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column7",
+                                "GUID": "81131410-9fcc-4b32-98da-3195f8dabc42"
+                              },
+                              "ColumnName": "column7"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column8",
+                                "GUID": "e0480d04-2cdd-4381-843c-c8ac6bbedfa0"
+                              },
+                              "ColumnName": "column8"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column9",
+                                "GUID": "60680aa7-27d1-4b3d-9ef7-2deed0bab6d0"
+                              },
+                              "ColumnName": "column9"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务子表",
+                                "ColumnName": "column10",
+                                "GUID": "6461af52-f40b-4896-a13f-905bb5a4e027"
+                              },
+                              "ColumnName": "column10"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "任务主表ID",
+                              "GUID": "25adb565-3881-4fc9-a656-76c7609ac3ae"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=协议参数数据.任务主表id"
+                            }
+                          },
+                          "TopCount": "1",
+                          "OrderBySqlCondition": {
+                            "OrderByColumns": [
+                              {
+                                "ColumnBindingInfo": {
+                                  "TableName": "签章任务子表",
+                                  "ColumnName": "ID",
+                                  "GUID": "85e12fbe-b998-484f-a489-1c8200f08930"
+                                },
+                                "Order": 1
+                              }
+                            ]
+                          }
+                        },
+                        "ID": "695a1ea3d7344481a768daf0add22980"
+                      },
+                      {
+                        "$type": "ObjectOperationCommand.CreateObjectCommand, ObjectOperationCommand",
+                        "ObjectProperties": [
+                          {
+                            "Name": "row",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=固定列数值"
+                            }
+                          }
+                        ],
+                        "ParamName": "固定值"
+                      },
+                      {
+                        "$type": "ObjectOperationCommand.CreateObjectCommand, ObjectOperationCommand",
+                        "ObjectProperties": [
+                          {
+                            "Name": "column1",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column1"
+                            }
+                          },
+                          {
+                            "Name": "column2",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column2"
+                            }
+                          },
+                          {
+                            "Name": "column3",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column3"
+                            }
+                          },
+                          {
+                            "Name": "column4",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column4"
+                            }
+                          },
+                          {
+                            "Name": "column5",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column5"
+                            }
+                          },
+                          {
+                            "Name": "column6",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column6"
+                            }
+                          },
+                          {
+                            "Name": "column7",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column7"
+                            }
+                          },
+                          {
+                            "Name": "column8",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column8"
+                            }
+                          },
+                          {
+                            "Name": "column9",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column9"
+                            }
+                          },
+                          {
+                            "Name": "column10",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取合计数据.column10"
+                            }
+                          }
+                        ],
+                        "ParamName": "表格合计数据"
+                      },
+                      {
+                        "$type": "ObjectOperationCommand.CreateObjectCommand, ObjectOperationCommand",
+                        "ObjectProperties": [
+                          {
+                            "Name": "insertRow",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=setinsertRow"
+                            }
+                          }
+                        ],
+                        "ParamName": "true返回值"
+                      },
+                      {
+                        "$type": "CollectionOperationKit.ServerSideObjectOp, CollectionOperationKit",
+                        "Operation": 3,
+                        "InParamater": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=true返回值"
+                        },
+                        "OperationParamaterName": "row",
+                        "OperationParamaterValue": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=表格合计数据"
+                        },
+                        "OutParamaterName": "表格合计"
+                      },
+                      {
+                        "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                        "LoopInfo": {
+                          "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                          "LoopCount": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=表格数据"
+                          },
+                          "LoopItemParamName": "Item"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "ObjectOperationCommand.CreateObjectCommand, ObjectOperationCommand",
+                            "ObjectProperties": [
+                              {
+                                "Name": "column1",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column1"
+                                }
+                              },
+                              {
+                                "Name": "column2",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column2"
+                                }
+                              },
+                              {
+                                "Name": "column3",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column3"
+                                }
+                              },
+                              {
+                                "Name": "column4",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column4"
+                                }
+                              },
+                              {
+                                "Name": "column5",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column5"
+                                }
+                              },
+                              {
+                                "Name": "column6",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column6"
+                                }
+                              },
+                              {
+                                "Name": "column7",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column7"
+                                }
+                              },
+                              {
+                                "Name": "column8",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column8"
+                                }
+                              },
+                              {
+                                "Name": "column9",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column9"
+                                }
+                              },
+                              {
+                                "Name": "column10",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.column10"
+                                }
+                              }
+                            ],
+                            "ParamName": "row"
+                          },
+                          {
+                            "$type": "ObjectOperationCommand.CreateObjectCommand, ObjectOperationCommand",
+                            "ObjectProperties": [
+                              {
+                                "Name": "insertRow",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=setinsertRow"
+                                }
+                              }
+                            ],
+                            "ParamName": "insertRow"
+                          },
+                          {
+                            "$type": "CollectionOperationKit.ServerSideObjectOp, CollectionOperationKit",
+                            "Operation": 3,
+                            "InParamater": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=insertRow"
+                            },
+                            "OperationParamaterName": "row",
+                            "OperationParamaterValue": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=row"
+                            },
+                            "OutParamaterName": "Rw"
+                          },
+                          {
+                            "$type": "CollectionOperationKit.ServerSideArrayOp, CollectionOperationKit",
+                            "InParamater": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=resarray"
+                            },
+                            "Operation": 6,
+                            "OperationParamaterAName": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=Rw"
+                            },
+                            "OutParamaterName": "res"
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "CollectionOperationKit.ServerSideArrayOp, CollectionOperationKit",
+                        "InParamater": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=res"
+                        },
+                        "Operation": 6,
+                        "OperationParamaterAName": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=固定值"
+                        },
+                        "OutParamaterName": "动态表格"
+                      },
+                      {
+                        "$type": "CollectionOperationKit.ServerSideArrayOp, CollectionOperationKit",
+                        "InParamater": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=动态表格"
+                        },
+                        "Operation": 4,
+                        "OperationParamaterAName": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=表格合计"
+                        },
+                        "OutParamaterName": "动态表格参数"
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON序列化, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=动态表格参数"
+                        },
+                        "FanHuiMsg": "动态表格类型转换"
+                      },
+                      {
+                        "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                        "PostData": {
+                          "DataItemType": 1,
+                          "Data": {
+                            "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                            "IsStringify": true,
+                            "Data": [
+                              {
+                                "Name": "docTemplateId",
+                                "DataItemType": 0,
+                                "Data": "823bee148b2f44e7a26b4df44573beae"
+                              },
+                              {
+                                "Name": "fileName",
+                                "DataItemType": 0,
+                                "Data": "山东亿嘉农业科技有限公司运输协议模板.pdf"
+                              },
+                              {
+                                "Name": "components",
+                                "DataItemType": 4,
+                                "Data": {
+                                  "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                  "Data": [
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "componentKey",
+                                            "DataItemType": 0,
+                                            "Data": "mubanmingcheng"
+                                          },
+                                          {
+                                            "Name": "componentValue",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=协议参数数据.托运方"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "componentKey",
+                                            "DataItemType": 0,
+                                            "Data": "tuoyunfang"
+                                          },
+                                          {
+                                            "Name": "componentValue",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=协议参数数据.托运方"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "componentKey",
+                                            "DataItemType": 0,
+                                            "Data": "chengyunfang"
+                                          },
+                                          {
+                                            "Name": "componentValue",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=协议参数数据.承运方"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "componentKey",
+                                            "DataItemType": 0,
+                                            "Data": "huowuqiyundian"
+                                          },
+                                          {
+                                            "Name": "componentValue",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=协议参数数据.托运方"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "componentKey",
+                                            "DataItemType": 0,
+                                            "Data": "chepaihao"
+                                          },
+                                          {
+                                            "Name": "componentValue",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=协议参数数据.车牌号"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "componentKey",
+                                            "DataItemType": 0,
+                                            "Data": "fahuoshuliang"
+                                          },
+                                          {
+                                            "Name": "componentValue",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=协议参数数据.数量合计"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "componentKey",
+                                            "DataItemType": 0,
+                                            "Data": "riqi"
+                                          },
+                                          {
+                                            "Name": "componentValue",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=协议参数数据.发货日期"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "componentKey",
+                                            "DataItemType": 0,
+                                            "Data": "wenben"
+                                          },
+                                          {
+                                            "Name": "componentValue",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=动态表格类型转换"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "WebUrl": "https://openapi.esign.cn/v3/files/create-by-doc-template",
+                        "Method": "POST",
+                        "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                        "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                        "NewParameter": "生成合同模板返回值",
+                        "Header": [
+                          {
+                            "Type": "X-Tsign-Open-App-Id",
+                            "Value": "5111834261"
+                          },
+                          {
+                            "Type": "X-Tsign-Open-Token",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=token"
+                            }
+                          },
+                          {
+                            "Type": "Content-Type",
+                            "Value": "application/json"
+                          }
+                        ],
+                        "Timeout": 100.0
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=生成合同模板返回值"
+                        },
+                        "JsonLu": "data",
+                        "Noobj": true,
+                        "FanHuiMsg": "模板data"
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=模板data"
+                        },
+                        "JsonLu": "fileId",
+                        "FanHuiMsg": "fileId"
+                      },
+                      {
+                        "$type": "GETPOST.程序类.程序_延时, GETPOST",
+                        "CanShu": "5000"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "获取法人",
+                        "TableValue": {
+                          "TableName": "签章任务",
+                          "TableValueType": 1,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务",
+                                "ColumnName": "法人手机号1",
+                                "GUID": "329445e3-a8bc-480b-9674-9a6b0c2b6f70"
+                              },
+                              "ColumnName": "法人手机号1"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务",
+                                "ColumnName": "法人手机号2",
+                                "GUID": "7389ed9d-8f6b-4b2d-adbe-6486cf17548d"
+                              },
+                              "ColumnName": "法人手机号2"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "任务主表id",
+                              "GUID": "7ace7544-86f8-41eb-b723-ba09b25e7633"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=协议参数数据.任务主表id"
+                            }
+                          },
+                          "TopCount": "1"
+                        },
+                        "ID": "08ccbfed8b0f417c826cecb64664510b"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "物流运输协议",
+                        "ParameterValue": "物流运输协议",
+                        "ID": "ee307f7300b548ec91bd069a67e08dbc"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "公司名称拼接物流协议",
+                        "ParameterValue": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=协议参数数据.承运方&物流运输协议"
+                        },
+                        "ID": "9f0d015d53874f32aa2f07515603b883"
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "调用记录",
+                        "UpdateType": "add",
+                        "ShowConfirm": false,
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "调用记录",
+                              "ColumnName": "任务主表ID",
+                              "GUID": "7c12504b-0c8c-4dcd-b019-e4b1df1ea7b3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=协议参数数据.任务主表id"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "调用记录",
+                              "ColumnName": "发起时间",
+                              "GUID": "3238a380-7ac3-429b-b680-051bb07d72c7"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=NOW()"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                        "PostData": {
+                          "DataItemType": 1,
+                          "Data": {
+                            "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                            "IsStringify": true,
+                            "Data": [
+                              {
+                                "Name": "docs",
+                                "DataItemType": 4,
+                                "Data": {
+                                  "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                  "Data": [
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "fileId",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=fileId"
+                                            }
+                                          },
+                                          {
+                                            "Name": "fileName",
+                                            "DataItemType": 0,
+                                            "Data": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=公司名称拼接物流协议"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "Name": "signFlowConfig",
+                                "DataItemType": 1,
+                                "Data": {
+                                  "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                  "Data": [
+                                    {
+                                      "Name": "signFlowTitle",
+                                      "DataItemType": 0,
+                                      "Data": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=公司名称拼接物流协议"
+                                      }
+                                    },
+                                    {
+                                      "Name": "autoStart",
+                                      "DataItemType": 0,
+                                      "Data": true
+                                    },
+                                    {
+                                      "Name": "autoFinish",
+                                      "DataItemType": 0,
+                                      "Data": true
+                                    },
+                                    {
+                                      "Name": "noticeConfig",
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "noticeTypes",
+                                            "DataItemType": 0,
+                                            "Data": "1"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "Name": "notifyUrl",
+                                      "DataItemType": 0,
+                                      "Data": ""
+                                    },
+                                    {
+                                      "Name": "redirectConfig",
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "redirectUrl",
+                                            "DataItemType": 0,
+                                            "Data": "https://www.esign.cn/"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "Name": "authConfig",
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "psnAvailableAuthModes",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_MOBILE3"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_FACE"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_BANKCARD4"
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "willingnessAuthModes",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "CODE_SMS"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_FACE_ALIPAY"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_FACE_TECENT"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_FACE_ESIGN"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_FACE_WECHAT"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_AUDIO_VIDEO_ALIPAY"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "PSN_AUDIO_VIDEO_WECHAT"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "SIGN_PWD"
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "orgAvailableAuthModes",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "ORG_BANK_TRANSFER"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "ORG_LEGALREP"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "ORG_ALIPAY_CREDIT"
+                                                },
+                                                {
+                                                  "DataItemType": 0,
+                                                  "Data": "ORG_LEGALREP_AUTHORIZATION"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "Name": "signers",
+                                "DataItemType": 4,
+                                "Data": {
+                                  "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                  "Data": [
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "orgSignerInfo",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "orgName",
+                                                  "DataItemType": 0,
+                                                  "Data": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=协议参数数据.托运方"
+                                                  }
+                                                },
+                                                {
+                                                  "Name": "transactorInfo",
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "psnAccount",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=协议参数数据.发运人手机号1"
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signConfig",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "forcedReadingTime",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signOrder",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                },
+                                                {
+                                                  "Name": "signTaskType",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signerType",
+                                            "DataItemType": 0,
+                                            "Data": 1
+                                          },
+                                          {
+                                            "Name": "signFields",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "customBizNum",
+                                                        "DataItemType": 0,
+                                                        "Data": "001"
+                                                      },
+                                                      {
+                                                        "Name": "fileId",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=fileId"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Name": "normalSignFieldConfig",
+                                                        "DataItemType": 1,
+                                                        "Data": {
+                                                          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                          "Data": [
+                                                            {
+                                                              "Name": "signFieldPosition",
+                                                              "DataItemType": 1,
+                                                              "Data": {
+                                                                "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                                "Data": [
+                                                                  {
+                                                                    "Name": "positionPage",
+                                                                    "DataItemType": 0,
+                                                                    "Data": "1"
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionX",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 120.461266
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionY",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 170.44592
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "Name": "orgSealBizTypes",
+                                                              "DataItemType": 0,
+                                                              "Data": "COMMON"
+                                                            },
+                                                            {
+                                                              "Name": "signFieldStyle",
+                                                              "DataItemType": 0,
+                                                              "Data": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "orgSignerInfo",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "orgName",
+                                                  "DataItemType": 0,
+                                                  "Data": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=协议参数数据.托运方"
+                                                  }
+                                                },
+                                                {
+                                                  "Name": "transactorInfo",
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "psnAccount",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=协议参数数据.发运人手机号2"
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signConfig",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "forcedReadingTime",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signOrder",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                },
+                                                {
+                                                  "Name": "signTaskType",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signerType",
+                                            "DataItemType": 0,
+                                            "Data": 1
+                                          },
+                                          {
+                                            "Name": "signFields",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "customBizNum",
+                                                        "DataItemType": 0,
+                                                        "Data": "001"
+                                                      },
+                                                      {
+                                                        "Name": "fileId",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=fileId"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Name": "normalSignFieldConfig",
+                                                        "DataItemType": 1,
+                                                        "Data": {
+                                                          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                          "Data": [
+                                                            {
+                                                              "Name": "signFieldPosition",
+                                                              "DataItemType": 1,
+                                                              "Data": {
+                                                                "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                                "Data": [
+                                                                  {
+                                                                    "Name": "positionPage",
+                                                                    "DataItemType": 0,
+                                                                    "Data": "1"
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionX",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 120.461266
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionY",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 170.44592
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "Name": "orgSealBizTypes",
+                                                              "DataItemType": 0,
+                                                              "Data": "COMMON"
+                                                            },
+                                                            {
+                                                              "Name": "signFieldStyle",
+                                                              "DataItemType": 0,
+                                                              "Data": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "orgSignerInfo",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "orgName",
+                                                  "DataItemType": 0,
+                                                  "Data": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=协议参数数据.托运方"
+                                                  }
+                                                },
+                                                {
+                                                  "Name": "transactorInfo",
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "psnAccount",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=协议参数数据.发运人手机号3"
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signConfig",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "forcedReadingTime",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signOrder",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                },
+                                                {
+                                                  "Name": "signTaskType",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signerType",
+                                            "DataItemType": 0,
+                                            "Data": 1
+                                          },
+                                          {
+                                            "Name": "signFields",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "customBizNum",
+                                                        "DataItemType": 0,
+                                                        "Data": "001"
+                                                      },
+                                                      {
+                                                        "Name": "fileId",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=fileId"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Name": "normalSignFieldConfig",
+                                                        "DataItemType": 1,
+                                                        "Data": {
+                                                          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                          "Data": [
+                                                            {
+                                                              "Name": "signFieldPosition",
+                                                              "DataItemType": 1,
+                                                              "Data": {
+                                                                "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                                "Data": [
+                                                                  {
+                                                                    "Name": "positionPage",
+                                                                    "DataItemType": 0,
+                                                                    "Data": "1"
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionX",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 120.461266
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionY",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 170.44592
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "Name": "orgSealBizTypes",
+                                                              "DataItemType": 0,
+                                                              "Data": "COMMON"
+                                                            },
+                                                            {
+                                                              "Name": "signFieldStyle",
+                                                              "DataItemType": 0,
+                                                              "Data": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "orgSignerInfo",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "orgName",
+                                                  "DataItemType": 0,
+                                                  "Data": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=协议参数数据.承运方"
+                                                  }
+                                                },
+                                                {
+                                                  "Name": "transactorInfo",
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "psnAccount",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=协议参数数据.法人手机号1"
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signConfig",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "forcedReadingTime",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signOrder",
+                                                  "DataItemType": 0,
+                                                  "Data": 2
+                                                },
+                                                {
+                                                  "Name": "signTaskType",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signerType",
+                                            "DataItemType": 0,
+                                            "Data": 1
+                                          },
+                                          {
+                                            "Name": "signFields",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "customBizNum",
+                                                        "DataItemType": 0,
+                                                        "Data": "002"
+                                                      },
+                                                      {
+                                                        "Name": "fileId",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=fileId"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Name": "normalSignFieldConfig",
+                                                        "DataItemType": 1,
+                                                        "Data": {
+                                                          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                          "Data": [
+                                                            {
+                                                              "Name": "signFieldPosition",
+                                                              "DataItemType": 1,
+                                                              "Data": {
+                                                                "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                                "Data": [
+                                                                  {
+                                                                    "Name": "positionPage",
+                                                                    "DataItemType": 0,
+                                                                    "Data": "1"
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionX",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 439.69296
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionY",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 178.10352
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "Name": "signFieldStyle",
+                                                              "DataItemType": 0,
+                                                              "Data": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "orgSignerInfo",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "orgName",
+                                                  "DataItemType": 0,
+                                                  "Data": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=协议参数数据.承运方"
+                                                  }
+                                                },
+                                                {
+                                                  "Name": "transactorInfo",
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "psnAccount",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=协议参数数据.法人手机号2"
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signConfig",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "forcedReadingTime",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signOrder",
+                                                  "DataItemType": 0,
+                                                  "Data": 2
+                                                },
+                                                {
+                                                  "Name": "signTaskType",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signerType",
+                                            "DataItemType": 0,
+                                            "Data": 1
+                                          },
+                                          {
+                                            "Name": "signFields",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "customBizNum",
+                                                        "DataItemType": 0,
+                                                        "Data": "002"
+                                                      },
+                                                      {
+                                                        "Name": "fileId",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=fileId"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Name": "normalSignFieldConfig",
+                                                        "DataItemType": 1,
+                                                        "Data": {
+                                                          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                          "Data": [
+                                                            {
+                                                              "Name": "signFieldPosition",
+                                                              "DataItemType": 1,
+                                                              "Data": {
+                                                                "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                                "Data": [
+                                                                  {
+                                                                    "Name": "positionPage",
+                                                                    "DataItemType": 0,
+                                                                    "Data": "1"
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionX",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 439.69296
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionY",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 178.10352
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "Name": "signFieldStyle",
+                                                              "DataItemType": 0,
+                                                              "Data": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "psnSignerInfo",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "psnAccount",
+                                                  "DataItemType": 0,
+                                                  "Data": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=协议参数数据.仓管手机人1"
+                                                  }
+                                                },
+                                                {
+                                                  "Name": "psnInfo",
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "psnName",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=协议参数数据.仓管1"
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signConfig",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "forcedReadingTime",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signOrder",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signTaskType",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signerType",
+                                            "DataItemType": 0,
+                                            "Data": 0
+                                          },
+                                          {
+                                            "Name": "signFields",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "mustSign",
+                                                        "DataItemType": 0,
+                                                        "Data": false
+                                                      },
+                                                      {
+                                                        "Name": "customBizNum",
+                                                        "DataItemType": 0,
+                                                        "Data": "003"
+                                                      },
+                                                      {
+                                                        "Name": "fileId",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=fileId"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Name": "normalSignFieldConfig",
+                                                        "DataItemType": 1,
+                                                        "Data": {
+                                                          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                          "Data": [
+                                                            {
+                                                              "Name": "signFieldPosition",
+                                                              "DataItemType": 1,
+                                                              "Data": {
+                                                                "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                                "Data": [
+                                                                  {
+                                                                    "Name": "positionPage",
+                                                                    "DataItemType": 0,
+                                                                    "Data": "1"
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionX",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 258.34537
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionY",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 175.52759
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "Name": "signFieldStyle",
+                                                              "DataItemType": 0,
+                                                              "Data": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "psnSignerInfo",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "psnAccount",
+                                                  "DataItemType": 0,
+                                                  "Data": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=协议参数数据.仓管手机号2"
+                                                  }
+                                                },
+                                                {
+                                                  "Name": "psnInfo",
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "psnName",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=协议参数数据.仓管2"
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signConfig",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "forcedReadingTime",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signOrder",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signTaskType",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signerType",
+                                            "DataItemType": 0,
+                                            "Data": 0
+                                          },
+                                          {
+                                            "Name": "signFields",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "mustSign",
+                                                        "DataItemType": 0,
+                                                        "Data": false
+                                                      },
+                                                      {
+                                                        "Name": "customBizNum",
+                                                        "DataItemType": 0,
+                                                        "Data": "003"
+                                                      },
+                                                      {
+                                                        "Name": "fileId",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=fileId"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Name": "normalSignFieldConfig",
+                                                        "DataItemType": 1,
+                                                        "Data": {
+                                                          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                          "Data": [
+                                                            {
+                                                              "Name": "signFieldPosition",
+                                                              "DataItemType": 1,
+                                                              "Data": {
+                                                                "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                                "Data": [
+                                                                  {
+                                                                    "Name": "positionPage",
+                                                                    "DataItemType": 0,
+                                                                    "Data": "1"
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionX",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 258.34537
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionY",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 175.52759
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "Name": "signFieldStyle",
+                                                              "DataItemType": 0,
+                                                              "Data": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "DataItemType": 1,
+                                      "Data": {
+                                        "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                        "Data": [
+                                          {
+                                            "Name": "psnSignerInfo",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "psnAccount",
+                                                  "DataItemType": 0,
+                                                  "Data": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=协议参数数据.仓管手机号3"
+                                                  }
+                                                },
+                                                {
+                                                  "Name": "psnInfo",
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "psnName",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=协议参数数据.仓管3"
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signConfig",
+                                            "DataItemType": 1,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "Name": "forcedReadingTime",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signOrder",
+                                                  "DataItemType": 0,
+                                                  "Data": 3
+                                                },
+                                                {
+                                                  "Name": "signTaskType",
+                                                  "DataItemType": 0,
+                                                  "Data": 1
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "Name": "signerType",
+                                            "DataItemType": 0,
+                                            "Data": 0
+                                          },
+                                          {
+                                            "Name": "signFields",
+                                            "DataItemType": 4,
+                                            "Data": {
+                                              "$type": "PostDataToWebApi.ArrayData, PostDataToWebApi",
+                                              "Data": [
+                                                {
+                                                  "DataItemType": 1,
+                                                  "Data": {
+                                                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                    "Data": [
+                                                      {
+                                                        "Name": "mustSign",
+                                                        "DataItemType": 0,
+                                                        "Data": false
+                                                      },
+                                                      {
+                                                        "Name": "customBizNum",
+                                                        "DataItemType": 0,
+                                                        "Data": "003"
+                                                      },
+                                                      {
+                                                        "Name": "fileId",
+                                                        "DataItemType": 0,
+                                                        "Data": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=fileId"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Name": "normalSignFieldConfig",
+                                                        "DataItemType": 1,
+                                                        "Data": {
+                                                          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                          "Data": [
+                                                            {
+                                                              "Name": "signFieldPosition",
+                                                              "DataItemType": 1,
+                                                              "Data": {
+                                                                "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                                                                "Data": [
+                                                                  {
+                                                                    "Name": "positionPage",
+                                                                    "DataItemType": 0,
+                                                                    "Data": "1"
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionX",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 258.34537
+                                                                  },
+                                                                  {
+                                                                    "Name": "positionY",
+                                                                    "DataItemType": 0,
+                                                                    "Data": 175.52759
+                                                                  }
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "Name": "signFieldStyle",
+                                                              "DataItemType": 0,
+                                                              "Data": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "WebUrl": "https://openapi.esign.cn/v3/sign-flow/create-by-file",
+                        "Method": "POST",
+                        "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                        "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                        "NewParameter": "流程ID返回值",
+                        "Header": [
+                          {
+                            "Type": "X-Tsign-Open-App-Id",
+                            "Value": "5111834261"
+                          },
+                          {
+                            "Type": "X-Tsign-Open-Token",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=token"
+                            }
+                          },
+                          {
+                            "Type": "Content-Type",
+                            "Value": "application/json"
+                          }
+                        ],
+                        "Timeout": 100.0
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=流程ID返回值"
+                        },
+                        "JsonLu": "code",
+                        "FanHuiMsg": "code"
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=流程ID返回值"
+                        },
+                        "JsonLu": "data",
+                        "Noobj": true,
+                        "FanHuiMsg": "流程data"
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=流程data"
+                        },
+                        "JsonLu": "signFlowId",
+                        "FanHuiMsg": "signFlowId"
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "调用记录",
+                        "ShowConfirm": false,
+                        "RowsToUpdate": 1,
+                        "RowsToUpdateCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "调用记录",
+                            "ColumnName": "任务主表ID",
+                            "GUID": "c6d709e1-a4fe-4d12-a43d-8b34c459e2a9"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=协议参数数据.任务主表id"
+                          }
+                        },
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "调用记录",
+                              "ColumnName": "流程ID",
+                              "GUID": "c1b75899-8e2c-49bd-bb18-26c3b8095f70"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=signFlowId"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "调用记录",
+                              "ColumnName": "流程返回值",
+                              "GUID": "681d7e2c-e51a-44c2-b5b0-89b4393c45f6"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=流程ID返回值"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "调用记录",
+                              "ColumnName": "结束时间",
+                              "GUID": "4de64157-d609-4c03-bb01-05c91804ada3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=NOW()"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "调用记录",
+                              "ColumnName": "添加模板返回值",
+                              "GUID": "d594d132-420b-4d18-8750-dcf33581e6b5"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=生成合同模板返回值"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "查询连接",
+                        "ParameterValue": "https://openapi.esign.cn/v3/sign-flow/",
+                        "ID": "921f922a70c1451cb97149856e2dd6d2"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "流程查询地址",
+                        "ParameterValue": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=查询连接&signFlowId"
+                        },
+                        "ID": "757fc18a4c894a6e9472a4902c7c0111"
+                      },
+                      {
+                        "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                        "PostData": {
+                          "DataItemType": 1,
+                          "Data": {
+                            "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                            "Data": []
+                          }
+                        },
+                        "WebUrl": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=流程查询地址"
+                        },
+                        "Method": "GET",
+                        "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                        "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                        "NewParameter": "流程状态",
+                        "Header": [
+                          {
+                            "Type": "X-Tsign-Open-App-Id",
+                            "Value": "5111834261"
+                          },
+                          {
+                            "Type": "X-Tsign-Open-Token",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=token"
+                            }
+                          },
+                          {
+                            "Type": "Content-Type",
+                            "Value": "application/json"
+                          }
+                        ],
+                        "Timeout": 100.0
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=流程状态"
+                        },
+                        "JsonLu": "data",
+                        "Noobj": true,
+                        "FanHuiMsg": "流程状态data"
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=流程状态data"
+                        },
+                        "JsonLu": "signFlowStatus",
+                        "FanHuiMsg": "signFlowStatus"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "次数",
+                        "TableValue": {
+                          "TableName": "签章任务",
+                          "OnlyGetValue": true,
+                          "TableValueType": 0,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务",
+                                "ColumnName": "API调用次数",
+                                "GUID": "706c8ba1-34d4-4ba0-8fea-6a04e3962bb1"
+                              },
+                              "ColumnName": "API调用次数"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "任务主表id",
+                              "GUID": "4fb2e683-d381-41c0-9d56-026c06d69b04"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=协议参数数据.任务主表id"
+                            }
+                          }
+                        },
+                        "ID": "1e91e5a40a2947b5ad24f547c8552600"
+                      },
+                      {
+                        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                        "ConditionAndCommandPairList": [
+                          {
+                            "Condition": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "SubConditions": [
+                                {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                                    "ParamObject": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=次数"
+                                    }
+                                  },
+                                  "value": "%Null%"
+                                },
+                                {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                                    "ParamObject": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=次数"
+                                    }
+                                  }
+                                }
+                              ],
+                              "RelationType": 1
+                            },
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "签章任务",
+                                "ShowConfirm": false,
+                                "RowsToUpdate": 1,
+                                "RowsToUpdateCondition": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "签章任务",
+                                    "ColumnName": "任务主表id",
+                                    "GUID": "7fc8f526-b6a8-4288-b072-811512ef2a5e"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=协议参数数据.任务主表id"
+                                  }
+                                },
+                                "UpdateBindingValues": [
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "API调用日期",
+                                      "GUID": "4aae4455-1a88-4fe0-aa94-431b8c5eb152"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=NOW()"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "API调用次数",
+                                      "GUID": "e1cae3e5-9376-4190-9225-50d6047fa5b5"
+                                    },
+                                    "Value": "1"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "接口发起状态",
+                                      "GUID": "e1c846be-d9df-4a0e-92db-b9d7c093cb30"
+                                    },
+                                    "Value": "1"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "发起流程ID",
+                                      "GUID": "29dcfdfb-dc98-4a89-be52-bdd0b74879b5"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=signFlowId"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "发起类型",
+                                      "GUID": "743c4d4d-6950-4e82-ade1-9da45fc8d039"
+                                    },
+                                    "Value": "自动发起"
+                                  }
+                                ]
+                              }
+                            ],
+                            "ID": "721b3ed7-7180-456e-b15a-c138a15acad1"
+                          },
+                          {
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "签章任务",
+                                "ShowConfirm": false,
+                                "RowsToUpdate": 1,
+                                "RowsToUpdateCondition": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "签章任务",
+                                    "ColumnName": "任务主表id",
+                                    "GUID": "8d097ea7-0649-49b8-9e51-a33df1e7a9e8"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=协议参数数据.任务主表id"
+                                  }
+                                },
+                                "UpdateBindingValues": [
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "API调用日期",
+                                      "GUID": "f484ceb7-e748-43d3-ad5b-229eeffb6dc3"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=NOW()"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "API调用次数",
+                                      "GUID": "27ded503-c73f-4a15-bfdd-42ed7a3ae6d4"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=次数+1"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "接口发起状态",
+                                      "GUID": "a77c9219-5c36-4187-81a8-14d5be030670"
+                                    },
+                                    "Value": "1"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "发起流程ID",
+                                      "GUID": "481aa5cd-8875-4442-bbf6-01ab7be2f1c4"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=signFlowId"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "发起类型",
+                                      "GUID": "02eba807-d6a3-4ee9-937b-f6b14266f20e"
+                                    },
+                                    "Value": "自动发起"
+                                  }
+                                ]
+                              }
+                            ],
+                            "ID": "c38bcb77-506c-44cb-9de0-7ea0e34c6247"
+                          }
+                        ]
+                      }
+                    ],
+                    "ID": "4745afef-590f-41f2-be4b-b1b4e85abeef"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                        "ErrorCode": "0",
+                        "Message": "暂无数据发送",
+                        "CustomReturns": [
+                          {
+                            "ReturnPropertyName": "任务主表id",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=协议参数数据.任务主表id"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "ID": "09649ac2-4323-4bb3-9f87-47892dc9cf46"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+            "ErrorCode": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=code"
+            },
+            "Message": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=流程ID返回值"
+            },
+            "CustomReturns": [
+              {
+                "ReturnPropertyName": "任务主表id",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=协议参数数据.任务主表id"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "CatchCommandPart": {
+        "CommandList": [
+          {
+            "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+            "BianmaMsg": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=流程ID返回值"
+            },
+            "JsonLu": "code",
+            "FanHuiMsg": "code"
+          },
+          {
+            "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+            "BianmaMsg": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=流程ID返回值"
+            },
+            "JsonLu": "message",
+            "FanHuiMsg": "message"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "是否存在此任务主表ID",
+            "TableValue": {
+              "TableName": "调用记录",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "调用记录",
+                  "ColumnName": "任务主表ID",
+                  "GUID": "3a6c94c5-d06d-4f5e-bd9c-e2477851d804"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=协议参数数据.任务主表id"
+                }
+              }
+            },
+            "ID": "c9b153a49f5d45b88db2feff9886984c"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                    "ParamObject": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=是否存在此任务主表ID"
+                    }
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "调用记录",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "调用记录",
+                          "ColumnName": "流程返回值",
+                          "GUID": "88c43e17-145d-4ee9-a4ff-a7449d0faf47"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=message"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "调用记录",
+                          "ColumnName": "任务主表ID",
+                          "GUID": "71c15ffa-73e0-46b1-a79d-dd196470e052"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=协议参数数据.任务主表id"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8d8b2013-32b7-4c0e-894d-065707ab7b22"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "调用记录",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "调用记录",
+                        "ColumnName": "任务主表ID",
+                        "GUID": "c41d939e-f90f-49a5-b9fe-6c58ec5ef595"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=协议参数数据.任务主表id"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "调用记录",
+                          "ColumnName": "流程返回值",
+                          "GUID": "82e54a03-deb5-4dc1-867e-2a7cce17cd4c"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=message"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "fb06515f-760a-4017-8e2a-319132dc5537"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+            "ErrorCode": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=code"
+            },
+            "Message": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=message"
+            },
+            "CustomReturns": [
+              {
+                "ReturnPropertyName": "任务主表id",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=协议参数数据.任务主表id"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "Disabled": true
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "任务主表id"
+    }
+  ]
+}

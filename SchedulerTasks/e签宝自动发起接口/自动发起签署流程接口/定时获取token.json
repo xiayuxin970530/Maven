@@ -1,0 +1,35 @@
+{
+  "Name": "定时获取token",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 30.0,
+      "TimeUnit": 1,
+      "StartDateTime": 45281.36111111111,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+      "ServerCommandName": "e签宝token",
+      "ResultErrorCodeTo": {
+        "SerializeProperty": "res"
+      },
+      "ResultMessageTo": {
+        "SerializeProperty": "data"
+      },
+      "ReturnPropertiesTo": [
+        {
+          "ResultPropertyName": "token",
+          "ResultTo": {
+            "SerializeProperty": "token"
+          }
+        }
+      ],
+      "RefreshAfterFinish": true,
+      "CheckDataValidation": true
+    }
+  ]
+}

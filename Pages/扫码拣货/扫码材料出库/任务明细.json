@@ -1,0 +1,938 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 29.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "Count": 30
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 9.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0,
+          "IsHidden": true
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 209.0,
+          "IsHidden": true
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 177.0,
+          "IsHidden": true
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "Count": 25,
+    "DefaultSize": 30.0
+  },
+  "Values": {
+    "1,6": "出库",
+    "2,1": 0
+  },
+  "AttachInfos": {
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "cInvCode",
+        "GUID": "e21af348-1a91-4633-914e-e66dfe7341b9",
+        "RelationBinding": {
+          "RelatedTable": "inventory",
+          "RelatedColumn": "cInvCode",
+          "DisplayColumn": "cInvName"
+        }
+      },
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "ClickMode": 1
+      }
+    },
+    "1,6": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "材料扫码记录",
+            "UpdateType": "add",
+            "ShowConfirm": false,
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "mocode",
+                  "GUID": "d2cf8114-cd79-4279-b48e-0230a4070d81"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K5"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "imasid",
+                  "GUID": "19641b4a-aa6f-4b93-8396-5fafa0f68983"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K6"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "alid",
+                  "GUID": "53c28bb1-2afd-4e1b-aec2-df0617b2d65c"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K4"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "barcode",
+                  "GUID": "ef22a427-3791-4b46-89ca-d250543ba320"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!N6"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "出库折百数量",
+                  "GUID": "5267ad5d-3dab-476a-9dcd-b43d33d450fa"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K9"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "出库换算率",
+                  "GUID": "a12aed8f-903f-4966-90ef-ffd42f1252a8"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K11"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "出库实物数",
+                  "GUID": "8bf8b156-9764-4c24-9e45-c17484999f9c"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K10"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "条码折百数",
+                  "GUID": "3e6267ca-1862-4272-9bd2-df827e36f629"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K9"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "条码实物",
+                  "GUID": "9741c249-66ef-4d1f-b34a-021ae61782ae"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K10"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "条码换算率",
+                  "GUID": "7c55d0e8-ceb0-4487-9d4e-798825e42d77"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K11"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "库存折百",
+                  "GUID": "2898d9f4-8a42-4183-83b2-b94cef911179"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K12"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "库存实物",
+                  "GUID": "e87c3529-b781-4c87-a3d5-ed81a678e225"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K13"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "库存换算率",
+                  "GUID": "6bec3d27-e5db-46b7-8b92-f91c83059ab7"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K14"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "领用折百",
+                  "GUID": "87e77bc6-05b3-4386-ab29-c72b930811d4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!N4"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "领用实物",
+                  "GUID": "b0244c9e-1312-48c4-8d90-ff8d9fd69e8e"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!N5"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "领用换算率",
+                  "GUID": "990b3f84-78c2-48e6-8c84-cbe10e963afb"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K11"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "cinvcode",
+                  "GUID": "aafd62a8-168b-474a-b5ae-10b1b9a42b30"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K7"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "材料扫码记录",
+                  "ColumnName": "申请仓库",
+                  "GUID": "92fb3df5-d08a-4188-b513-5b9497ff8730"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=任务明细!K8"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "出库",
+        "TemplateKey": "样式5"
+      }
+    },
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 3,
+        "CellDefaultValue": 0,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "不显示0"
+          },
+          {
+            "Value": "-1",
+            "DisplayValue": "显示0"
+          }
+        ]
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "TemplatePageName": "9c48c8d8fcb645c7a13fbbb297cc3aa",
+        "ListviewName": "表格1",
+        "TemplateKey": "_RS_Selectable"
+      }
+    },
+    "3,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "iMPoIds",
+        "GUID": "1a94d8ef-e761-455f-aaeb-065e43bc47b7"
+      }
+    },
+    "3,13": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "iQuantity",
+        "GUID": "e57a8658-e355-4d0c-9736-fd2dec904994"
+      }
+    },
+    "4,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "生产单号",
+        "GUID": "fda50f12-82a5-4746-a00a-2606fa5a91fe"
+      }
+    },
+    "4,13": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "iNum",
+        "GUID": "cbffb7f1-f9a1-4e01-93b3-62854423f757"
+      }
+    },
+    "5,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "AutoID",
+        "GUID": "e150b9db-2f98-42c7-a979-8ffb6ba95beb"
+      }
+    },
+    "5,13": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "cbsysbarcode",
+        "GUID": "505d2a67-b88f-4a3b-8c9e-ab4f3a6f76a3"
+      }
+    },
+    "6,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "cInvCode",
+        "GUID": "fd0a8771-a92a-4b23-a376-d07adfef9fe5"
+      }
+    },
+    "7,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "cWhCode",
+        "GUID": "3c3a7922-bbc8-4ae1-825f-6285da06776f"
+      }
+    },
+    "8,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "未出库折百",
+        "GUID": "fa1949cc-4c3a-410b-a3ee-df9b37973e77"
+      }
+    },
+    "9,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "未出库实物",
+        "GUID": "0cc8183b-ea6d-429f-865c-9356963f245e"
+      }
+    },
+    "10,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "iinvexchrate",
+        "GUID": "0f4dc420-4707-4c3e-a976-8dd65a1457c9"
+      }
+    },
+    "11,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "库存折百",
+        "GUID": "cc381aba-17df-41ef-babb-1c1b29be4b65"
+      }
+    },
+    "12,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "库存实物",
+        "GUID": "48f5c730-12bb-409d-abea-814543a4fa2e"
+      }
+    },
+    "13,10": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "库存换算率",
+        "GUID": "c2a21f97-7589-4279-9077-b2d5677205ec"
+      }
+    },
+    "15,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "未出库领料申请明细",
+        "RowIndex": 15,
+        "ColumnIndex": 1,
+        "RowCount": 14,
+        "ColumnCount": 24,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "未出库领料申请明细",
+                "ColumnName": "生产单号",
+                "GUID": "d6069a66-9d74-446e-9256-390f877f06c9"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=出库验料!生产单号主页"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "未出库领料申请明细",
+                "ColumnName": "未扫描折百",
+                "GUID": "04252878-76d2-4ce8-8408-8d9d10f07f7f"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=任务明细!$B$3"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "16,1": {
+      "NameUsedInJavaScript": "iMPoIds",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "iMPoIds",
+        "GUID": "33fb05e0-409f-428e-a9aa-b5f0d50128c6"
+      }
+    },
+    "16,2": {
+      "NameUsedInJavaScript": "cInvCode",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "cInvCode",
+        "GUID": "9228ceaf-57e7-4377-8adb-b7f91a8fb0d0"
+      }
+    },
+    "16,3": {
+      "NameUsedInJavaScript": "cInvName",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "cInvCode",
+        "GUID": "30c90406-b388-4866-bcba-9005506a8f72",
+        "RelationBinding": {
+          "RelatedTable": "inventory",
+          "RelatedColumn": "cInvCode",
+          "DisplayColumn": "cInvName"
+        }
+      }
+    },
+    "16,4": {
+      "NameUsedInJavaScript": "出库批次",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "出库批次",
+        "GUID": "c305d3f7-8db5-4c02-a5e4-12187157cb60"
+      }
+    },
+    "16,5": {
+      "NameUsedInJavaScript": "未出库折百",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "未出库折百",
+        "GUID": "f0b455eb-0fb3-4a43-ac11-93b00d6ec325"
+      }
+    },
+    "16,6": {
+      "NameUsedInJavaScript": "未出库实物",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "未出库实物",
+        "GUID": "a59d2c5e-fb63-412d-9ce4-c43c07af6330"
+      }
+    },
+    "16,7": {
+      "NameUsedInJavaScript": "库存实物",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "库存实物",
+        "GUID": "8b7566de-2191-4f89-84fd-80a4c59e1b8b"
+      }
+    },
+    "16,9": {
+      "NameUsedInJavaScript": "库存折百",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "库存折百",
+        "GUID": "53b10a1e-5ad5-4e9b-a713-36eba5fe27d7"
+      }
+    },
+    "16,10": {
+      "NameUsedInJavaScript": "cWhCode",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "cWhCode",
+        "GUID": "23276de6-0801-482e-93da-de4d8c57e0ab"
+      }
+    },
+    "16,11": {
+      "NameUsedInJavaScript": "fOutQuantity",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "fOutQuantity",
+        "GUID": "c8471025-4d3c-43d4-9fcd-59abe6aeafe0"
+      }
+    },
+    "16,12": {
+      "NameUsedInJavaScript": "fOutNum",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "fOutNum",
+        "GUID": "f5b041bb-1866-4c78-a551-ec2b8e0523ac"
+      }
+    },
+    "16,13": {
+      "NameUsedInJavaScript": "AutoID",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "AutoID",
+        "GUID": "2de65824-c7f8-48dd-bef4-a147aa1252e9"
+      }
+    },
+    "16,14": {
+      "NameUsedInJavaScript": "生产单号",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "生产单号",
+        "GUID": "17a237cf-5899-4b71-9377-48596f210ba8"
+      }
+    },
+    "16,15": {
+      "NameUsedInJavaScript": "cbsysbarcode",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "cbsysbarcode",
+        "GUID": "60b31d9a-00bd-4294-bcb8-c5c23ad15532"
+      }
+    },
+    "16,16": {
+      "NameUsedInJavaScript": "库存换算率",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "库存换算率",
+        "GUID": "3753efa2-5f1c-408b-b84c-0e59e5475701"
+      }
+    },
+    "16,17": {
+      "NameUsedInJavaScript": "iinvexchrate",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "iinvexchrate",
+        "GUID": "da383c30-ad4f-417e-b642-27922e43932f"
+      }
+    },
+    "16,18": {
+      "NameUsedInJavaScript": "iQuantity",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "iQuantity",
+        "GUID": "f6b6b2ff-ef72-4384-b4f2-bd48da0cb82e"
+      }
+    },
+    "16,19": {
+      "NameUsedInJavaScript": "iNum",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "iNum",
+        "GUID": "a96496cb-84c1-41c6-bb72-cd8b348ab798"
+      }
+    },
+    "16,20": {
+      "NameUsedInJavaScript": "未扫描折百",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "未扫描折百",
+        "GUID": "88e3e67c-9909-408d-8a08-1263c68bfffa"
+      }
+    },
+    "16,21": {
+      "NameUsedInJavaScript": "未扫码实物",
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "未扫码实物",
+        "GUID": "1e269b60-6bfa-477c-bfe0-d67ce027d2c2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "Underline": true
+      },
+      {
+        "FontWeight": 0
+      },
+      {
+        "FontSize": 10.666666666666666,
+        "FontWeight": 0
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Blue",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,6": 1,
+      "2,1": 2,
+      "3,1": 3,
+      "4,10": 4,
+      "4,13": 4,
+      "5,10": 4,
+      "5,13": 4,
+      "6,10": 4,
+      "6,13": 4,
+      "6,14": 4,
+      "6,15": 4,
+      "6,16": 4,
+      "7,10": 4,
+      "7,13": 4,
+      "7,14": 4,
+      "7,15": 4,
+      "7,16": 4,
+      "8,10": 4,
+      "8,13": 4,
+      "8,14": 4,
+      "8,15": 4,
+      "8,16": 4,
+      "9,10": 4,
+      "9,13": 4,
+      "9,14": 4,
+      "9,15": 4,
+      "9,16": 4,
+      "10,10": 4,
+      "10,13": 4,
+      "10,14": 4,
+      "10,15": 4,
+      "10,16": 4,
+      "11,10": 4,
+      "11,13": 4,
+      "11,14": 4,
+      "11,15": 4,
+      "11,16": 4,
+      "12,10": 4,
+      "12,13": 4,
+      "12,14": 4,
+      "12,15": 4,
+      "12,16": 4,
+      "13,10": 4,
+      "13,13": 4,
+      "13,14": 4,
+      "13,15": 4,
+      "13,16": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "3,1,11,7",
+    "29,1,1,7",
+    "17,1,12,24",
+    "6,13,1,4",
+    "7,13,1,4",
+    "8,13,1,4",
+    "9,13,1,4",
+    "10,13,1,4",
+    "11,13,1,4",
+    "12,13,1,4",
+    "13,13,1,4",
+    "1,1,1,4",
+    "1,6,1,2",
+    "3,10,1,3",
+    "4,10,1,3",
+    "5,10,1,3",
+    "6,10,1,3",
+    "7,10,1,3",
+    "8,10,1,3",
+    "9,10,1,3",
+    "10,10,1,3",
+    "11,10,1,3",
+    "12,10,1,3",
+    "13,10,1,3",
+    "3,13,1,4",
+    "4,13,1,4",
+    "5,13,1,4",
+    "2,1,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "Administrator",
+            "查询包材差异及仓库"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "生产单号",
+      "Formula": "任务明细!$B$30"
+    }
+  ]
+}//orfCziTxcNWkEhDUcQmpB1lC+DBKg46V+8WZDpqu6s21JcuKO260/yPYQ0UOeaI3fvjuzUdV6RzyIHLmOeWvFwrU4OCfF2SZwrRlhok7ULfZ2cSLWguZP7gDoTorFkAqSyh3gkI10BQlz5dwM4naSUqAzborTFKIPAkfUIHdXRDrWaK12cuiViAf0iCckPjLWjr1vjBrg2axER3wrDPbNoyvEYQXThBddVNqUdUMno2oKmeETkvSPNDsuMqNzg5SC3jxbc83uL4KHOCumxLy6TBVTTObJMg9LthWCnZe3od3UqeOV5fsO66DaiKmQySIMmaH5kfBnYW79EkFMjq1H3kMu3CM0m2SNLODHcK0ua+GZKye7xSROMRqTHJoTw+X36xC/AT7081YlW9v0jTLaejE48HfCkcbNgwJHI5JedPel8PGhByd+DFiRDVd/xM5IrQP/LSNfXuGL3bjWlE33c5lvT4XRiKvDSpCIrz0N8/jUrHafPgzdxE8Z49aH+ozVw/QdVmADAZ74JpiVeTOPJm7WFCE5pDeeJe6VgnD0IJIBqif9KACkavlqHScHOXoeQkQkfBeqxYlCqUTt/yn+ZwYAANjJeoDsXm5SnKW8e0jDR3JurPOSdQo1do/MW0olkLKREpasExG719lZ9Y4W6l0BNqJzgKM8bYg9F1MqWbXgWhdn8IPIcoiBybiG0fV2rRhQA1g2Dpy7qPXQXudRhX7x/T0Gm5JIv1h4JISe7Og6gIr9HpbB8InZ98NXuHHOktYu1Cr/bg8ZuA06narSzSFhquV2nA4EhstGr3sVlLGyTvh3oP4CAmHccVr71Wa6dFkKdA8+9geEGwINEhHBWTI6/fxhgI2WzpBmkPEryhfDtRVKM4LUBEZVuj8w2Db4bVMjkiuIRJ+F4VI7vZOqA==|920

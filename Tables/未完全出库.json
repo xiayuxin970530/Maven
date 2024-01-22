@@ -1,0 +1,43 @@
+{
+  "Name": "未完全出库",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "carcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "code",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bit",
+      "MaxLength": -1,
+      "Name": "出库完成状态",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "未完全出库",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   carcode, code, 出库完成状态\r\nFROM      dbo.PICK\r\nWHERE   (FGC_CreateDate > '2023-09-27') AND (ISNULL(出库完成状态, 0) = 0)",
+    "ViewInfo": {
+      "ViewName": "未完全出库",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "code"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

@@ -1,0 +1,778 @@
+{
+  "Name": "添加客户回执签章任务",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.InvokeTrigger, ServerDesignerCommon",
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+          "TryCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "是否有新数据",
+                "TableValue": {
+                  "TableName": "e签宝查询客户回执主表信息",
+                  "TableValueType": 3,
+                  "TopCount": "1"
+                },
+                "ID": "36033e8317c3452da67701e37792f0ca"
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=是否有新数据"
+                        }
+                      },
+                      "value": "0"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                        "ErrorCode": "1",
+                        "Message": "暂无数据添加！"
+                      }
+                    ],
+                    "ID": "8e5dc7b8-502b-4cef-a317-13b521f817de"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "获取主表ID",
+                        "TableValue": {
+                          "TableName": "e签宝查询客户回执主表信息",
+                          "OnlyGetValue": true,
+                          "TableValueType": 0,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝查询客户回执主表信息",
+                                "ColumnName": "任务主表ID",
+                                "GUID": "94480109-fb9e-4032-9125-0762ca4c23b0"
+                              },
+                              "ColumnName": "任务主表ID"
+                            }
+                          ],
+                          "TopCount": "1"
+                        },
+                        "ID": "824d9ff0514a4356b84514fdcb112077"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "签章任务是否存在",
+                        "TableValue": {
+                          "TableName": "签章任务",
+                          "TableValueType": 3,
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "任务主表id",
+                              "GUID": "64b1f729-66d8-45e5-a5f4-82d9cf7feac2"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取主表ID"
+                            }
+                          }
+                        },
+                        "ID": "a4a69791b96c4651b8862db2fdfbc535"
+                      },
+                      {
+                        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                        "ConditionAndCommandPairList": [
+                          {
+                            "Condition": {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                                "ParamObject": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=签章任务是否存在"
+                                }
+                              },
+                              "value": "0"
+                            },
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                "ParameterName": "获取传参的数据",
+                                "TableValue": {
+                                  "TableName": "e签宝查询客户回执主表信息",
+                                  "TableValueType": 1,
+                                  "BindingInfos": [
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "任务主表ID",
+                                        "GUID": "ded9eb35-31b8-4516-a9b8-b388e8200339"
+                                      },
+                                      "ColumnName": "任务主表ID"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "来源类型",
+                                        "GUID": "2fce276d-a665-4d65-bacd-3d2bd023b20d"
+                                      },
+                                      "ColumnName": "来源类型"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "发货日期",
+                                        "GUID": "1466b3c8-f503-4bb5-a895-be3534232f42"
+                                      },
+                                      "ColumnName": "发货日期"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "客户名称",
+                                        "GUID": "ca4a74af-a1d4-4bf5-a318-34f9253cce37"
+                                      },
+                                      "ColumnName": "客户名称"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "交付地址",
+                                        "GUID": "d882bf13-7d6d-41d3-84a8-5353c09ba3eb"
+                                      },
+                                      "ColumnName": "交付地址"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "联系人",
+                                        "GUID": "ea932737-3837-4278-8b28-52d2de26f8a5"
+                                      },
+                                      "ColumnName": "联系人"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "收货联系人手机",
+                                        "GUID": "271346cd-cb75-4492-a657-125e95fa2e31"
+                                      },
+                                      "ColumnName": "收货联系人手机"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "客户回执法人",
+                                        "GUID": "86f6d247-2000-4568-930b-38c065faf139"
+                                      },
+                                      "ColumnName": "客户回执法人"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "客户回执法人手机号",
+                                        "GUID": "708e9af4-4b3b-4c3a-8202-cd5ae8ed029d"
+                                      },
+                                      "ColumnName": "客户回执法人手机号"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "我方签署人",
+                                        "GUID": "010b5e49-7d35-4a88-a481-c9c68a817ebc"
+                                      },
+                                      "ColumnName": "我方签署人"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "我方签署手机",
+                                        "GUID": "abecef97-758f-4a26-98b3-b619f71bcb5f"
+                                      },
+                                      "ColumnName": "我方签署手机"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "e签宝查询客户回执主表信息",
+                                        "ColumnName": "crm单号",
+                                        "GUID": "0a0c5619-0dac-4f2b-b9c2-70d3d4499f51"
+                                      },
+                                      "ColumnName": "crm单号"
+                                    }
+                                  ],
+                                  "SqlCondition": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "e签宝查询客户回执主表信息",
+                                      "ColumnName": "任务主表ID",
+                                      "GUID": "147e16e8-2d72-45f8-8fc1-2d835d3206f3"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取主表ID"
+                                    }
+                                  }
+                                },
+                                "ID": "c64e76b8b9324d06952bdcf20d6d9065"
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "签章任务",
+                                "UpdateType": "add",
+                                "ShowConfirm": false,
+                                "UpdateBindingValues": [
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "任务类型",
+                                      "GUID": "6ef44f8d-f124-457f-88d1-5196edf4242e"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.来源类型"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "任务主表id",
+                                      "GUID": "36518c93-5f50-4b24-8454-505a55971f0d"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.任务主表ID"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "我方签署人",
+                                      "GUID": "39da0611-5617-43be-9d4e-56495abfd575"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.我方签署人"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "我方电话",
+                                      "GUID": "60b937ac-e274-4d78-b5a8-a4504c981c70"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.我方签署手机"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "对方签署人",
+                                      "GUID": "9e91c083-cdf2-4062-919a-0fa01b033d6c"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.联系人"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "对方电话",
+                                      "GUID": "f3bd42f2-22a6-4914-86d2-6ee303ab4cdb"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.收货联系人手机"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "客户名称",
+                                      "GUID": "1515f5bd-2544-46cf-b714-0c9a86fa4c61"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.客户名称"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "客户地址",
+                                      "GUID": "c4ff5827-a768-4479-8df4-db6853a88b84"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.交付地址"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "匹配模板id",
+                                      "GUID": "640b4f60-c157-4032-90ec-c5cb2585da26"
+                                    },
+                                    "Value": "8203efe29a2e49af96b1b0757419b493"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "匹配模板名称",
+                                      "GUID": "57ef0014-c035-444f-aeda-ef559362b53d"
+                                    },
+                                    "Value": "收货确认函模版.pdf"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "客户回执法人",
+                                      "GUID": "9d0587ed-52f4-41ce-888a-6570599f2ef3"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.客户回执法人"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "客户回执法人手机",
+                                      "GUID": "bcb9ee36-675f-4dec-8d01-b1ad14018fce"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.客户回执法人手机号"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "签收人",
+                                      "GUID": "2ca52dc1-8545-44e8-adc1-99921210893e"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.联系人"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "签收人电话",
+                                      "GUID": "9f2bd557-4497-4798-baed-3c8ae8d63d40"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.收货联系人手机"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "发货日期",
+                                      "GUID": "f7dd7c96-478f-4b0b-83b1-d62380606e76"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.发货日期"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "crm单号",
+                                      "GUID": "96f490b8-98ab-4175-ba63-653ea0b0ee71"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.crm单号"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                "ParameterName": "获取签章任务ID",
+                                "TableValue": {
+                                  "TableName": "签章任务",
+                                  "OnlyGetValue": true,
+                                  "TableValueType": 0,
+                                  "BindingInfos": [
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "签章任务",
+                                        "ColumnName": "签章任务ID",
+                                        "GUID": "408cfa0a-de28-4bba-9593-19d7bafe04dc"
+                                      },
+                                      "ColumnName": "签章任务ID"
+                                    }
+                                  ],
+                                  "SqlCondition": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "任务主表id",
+                                      "GUID": "0f826b8f-22f3-4405-91da-e5b786acbb15"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取主表ID"
+                                    }
+                                  }
+                                },
+                                "ID": "3f3e481dec3e4e7594ccb2b839177720"
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "签章任务子表",
+                                "UpdateType": "add",
+                                "ShowConfirm": false,
+                                "UpdateBindingValues": [
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "签章任务ID",
+                                      "GUID": "d6081217-3d4d-4fc3-9b0a-aac8e06a1af5"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取签章任务ID"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column1",
+                                      "GUID": "d92ce41f-a137-4cb1-85ec-79b35741991b"
+                                    },
+                                    "Value": "合计"
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column2",
+                                      "GUID": "130ea210-5772-4365-a798-fd75b946a5e1"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column3",
+                                      "GUID": "2876d8f3-5df0-4265-b6a4-54f61743ef1b"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column4",
+                                      "GUID": "46e71b99-ef25-4878-bfae-1ef5e9b30fa2"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column5",
+                                      "GUID": "ebd72549-6dbb-4e05-82dc-2f7117c651f4"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column6",
+                                      "GUID": "80c144f1-608f-4f6d-8168-b6d660432d02"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "任务主表ID",
+                                      "GUID": "729433f9-5265-4f3f-8d82-36c3a04ac5a2"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取主表ID"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column7",
+                                      "GUID": "a801cd7a-8456-4028-b9e9-70f2f024ba84"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column8",
+                                      "GUID": "d5d12c0a-5468-4767-ba1b-16042d536982"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "数量",
+                                      "GUID": "8cac6a59-fb07-4863-8249-3fd6430a4bf8"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column10",
+                                      "GUID": "87f27f27-2afa-4fdf-a0c6-a564e3d00e40"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "销售运费",
+                                      "GUID": "78a31396-961b-44f6-a06e-ae769f4983ec"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column12",
+                                      "GUID": "162f75db-f82c-4a9c-8975-1fbdf9e33c44"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "数据类型",
+                                      "GUID": "b882a890-0736-4e5b-bb24-b288744507af"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.来源类型"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column9",
+                                      "GUID": "6e709eca-e8ad-4667-9e0b-8b06824789ce"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务子表",
+                                      "ColumnName": "column11",
+                                      "GUID": "0c15b6d4-62f9-45c3-b280-0e6e429c1218"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                "ParameterName": "获取发货回执接收人",
+                                "TableValue": {
+                                  "TableName": "获取700和800中对账单和发货回执单接收人",
+                                  "TableValueType": 1,
+                                  "BindingInfos": [
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "获取700和800中对账单和发货回执单接收人",
+                                        "ColumnName": "cCusName",
+                                        "GUID": "d53d4af5-b8bc-43f1-ac74-b638afd418bb"
+                                      },
+                                      "ColumnName": "客户名称"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "获取700和800中对账单和发货回执单接收人",
+                                        "ColumnName": "cCusCode",
+                                        "GUID": "a68d61ec-10ca-45ac-abf3-0c8334f9b46e"
+                                      },
+                                      "ColumnName": "客户编码"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "获取700和800中对账单和发货回执单接收人",
+                                        "ColumnName": "ccdefine1",
+                                        "GUID": "7bce0716-c013-4af7-90b3-cfa11616b6f6"
+                                      },
+                                      "ColumnName": "对账单接收人"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "获取700和800中对账单和发货回执单接收人",
+                                        "ColumnName": "ccdefine2",
+                                        "GUID": "6f1f18b5-d90a-45db-b66c-94bda28d48a2"
+                                      },
+                                      "ColumnName": "对账单接收人手机号"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "获取700和800中对账单和发货回执单接收人",
+                                        "ColumnName": "ccdefine5",
+                                        "GUID": "15b9f805-be94-4f1f-8606-75cbb584d492"
+                                      },
+                                      "ColumnName": "发货回执单接收人"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "获取700和800中对账单和发货回执单接收人",
+                                        "ColumnName": "ccdefine6",
+                                        "GUID": "ede493b3-f14b-400a-b486-af3a798237ed"
+                                      },
+                                      "ColumnName": "发货回执单接收人手机号"
+                                    },
+                                    {
+                                      "BindingInfo": {
+                                        "TableName": "获取700和800中对账单和发货回执单接收人",
+                                        "ColumnName": "cCusDefine9",
+                                        "GUID": "3108725c-e04b-4579-9720-31cda4dd81eb"
+                                      },
+                                      "ColumnName": "公司类型"
+                                    }
+                                  ],
+                                  "SqlCondition": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "获取700和800中对账单和发货回执单接收人",
+                                      "ColumnName": "cCusName",
+                                      "GUID": "d32affd5-5fdb-4ec5-b64a-f7bbb13b0855"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取传参的数据.客户名称"
+                                    }
+                                  },
+                                  "TopCount": "1"
+                                },
+                                "ID": "dc37deb9f28f40febf33d17246d7ba38"
+                              },
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "签章任务",
+                                "ShowConfirm": false,
+                                "RowsToUpdate": 1,
+                                "RowsToUpdateCondition": {
+                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                  "ColumnBindingInfo": {
+                                    "TableName": "签章任务",
+                                    "ColumnName": "签章任务ID",
+                                    "GUID": "74a93e7a-33ee-4ad6-8430-8e3669e05a9a"
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取签章任务ID"
+                                  }
+                                },
+                                "UpdateBindingValues": [
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "对方签署人",
+                                      "GUID": "803d41f8-f9b5-4a1f-8f0d-d1b7988674db"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取发货回执接收人.发货回执单接收人"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "对方电话",
+                                      "GUID": "bb4e28ee-5a99-4659-877d-f4d7870c4ec5"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取发货回执接收人.发货回执单接收人手机号"
+                                    }
+                                  },
+                                  {
+                                    "BindingInfo": {
+                                      "TableName": "签章任务",
+                                      "ColumnName": "公司类型",
+                                      "GUID": "4a6c30d9-141f-4b32-9730-4a0462b3e062"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取发货回执接收人.公司类型"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+                                "ConnectionStringID": "pld",
+                                "Name": "客户回执发货数量合计",
+                                "DisplayNameInDesigner": "[dbo].[客户回执发货数量合计]",
+                                "Parmeters": [
+                                  {
+                                    "Name": "主表ID",
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=获取主表ID"
+                                    },
+                                    "DataType": "nvarchar"
+                                  }
+                                ],
+                                "ReturnsName": "data",
+                                "AllowAcessRoleList": [
+                                  "FGC_LoginUser"
+                                ],
+                                "ID": "f5ce9017b91d43bebbda5f03caf9b150"
+                              }
+                            ],
+                            "ID": "94a981c3-94c3-4e9a-980b-15960763252e"
+                          },
+                          {
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                                "ErrorCode": "1",
+                                "Message": "已存在，无需再添加"
+                              }
+                            ],
+                            "ID": "7e6bbddd-db06-4607-a40a-60c2eb7dabc5"
+                          }
+                        ]
+                      }
+                    ],
+                    "ID": "e6a17a1c-a7e9-4d56-8b4f-473d939e9ffd"
+                  }
+                ]
+              }
+            ]
+          },
+          "CatchCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "ErrorCode": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionCode"
+                },
+                "Message": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionMessage"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

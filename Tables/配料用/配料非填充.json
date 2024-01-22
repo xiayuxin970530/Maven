@@ -1,0 +1,81 @@
+{
+  "Name": "配料非填充",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "InvCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "Qty",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cBatch",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "iQuantity",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "iNum",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "a",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "纯度",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "实物数",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "折百非有效",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "配料非填充",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   a.InvCode, a.Qty, c.cBatch, c.iQuantity, c.iNum,\r\n                    (SELECT   SUM(iQuantity) AS Expr1\r\n                     FROM      UFDATA_800_2018.dbo.CurrentStock AS w\r\n                     WHERE   (cInvCode = c.cInvCode) AND (cBatch <= c.cBatch) AND (dVDate <= c.dVDate)) AS a, \r\n                c.iQuantity / ISNULL(c.iNum, c.iQuantity) AS 纯度, a.Qty / (c.iQuantity / ISNULL(c.iNum, c.iQuantity)) AS 实物数, \r\n                a.Qty / (c.iQuantity / ISNULL(c.iNum, c.iQuantity)) - a.Qty AS 折百非有效\r\nFROM      UFDATA_800_2018.dbo.mom_moallocate AS a LEFT OUTER JOIN\r\n                UFDATA_800_2018.dbo.CurrentStock AS c ON a.InvCode = c.cInvCode\r\nWHERE   (a.Define22 = '否') AND (c.iQuantity > '0') AND (c.iQuantity =\r\n                    (SELECT   SUM(iQuantity) AS Expr1\r\n                     FROM      UFDATA_800_2018.dbo.CurrentStock AS w\r\n                     WHERE   (cInvCode = c.cInvCode) AND (cBatch <= c.cBatch))) AND\r\n                    ((SELECT   SUM(iQuantity) AS Expr1\r\n                      FROM      UFDATA_800_2018.dbo.CurrentStock AS w\r\n                      WHERE   (cInvCode = c.cInvCode) AND (cBatch <= c.cBatch)) < a.Qty) AND (a.Define22 = '否') AND (c.iQuantity > '0')",
+    "ViewInfo": {
+      "ViewName": "配料非填充",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

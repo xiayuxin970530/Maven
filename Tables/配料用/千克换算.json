@@ -1,0 +1,50 @@
+{
+  "Name": "千克换算",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "千克换算",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "千克换算",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   TOP (100) PERCENT cInvCode, \r\n                CASE WHEN cGroupCode != '03' THEN '1' WHEN cGroupCode = '03' THEN '1000' END AS 千克换算\r\nFROM      UFDATA_800_2018.dbo.Inventory\r\nORDER BY cGroupCode",
+    "UserSetQueryColumns": [
+      "cInvCode"
+    ],
+    "ViewInfo": {
+      "ViewName": "千克换算",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "cInvCode"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": [
+    {
+      "PrimarySchema": null,
+      "PrimaryTable": "存货验料属性",
+      "PrimaryColumn": "存货编码",
+      "ForeignSchema": null,
+      "ForeignTable": "千克换算",
+      "ForeignColumn": "cInvCode",
+      "RelationTypeOnDelete": 0,
+      "RelationTypeOnUpdate": 0,
+      "IsDetailTableRelation": false
+    }
+  ]
+}

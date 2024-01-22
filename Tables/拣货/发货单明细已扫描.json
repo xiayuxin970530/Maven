@@ -1,0 +1,37 @@
+{
+  "Name": "发货单明细已扫描",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "dlautoid",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "已扫描数量",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "发货单明细已扫描",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   b.dlautoid, SUM(a.核销数量) AS 已扫描数量\r\nFROM      dbo.发货拣货核销表 AS a LEFT OUTER JOIN\r\n                dbo.PICKS AS b ON a.picksid = b.PICKsID\r\nGROUP BY b.dlautoid",
+    "UserSetQueryColumns": [
+      "dlautoid"
+    ],
+    "ViewInfo": {
+      "ViewName": "发货单明细已扫描",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "dlautoid"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

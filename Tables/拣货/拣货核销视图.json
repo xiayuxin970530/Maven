@@ -1,0 +1,46 @@
+{
+  "Name": "拣货核销视图",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "PICKsID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "dlqty",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "核销余额",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "拣货核销视图",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   a.PICKsID, a.dlqty, CAST(ISNULL(a.dlqty, 0) - ISNULL(b.核销总数, 0) AS decimal(18, 4)) AS 核销余额\r\nFROM      dbo.PICKS AS a LEFT OUTER JOIN\r\n                    (SELECT   picksid, SUM(ISNULL(核销数量, '0')) AS 核销总数\r\n                     FROM      dbo.发货拣货核销表\r\n                     GROUP BY picksid) AS b ON a.PICKsID = b.picksid\r\nWHERE   (ISNULL(a.出库比例, 0) <> 1)",
+    "UserSetQueryColumns": [
+      "PICKsID"
+    ],
+    "ViewInfo": {
+      "ViewName": "拣货核销视图",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "PICKsID"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

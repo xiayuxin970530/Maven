@@ -1,0 +1,223 @@
+{
+  "Name": "每日发货明细",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "物流公司",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "发货日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "累计出库数量",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "发货数量",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cDLCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "客户编码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "存货编码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "批次",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "发货仓库",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "制单人",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "备注",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cDepCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cPersonCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "AutoID",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "iNum",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "dvDate",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "客户名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "账套号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "存货名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "存货规格",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "单件毛重",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "单件体积",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "毛重",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "体积",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cDefine13",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cDefine14",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "单据原客户名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "批次备注",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "money",
+      "MaxLength": -1,
+      "Name": "inatsum",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "每日发货明细",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  s.cSCName AS 物流公司, ps.pdate AS 发货日期, a800.fOutQuantity AS 累计出库数量, a800.iQuantity AS 发货数量, \r\n                   a.cDLCode, a.cCusCode AS 客户编码, a800.cInvCode AS 存货编码, a800.cBatch AS 批次, a800.cWhCode AS 发货仓库, \r\n                   a.cMaker AS 制单人, a.cMemo AS 备注, a.cDepCode, a.cPersonCode, a800.AutoID, a800.iNum, a800.dvDate, \r\n                   CASE WHEN d .cCusName = '山东亿嘉农业科技有限公司' THEN cDefine13 ELSE d .cCusName END AS 客户名称, \r\n                   'ZT800' AS 账套号, i.cInvName AS 存货名称, i.cInvStd AS 存货规格, i.fGrossW AS 单件毛重, i.cInvDefine14 AS 单件体积, \r\n                   i.fGrossW * (a800.iQuantity) AS 毛重, i.cInvDefine14 * (a800.iQuantity) AS 体积, a.cDefine13, a.cDefine14, \r\n                   d .cCusName AS 单据原客户名称, ISNULL(a800.cDefine33, N'无') AS 批次备注, a700.inatsum\r\nFROM      PICKS AS p LEFT JOIN\r\n                   pick AS ps ON p.PICKID = ps.pickID LEFT JOIN\r\n                   UFDATA_800_2018.dbo.DispatchLists AS a800 ON p.dlautoid = a800.AutoID AND p.ztcode = 'ZT800' LEFT JOIN\r\n                   UFDATA_700_2020.dbo.DispatchLists AS a700 ON isnull(a700.cdefine25, - 1) = isnull(a800.cDefine25, 0) AND \r\n                   isnull(a700.cDefine25,'') != '' LEFT JOIN\r\n                   UFDATA_800_2018.dbo.DispatchList AS a ON a800.DLID = a.dlid LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.Customer AS d ON a.cCusCode = d .cCusCode LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.Inventory AS i ON a800.cInvCode = i.cInvCode LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.ShippingChoice AS s ON a.cSCCode = s.cSCCode\r\nWHERE   ps.pdate > '2023-02-21' AND ztcode = 'ZT800'\r\n\r\n\r\n\r\n\r\nUNION ALL\r\nSELECT  s.cSCName AS 物流公司, ps.pdate AS 发货日期, a700.fOutQuantity AS 累计出库数量, a700.iQuantity AS 发货数量, \r\n                   a.cDLCode, a.cCusCode AS 客户编码, a700.cInvCode AS 存货编码, a700.cBatch AS 批次, a700.cWhCode AS 发货仓库, \r\n                   a.cMaker AS 制单人, a.cMemo AS 备注, a.cDepCode, a.cPersonCode, a700.AutoID, a700.iNum, a700.dvDate, \r\n                   CASE WHEN d .cCusName = '山东亿嘉农业科技有限公司' THEN cDefine13 ELSE d .cCusName END AS 客户名称, \r\n                   'ZT700' AS 账套号, i.cInvName AS 存货名称, i.cInvStd AS 存货规格, i.fGrossW AS 单件毛重, i.cInvDefine14 AS 单件体积, \r\n                   i.fGrossW * (a700.iQuantity) AS 毛重, i.cInvDefine14 * (a700.iQuantity) AS 体积, a.cDefine13, a.cDefine14, \r\n                   d .cCusName AS 单据原客户名称, ISNULL(a700.cDefine33, N'无') AS 批次备注, a700.inatsum\r\nFROM      PICKS AS p LEFT JOIN\r\n                   pick AS ps ON p.PICKID = ps.pickID LEFT JOIN\r\n                   UFDATA_700_2020.dbo.DispatchLists AS a700 ON p.dlautoid = a700.AutoID AND p.ztcode = 'ZT700' LEFT JOIN\r\n                   UFDATA_700_2020.dbo.DispatchList AS a ON a700.DLID = a.dlid LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.Customer AS d ON a.cCusCode = d .cCusCode LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.Inventory AS i ON a700.cInvCode = i.cInvCode LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.ShippingChoice AS s ON a.cSCCode = s.cSCCode\r\nWHERE   ps.pdate > '2023-02-21' AND ztcode = 'ZT700'",
+    "ViewInfo": {
+      "ViewName": "每日发货明细",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

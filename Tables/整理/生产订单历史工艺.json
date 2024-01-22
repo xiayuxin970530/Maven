@@ -1,0 +1,69 @@
+{
+  "Name": "生产订单历史工艺",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "invcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "ZYZD",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "date",
+      "MaxLength": -1,
+      "Name": "ddate",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "invstd",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "unitcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "invname",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "modid",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "生产订单历史工艺",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT invcode, ZYZD, ddate AS ddate, invstd, unitcode, invname,modid\r\nFROM      UFDATA_800_2018.dbo.pld_m\r\nWHERE   (ZYZD IS NOT NULL) AND (ZYZD <> '')\r\n\r\nUNION\r\nSELECT  m.InvCode, a.工艺说明, cast(FGC_CreateDate AS date), b.cInvStd, b.cCAComUnitCode, b.cInvName,m.modid\r\nFROM      UFDATA_800_2018.dbo.配料单工艺 AS a LEFT JOIN\r\n                   UFDATA_800_2018.dbo.mom_moallocate AS m ON a.modid = m.MoDId LEFT JOIN\r\n                   UFDATA_800_2018.dbo.Inventory AS b ON m.InvCode = b.cInvCode",
+    "ViewInfo": {
+      "ViewName": "生产订单历史工艺",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "modid"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

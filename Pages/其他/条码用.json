@@ -1,0 +1,444 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 23
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "51": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "53": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 60
+  },
+  "Values": {
+    "3,49": 12345
+  },
+  "AttachInfos": {
+    "1,6": {
+      "BindingInfo": {
+        "TableName": "货位存量表",
+        "ColumnName": "cInvCode",
+        "GUID": "d8c0fbdf-1981-4be3-8a51-c7e14704949a"
+      }
+    },
+    "1,16": {
+      "BindingInfo": {
+        "TableName": "货位存量表",
+        "ColumnName": "cBatch",
+        "GUID": "ed3d4877-be22-4955-9d63-8a63ed01ce59"
+      }
+    },
+    "2,3": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "货位存量表",
+        "RowIndex": 2,
+        "ColumnIndex": 3,
+        "RowCount": 20,
+        "ColumnCount": 36,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,41": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "条码档案",
+        "RowIndex": 2,
+        "ColumnIndex": 41,
+        "RowCount": 17,
+        "ColumnCount": 14,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "条码档案",
+                "ColumnName": "cInvCode",
+                "GUID": "cc580dc2-8fbe-4df4-9f3a-df5bf96f9950"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=条码用!$G$2"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "条码档案",
+                "ColumnName": "pLot",
+                "GUID": "05bf506b-3748-4474-b3dd-b727ecdf498f"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=条码用!$Q$2"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,4": {
+      "BindingInfo": {
+        "TableName": "货位存量表",
+        "ColumnName": "cWhCode",
+        "GUID": "413e5166-14e0-4628-8d29-d9c62f774202"
+      }
+    },
+    "3,11": {
+      "BindingInfo": {
+        "TableName": "货位存量表",
+        "ColumnName": "cInvCode",
+        "GUID": "dc6767ef-af9b-48fc-bdbf-e5f0bb74c538"
+      }
+    },
+    "3,20": {
+      "BindingInfo": {
+        "TableName": "货位存量表",
+        "ColumnName": "cPosCode",
+        "GUID": "ff7055a0-3275-4947-8009-93bdb5bcfcd7"
+      }
+    },
+    "3,26": {
+      "BindingInfo": {
+        "TableName": "货位存量表",
+        "ColumnName": "iQuantity",
+        "GUID": "92a517b3-f460-470e-a6a2-e035f8544a02"
+      }
+    },
+    "3,33": {
+      "BindingInfo": {
+        "TableName": "货位存量表",
+        "ColumnName": "现存量",
+        "GUID": "b7489e80-0116-4a67-87d9-90b7377cb11f"
+      }
+    },
+    "3,41": {
+      "BindingInfo": {
+        "TableName": "条码档案",
+        "ColumnName": "BarCode",
+        "GUID": "c2bb863a-7b19-42ea-97b5-2380e2036a2e"
+      }
+    },
+    "3,49": {
+      "BindingInfo": {
+        "TableName": "条码档案",
+        "ColumnName": "BarCode",
+        "GUID": "74c36757-5bae-4f41-bc17-9fdadf987d7a"
+      },
+      "CellType": {
+        "$type": "Forguncy.BarcodeCellType, ServerDesignerCommon",
+        "CodeType": "QRCode"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,11": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,49,1,6",
+    "4,41,15,14",
+    "4,3,18,36",
+    "3,4,1,7",
+    "3,11,1,9",
+    "3,20,1,6",
+    "3,26,1,7",
+    "3,33,1,6",
+    "1,6,1,8",
+    "1,16,1,9",
+    "3,41,1,8",
+    "2,4,1,7",
+    "2,11,1,9",
+    "2,20,1,6",
+    "2,26,1,7",
+    "2,33,1,6",
+    "2,41,1,8",
+    "2,49,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "网页母板",
+    "MobilePageName": "车辆拣货任务",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "Administrator",
+            "查询包材差异及仓库",
+            "发货任务"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//adNFM2L9WQpKkeuuCVfV6QdpGN+F+p3VQ+K7vMqBBmfPy8B8NU2CpFjBexHZgeHvTA7ljI1M5sClqoVkJV3Qlhgg+WzO5cpexekS1WutlqSa72+jod2ncQX2bS997CvXKM5lE77TwxWlPmfPNPbe88+bAQWHCWCCyMHfbihn7YS1OD9ywCQXGOqwyO/Tru/ZL6LN14AbDmI88408YIKP50kcoV1FZOgsLla+eWY1WfuQefyabm90opWw0L6tZxM+uMovrhZKLGdkE4rZ6bdpbq0vG9ccG0Gnbw4FAufEE0WuJu5D3Vt/3XO9cizugjSETVQ4JM8EzGuKYGEEO5RAtvjTEwytSDgWjyNKfkSY2WcmZlDNGjW9jh+6dy2srUrJgnA52KITaaIK7y2YUc/sSnpzSo1mQnMCsYMamCUutNXhcqWxNfSWD2arNV8FX+Ff34flXSHahfdRjkNRzLL7nFfQoxiSY5hbZ6vYqE+GycINhw3QG1QZO2Tt1HTE+t5sVMKttJXg8B7F1cFjCEdbGBv1DrFURc6s12bnndU2lbmAy7N54uOp6CqOT54W8RvRCFw2bC523jmxn2TGnfpvTb83OzqzUmJz4D1ldAzeYFS/GlypDyStuVGhCpjGIsON4v4CsToGQkpBJDEG34nmyImx3xPuTNRqiDTyAdUumsVufFJagPACfXNZ5bZpRyQvzil4nwPFw0KNuDSAblp1NAdWnhTRqYcxRlVz8s9octxZrHAUOwFJWJiaoqqlu+0mDJog3tG8s246Wn624HMeoI2K1zTFqgF0aUpy/LWeTPyi37K/UY5wVAkLaqLhDdJ5GF6BF50X3/vnOGAxa/7AWdhFl3mmslOVX0PSu9RKr7Hb+BiNPxY0cZunlpKfNX9g96QdJrHmOTJ7FQrv6wg0Gg==|920

@@ -1,0 +1,644 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 189.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 17
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 76.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 76.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 76.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "1,1": "当前单号",
+    "1,14": "配料",
+    "1,16": "删除记录",
+    "3,1": "选择仓库",
+    "4,1": "日期",
+    "5,3": "日期",
+    "5,11": "单号"
+  },
+  "Formulas": {
+    "4,4": "TODAY()-7",
+    "4,11": "TODAY()+3"
+  },
+  "AttachInfos": {
+    "1,4": {
+      "BindingInfo": {
+        "TableName": "OM_MOMain",
+        "ColumnName": "cCode",
+        "GUID": "0ce2ec2b-0643-48bb-9f16-ae75d9c0c3ce"
+      },
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "1,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "委外可用仓库",
+            "UpdateType": 3
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=委外配料!E2"
+                      }
+                    ]
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingText": "配料计算中 请等候",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+                    "ConnectionStringID": "pld",
+                    "Name": "委外配料",
+                    "DisplayNameInDesigner": "[dbo].[委外配料]",
+                    "Parmeters": [
+                      {
+                        "Name": "ccode",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=委外配料!$E$2"
+                        },
+                        "DataType": "nvarchar"
+                      }
+                    ],
+                    "AllowAcessRoleList": [
+                      "FGC_LoginUser"
+                    ],
+                    "ID": "f2ed9bb33be1463b9541f60a66aa6b72"
+                  },
+                  {
+                    "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "配料完成"
+                  }
+                ],
+                "ID": "530fd8de-e1e2-47d2-8ff5-de7e653f3fd6"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=委外配料!E2"
+                      }
+                    ]
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "请选择单号"
+                  }
+                ],
+                "ID": "d51b6fbd-0462-4e61-ba78-ebc4008f6d72"
+              }
+            ]
+          }
+        ],
+        "Text": "配料",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "1,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+            "ConnectionStringID": "pld",
+            "Name": "删除委外配料",
+            "DisplayNameInDesigner": "[dbo].[删除委外配料]",
+            "Parmeters": [
+              {
+                "Name": "单号",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=委外配料!$E$2"
+                },
+                "DataType": "nvarchar"
+              }
+            ],
+            "AllowAcessRoleList": [
+              "FGC_LoginUser"
+            ],
+            "ID": "1b5973b944344594924364104ea2aab7"
+          }
+        ],
+        "Text": "删除记录",
+        "TemplateKey": "_RS_Main1"
+      }
+    },
+    "3,4": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "TemplatePageName": "0b2e0f1893554e52a7533cee94f2e42",
+        "DataSourceType": 1,
+        "DataSource": {
+          "$type": "ServerDesignerCommon.Model.BindingDataSourceModel, ServerDesignerCommon",
+          "TableName": "配料可用仓库",
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "ID",
+                "GUID": "bae63edf-5ceb-4720-804f-e73b8e3b359d"
+              },
+              "ColumnName": "ID"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "仓库编码",
+                "GUID": "ec8d08c5-4aaf-4d8c-8ff8-b6513f1764e6"
+              },
+              "ColumnName": "仓库编码"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "是否可用",
+                "GUID": "cd136037-556c-46a7-a9ae-130dfa37a4a9"
+              },
+              "ColumnName": "是否可用"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "齐套可用",
+                "GUID": "f69f088b-4dd2-4d93-8f15-df2c064eb195"
+              },
+              "ColumnName": "齐套可用"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "齐套显示",
+                "GUID": "f424deef-9c8d-4bea-aa9d-82d696796673"
+              },
+              "ColumnName": "齐套显示"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "委外可用",
+                "GUID": "6d0c5035-5b1a-4454-a10c-0ef67b8a43a0"
+              },
+              "ColumnName": "委外可用"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "虚拟库存特殊可用",
+                "GUID": "d909dbb6-bd09-4861-865c-4d73f9dfef2d"
+              },
+              "ColumnName": "虚拟库存特殊可用"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "FGC_Creator",
+                "GUID": "eff54f68-31e9-4d39-84e8-a06527d0fe00"
+              },
+              "ColumnName": "创建者"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "FGC_CreateDate",
+                "GUID": "ae6fe0e4-2a94-422a-b2b4-02ffb5d0f179"
+              },
+              "ColumnName": "创建日期"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "FGC_LastModifier",
+                "GUID": "89eca51e-6561-4950-b16b-76679155e818"
+              },
+              "ColumnName": "最后更新者"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "FGC_LastModifyDate",
+                "GUID": "8e828a8a-a928-4c52-b19d-6d3327c651f1"
+              },
+              "ColumnName": "最后更新日期"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "配料可用仓库",
+                "ColumnName": "仓库编码",
+                "GUID": "79df541d-25dd-403f-a94b-0bb0cb2a7e86",
+                "RelationBinding": {
+                  "RelatedTable": "Warehouse",
+                  "RelatedColumn": "cWhCode",
+                  "DisplayColumn": "cWhName"
+                }
+              },
+              "ColumnName": "cWhName"
+            }
+          ],
+          "IsListviewDataSource": true,
+          "CustomColumns": []
+        },
+        "DataSourceListviewName": "委外可用仓库",
+        "DisplayMode": 2,
+        "TemplateKey": "_RS_Selectable"
+      }
+    },
+    "4,4": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "4,11": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "5,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "OM_MOMain",
+        "RowIndex": 5,
+        "ColumnIndex": 1,
+        "RowCount": 11,
+        "ColumnCount": 17,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "OM_MOMain",
+                "ColumnName": "dDate",
+                "GUID": "a2ec3135-b549-44c8-885f-cbe67e767992"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=委外配料!$E$5"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "OM_MOMain",
+                "ColumnName": "dDate",
+                "GUID": "c078ac10-a5a3-4d48-a914-1e8c0a17cfa0"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=委外配料!$L$5"
+              }
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "OM_MOMain",
+                "ColumnName": "MOID",
+                "GUID": "ab597f37-4c0a-476b-8300-9fda623e6c05"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "6,3": {
+      "BindingInfo": {
+        "TableName": "OM_MOMain",
+        "ColumnName": "dDate",
+        "GUID": "9d1cbd63-d2ba-4df8-a6c9-b39da727b68e"
+      }
+    },
+    "6,11": {
+      "BindingInfo": {
+        "TableName": "OM_MOMain",
+        "ColumnName": "cCode",
+        "GUID": "00ef4ded-7f81-48c9-8f5d-b03b1147d746"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 3,
+        "HorizontalAlignment": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Right",
+        "Left",
+        "yyyy/m/d",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,4": 0,
+      "3,4": 1,
+      "4,1": 1,
+      "4,4": 2,
+      "4,11": 3,
+      "6,3": 4,
+      "6,11": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "6,3,1,8",
+    "1,1,1,3",
+    "6,11,1,7",
+    "3,1,1,3",
+    "3,4,1,13",
+    "4,1,1,3",
+    "4,4,1,6",
+    "4,11,1,4",
+    "7,1,9,17",
+    "1,4,1,9",
+    "5,3,1,8",
+    "5,11,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "网页母板",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//kPMjOSvn9kobnPbtlSTHS2wFFd59u6BSZodv4wBZybcn9isejox5ka9sJrYe/ChpZU2V4BwV1JWQjMA57x+WohBRAXk3JRdqda2AO+wHMpWNfD+CDpou1lK/LZCrGDMEJmKtVWVH/pX/JCcw+KhniESMQxQlWCJt70pKZewMAcR1TI4Cvf8Jssn9OXGwJnhwv3nO8CMwlEhyOyqR8C0v031cJzcjF5s/NrRMDgaD1hYRx/IV1EAu5NSEC7Fi/UhZPbZ9qy10D2YXBtfpgpMg4OZ2LKSepgSW9f/l2yvZM/HiddqyffG7U/gw+a3qfQdar6T/EVXO0kCNHtXGUwfToILa0xsHjHMsRVDdf8+aFvKlPjP2Fzr/Jf003J/t3nvFhk1ItB2Qyq+iCLcaZKgu6oL6DV5fyxNVVfxliFYvb2CZhiT8iqe/1iBt27RFav2iBmCS2S6FQDZUdLzig7wDyvhMkHVfKaz9xpSeiwwiMNJZlzhmw0XTrghaJwQTY8ja0yOaoV+SV1rC6UFbHR8JAUeCYf+L/RUrfp19nIkb5nHOcD1m8rcbvjLBfuFSWv0sChBWVKmXCdrHpP9eZXFZeEqIMhzz80M8QCv5/N215GTIVzapmR7o0eywOd8xYp9dK/YY8Q7D0fJ0xT0Z8NBr/t6K9FufwuvGT1k7InBmR/oRWUvO7tZS6NoiTS3M8FadhVfOX53mG7OU6Upj7HDZueg+PhzBGVTWI2eiwzMfzS+lZ/pTLh2sJOP4Cc3OKahRDZGMs3xIYnFyqFiOINP+qw0DXS7qdwOl0gDiqrpZg9hP3jH4n4UJP1f5Y4siuSXGz3DYqXs6ZllV0BYxk0HTz9jdfKE7/jVwH4HswltFKUmR5RKwP9TcXhTRxR5x0wlwLussk0Ry4gPH9b+AbnrGFQ==|920

@@ -1,0 +1,426 @@
+{
+  "Name": "查找符合条件拣货单",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "pickid",
+          "TestData": "11322"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "查询拣货单表头数据",
+      "TableValue": {
+        "TableName": "PICK",
+        "TableValueType": 1,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "PICK",
+              "ColumnName": "pickID",
+              "GUID": "8b1c4a4d-d2c7-41f0-bd87-80f057663a58"
+            },
+            "ColumnName": "pickID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "PICK",
+              "ColumnName": "pdate",
+              "GUID": "d4f669ba-bc6f-4202-8c94-86612316a6d5"
+            },
+            "ColumnName": "pdate"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "PICK",
+              "ColumnName": "carcode",
+              "GUID": "b8832fd9-fa3e-4571-9c8c-55aaf3c80605"
+            },
+            "ColumnName": "carcode"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "PICK",
+              "ColumnName": "mark",
+              "GUID": "6b938185-24b9-4b3c-9321-c42b66e10df9"
+            },
+            "ColumnName": "mark"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "PICK",
+              "ColumnName": "code",
+              "GUID": "c949cddd-260e-4ad4-8934-3952336a97da"
+            },
+            "ColumnName": "code"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "PICK",
+            "ColumnName": "pickID",
+            "GUID": "777eba9e-ff67-44a8-ba40-65cc871ea1db"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=pickid"
+          }
+        }
+      },
+      "ID": "db1af8cee0134a9e94c0ec9517246513"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "查询交货单明细",
+      "TableValue": {
+        "TableName": "PICKS",
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "PICKS",
+              "ColumnName": "PICKsID",
+              "GUID": "5c6f0c91-f3a7-4eba-b7d5-018cec6f4d69"
+            },
+            "ColumnName": "PICKsID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "PICKS",
+              "ColumnName": "dlcinvcod",
+              "GUID": "f03c27dc-b8e5-46b1-aeda-fe6efbf97841"
+            },
+            "ColumnName": "dlcinvcod"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "PICKS",
+              "ColumnName": "dlqty",
+              "GUID": "811f8380-bc8c-455b-920d-4b5f378ec6fc"
+            },
+            "ColumnName": "dlqty"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "PICKS",
+              "ColumnName": "dlcinvcod",
+              "GUID": "392a91f8-5401-43fe-8d3e-bb7072104251",
+              "RelationBinding": {
+                "RelatedTable": "inventory",
+                "RelatedColumn": "cInvCode",
+                "DisplayColumn": "cComUnitCode",
+                "NextRelationBinding": {
+                  "RelatedTable": "ComputationUnit",
+                  "RelatedColumn": "cComunitCode",
+                  "DisplayColumn": "cComUnitName"
+                }
+              }
+            },
+            "ColumnName": "cComUnitName"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "PICKS",
+              "ColumnName": "marks",
+              "GUID": "a685aaef-1a7a-47e0-a7c3-5341a04b7c9b"
+            },
+            "ColumnName": "marks"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "PICKS",
+            "ColumnName": "PICKID",
+            "GUID": "eab2d7f9-ad78-4c6b-a9b1-ad1b1a31c3ed"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=pickid"
+          }
+        }
+      },
+      "ID": "3a5c86b52a374e108c9a17785783b4ed"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=查询拣货单表头数据.pickID"
+              }
+            },
+            "value": "null",
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "任务主表",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "任务主表",
+                    "ColumnName": "来源类型",
+                    "GUID": "a7978220-c90d-4842-86f1-e42e12d3cf81"
+                  },
+                  "Value": "运输协议"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "任务主表",
+                    "ColumnName": "业务日期",
+                    "GUID": "b7d9a3d7-aba8-4c02-9dd8-7f67f7409eba"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=查询拣货单表头数据.pdate"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "任务主表",
+                    "ColumnName": "描述",
+                    "GUID": "17af7f56-d8d1-459c-8bac-416693f110ec"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=查询拣货单表头数据.mark"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "任务主表",
+                    "ColumnName": "来源自动生效标识",
+                    "GUID": "9105f261-91a0-4196-ace4-060a8381f5a0"
+                  },
+                  "Value": "1"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "任务主表",
+                    "ColumnName": "来源唯一标识",
+                    "GUID": "122f152b-4770-4bcc-ab1a-be29ee3c27e7"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=pickid"
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "取已经生成的id",
+              "TableValue": {
+                "TableName": "任务主表",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "任务主表",
+                      "ColumnName": "任务主表ID",
+                      "GUID": "003f3780-99d1-43cc-8928-e5176e6e81f6"
+                    },
+                    "ColumnName": "任务主表ID"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "任务主表",
+                        "ColumnName": "来源唯一标识",
+                        "GUID": "3e2c0053-b343-4e76-b12c-5597e72b19f9"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=pickid"
+                      }
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "任务主表",
+                        "ColumnName": "来源类型",
+                        "GUID": "c2131c70-2e81-4ff7-b1d4-818a30d759db"
+                      },
+                      "Value": "运输协议"
+                    }
+                  ]
+                }
+              },
+              "ID": "346f66efb0f546d5a94425b60bff081d"
+            },
+            {
+              "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+              "LoopInfo": {
+                "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                "LoopCount": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=查询交货单明细"
+                },
+                "LoopItemParamName": "Item"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "任务子表",
+                  "UpdateType": "add",
+                  "ShowConfirm": false,
+                  "UpdateBindingValues": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "任务子表",
+                        "ColumnName": "来源主表ID",
+                        "GUID": "95b429e0-a213-4891-bd86-f838e0099c4c"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=取已经生成的id"
+                      }
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "任务子表",
+                        "ColumnName": "交付物",
+                        "GUID": "90809cc7-5e78-47c0-ada9-176fdf9dd53a"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.dlcinvcod"
+                      }
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "任务子表",
+                        "ColumnName": "交付确认数量",
+                        "GUID": "485bfcfc-3a1a-42fd-a25d-2442d96586ca"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.dlqty"
+                      }
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "任务子表",
+                        "ColumnName": "单位",
+                        "GUID": "4d75339c-4573-4e4e-a1dc-4dba2ac96d23"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.cComUnitName"
+                      }
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "任务子表",
+                        "ColumnName": "备注",
+                        "GUID": "28a7cc67-c4e8-4b6c-96e6-9717ead3b285"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.marks"
+                      }
+                    },
+                    {
+                      "BindingInfo": {
+                        "TableName": "任务子表",
+                        "ColumnName": "来源唯一标识",
+                        "GUID": "749a33fd-83c8-442c-bdac-bbcc4c5d2882"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.PICKsID"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                  "ErrorCode": "1",
+                  "Message": "成功",
+                  "CustomReturns": [
+                    {
+                      "ReturnPropertyName": "成功",
+                      "Value": "成功"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ID": "0b1653b7-3387-4db0-8d94-09ed875513ed"
+        },
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=查询拣货单表头数据.pickID"
+              }
+            },
+            "value": "%Null%"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "2",
+              "Message": "空值",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "成功",
+                  "Value": "空值"
+                }
+              ]
+            }
+          ],
+          "ID": "2f3d0de1-d563-4c21-8839-6486c67d2a34"
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "成功"
+    }
+  ]
+}

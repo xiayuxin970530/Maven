@@ -1,0 +1,68 @@
+{
+  "Rows": {
+    "Count": 1,
+    "DefaultSize": 21.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 14.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 39.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 105.0
+        }
+      }
+    },
+    "Count": 5
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      },
+      "TemplateCellSource": "齐套可用"
+    },
+    "0,2": {
+      "TemplateCellSource": "仓库编码"
+    },
+    "0,4": {
+      "TemplateCellSource": "cWhName"
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 12.0,
+      "FontWeight": 1,
+      "HorizontalAlignment": 2
+    }
+  },
+  "Spans": [
+    "0,2,1,2",
+    "0,0,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "包材齐套分析备份"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//I5+LtUY2aU7D/NRbl5MpUbq6nxOszOxJSAAsNyoPJYlJQvc1Qdh77EqqFtMTI6zREvqT79VrNSvcWzP+fydDmOJur7mFoPAOxHQmv1acEWjtQeshTQUdCAggB/FITX+BdTggAy6n3t+tPF777pF6lCYEv2ST21mqsGovSiO4RbQu0uIeELMg13g2pNLQ1UIUTiCFvll49sZXsJbwiGtJejtyZ3GDchL1Zjqgv/PFnkCBHOT2rhK0+3Dtx4QYVdGy8iD2z6pTAmFt01vzCQqy40ifTvmXCG+7pl1D8GPxq2GZkiGZ62Z45weKamTCdNYoBQw2NZw/ZzGVoG8ZBvu6PFt29PzJmipdafrhMehd3WkpNh4sKm9lIFZg+HauhTs7PymqzeiaOHh+5MeGXwIJMO/VgzSZ5gAGgNcdEZoGHmEva8uvfclCDWyP/LDfVex575I2K/cF3Ye2InUqTNbJaPmuhSSo3ff9yGlj0X+GHCpCZQe6VZ+0tOoNTGxrYVa7i9JGflNHMietcSH67o/RCW01KSRavCI4pTZTE5KGnOmVBHWWqusypVpZN/6zjdBMLB3lnir9BUe3MPV6eje6GDLL2KDm7CgAhNYH4xGNBwW4rR+idKmaV4W8tvJGyyr3svwpPQ7rdqGDnP6LJI0C/OdVIsrjDBSfNCcVAdVypuMRI8gU2PATuIfHgjQ9OAL0gi9xYCOuKxRP89J0kPBESkMZA18MqvZRBGtS3weNN1zElxaX2isVyjSLAX8FfpB6sfRG4o4BesuK3tLXy7ZHwziHXm7zQHK3eZK/tRksGNGaFTwWGVztpudXDOeW1jPtCfikGSTG/J168R4eCSbYVSRG+kbttfHC2IpghW5bSq+Y51WEhkcFjjJy9tRTz4RthOe6+JOjral3jrBKlwUTGA==|920

@@ -1,0 +1,38 @@
+{
+  "Name": "库存不足计数",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "MoDId",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "不足个数",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "库存不足计数",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   MoDId, COUNT(MoDId) AS 不足个数\r\nFROM      dbo.应领配料出库明细\r\nWHERE   (未配料 > 净总库存)\r\nGROUP BY MoDId",
+    "UserSetQueryColumns": [
+      "MoDId"
+    ],
+    "ViewInfo": {
+      "ViewName": "库存不足计数",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "MoDId"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

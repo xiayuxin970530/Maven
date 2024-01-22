@@ -1,0 +1,54 @@
+{
+  "Name": "添加运输协议到签章任务",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 15.0,
+      "TimeUnit": 2,
+      "StartDateTime": 45209.475694444445,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+          "TryCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                "ServerCommandName": "添加运输协议签章任务",
+                "ResultErrorCodeTo": {
+                  "SerializeProperty": "res"
+                },
+                "ResultMessageTo": {
+                  "SerializeProperty": "data"
+                },
+                "RefreshAfterFinish": true,
+                "CheckDataValidation": true
+              }
+            ]
+          },
+          "CatchCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "ErrorCode": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionCode"
+                },
+                "Message": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionMessage"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

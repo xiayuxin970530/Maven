@@ -1,0 +1,234 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "9,12": "%CurrentUser.Role%"
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,9,4,21",
+    "9,12,6,19"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=跳转导航!M10"
+                  }
+                ]
+              },
+              "value": "发",
+              "compareType": 6
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "发货任务明细"
+              }
+            ],
+            "ID": "4c200938-15de-4628-863f-079bfdd3c062"
+          },
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=跳转导航!M10"
+                      }
+                    ]
+                  },
+                  "value": "配料",
+                  "compareType": 10
+                },
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=跳转导航!M10"
+                      }
+                    ]
+                  },
+                  "value": "审核",
+                  "compareType": 11
+                }
+              ]
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "待配料"
+              }
+            ],
+            "ID": "fb974f6d-e496-46f7-b9a2-4dbf1b2848ba"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=跳转导航!M10"
+                  }
+                ]
+              },
+              "value": "配料单审核",
+              "compareType": 10
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "配料单审核"
+              }
+            ],
+            "ID": "31c99234-266b-42ea-9c1f-f6e5b23f0342"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=跳转导航!M10"
+                  }
+                ]
+              },
+              "value": "生产",
+              "compareType": 10
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "配料单已复核打印备注"
+              }
+            ],
+            "ID": "6a298092-989b-4df6-bc70-8c7469dd2b18"
+          },
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=跳转导航!M10"
+                      }
+                    ]
+                  },
+                  "value": "生产",
+                  "compareType": 11
+                },
+                {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=跳转导航!M10"
+                      }
+                    ]
+                  },
+                  "value": "发",
+                  "compareType": 11
+                }
+              ],
+              "RelationType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "包材差异查询"
+              }
+            ],
+            "ID": "efe5560f-21bf-4f3c-acd2-b6e78520e282"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=跳转导航!M10"
+                  }
+                ]
+              },
+              "value": "对账",
+              "compareType": 10
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "对账单列表"
+              }
+            ],
+            "ID": "40c0cefc-80ea-4dcf-8eda-54fea7da0ae6"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "Administrator",
+            "查询包材差异及仓库",
+            "发货任务",
+            "查询包材差异",
+            "配料操作",
+            "配料单审核",
+            "配料单复核",
+            "生产主管",
+            "生产验料固体",
+            "生产验料液体"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//s0Z0cfNxUxB+dCF+heaQsrcwpWDevnTZZ+HCK6vXtwmj0vGI4a62ewDA/VhVdHs8Utk8X0dW2MSwtQz60bgBLXxg0FUpclCPEI05d8dKDd0staoTAaeG2i5aUIUlvZk0M6qeotj7H5QWh7Eih2SZcWS7LO2nG4sstaDJetNU1KkRkWut25XFXdqn6zeXJIri0BxOutpnPWBcRnm6RZPeOCzzeGe0lHVC9K0kK/Gzyc7C6TCjuAYIpXznrjfkrnPT6MG+v6jJ/lI2dGdmEGbAq4D6hl0q/mkQQuFB1xiin4ksYJp50DO3uA8AVHRAqmFpztvsmjiIUTnwJYH3OQnQFm6M6sJOOMv1f/Y9DAN0YUXa2QER96s+0jFzCtHiVHzWxF/4j7H5OvT9i/krOIKTFXTjNBRTXuGfXG/4k82M3njYbjoHYol1BHG7M4ESo6cLB9KMQwmc2JcXcRQcgXdwkJ9WURyHj3CfJtt6vhbsu2+gaOS8S0rAoDpvuoSMkoTlJGGQDjUJ4hxHBG144Wf3WDvk4QILdxRJn4SaLRMJ08rprMW0SMRZtK9HJNsVYhGar3QFacsrUkfkWsMZvDRE/Bvp+usZz4aGaiFWh502duJjMo3R1UV8OWC5FwFMxGT3+4k+oNTbPdb+CLzeCppKWASRcB4AVL5jVd7r8wLAu4etYTT7pi8fvviBW2Dd3G6CsjoQin93wwzb7dhinzXExupQy0tw3gD8wUMVeCql11Zetu70M5ONVuHy0LeFPLJ6aiNFSTOp0bQqL6fY95AHTqLD1QmEmzgaAkwEYOrLEbZBpABedFnM9svI2c3uVoMalilcjoA7BuVBQ+T260L3KRqUdf/bbRlTfuxuixjotCSIPW9zy4Yvi6ChlqLVaWo/a41Uih3kkEL5fG6HTvWeew==|920

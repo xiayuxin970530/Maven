@@ -1,0 +1,68 @@
+{
+  "Rows": {
+    "Count": 1,
+    "DefaultSize": 21.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 14.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 39.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 105.0
+        }
+      }
+    },
+    "Count": 5
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      },
+      "TemplateCellSource": "齐套可用"
+    },
+    "0,2": {
+      "TemplateCellSource": "仓库编码"
+    },
+    "0,4": {
+      "TemplateCellSource": "cWhName"
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 12.0,
+      "FontWeight": 1,
+      "HorizontalAlignment": 2
+    }
+  },
+  "Spans": [
+    "0,2,1,2",
+    "0,0,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "半成品齐套分析 (2)"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//9SRoZ+dw011OF0ee2+suHFOky8TF031aE29bdvaPNd8iA1WpJp2QkX4M/1kuqXmWHTajtKUMGsyr4BD60ZgnRt8wF/w4fProXxb2rd068ahEVkb5jEgjQNGW3TtbLB1k0HnuGOdv2Qolezxsw3OHfhj1jkmLbo/ytaWUR2Tg8q369L1+jD9QQZwThWZQXISBaDexCpvyrUhksKjkUpukKGeDY46HazMK8+gLzs4erqOviYr9/h5wz0iKaxzcfiKHVQM6jGuXdvb7mEUJuTsfQ/vPLDt2M7iZOyNOa4g93GiRln4wq6xpAVYap8uphbQpPU9mvDQigJwTctSE1KXX3AaoSSPTmhafUBBT1GlWRaGl+so4qj4s/895li+NwGAhDtiaNtIzNwkpp8uDLNH41GNQrmKP4W1SWLdgYAwXhMRQf3cMjpDhaIzgXv8Xkeaqq6Wog3cq+hZYJ922a6XX0zDWUy+Gh+uqrcp2zAP4l5VJlUCyBOYMfq5YVev9zNYX+X5XOHsbhFQSYyZlCXikbSVcsv7+ygPZzfXhlNSUVSs3FN0alMyvFrtOeDz8qQS8IP1n0u3q8SVtcge28CIjgpTlB0UKUqw6Ts6HGEkkIr+L7VXZ4S6XrNXX4l6txSwKOFgZuPR6af+/NS6JzBClMmW4nk6o58H9p8NbqgFoaMOD+znthNckHufSs3RMQ00EbnrEABPInsWgvOczHMDhN5WiKrDuZnYxO12Ovc6BeXHvuFXawg/MU7ohQNdOE04hsDGejdCVsOCGZc96FoI9/f2lUTPQH30Vi7LW/RQYxdcyXjUS2lh8gE3nuvnmnCsQi99CRSXPKr0oGe1yti0jgEW9v6h+1OjSyesaeLsBLfuW/JZPXHh15/TNbUbe/PxtoiBlreKLTB7w6yVTkGVSnA==|920

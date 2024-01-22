@@ -1,0 +1,48 @@
+{
+  "Name": "存仓库货位扫码扣减结余",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cPosCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cWhCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "扫描可用数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "存仓库货位扫码扣减结余",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  a.cInvCode, a.cPosCode, a.cWhCode, a.库存余数 - ISNULL(b.扫码占用数, 0) AS 扫描可用数\r\nFROM      (SELECT  cWhCode, cWhName, cPosCode, cPosName, cInvCode, SUM(现存量) AS 库存余数\r\n                   FROM       dbo.货位存量表\r\n                   GROUP BY cWhCode, cWhName, cPosCode, cPosName, cInvCode) AS a LEFT OUTER JOIN\r\n                       (SELECT  cinvcode, invpostion, cwhcode, SUM(scanqty) AS 已扫描数, SUM(scanqty * (1 - ISNULL(扫描出库比例, 0))) \r\n                                           AS 扫码占用数\r\n                        FROM       dbo.scandetail\r\n                        WHERE    (ISNULL(扫描出库比例, 0) < 1)\r\n                        GROUP BY cinvcode, invpostion, cwhcode) AS b ON a.cInvCode = b.cinvcode AND a.cPosCode = b.invpostion AND \r\n                   a.cWhCode = b.cwhcode",
+    "ViewInfo": {
+      "ViewName": "存仓库货位扫码扣减结余",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

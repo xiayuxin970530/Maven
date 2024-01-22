@@ -1,0 +1,228 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,6": "ID:",
+    "5,6": "生产类型:",
+    "7,6": "仓库编码:",
+    "9,6": "范围:",
+    "11,16": "取消"
+  },
+  "AttachInfos": {
+    "3,14": {
+      "BindingInfo": {
+        "TableName": "配料仓库对照表",
+        "ColumnName": "ID",
+        "GUID": "d5bb432a-59b5-4a8c-b99e-60217d99adfb"
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "配料仓库对照表",
+        "ColumnName": "生产类型",
+        "GUID": "b2559d96-a190-4ca3-9683-5b02b747ee9e"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    },
+    "7,14": {
+      "BindingInfo": {
+        "TableName": "配料仓库对照表",
+        "ColumnName": "仓库编码",
+        "GUID": "0d19e738-d442-4c90-a843-533bc024de19"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    },
+    "9,14": {
+      "BindingInfo": {
+        "TableName": "配料仓库对照表",
+        "ColumnName": "范围",
+        "GUID": "560a3cea-c334-493b-84eb-6829f081f77f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      }
+    },
+    "11,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=配料仓库对照表_详情页面!K12"
+                      }
+                    ]
+                  },
+                  "value": "添加"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "配料仓库对照表",
+                    "UpdateType": "add"
+                  }
+                ],
+                "ID": "cc58306d-aed5-45c4-8e72-2977c853c7ac"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=配料仓库对照表_详情页面!K12"
+                      }
+                    ]
+                  },
+                  "value": "更改"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "配料仓库对照表"
+                  }
+                ],
+                "ID": "cf411162-82fa-4bb2-a560-1a59c9801d34"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "TemplateKey": "样式5"
+      }
+    },
+    "11,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "样式5"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0
+      },
+      {
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,6": 0,
+      "5,6": 0,
+      "5,14": 1,
+      "7,6": 0,
+      "7,14": 1,
+      "9,6": 0,
+      "9,14": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,14,1,6",
+    "5,14,1,6",
+    "7,14,1,6",
+    "9,14,1,6",
+    "11,10,1,4",
+    "11,16,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//poO4tbM+ZoKoBHMiHc6nHzf4hP3KbvGdGGAw31RPuedNdT0ZzpuLwFJMVkJx4pZTmmL+AwOjo+JYc8eHx8vAEkn6N7OVQUiuIEePoSBMI1J7yYRd6WA51WxkjX0yXH9dnYoycGFc+38uP/ieoCwrXkOjkXTuAbMC2rlKmtalPaOxdcGMUm7HVIo8wLYslkS0sElQWcgZ3z4vaCunumbnDya4m/6A6O6R0cEgL9A0ZGRc/5b+kD2BtDMXGFEPD1AZ/OyZ2hMAqJGMctjO8KEbTdJr513TkagKUBD3ScfRgFPNHcKoZge3kj48W3yOp80hIZQUpmVf77AMuZthfCNVwhaTu7erG1sWqR5YWoDy29JZjioEl2r4a618wQTGwNiB+qnPVy9bvbDXL0SYA+kMyCOGE/v0euGvV+ZLNEaxO6KotgwKi/eHCpvbyoWb2tGCQAe5whXRpW03wiImrchJ3tMRRFT8XW91QnfiFd1MrYK1eGxZ+QWCSwDJpt/tutWz7YC0ieDsv22S98a+Wu1BkGrfqtugMc+U+jBSOMdrFh+vXUzDhnb9eWdl3oW9DckvrRq66B8TvCbxy7EsOsHMJRj14/TqUZuKPm6N044/uVyeqdzwYNThn4ZfEoXgNKx7Rloy7T/opqmtXxYNRzJm2PDKKo+c0OVyC9e9PTxRpc1czZHlD0U3213xrRRfde6INvW/inJqw80R3q5vL8fPxjSYvwLO0a6om0pNEXUeMx79vQkYPtpvD5gCNRaVdHlszk/JsnPOE+AQdgS7KlsMYUKT/Q5xLQaIxnI7UVrx+5ko+GhRSET8CKjKpeTVbTkVoM5OCSuRdliGCRUjxPpR7eYqBmi7oJrHNGzh8V1yoQW0ePGah50lGYS5UzbtCxBH/NGFm+Cl/qIgxp0iRI1yEw==|920

@@ -1,0 +1,74 @@
+{
+  "Rows": {
+    "Count": 28
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "AttachInfos": {
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "var audio = new Audio(Forguncy.ForguncyData.ForguncyRoot + 'GeneratedResources/UserFile/A.wav');\r\naudio.play();\r\nvar audio = new Audio(Forguncy.ForguncyData.ForguncyRoot + 'GeneratedResources/UserFile/A.mp3');\r\naudio.play();\r\nvar audio = new Audio(Forguncy.ForguncyData.ForguncyRoot + 'GeneratedResources/UserFile/有效.mp3');\r\naudio.play();\r\nvar audio = new Audio(Forguncy.ForguncyData.ForguncyRoot + 'GeneratedResources/UserFile/存货错误.mp3');\r\naudio.play();\r\nvar audio = new Audio(Forguncy.ForguncyData.ForguncyRoot + 'GeneratedResources/UserFile/批次错误.mp3');\r\naudio.play();\r\nvar audio = new Audio(Forguncy.ForguncyData.ForguncyRoot + 'GeneratedResources/UserFile/货位无库存.mp3');\r\naudio.play();\r\nvar audio = new Audio(Forguncy.ForguncyData.ForguncyRoot + 'GeneratedResources/UserFile/批次无记录.mp3');\r\naudio.play();\r\nvar audio = new Audio(Forguncy.ForguncyData.ForguncyRoot + 'GeneratedResources/UserFile/批次冻结后数量不足.mp3');\r\naudio.play();",
+            "ID": "900448dca9de42f8a67f5239f6c31c9a"
+          }
+        ],
+        "TemplateKey": "样式5"
+      }
+    },
+    "5,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "TemplateKey": "样式5"
+      }
+    },
+    "9,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "TemplateKey": "样式5"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,3,3,9",
+    "5,3,3,9",
+    "9,3,3,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//s8CRySDGCzWIVljX45EFpOj4kh5C1r8p3huVHMDsprquIF5TS6tIJCv7OSE5GhxTpGIxdakEwXK8fj6IyNbrjpePSsKLA6TciLTdQ199B7qLq5B7NSZZAIFdOBlarQJ6ZIDIn6QUgEJhdshQ4GVBiesCdVqJLJFsfQ5PjcHzzD6Tlg1Xv1+WLOTaAfo3TVWZvdoKKBLbGQXPK/oXYp1FEQMA0jCiinkIn5gnJKXLBvbrhuigvz9G/JdJ6xYAKdsxzgH/X7EnFPfvdKOuvlbQhcbJu6yg1bajgcosVfe5a2qp50LvMbcMx3uU6eF9gOmRx8snxfjP/MYlnAioJntQRBCdN+62qxpVqX/U7jwUNzpmrZFqFQwYfzJH+y65V3ypijLU57Vao9VXjl2t9Sx26Wj7cpQzYdG8nquIMDMrkWsUz2atOHS1c/R+U2hmJZjOdeR/THbOzhxNoVlFUPbR65HyIlTEmYo8E720hbrgblDFa7Q5vo8/YREJBuoP96FS/2agG0sUiFJ4qDWIVVRJFi0UhupgUBDNClSpGEd6LUCRny2saCPdQUgPsCg5B7N2Uuw+R4gWXDzodavAHmgZXwdynxnhECRSTCff77/oypt7baaWuHNWcJkMPiQgTOBw4KGJKY6h5WbmudqOu9CVl/RRftaVIQWYAiCTO4pIpvZKUqkvSNvCQacpmGKDY4sVni/KOyhyX/CVIgSvV715t/PyLrvJJk84lgTo6dv6y34xQEdpJXCaqus4hNys9OOwJNot8vgsZ8bXUlx00vS5fF3HjWlqy6safXTsx3AKLZ/uTdzpIGtYKEG+gKf8/rRDviM7no9yTDKu0YnwBD2bi8TVgDT7yLDVufjck+LNx8vLIJjdZ0EOpaHA/Lrdhrabm94Tk7kbFHjUcmAhnBpyrQ==|920

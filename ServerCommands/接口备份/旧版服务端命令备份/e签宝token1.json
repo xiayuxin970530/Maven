@@ -1,0 +1,88 @@
+{
+  "Name": "e签宝token1",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.InvokeTrigger, ServerDesignerCommon",
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+      "PostData": {
+        "DataItemType": 1,
+        "Data": {
+          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+          "Data": [
+            {
+              "Name": "appId",
+              "DataItemType": 0,
+              "Data": 5111834261
+            },
+            {
+              "Name": "secret",
+              "DataItemType": 0,
+              "Data": "461f4026da0dd843d1d67f9288f70d76"
+            },
+            {
+              "Name": "grantType",
+              "DataItemType": 0,
+              "Data": "client_credentials"
+            }
+          ]
+        }
+      },
+      "WebUrl": "https://openapi.esign.cn/v1/oauth2/access_token",
+      "Method": "GET",
+      "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+      "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+      "NewParameter": "res",
+      "Header": [],
+      "Timeout": 100.0
+    },
+    {
+      "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+      "BianmaMsg": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=res"
+      },
+      "JsonLu": "data",
+      "Noobj": true,
+      "FanHuiMsg": "data"
+    },
+    {
+      "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+      "BianmaMsg": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=data"
+      },
+      "JsonLu": "token",
+      "FanHuiMsg": "token"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": "0",
+      "Message": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=token"
+      },
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "token",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=token"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "token"
+    }
+  ]
+}

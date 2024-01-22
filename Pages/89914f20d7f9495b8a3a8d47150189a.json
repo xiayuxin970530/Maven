@@ -1,0 +1,151 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 22.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 145.0
+        }
+      }
+    },
+    "Count": 2,
+    "DefaultSize": 24.0
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      },
+      "TemplateCellSource": "是否可用"
+    },
+    "0,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='89914f20d7f9495b8a3a8d47150189a'!A1"
+                      }
+                    ]
+                  },
+                  "value": "1",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "配料可用仓库",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "配料可用仓库",
+                          "ColumnName": "是否可用",
+                          "GUID": "c332f0cf-32cb-43f5-85bd-3e3704e78da7"
+                        },
+                        "Value": "1"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "74c04dd3-a536-4166-929d-628fadb340e8"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='89914f20d7f9495b8a3a8d47150189a'!A1"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "配料可用仓库",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "配料可用仓库",
+                          "ColumnName": "是否可用",
+                          "GUID": "6fdf00a0-1956-4a9a-a43b-0aea1ce6c7ce"
+                        },
+                        "Value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d2ce8c79-032b-4d4a-8b41-6b8cc1ec9f6f"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "TemplateCellSource": "仓库"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "Underline": true
+      },
+      {
+        "FontSize": 8.0,
+        "FontWeight": 1,
+        "WordWrap": false
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Blue",
+        "Bold",
+        "Body",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0
+    },
+    "ColStyles": {
+      "1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "HorizontalAlignment": 3
+    }
+  },
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "待配料 (2)"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Q3hgXbE3wcO0wpC+F4KguMj+RQtdeUxd/2ymLbCMJDqWiFBHKz9IXZ8B1DmgTbpIloQRm4AedHjhmEmOVPrwi9objJ3Q+/RASKISeR0ZX/Ia2m5rZWCsVBfa1+CZeKRIm/wHZz9IX/GuFc06xmciMu7Fg2/NoeSi0TFfPxLi5rsIDdHKtnROprowLBncpC96NqKMoM9Qs/zvCQwGXJzto9p/BDAgw7cJnbv0Inl9BQjpJuyIXZuJ9Ej+Mtj+1CmAmJ3ODV4zskVll68xQj1J4BcKQ2IoqUBU0eUEpyxO2b+z8GGjQyezqqioFr64FRm/ro1yGxF5qfsbxfnNqgnGB1tyP8afjqB0hFS3HOplAhiReZEzUpLWkMyHbkjlQTDj/WEa2+zZaX3cJqHoFY5XTMzcLRY1HwtJACDLgpkUx9AmspqTY93uMqXQirhExjlx3Mt6ZYon8+vKutHOeGbBhWnggSNuS/hQqV5fiy439LnmlKorRQyL6zVfKEy532Hqr1R1h10l+e+1f6GZf0pg8bzby1hBmPMEqiBxgKjqCO/NHWk2ragtVvSr0VyUPE4Nrcp0B0N67xAV6yL1XPwWktciWYSNnq3aZ/bGAQplYdIhClDgJzE1ymqVwDxoLJrwz9KmCLFZ2/bXPrn2CJghc55f/Ye/jfoCkETWQPLppETB6kgXdjoNQAFCfmQfHq9M9qnoETZ+Ins6mJT6Gv9FvRdmFhjLvc8chmMUelm0x+62qXbhh9UcfCbdN2HUwuGq/xviVy2YNo+eyXJLtMclQu+5os/uzkgRulKEL4J1u26DdNdFySAQ0gx2FJ09kz82mL012f/Z9PDcDhbx6j0zCrshWran0Yc5Q/c04Ypf/iipebHKbvPak9N9qfE0WEG7kmDVSvCoYiKiMwzOILMOpQ==|920

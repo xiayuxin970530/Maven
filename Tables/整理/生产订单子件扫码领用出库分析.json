@@ -1,0 +1,136 @@
+{
+  "Name": "生产订单子件扫码领用出库分析",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "MoCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "InvCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvName",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvStd",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "扫码出库实物合计",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "扫码出库折百合计",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "出库单合计实物",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "出库单合计折百",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "应出库折百",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "生产订单子件出库折百",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "配料实物数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "配料有效数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "领料申请",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "领料申请有效数",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "DueDate",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "StartDate",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.FormulaColumn, ServerDesignerCommon",
+      "Formula": "[配料有效数]-[出库单合计折百]",
+      "Name": "未出库折百",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "生产订单子件扫码领用出库分析",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  mm.MoCode, m.InvCode, i.cInvName, i.cInvStd, al.扫码出库实物合计, al.扫码出库折百合计, rd.出库单合计实物, \r\n                   rd.出库单合计折百, m.Qty AS 应出库折百, m.IssQty AS 生产订单子件出库折百, p.配料实物数, p.配料有效数, \r\n                   pu.领料申请, pu.领料申请有效数, mo.DueDate, mo.StartDate\r\nFROM      UFDATA_800_2018.dbo.mom_moallocate AS m LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.mom_orderdetail AS o ON m.MoDId = o.MoDId LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.mom_morder AS mo ON mo.MoDId = o.MoDId LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.mom_order AS mm ON o.MoId = mm.MoId LEFT OUTER JOIN\r\n                       (SELECT  SUM(出库折百数量) AS 扫码出库折百合计, SUM(出库实物数) AS 扫码出库实物合计, alid\r\n                        FROM       dbo.材料扫码记录\r\n                        GROUP BY alid) AS al ON al.alid = m.AllocateId LEFT OUTER JOIN\r\n                       (SELECT  SUM(iQuantity) AS 出库单合计折百, SUM(iNum) AS 出库单合计实物, iMPoIds\r\n                        FROM       UFDATA_800_2018.dbo.rdrecords11\r\n                        GROUP BY iMPoIds) AS rd ON m.AllocateId = rd.iMPoIds LEFT OUTER JOIN\r\n                       (SELECT  ALID, SUM(有效数) AS 配料有效数, SUM(实物数) AS 配料实物数\r\n                        FROM       UFDATA_800_2018.dbo.PLMX\r\n                        GROUP BY ALID) AS p ON p.ALID = m.AllocateId LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.Inventory AS i ON m.InvCode = i.cInvCode LEFT OUTER JOIN\r\n                       (SELECT  iMPoIds, SUM(iQuantity) AS 领料申请有效数, SUM(iNum) AS 领料申请\r\n                        FROM       UFDATA_800_2018.dbo.MaterialAppVouchs\r\n                        GROUP BY iMPoIds) AS pu ON pu.iMPoIds = m.AllocateId\r\nWHERE   (m.AllocateId IN\r\n                       (SELECT  ALID\r\n                        FROM       UFDATA_800_2018.dbo.PLMX AS PLMX_1)) AND (o.Status = 3) AND (ISNULL(al.扫码出库折百合计, 0) > 0)",
+    "ViewInfo": {
+      "ViewName": "生产订单子件扫码领用出库分析",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

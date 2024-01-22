@@ -1,0 +1,51 @@
+{
+  "Name": "未配料余额表",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "批次有效合计",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "ALID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "Qty",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "未配料余额",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "未配料余额表",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   a.批次有效合计, a.ALID, b.Qty, b.Qty - a.批次有效合计 AS 未配料余额\r\nFROM      dbo.已配料合计 AS a LEFT OUTER JOIN\r\n                UFDATA_800_2018.dbo.mom_moallocate AS b ON a.ALID = b.AllocateId",
+    "UserSetQueryColumns": [
+      "ALID"
+    ],
+    "ViewInfo": {
+      "ViewName": "未配料余额表",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "ALID"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

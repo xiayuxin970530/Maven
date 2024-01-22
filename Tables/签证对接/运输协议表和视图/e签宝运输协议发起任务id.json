@@ -1,0 +1,32 @@
+{
+  "Name": "e签宝运输协议发起任务id",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "任务主表id",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "任务类型",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "e签宝运输协议发起任务id",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   任务主表id, 任务类型\r\nFROM      dbo.签章任务\r\nWHERE   (任务类型 = '物流运输协议') AND (接口发起状态 IS NULL) AND (发起状态 IS NULL OR\r\n                发起状态 = '')",
+    "ViewInfo": {
+      "ViewName": "e签宝运输协议发起任务id",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

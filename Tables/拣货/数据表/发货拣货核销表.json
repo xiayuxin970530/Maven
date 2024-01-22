@@ -1,0 +1,339 @@
+{
+  "Name": "发货拣货核销表",
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionResource, Forguncy.RbacPermission.Core",
+      "enabledTypes": 1
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordBindingConfig, Forguncy.RbacPermission.Core",
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordBindingConfig, Forguncy.RbacPermission.Core",
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.CreateRecordFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 1,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 13,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "Administrator"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 5,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 1
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowBindingConfig, Forguncy.RbacPermission.Core",
+          "operationTypes": 1,
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.RowFilter, Forguncy.RbacPermission.Core",
+            "filterType": 2
+          }
+        },
+        "dataPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 1,
+            "picksid": 5,
+            "scandid": 5,
+            "核销数量": 5,
+            "操作时间": 5,
+            "操作日期": 5,
+            "ckmid": 5,
+            "ckdid": 5,
+            "ckcode": 5,
+            "账套号": 5,
+            "生单流水": 5,
+            "发货出库比例": 5,
+            "采购入库主表id": 5,
+            "采购入库子表id": 5,
+            "采购入库单号": 5,
+            "销售800出库单子表id": 5,
+            "生成标识": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "Administrator"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 1,
+            "picksid": 5,
+            "scandid": 5,
+            "核销数量": 5,
+            "操作时间": 5,
+            "操作日期": 5,
+            "ckmid": 5,
+            "ckdid": 5,
+            "ckcode": 5,
+            "账套号": 5,
+            "生单流水": 5,
+            "发货出库比例": 5,
+            "采购入库主表id": 5,
+            "采购入库子表id": 5,
+            "采购入库单号": 5,
+            "销售800出库单子表id": 5,
+            "生成标识": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Data.DataPermissionBinding, Forguncy.RbacPermission.Core",
+        "config": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldBindingConfig, Forguncy.RbacPermission.Core",
+          "fieldOperations": {
+            "ID": 1,
+            "picksid": 5,
+            "scandid": 5,
+            "核销数量": 5,
+            "操作时间": 5,
+            "操作日期": 5,
+            "ckmid": 5,
+            "ckdid": 5,
+            "ckcode": 5,
+            "账套号": 5,
+            "生单流水": 5,
+            "发货出库比例": 5,
+            "采购入库主表id": 5,
+            "采购入库子表id": 5,
+            "采购入库单号": 5,
+            "销售800出库单子表id": 5,
+            "生成标识": 5
+          },
+          "subTableOperations": {},
+          "dataFilter": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.Data.FieldFilter, Forguncy.RbacPermission.Core"
+          }
+        },
+        "dataPermissionType": 4,
+        "roleNames": [
+          "FGC_Anonymous"
+        ]
+      }
+    ]
+  },
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "picksid",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "scandid",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "核销数量",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "time",
+      "MaxLength": -1,
+      "Name": "操作时间",
+      "ColumnType": "System.TimeSpan, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "操作日期",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "ckmid",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "ckdid",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "ckcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "账套号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "生单流水",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "发货出库比例",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "采购入库主表id",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "采购入库子表id",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "采购入库单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "销售800出库单子表id",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bit",
+      "MaxLength": -1,
+      "Name": "生成标识",
+      "ColumnType": "System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.UserExtraBingingColumn, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_Creator"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.DateExtraBingingColumn, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_CreateDate"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.UserExtraBingingColumn, ServerDesignerCommon",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifier"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.DateExtraBingingColumn, ServerDesignerCommon",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "Name": "FGC_LastModifyDate"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "AllowModifySchema": true,
+    "ConnectionId": "pld",
+    "SourceTableName": "发货拣货核销表",
+    "SourceTableSchema": "dbo"
+  },
+  "PrimaryKey": [
+    "ID"
+  ],
+  "Indexes": [],
+  "Relations": []
+}

@@ -1,0 +1,874 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "Count": 12,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 16,
+    "DefaultSize": 8.0
+  },
+  "Values": {
+    "1,1": "条码",
+    "3,1": "编码",
+    "3,8": "货位",
+    "5,1": "批次",
+    "5,8": "数量",
+    "8,1": "库存",
+    "8,13": "改前",
+    "9,1": "任务",
+    "10,1": "数据库已写入"
+  },
+  "AttachInfos": {
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式2",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "scancode"
+    },
+    "1,14": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要删除吗？"
+          }
+        ],
+        "ImagePath": "Application/037_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1"
+      }
+    },
+    "3,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式2",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "cinvcode"
+    },
+    "3,10": {
+      "TemplateCellSource": "invpostion"
+    },
+    "5,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式2",
+        "ReadOnly": true
+      },
+      "TemplateCellSource": "scanbatch"
+    },
+    "5,10": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "样式2",
+        "IsSelectAllOnFocus": true,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D2"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "数据库当前行数据",
+                    "TableValue": {
+                      "TableName": "scandetail",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "scandetail",
+                            "ColumnName": "scanqty",
+                            "GUID": "728c296e-bea1-409e-a6dd-b8fb1aff351d"
+                          },
+                          "ColumnName": "scanqty"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "scandetail",
+                          "ColumnName": "scdID",
+                          "GUID": "2193f19b-41c5-49ea-80da-d87c58c2860a"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!N10"
+                        }
+                      },
+                      "TopCount": "1"
+                    },
+                    "ID": "160642d4219049bc8678f854929649dc"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!N9"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!K6"
+                        }
+                      }
+                    ],
+                    "Comments": "记录改前数量"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "查找当前库存",
+                    "TableValue": {
+                      "TableName": "货位存量",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "货位存量",
+                            "ColumnName": "iQuantity",
+                            "GUID": "9663a1a3-bb33-4658-b5cc-42dd369869ed"
+                          },
+                          "ColumnName": "iQuantity"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "SubConditions": [
+                          {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "货位存量",
+                              "ColumnName": "cWhCode",
+                              "GUID": "4ffa80f3-8b29-41ef-96b7-2c6108a8c9d9"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!C8"
+                            }
+                          },
+                          {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "货位存量",
+                              "ColumnName": "cPosCode",
+                              "GUID": "f5aa3451-e247-4f05-bf72-45b026b02707"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!K4"
+                            }
+                          },
+                          {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "货位存量",
+                              "ColumnName": "cInvCode",
+                              "GUID": "53b9d014-b654-4792-ac7a-1f783998d277"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D4"
+                            }
+                          },
+                          {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "货位存量",
+                              "ColumnName": "cBatch",
+                              "GUID": "00712099-5832-46fe-90b8-70bad79d5e4a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D6"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "ID": "839e189a64be4644be0812bbb93450aa"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D9"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!查找当前库存"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "查找任务余量",
+                    "TableValue": {
+                      "TableName": "扫码任务",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "扫码任务",
+                            "ColumnName": "待扫码",
+                            "GUID": "4c3f5738-9ad4-4697-845b-6e2ae245baa7"
+                          },
+                          "ColumnName": "待扫码"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "SubConditions": [
+                          {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "扫码任务",
+                              "ColumnName": "dlcinvcod",
+                              "GUID": "fc7d85ab-daf9-47dc-8c02-dbf9402e06ea"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D4"
+                            }
+                          },
+                          {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "扫码任务",
+                              "ColumnName": "PICKID",
+                              "GUID": "444c54e9-e3eb-47de-ac96-512a20edcc55"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!J8"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "ID": "0dd193cc6e824559a403fdb606ec55bb"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D10"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!查找任务余量"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "8188222f-a5c8-4903-b127-7b4670b3eff9"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!K6"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D9+'35c4e2898a2d4f4d850928590079191'!数据库当前行数据"
+                      },
+                      "compareType": 5
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!K6"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D10+'35c4e2898a2d4f4d850928590079191'!数据库当前行数据"
+                      },
+                      "compareType": 5
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D2"
+                          }
+                        ]
+                      },
+                      "value": "1"
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "scandetail",
+                    "ShowConfirm": false
+                  }
+                ],
+                "ID": "f37cb329-c232-4304-ad5d-01b119f7a96a"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!K6"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D9"
+                      },
+                      "compareType": 2
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D2"
+                          }
+                        ]
+                      },
+                      "value": "1"
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "库存数小于所填数"
+                  }
+                ],
+                "ID": "3205560c-ea8d-44c1-8167-fd8b4094faf0"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!K6"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D10"
+                      },
+                      "compareType": 2
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!D2"
+                          }
+                        ]
+                      },
+                      "value": "1"
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "超过未拣货数"
+                  }
+                ],
+                "ID": "36f80753-8941-43e6-a862-48ec678b6c29"
+              }
+            ]
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "NumberType": 2,
+        "FirstParamValue": "0.0001",
+        "SecondParamValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='35c4e2898a2d4f4d850928590079191'!F11+'35c4e2898a2d4f4d850928590079191'!D9"
+        },
+        "ErrorMessage": "不能大于库存量"
+      },
+      "TemplateCellSource": "scanqty"
+    },
+    "7,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1"
+      },
+      "TemplateCellSource": "cwhcode"
+    },
+    "7,9": {
+      "TemplateCellSource": "pickid"
+    },
+    "8,3": {
+      "TemplateCellSource": "存量"
+    },
+    "9,13": {
+      "TemplateCellSource": "scdID"
+    },
+    "10,5": {
+      "TemplateCellSource": "写入数据库数"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontSize": 12.0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 12.0,
+        "FontWeight": 3,
+        "Foreground": 0,
+        "Formatter": 4,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 5
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "FontWeight": 3,
+        "Formatter": 4,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "FontWeight": 3,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "FontWeight": 3,
+        "Formatter": 6,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF0070C0",
+        "Background 1 0",
+        "Center",
+        "Bold",
+        "@",
+        "Body",
+        "0.00"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,3": 1,
+      "2,1": 2,
+      "2,2": 2,
+      "2,3": 3,
+      "2,4": 3,
+      "2,5": 3,
+      "2,6": 3,
+      "2,7": 3,
+      "2,8": 3,
+      "2,9": 3,
+      "2,10": 3,
+      "2,11": 3,
+      "2,12": 3,
+      "2,13": 3,
+      "2,14": 3,
+      "3,1": 4,
+      "3,2": 5,
+      "3,3": 6,
+      "3,8": 4,
+      "3,9": 5,
+      "3,10": 7,
+      "4,1": 8,
+      "4,2": 8,
+      "4,3": 9,
+      "4,4": 9,
+      "4,5": 9,
+      "4,6": 9,
+      "4,7": 9,
+      "4,8": 8,
+      "4,9": 8,
+      "4,10": 9,
+      "4,11": 9,
+      "4,12": 9,
+      "4,13": 9,
+      "4,14": 9,
+      "5,1": 4,
+      "5,2": 5,
+      "5,3": 6,
+      "5,8": 4,
+      "5,9": 5,
+      "5,10": 10,
+      "7,2": 11
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "1,1,1,2",
+    "3,1,1,2",
+    "3,8,1,2",
+    "5,1,1,2",
+    "5,8,1,2",
+    "3,3,1,5",
+    "5,3,1,5",
+    "5,10,1,5",
+    "1,3,1,10",
+    "3,10,1,5",
+    "7,2,1,4",
+    "8,3,1,10",
+    "8,1,1,2",
+    "9,1,1,2",
+    "9,3,1,10",
+    "7,9,1,6",
+    "9,13,1,3",
+    "8,14,1,2",
+    "10,1,1,4",
+    "10,5,1,11"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "扫码备份",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//6dXIkWKoPFb2Zb4gplpt2Tmhz9KIf6xH+4x/ZDxfjSNPDgsCCXb48sgaeUjvCWFQEf5dHF2gco8jy5Hq/1Dwkr19raLgLEd/dHBB2wNvwnYhc2E7iThdZT+VCaVelJge6x+DBuXrikMNRR22EwnvmjYPJTsgNdmG7/rUoGEF09niLaFzjF6JHWJmUtPAWAXa+CVUyWMIFYdM82hxLv+X5FAeBwma3CuykjQU+w75dkKdIGHtaZGV3aC9PUiDjBQtxoG/dpvmP28Q9ASZj8Yyrj9Xn4xGppJgIeOBcFT/Q5rSyhu65cWlLP3gArvubhBzzDYg2Wv56S+r81Nf0PVfi58Yl1h0qRnYIzwyPm7M8h/81sjybq+Utidp+ZFbH59xYAUCC4+lBgWL6n3hTW7/XhWk/FODb9UHXNa7Tzyb9+mOvDs/BP+8nN+C9KaSM5ZSU+qFy+gSHSWj/Ma2Ukql5AL7RtHa/h22loKPY0jUvzd6L6gtMxSDCXv/F55rasdPiAHHobGKzaecSqiAq/WqHWcmzilxoWr2AmwnRyq+6ajAwCO17h9dBAgNuRKUS+KxOcZcB3HsZX9gEmlDrtF9108Z9iQpyOk6PnfbSIGxixg2tcOM8SZg1CUAfOAMJugsB4PgUWSD0/FgHU3d1xYz9oBHXAfMz8pGFquBJdkH3ig0ziYLr49iaKSC81Wi6mi7zHWvmhEbDYvTJACYuFVy98yFlWnsy5kPZCDXxEb/FAMvT1R1r1Chn6PujZ94+LJBDx2K3ovhotpiYi2ZRstpDHVJgjSR/sBVhrmvkhCssT2Vh1b1+vXo8J95gvtX172KHMD626g/maYCCtD1GgSYvgoQKGRulaAPHgRnIlFwZ8QLlhD8xsJIRviSGIcIt+rkQhGxwDzuFH8170gT0jHmpQ==|920

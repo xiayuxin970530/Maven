@@ -1,0 +1,47 @@
+{
+  "Name": "e签宝定时查询接口状态",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "发起流程ID",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "crm单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "crm合同id",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "签章任务ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "e签宝定时查询接口状态",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   发起流程ID, crm单号, '' AS crm合同id, 签章任务ID\r\nFROM      [dbo].[签章任务]\r\nWHERE   接口发起状态 IS NOT NULL AND 发起流程ID is not null and 接口发起状态 != 2 and 接口发起状态 != 5 and 接口发起状态 != 3 and 接口发起状态 != 7\r\nUNION\r\nSELECT   发起流程ID, '' AS crm单号, crm合同id, ID AS 签章任务ID\r\nFROM      [dbo].[合同模板主表]\r\nWHERE   接口状态 IS NOT NULL AND 发起流程ID is not null and 接口状态 != 2 and 接口状态 != 5 and 接口状态 != 3 and 接口状态 != 7",
+    "ViewInfo": {
+      "ViewName": "e签宝定时查询接口状态",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

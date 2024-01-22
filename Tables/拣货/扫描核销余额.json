@@ -1,0 +1,53 @@
+{
+  "Name": "扫描核销余额",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "scdID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "scanqty",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "核销余额",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "核销次数",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "扫描核销余额",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   a.scdID, a.scanqty, CAST(ISNULL(a.scanqty, 0) - ISNULL(b.核销总数, 0) AS decimal(18, 4)) AS 核销余额, \r\n                a.核销次数\r\nFROM      dbo.scandetail AS a LEFT OUTER JOIN\r\n                    (SELECT   scandid, SUM(ISNULL(核销数量, '0')) AS 核销总数\r\n                     FROM      dbo.发货拣货核销表\r\n                     GROUP BY scandid) AS b ON b.scandid = a.scdID\r\nWHERE   (ISNULL(a.核销次数, 0) < 20) AND (CAST(a.FGC_CreateDate AS date) = CAST(GETDATE() AS date)) AND \r\n                (ISNULL(a.扫描出库比例, 0) <> 1)",
+    "UserSetQueryColumns": [
+      "scdID"
+    ],
+    "ViewInfo": {
+      "ViewName": "扫描核销余额",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "scdID"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

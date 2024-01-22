@@ -1,0 +1,199 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 45.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 64.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 36.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 112.0
+        }
+      }
+    },
+    "Count": 4,
+    "DefaultSize": 24.0
+  },
+  "Values": {
+    "0,2": "原药"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      },
+      "TemplateCellSource": "是否可用"
+    },
+    "0,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='89f10dd1408e4345be3088627bb9fb4'!A1"
+                      }
+                    ]
+                  },
+                  "value": "1",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "配料可用仓库",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "配料可用仓库",
+                          "ColumnName": "是否可用",
+                          "GUID": "8e6c93b8-7e80-4a08-82cb-0ee97246f9da"
+                        },
+                        "Value": "1"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "19a43321-596e-4959-bdcc-2054d3feba9e"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='89f10dd1408e4345be3088627bb9fb4'!A1"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "配料可用仓库",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "配料可用仓库",
+                          "ColumnName": "是否可用",
+                          "GUID": "0966b01e-cccc-47ce-b936-fd2164328bdf"
+                        },
+                        "Value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "aeed3a72-ec47-4c55-aec7-009ce0feb448"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "TemplateCellSource": "cWhName"
+    },
+    "0,2": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "CellDefaultValue": "原药",
+        "ItemSpace": 2,
+        "Items": [
+          {
+            "Value": "原药",
+            "DisplayValue": "原药"
+          },
+          {
+            "Value": "全部",
+            "DisplayValue": "全部"
+          },
+          {
+            "Value": "助剂",
+            "DisplayValue": "助剂"
+          }
+        ],
+        "SortOrderForUnbindCombo": 1
+      },
+      "TemplateCellSource": "范围"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "Underline": true
+      },
+      {
+        "FontSize": 8.0
+      },
+      {
+        "FontSize": 8.0,
+        "FontWeight": 1,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Blue",
+        "Normal",
+        "Body",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 0
+    },
+    "ColStyles": {
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "3": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2,
+      "FontSize": 10.666666666666666,
+      "HorizontalAlignment": 3
+    }
+  },
+  "Spans": [
+    "0,2,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "待配料"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//g4uh8l+gR6jzCP7AUtZqgMQx4AHw7Z3ueA/xF/65zpKlH/Jq0NJIHvayvz/vwj3N+exCi8EoV9VObk4YUiymHYmbR2eOINXcrkjQEgPceofs343896a5FPAd4rcVrA1DwWW807AV1uA3rybqxqirWJhtgBAlG2yTBdDmggE3cHx6YBun/OwPV7SzkBw4y3zmCePyoPmMneEif2Bvak5cu5gM3Fwrm7RFBmHjC/dpylZWcWEyGKKlg2CPq99XNuro8kDG44dfTZZfyFPQCU121rZaqEKlNmnurx/B4aZK/R6SP4JKT6KcI7SRHPS2lAqpIk2mZBT31ZPsfU5cyc9VayVMxxPJEXbcRD2FqVCz2ye5TPmzNZ4Gkpcy7Pgrk0LX6y2GAUzXEfPjm33jMosUnA7bRgo3GaVsAaLxZ8fmUf1KQwr2sXaRIuN/pMIyDb88R6I+UhSwo4So/4tPJZvFUXwg1FzPxDY6Etmkoh0pJaAWBv3epbY6G+4E9tZdEFAKcIZfU2BC6+5pHNzElMvKXPgYxX/+LZ3ww4+HL5c0WjZqjLEMRIaQ7B+CpXsf5Jl97FJPh0z8BZdHmQ08ImLMyNOz7V/OOCvA2imny3gKnJHMD1UjiTzKg2Rq4IVVrWHOwhPc84TNSmm8EjOR/212UOkWt2nabA/515mVnrm6j6K5LNhQNH5FPpH9Kg1AD3413SgOUoGtTCAWbLTHKA0iweeaEgZNN7u/r7vMvuibn8dtDrzldwImR+Aeh6db56/n2GnXTOWJUoxGMKLxCbNSicKEFQqenHu2+wvvPKFKKtg+lcqTtxfb00krLGcIOumD8zK0/tljMG6Lmm2edDx55bBB7BV11vThiFL8HGgqaYpNCu17r+WBP3iGMaxmsIdhPZ93NOpFMWIMlH/nGgiWBg==|920

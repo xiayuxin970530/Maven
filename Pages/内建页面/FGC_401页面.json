@@ -1,0 +1,129 @@
+{
+  "Rows": {
+    "Count": 26
+  },
+  "Cols": {
+    "Count": 47
+  },
+  "Values": {
+    "5,12": "页面未授权",
+    "8,12": "你没有权限访问目标页面",
+    "10,12": "可能的原因：",
+    "12,12": "目标页面只有属于特定用户组的用户才能访问",
+    "14,12": "解决方法：",
+    "16,11": "1.",
+    "16,13": "登出，并使用其他账号重新登录",
+    "18,11": "2.",
+    "18,13": "单击浏览器的后退按钮跳转到前一个页面，再选择其他链接浏览",
+    "20,11": "3.",
+    "20,13": "联系网站管理员申请权限"
+  },
+  "AttachInfos": {
+    "16,13": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "Text": "登出，并使用其他账号重新登录",
+        "ForguncyAttribute": "401Login"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 37.33333206176758,
+        "VerticalAlignment": 0
+      },
+      {
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 18.0,
+        "FontWeight": 1,
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 14.0,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 14.0,
+        "Foreground": 3,
+        "VerticalAlignment": 0,
+        "Underline": true
+      },
+      {
+        "FontSize": 14.0,
+        "VerticalAlignment": 0,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Top",
+        "Bold",
+        "Right",
+        "#FF0070C0",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "5,12": 0,
+      "8,12": 1,
+      "10,12": 2,
+      "12,12": 1,
+      "14,12": 2,
+      "16,11": 3,
+      "16,13": 4,
+      "18,11": 3,
+      "18,13": 5,
+      "20,11": 3,
+      "20,13": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 4,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "16,11,2,2",
+    "18,11,2,2",
+    "20,11,1,2",
+    "18,13,2,23",
+    "20,13,1,23",
+    "16,13,2,23",
+    "8,12,2,24",
+    "5,12,3,24",
+    "14,12,2,24",
+    "12,12,2,24",
+    "10,12,2,24"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "FGC_母版页",
+    "MobilePageName": "FGC_401页面_手机版",
+    "Title": "401页面",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "2e7e546e-a7f1-4e86-b8d4-dcb02575df77.png",
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "200,80",
+      "Size": "540,360"
+    }
+  ]
+}//A0RC6SpRSMOGT8CuNy9bRcjJ0w9QNt/B8SQIC1OWwb+hs1pQBnfmlLIaTO6Yedxe0z+6R1CcW98twHplXpc/JmRfzacOP60CadrNTmpsoSueSL7L/AkfGog0bMJrAMm7aho8BfLQBCi1Z3FMYH/gWqFhQYxU+jhsAZE4UEU8fZ4K8N4xKD0OOX5OkHuBPkm4RVWllEk0s4MVbzy8p/tfeMlZA0XBJ1+/qLKFIOXl/yrEjELHtUeZiBwzA7JIUXvjDo4JTp3ZyQQofddx+9tmMI8gtY/yfVEJ9XAOA8O4ZzZ/8SRfNLj+d/u9OFjpT8DMIFv32G1ah/PagGzDBBhHjPYUJR5TYXa8ctD8kYwbAsBN32NM14gVZDKNzRtP35YCaA3l9ak/bSzQY0PQA75yqIXduie2HfBG12XU+DKWGshldVFyf1He9W1Vv66Racr9bmgLaOFoKRQHNlfU3I+h1unZwNEYMD5RwDPwU/C26x2W5VQ4wbc2pHcWA1aQ8cS3ZgZgvIrtogSOY/Gh0DaKW/5GwMqPdjElnAyvMH+o+8O2o2Cvbct4gmtiwffVCcJcxDJOyqLkfqlN3L3iY+WA/itwPdU9VjMKcL6r5CwpBhtjVNgYuXg3kn2AmZngNRCDKM5n4qcjQFLAMU6scny3qKoTyRldi0cSlUQqKIAdkeIJCfu50o/vtk84tnUuE+sU01WN5ypULu6Yb8I1qzjLK98XLTVLx3j8io5ZuzA1y3VzyZ2CO4+99oZcm8ERE8l1bCHF6b1UxHs9mxEyGp7S2bjynsCoGMn0mex8x2uTa8DHz+t9odZsztBj2k1HbeGzKmtu8okqnq5IxV/1E6qn3j/kiyC4Q2A0uDTxcVGTJ+27j1G5bacCWtW1ynoCO6go5uBpowAmHtbfSmiBuQb75Q==|920

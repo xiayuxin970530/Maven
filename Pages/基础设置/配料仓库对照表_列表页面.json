@@ -1,0 +1,269 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 17
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 47.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 67.0
+        }
+      }
+    },
+    "Count": 18
+  },
+  "Values": {
+    "14,3": "关闭",
+    "14,11": "保存"
+  },
+  "AttachInfos": {
+    "1,3": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "配料仓库对照表",
+        "RowIndex": 1,
+        "ColumnIndex": 3,
+        "RowCount": 12,
+        "ColumnCount": 14,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AlwaysInEditMode": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "2,5": {
+      "BindingInfo": {
+        "TableName": "配料仓库对照表",
+        "ColumnName": "生产类型",
+        "GUID": "ce7fabb5-2492-47d2-ae1e-5292551acef5"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "2,8": {
+      "BindingInfo": {
+        "TableName": "配料仓库对照表",
+        "ColumnName": "仓库编码",
+        "GUID": "7edb4126-9117-46fb-a190-db64593277c6"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "2,11": {
+      "BindingInfo": {
+        "TableName": "配料仓库对照表",
+        "ColumnName": "范围",
+        "GUID": "fc5a14a5-edc8-4b0f-9621-34cbfa293aa1"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "Items": [
+          {
+            "Value": "全部",
+            "DisplayValue": "全部"
+          },
+          {
+            "Value": "原药",
+            "DisplayValue": "原药"
+          },
+          {
+            "Value": "助剂",
+            "DisplayValue": "助剂"
+          }
+        ]
+      }
+    },
+    "14,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "样式5"
+      }
+    },
+    "14,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "样式5"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Center",
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,5": 0,
+      "2,8": 0,
+      "2,11": 1,
+      "14,11": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,3,1,2",
+    "3,3,10,14",
+    "14,11,2,6",
+    "2,11,1,6",
+    "14,3,2,4",
+    "2,5,1,3",
+    "2,8,1,3",
+    "1,3,1,2",
+    "1,5,1,3",
+    "1,8,1,3",
+    "1,11,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Y+cb0aI5EIGyiY5cp3Zw6XUM9kB51j590v2UNd4Nr9wm3pcLcwqHcBi7EgoQT5foJ79UjmNRxDLebXO/DOHlJ+ZMBdHpgaAc9UHPx/ow1DtD1ix4ydf7MrWvxS+AosTVTUR2aWZ/jivXjhJAvwOTmyX+oC3s+EYGbfu5fxe5uSSoR9HPwemTrq3OyapkjbWVjmm8EkS0odbBuX1MsbLR8hZPHBE8OhGP38R41D3OiBfgkglm0JZ1W6xwmgxBRXQba2Fs4bx0k2EqGF0wZelgYRm4aHdQLbgrhlCpqrcjJ91ztlZpZE8xWAgF7ENmVijmUA0ss6s5of5I2I7ODBxRAT87zhLOOIy9iNGKt3ljlmNMDuSVKJUhjTOISFSvw7tX7WJCWC6CyeXcHLPkQV4ebQxq90hAJKGWTxz1PZWojif0KaQOLl0dkWNlDtB2aKVLrUxXAQjdPB9WbiUKoQkIBtxjZNwxhDOyCzqzKOrXzhSzptFIuTXGkLByb+04pzN2KSbDNcLy8+/xWQL27q5hoSy2/MPgElgv+ojCry165ASaMqDOhyPmJNFvuM6purlsFHWOcZg0mI9Ph8X1rEkw+pHtaIfYr9/SQo4+tvsfdK1Di0oaMzVkqW6y63lNGyXSqTaV9yG1UVMkFssSeVgQ3eyxfFfNXL+by6rq6zgqElBTKgj7Vi/BeQdPcFSB/cOlsViYbxeEHDrqmDXjWKvD4JvcAqrLyPNen0HBQKN1kxYcKP3CrAiEBMo3AP4gvwxjojVea5oJZsdduNgvDuEhCGtktuKQQzQWyQJQBSbDQ167oDedie62UFoDHS8IlEGJwk7c3Mqu7/J1jWeCohxyxjAr/3Uck0foBRUTWEqPhTXGN03t4Q6rvGLJNyu4fbxc0vr8Og5NYHCiUEWXfpe3BA==|920

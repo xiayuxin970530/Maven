@@ -1,0 +1,68 @@
+{
+  "Rows": {
+    "Count": 1,
+    "DefaultSize": 21.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 14.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 39.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 105.0
+        }
+      }
+    },
+    "Count": 5
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      },
+      "TemplateCellSource": "齐套可用"
+    },
+    "0,2": {
+      "TemplateCellSource": "仓库编码"
+    },
+    "0,4": {
+      "TemplateCellSource": "cWhName"
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 12.0,
+      "FontWeight": 1,
+      "HorizontalAlignment": 2
+    }
+  },
+  "Spans": [
+    "0,2,1,2",
+    "0,0,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "产品齐套分析"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//BPyL3OLRkiEb1aUvKw/ygDvLAGLzkW9B8DW1a2RLZkFnBFqzHWql3UapjY+Dv7TBbYAX0ECd/bI94sNy2WtfcuGVTyDRNEjQLXksMTrR5QDDUkuZOkIig5ezrT4wIpJXI6Nqsozifh9UZbsDs8/A5T8moPoE9OK9vmA8vAXc+2B3hrdrd/zZIbbN16s44dswViPqMJeCw8O8ou13g8JI+y/QuwxzkGAjXRooDg/a77LsF7BlInuHxxB/WLXzUq/1Lils3GGecAz9Manz+7pwIya4Csri+srArGjfFrRL/SUZANhaPEsWgQbxRIJ5AF6oa5RlloYaRkNhFfosflX18KQbL5ZTOZ+gjJZ/dPkpLquvL5Azu2p9wzk+WmQfKtL52vJUSd0LwiFcSz4lk/Y6Fv3PZKwPKDUH+bsiD+dbSjwKH45RZbBXNGy732oqNlXHLJQ6gj2LUW/Sg72f85NgqP+6s2ST0r9+VrSmEWkH/4KfaQFIKNWGZJEKUG0FoL4wEoB5SfVK5y3XIcaF8VYHD0LNCh7JA0v4AVBIDh3i6ybjOxNAzkSEpx9yovL6j+5Rikp+LLMyDf3AGz43pe/LgxSb6Q+cJOoVumbfD3sI3JVx6F6lJtuIc7yMoajuRyP7oGz2HvJPgJjJYgmfoLd7H4IPk090pBN+CwgY5PAMVZH3yku6lXUDMEVar9dmbIxShNp1pVkcB3up5HdV0fr67CtyKTnV+qgxnBrVndX7Kal1PnVZktqqMe0lb/FTieK9omE3IRSAQ9mYTN6vhBm8nVnfx7MWoBciHIlQ1DdbLXj17a2YiPZBy7ayScy+vV5h1XYbsK5CBpHndcK0yhKs/34PaDgE89DQYF1jM2dJVNDktAradF50GYliWdX713coPzliqqsxbrNzAOpdZCBEXg==|920

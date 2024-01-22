@@ -1,0 +1,418 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      3
+    ],
+    "Count": 4,
+    "DefaultSize": 5.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 43.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 16,
+    "DefaultSize": 12.0
+  },
+  "Values": {
+    "1,9": "余量"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='27d253e6a4494aef9f7effa4cb3c096'!D4"
+                      }
+                    ]
+                  },
+                  "value": "任务",
+                  "compareType": 10
+                },
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "车辆拣货任务",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='27d253e6a4494aef9f7effa4cb3c096'!B2"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=车辆拣货任务!M3"
+                        }
+                      },
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='27d253e6a4494aef9f7effa4cb3c096'!G2"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=车辆拣货任务!M5"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "f4c65074-b0e5-493b-8fb3-feaec5e6e345"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='27d253e6a4494aef9f7effa4cb3c096'!D4"
+                      }
+                    ]
+                  },
+                  "value": "删除",
+                  "compareType": 10
+                },
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "扫码记录",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='27d253e6a4494aef9f7effa4cb3c096'!B2"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=扫码记录!F3"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "ff6c6d86-a043-4e40-a93b-4409c066f59e"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "TemplateCellSource": "流水号"
+    },
+    "1,6": {
+      "TemplateCellSource": "cwhcode"
+    },
+    "1,11": {
+      "TemplateCellSource": "合计任务"
+    },
+    "3,3": {
+      "TemplateCellSource": "模式"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "WordWrap": true,
+        "Underline": true,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#FF0070C0",
+        "Center",
+        "Text 1 50",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 2,
+      "1,6": 3,
+      "1,7": 4,
+      "1,8": 4,
+      "1,9": 5,
+      "1,10": 4,
+      "1,11": 3,
+      "1,12": 4,
+      "1,13": 4,
+      "1,14": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "1,11,1,4",
+    "1,9,1,2",
+    "3,3,1,11",
+    "1,6,1,3",
+    "1,1,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "主页车号任务",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//eDIGfLAlRswHS7tQjydkc5Wd8IgHjHU5946tJ1NAd16NKdeFuO50RthVGd4OqDiLy1YN+zFPedMfH/S7GLFcv+qFXqlvBQ1+KtzrfHy7gILiA/gTcxf0UmieynVp7AI28Z9zVEggqtma4w4jynICgr+40aBlsFTiJ5oUhjusf/2FlR1I2jClfS6LFLQeP+cerayBWRUNJVSNdvocQ7zc7O/D/fP/6DsiDPp+n1i+IhFG51aMKgZ2Cmplp+vpVi1WxN1QPzcI/bNs/kvQyY3WPuUgpS2LxEdp0W6HurNtougg0LM2DVH1F5CiX6PJuIHClrGtkE0VPFvRa3HmU71cFJFlvPjmYqfw73yZrBO47muvetk3KBYOrJAiyp8Hc9ofsGrOJf5AWtx1jQlLWVFEkaTLBGrrmbBi6h4jk2Dl2Qa4jiH/54RXaxb9uO5Mc4HHg2mSo344Ggpu13Z7vhKdaMUkS3pKHhALHNbJGlkLv3a1cdOheCyPtDInc7hadjbbJfzXilidLhOY8U7OD8yBq947mD6B12uHD9kIOpvVVdbVFcmQ26NvbUw3FsYQHY692TG5RPki6dIIfL390avX7UtLUBjBjCU5aPMUguZVZX83ewPUJTZUVpCumWNoWqqsDWhCr+Q0OG08URcEGhSPWg5P6qhlzvsTfR7vpoiftISelV3xFpUYwp1AxdtUSiSgAO9TQvqzX7DzMgpSsQG7n07ARPLRSKr2fMMc//N3FBWNku7gfx84OYtbtV0LAHSA6oTHaQEeDQj0BCGdBwjdC/42/vgckMN9bp7JrWzT1f0m/RQm673IhVPRyeU7OO/6vm+Ky8PnHB9uXPyncI2kCOXmxswVM9pi4WQM/tBILvLAb5NzjUM/3eH+VBZaapReAxf/U9757FRI+0jaUJkNhA==|920

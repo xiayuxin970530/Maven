@@ -1,0 +1,53 @@
+{
+  "Name": "锁定库存汇总",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "CBATCH",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "合计占用",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "CINVCODE",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cwhcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "锁定库存汇总",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   p.CBATCH, CAST(SUM(p.有效数) - SUM(p.材料出库数) AS decimal(18, 4)) AS 合计占用, p.CINVCODE, p.cwhcode\r\nFROM      UFDATA_800_2018.dbo.PLMX AS p LEFT OUTER JOIN\r\n                UFDATA_800_2018.dbo.mom_orderdetail AS m ON p.MODID = m.MoDId\r\nWHERE   (ISNULL(m.Status, 3) = 3) AND (ISNULL(p.材料出库数, 0) < ISNULL(p.有效数, 0))\r\nGROUP BY p.CBATCH, p.CINVCODE, p.cwhcode",
+    "UserSetQueryColumns": [
+      "CBATCH",
+      "CINVCODE"
+    ],
+    "ViewInfo": {
+      "ViewName": "锁定库存汇总",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "CBATCH",
+        "CINVCODE"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

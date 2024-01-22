@@ -1,0 +1,34 @@
+{
+  "Name": "e签宝销售合同发起任务",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "ID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "发起流程ID",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "e签宝销售合同发起任务",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   ID, 发起流程ID\r\nFROM      dbo.合同模板主表\r\nWHERE   (接口状态 IS NULL) AND (发起状态 IS NULL OR\r\n                发起状态 = '')",
+    "ViewInfo": {
+      "ViewName": "e签宝销售合同发起任务",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

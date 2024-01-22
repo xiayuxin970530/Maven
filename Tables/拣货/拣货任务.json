@@ -1,0 +1,44 @@
+{
+  "Name": "拣货任务",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "dlautoid",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "dlcinvcod",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "任务数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "拣货任务",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   dlautoid, dlcinvcod, SUM(dlqty) AS 任务数\r\nFROM      dbo.PICKS\r\nGROUP BY dlautoid, dlcinvcod",
+    "UserSetQueryColumns": [
+      "dlautoid"
+    ],
+    "ViewInfo": {
+      "ViewName": "拣货任务",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "dlautoid"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

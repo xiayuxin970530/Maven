@@ -1,0 +1,111 @@
+{
+  "Name": "批次分配视图",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "InvCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "有效含量总使用",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cBatch",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "有效含量库存",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "实物库存",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "有效含量已用",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "本批纯度",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "AllocateId",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "MoDId",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "BaseQtyN",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "BaseQtyD",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "Define22",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "Define23",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "批次分配视图",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   a.InvCode, CASE WHEN isnull(Define22, '否') = '否' THEN a.Qty WHEN isnull(Define22, '否') \r\n                = '是' THEN a.Qty - isnull(d .非填充物料差额, 0) END AS 有效含量总使用, c.cBatch, c.iquantity AS 有效含量库存, \r\n                CASE WHEN isnull(c.inum, 0) = '0' THEN c.iquantity WHEN isnull(c.inum, 0) > '0' THEN inum END AS 实物库存,\r\n                    (SELECT   SUM(ISNULL(iQuantity, 0)) AS Expr1\r\n                     FROM      UFDATA_800_2018.dbo.CurrentStock AS w\r\n                     WHERE   (cInvCode = c.cInvCode) AND (ISNULL(cBatch, 0) < ISNULL(c.cBatch, 1)) AND (ISNULL(dVDate, 1) \r\n                                     <= ISNULL(c.dVDate, 1))) AS 有效含量已用, CASE WHEN isnull(c.iNum, 0) \r\n                = '0' THEN '1' WHEN c.iNum > '0' THEN c.iQuantity / ISNULL(c.iNum, c.iQuantity) END AS 本批纯度, a.AllocateId, \r\n                a.MoDId, a.BaseQtyN, a.BaseQtyD, a.Define22, a.Define23\r\nFROM      UFDATA_800_2018.dbo.mom_moallocate AS a LEFT OUTER JOIN\r\n                dbo.净可用库存 AS c ON a.InvCode = c.cInvCode LEFT OUTER JOIN\r\n                dbo.非填充物料扣减 AS d ON a.MoDId = d.MODID\r\nWHERE   (c.iquantity > '0') AND (a.MoDId > '1000036000') AND (a.Qty - ISNULL\r\n                    ((SELECT   SUM(iQuantity) AS Expr1\r\n                      FROM      UFDATA_800_2018.dbo.CurrentStock AS w\r\n                      WHERE   (cInvCode = c.cInvCode) AND (cBatch < c.cBatch) AND (ISNULL(dVDate, 1) < ISNULL(c.dVDate, 1))), 0) >= '0')",
+    "ViewInfo": {
+      "ViewName": "批次分配视图",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

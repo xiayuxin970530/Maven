@@ -1,0 +1,51 @@
+{
+  "Name": "车号未完成任务汇总",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "carcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "合计任务",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cwhcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "流水号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "车号未完成任务汇总",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   carcode, SUM(待扫码) AS 合计任务, cwhcode, 流水号\r\nFROM      dbo.扫码任务\r\nWHERE   (待扫码 > '0')\r\nGROUP BY carcode, cwhcode, 流水号",
+    "UserSetQueryColumns": [
+      "carcode"
+    ],
+    "ViewInfo": {
+      "ViewName": "车号未完成任务汇总",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "carcode"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

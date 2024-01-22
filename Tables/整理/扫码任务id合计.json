@@ -1,0 +1,50 @@
+{
+  "Name": "扫码任务id合计",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "contentID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "contentqty",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "标识出库比例",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "已扫描合计",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "扫码任务id合计",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  a.contentID, a.contentqty, a.标识出库比例, ISNULL(b.已扫描合计, 0) AS 已扫描合计\r\nFROM      dbo.任务绑定明细 AS a LEFT OUTER JOIN\r\n                       (SELECT  SUM(scanqty) AS 已扫描合计, contentid\r\n                        FROM       dbo.scandetail\r\n                        GROUP BY contentid) AS b ON a.contentID = b.contentid\r\nWHERE   (ISNULL(a.标识出库比例, 0) <> 1)",
+    "ViewInfo": {
+      "ViewName": "扫码任务id合计",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "contentid"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

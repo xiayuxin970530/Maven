@@ -1,0 +1,475 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "IsHidden": true
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      11,
+      12
+    ],
+    "Count": 13,
+    "DefaultSize": 26.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 90.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 15
+  },
+  "Values": {
+    "1,1": "物料流转卡",
+    "2,1": "产品",
+    "3,1": 12345,
+    "3,6": "编码",
+    "4,6": "名称",
+    "5,6": "数量",
+    "6,1": "批次",
+    "7,1": "库管",
+    "7,7": "日期",
+    "8,1": "整袋",
+    "8,5": "规格",
+    "8,9": "零头",
+    "9,1": "备注",
+    "11,6": "物料流转卡"
+  },
+  "AttachInfos": {
+    "1,6": {
+      "TemplateCellSource": "MoCode"
+    },
+    "2,6": {
+      "TemplateCellSource": "_cInvName"
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.BarcodeCellType, ServerDesignerCommon",
+        "CodeType": "QRCode"
+      },
+      "TemplateCellSource": "cbsysbarcode"
+    },
+    "3,8": {
+      "TemplateCellSource": "CINVCODE"
+    },
+    "4,8": {
+      "TemplateCellSource": "cInvName"
+    },
+    "5,8": {
+      "TemplateCellSource": "实物数"
+    },
+    "6,3": {
+      "TemplateCellSource": "CBATCH"
+    },
+    "8,3": {
+      "TemplateCellSource": "袋数"
+    },
+    "8,7": {
+      "TemplateCellSource": "单袋重"
+    },
+    "8,11": {
+      "TemplateCellSource": "余数"
+    },
+    "11,1": {
+      "TemplateCellSource": "MoCode"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 0,
+        "WordWrap": true,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontWeight": 2,
+        "HorizontalAlignment": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 3,
+        "HorizontalAlignment": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "black",
+        "Bold",
+        "0.0000_);[Red](0.0000)",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 2,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "2,1": 2,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 3,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "3,1": 2,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 2,
+      "3,7": 1,
+      "3,8": 4,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "4,1": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 2,
+      "4,7": 1,
+      "4,8": 4,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "5,1": 1,
+      "5,2": 1,
+      "5,3": 1,
+      "5,4": 1,
+      "5,5": 1,
+      "5,6": 2,
+      "5,7": 1,
+      "5,8": 5,
+      "5,9": 1,
+      "5,10": 1,
+      "5,11": 1,
+      "5,12": 1,
+      "5,13": 1,
+      "6,1": 2,
+      "6,2": 1,
+      "6,3": 4,
+      "6,4": 1,
+      "6,5": 1,
+      "6,6": 1,
+      "6,7": 1,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "7,1": 2,
+      "7,2": 1,
+      "7,3": 2,
+      "7,4": 1,
+      "7,5": 1,
+      "7,6": 1,
+      "7,7": 2,
+      "7,8": 1,
+      "7,9": 2,
+      "7,10": 1,
+      "7,11": 1,
+      "7,12": 1,
+      "7,13": 1,
+      "8,1": 2,
+      "8,2": 1,
+      "8,3": 2,
+      "8,4": 1,
+      "8,5": 2,
+      "8,6": 1,
+      "8,7": 2,
+      "8,8": 1,
+      "8,9": 2,
+      "8,10": 1,
+      "8,11": 2,
+      "8,12": 1,
+      "8,13": 1,
+      "9,1": 2,
+      "9,2": 1,
+      "9,3": 2,
+      "9,4": 1,
+      "9,5": 1,
+      "9,6": 1,
+      "9,7": 1,
+      "9,8": 1,
+      "9,9": 1,
+      "9,10": 1,
+      "9,11": 1,
+      "9,12": 1,
+      "9,13": 1,
+      "10,1": 6,
+      "10,2": 6,
+      "10,3": 6,
+      "10,4": 6,
+      "10,5": 6,
+      "10,6": 6,
+      "10,7": 6,
+      "10,8": 6,
+      "10,9": 6,
+      "10,10": 6,
+      "10,11": 6,
+      "10,12": 6,
+      "10,13": 6,
+      "11,1": 6,
+      "11,6": 6,
+      "11,11": 6,
+      "11,12": 6,
+      "11,13": 6
+    },
+    "RowStyles": {
+      "2": 7,
+      "3": 7,
+      "4": 8,
+      "5": 7,
+      "6": 7,
+      "7": 7,
+      "8": 7,
+      "9": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "3,1,3,5",
+    "3,6,1,2",
+    "3,8,1,6",
+    "4,6,1,2",
+    "4,8,1,6",
+    "5,6,1,2",
+    "5,8,1,6",
+    "6,1,1,2",
+    "6,3,1,11",
+    "7,1,1,2",
+    "7,3,1,4",
+    "7,7,1,2",
+    "7,9,1,5",
+    "8,1,1,2",
+    "8,7,1,2",
+    "9,1,1,2",
+    "9,3,1,11",
+    "11,1,1,5",
+    "11,6,1,5",
+    "8,3,1,2",
+    "8,5,1,2",
+    "8,9,1,2",
+    "8,11,1,3",
+    "1,1,1,5",
+    "1,6,1,8",
+    "2,1,1,5",
+    "2,6,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "打印物料流转卡",
+    "PageResponsiveMode": 1
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//HMu6JNoaxS1nk2OiVXkuqc24qf+N9hc4pM4WW1w/twvwv/KjgPpYp4PO0iF1rnz8WNUlxGIaJjOk8uB/AGbm4lHtjiRgYMTXuFasX/Om3auoXCF7+PZXNeL55sCLCWlEvlG3qwNRbX7OFPDYDhsMitkwCn1diQ8+km7hd5U03nypnWZ8qNV6yW56G0iwthWsS+rPc080wBx3QUKsRHTZc9VifMVeBnil70GOtSJEPpBuGjFX44DzXFB7jn4tzfdcfwiYnJioGQp3ESDaE/JVtqdpUQqfg+OafsJGFwbObXPAjGt3bv4OWNSJl5DIHr/2Gxa9T5X3eoLkLlisd/8UaD7idOhJuIEKamFsPn0QS+fH2UgkxfFvPO1DYzWCS7YIAmjfTQSV2V7lxjxBevG5ozYWHMOyKoCwOqnfqTwJHx6SvwC8IA6KqX46aHPk3KvW8Mt8eSYwPLhueftEhb1z88Er2rdyFqYVRR3+mOOPyJEniw0iBLYYXTp7SZkFQ1JJAA1nAUzhbCwvjNqjtrmlm0MMIh06LKSg+TqSkvxbmiHq/dAbvW1leOOYJ+xMS/Y0YGgh4M7oQsu1i+v2JmvsTbDxLLIU4rjKVyJ1p/4uhfExwL3QOYoJ/S5REqBZov3BadZMoB+Yjdol8MzlN9fn9PMPf44FLk4DduxzipYupx7Jbe8oJl33x+iAnli0iVUdkKzJ3r24kh8NIVMC0eay0cIB2gy7TjgsQlwbiscFA+eAquPumh3rZ9n2lAyJj8wAQKmYygz+nEdQ+/UazkNwTNzFvYnpEwrPQag8gooSVFl9s2DjE4XPIobO4LwjfO+Ya9Q5A0F+gHjtb3EKYgpffPaCmiIL6Cs5JXdvr7KDfByAiPS58lvKHxnDeOKl1dFS6GCSZoa2c8Ako/7ogc7Bag==|920

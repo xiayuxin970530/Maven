@@ -1,0 +1,38 @@
+{
+  "Name": "核销后已扫描总数",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "scandid",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "已扫描总数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "核销后已扫描总数",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   scandid, SUM(核销数量) AS 已扫描总数\r\nFROM      dbo.发货拣货核销表\r\nGROUP BY scandid",
+    "UserSetQueryColumns": [
+      "scandid"
+    ],
+    "ViewInfo": {
+      "ViewName": "核销后已扫描总数",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "scandid"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

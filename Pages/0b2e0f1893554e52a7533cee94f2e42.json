@@ -1,0 +1,92 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 3,
+    "DefaultSize": 5.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 11.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 84.0
+        }
+      }
+    },
+    "Count": 6
+  },
+  "AttachInfos": {
+    "1,1": {
+      "TemplateCellSource": "cWhName"
+    },
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1
+      },
+      "TemplateCellSource": "委外可用"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0,
+        "FontWeight": 0
+      },
+      {
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,3": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "1,1,1,2",
+    "1,3,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "委外配料"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//RO3ec09Xg5d78PmljHd+i8ZM78MwlIH3MfMsl6IH0h7yC5C2QZdbk47+whLH77ENQyLk+w9/F0+4ow2JXLfhLT8kpNsli19dVrUJJylRiZZKDW7TqD3+3Xi6/PEm6G+o8Y+RFbzz6jyvUBvk//R7pv08yZyXe0RW6Z9Q21W0zWhSZRAOlQktMlCFYemDt/85B+GAqHvLELVVfPkhgoJuO6lc888Pn5Not8fZ0U2OmcNtoG9FH2c9vYG+UX38E1kWQ1OP7bnd2Dskj4qOf1fB5HIzkPG/2WSLg8TkzbyMwPA0SAu86hT11CzESs70eSgC8mBjDzHP+iV5PiVwyQGJz6ADMJojtvRqEQyiW9ACkikeT6Qq8F85nfi69oFIur0SCwFUOTd1/8S9MEaknRR2Sa2TVIlUlXGmR0vHjHWIOLw/OXF6OZw91zyzyPoEi//WOZ4RtSoVXJP+dedFhZju9WfJ9j4uX1qXD9cRQDmKcQvpc3hjD1Y+ArY3TnmD1xZaIvo03sLhwk+ouSw/j9M0ML9ULqXHQFLWoYj6ZZxBWeXqBkETHD7TtioCsRoB61GMHFP67gCiez87WLJcLRtWrMGwDuDqFbvvQBAAJApMJu1Uyqimc8+NzoASxjP84B3RFSqdu5dKldOvXcP/i3L9GUAyFxSlU+Yuet6WeKvxBpPO4gVFj3zIThoQueD3lhCw9sVQficOVL8nZvwzfKwdH3NvSNQnKbPUhgBFkkE+STZeSWDIfaG3zbP/AviL/k2iC0LLFGk0G407BRtb61PxzUYK9Oq0YT99MMVBvCoa6+FfrZqmUcPSUxqG/QZqgCncORCEOt7T7ExdYA/NR48SMeDJvDYpsc/DDnCy7E6Qf3NuZCdjnMB2r3TxHRl+olrLvUJtRdGjasI4kZzbVgTMpQ==|920

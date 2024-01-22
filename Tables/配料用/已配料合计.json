@@ -1,0 +1,51 @@
+{
+  "Name": "已配料合计",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "批次有效合计",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "ALID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "批次实物合计",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "是否填料",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "已配料合计",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  SUM(有效数) AS 批次有效合计, ALID, SUM(实物数) AS 批次实物合计, 是否填料\r\nFROM      UFDATA_800_2018.dbo.PLMX AS p\r\nWHERE   (生产订单状态 = 3)\r\nGROUP BY ALID, 是否填料",
+    "UserSetQueryColumns": [
+      "ALID"
+    ],
+    "ViewInfo": {
+      "ViewName": "已配料合计",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "ALID"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

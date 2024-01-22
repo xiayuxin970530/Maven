@@ -1,0 +1,26 @@
+{
+  "Name": "同步存货档案",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 50.0,
+      "TimeUnit": 1,
+      "StartDateTime": 44841.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "U8存货档案同步",
+      "DisplayNameInDesigner": "[dbo].[U8存货档案同步]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "f152ed2e6e8b4f799c873b1aa56446c5"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Name": "验料任务合计",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "MoCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "任务数",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "验料任务合计",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  MoCode, COUNT(cbsysbarcode) AS 任务数\r\nFROM      dbo.验料任务表\r\nGROUP BY MoCode",
+    "UserSetQueryColumns": [
+      "MoCode"
+    ],
+    "ViewInfo": {
+      "ViewName": "验料任务合计",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "MoCode"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

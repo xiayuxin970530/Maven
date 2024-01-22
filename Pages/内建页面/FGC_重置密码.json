@@ -1,0 +1,208 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      }
+    },
+    "Count": 29
+  },
+  "Cols": {
+    "Count": 47
+  },
+  "Values": {
+    "5,12": "重置密码",
+    "8,14": "请谨慎保存您的新密码",
+    "11,19": "*",
+    "12,18": "新密码",
+    "16,19": "*",
+    "17,18": "再次输入新密码",
+    "21,25": "重置",
+    "21,30": "取消重置"
+  },
+  "AttachInfos": {
+    "11,22": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1",
+        "ForguncyAttribute": "ResetPassword_NewPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "16,22": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "样式1",
+        "ForguncyAttribute": "ResetPassword_ConfirmPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "21,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "重置",
+        "AutoExecute": true,
+        "TemplateKey": "样式5",
+        "ForguncyAttribute": "ResetPassword_Button"
+      }
+    },
+    "21,30": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "取消重置"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 37.33333206176758,
+        "Foreground": 0
+      },
+      {
+        "Foreground": 0
+      },
+      {
+        "Foreground": 1,
+        "VerticalAlignment": 2,
+        "Underline": null,
+        "Strikethrough": null
+      },
+      {
+        "Formatter": 3
+      },
+      {
+        "FontSize": 14.0,
+        "Foreground": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontSize": 14.0,
+        "FontWeight": 6
+      },
+      {
+        "FontSize": 14.0,
+        "FontWeight": 6,
+        "Foreground": 7,
+        "HorizontalAlignment": 8
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 25",
+        "#FFFF0000",
+        "Top",
+        "@",
+        "Text 1 35",
+        "Right",
+        "Bold",
+        "Accent 1 0",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "5,12": 0,
+      "8,14": 1,
+      "11,19": 2,
+      "11,22": 3,
+      "12,18": 4,
+      "16,19": 2,
+      "16,22": 3,
+      "17,18": 4,
+      "21,25": 5,
+      "21,30": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 9,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "5,12,3,23",
+    "11,22,3,12",
+    "16,22,3,12",
+    "21,25,2,5",
+    "21,30,2,5",
+    "8,14,2,20",
+    "11,19,2,1",
+    "16,19,2,1"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "FGC_母版页",
+    "MobilePageName": "FGC_重置密码_手机版",
+    "Title": "重置密码",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "3f3472c7-d700-4840-869e-07837142e4f7.png",
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "200,80",
+      "Size": "540,360"
+    }
+  ]
+}//xAkR2geL7dC5dSHMkKls4Aq3BEzC7q1zaGtXJ2BX+TlSmHv7ByrM5wAaooT2xd3g2W3hAhBIou2zDa3a/4V5Ekr/KUd2U7dxw9GF4Uja3hLbQNBLgegtUcKGoDnfbICcUw9sjivgYOnrkx3aZU1cpvoPDPSE5Ig+bSbxABYU5bm+L2eDGiTN+Ugzj6RsyOn4yGalfRL9r2N/OEmg2uNPt8N34DuqmE281NAwrXX5QaNNy55ASsbDkg/bRfOkDJG8IzC+Hw5kZrLCeGPTqWLafcoOCQ3Ne9GIDsgauH97WhTeQUAVku2qeYRlpSOqGIses/G4Ud58qxBz0VwPyQX7BWT5f1gD1WGfmMDNuR4sxfnYdGn/w6lqDSs/64l56GrjLJoZQtChBzkfAoK6jfbA94Qb4mKndzGy7ovB3pIGRFFFxN9/Y1l+qnLKruBj6NBEF93qAmJSrFoR5S77zJ5AES6lawuBzfsMeO1lmAy1ejin9fgocrT52KLuT+yN5PE+LDvbOZw1Uy3b+Ui5pxJpFKmGWi0KYVL6qjoDw6KQ9YeLFMBTUkG88ytyof52ilDsAAb8TizLM3O5gG+81A3uegHIulWe4FRJz89itmvu4jgfCcLvhs6N+vrmilPllPNtYT0OeW1fx/rwFJCQ5UNUW9AqfiGlR75rRaB/vx20nc2scubSlWIARQT/K4W5zJ/oIf8BJvQTah78USFUyzKV3gxtiDYZqoe7GMc37HmyPe1q5lbjgHgVYHqy+6zxPUvtwarM0NUJzS/xMrZjuliJriP8RtslXoE0ChKVD9get8LxfKTgyMBltpqRoom5ODgl9qKu15qoWEyTaXjOehO0IyJep5gZwuewux2f4E/hBSInyeSnQgZi2J9i3Z7O8BzK/kAdTV1f8ZKGYtceNC8tNw==|920

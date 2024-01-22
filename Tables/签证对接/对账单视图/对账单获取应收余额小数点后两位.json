@@ -1,0 +1,34 @@
+{
+  "Name": "对账单获取应收余额小数点后两位",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "任务主表id",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "应收余额",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "对账单获取应收余额小数点后两位",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   任务主表id, CAST(ISNULL(SUM(期初金额), 0) + ISNULL(SUM(金额), 0) - ISNULL(SUM(回款金额), 0) AS decimal(18, 2)) \r\n                AS 应收余额\r\nFROM      dbo.任务子表\r\nGROUP BY 任务主表id",
+    "ViewInfo": {
+      "ViewName": "对账单获取应收余额小数点后两位",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "任务主表id"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

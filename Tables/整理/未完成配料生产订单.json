@@ -1,0 +1,51 @@
+{
+  "Name": "未完成配料生产订单",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "MoDId",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "状态",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "未完成配料生产订单",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT DISTINCT MoDId, '未完成' AS 状态\r\nFROM      dbo.应领配料出库明细\r\nWHERE   (ABS(未配料) > '0.0001')",
+    "UserSetQueryColumns": [
+      "MoDId"
+    ],
+    "ViewInfo": {
+      "ViewName": "未完成配料生产订单",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "MoDId"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": [
+    {
+      "PrimarySchema": null,
+      "PrimaryTable": "生产订单视图",
+      "PrimaryColumn": "MoDId",
+      "ForeignSchema": null,
+      "ForeignTable": "未完成配料生产订单",
+      "ForeignColumn": "MoDId",
+      "RelationTypeOnDelete": 0,
+      "RelationTypeOnUpdate": 0,
+      "IsDetailTableRelation": false
+    }
+  ]
+}

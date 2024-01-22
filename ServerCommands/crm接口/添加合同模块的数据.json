@@ -1,0 +1,2052 @@
+{
+  "Name": "添加合同模块的数据",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_Anonymous",
+                "FGC_LoginUser",
+                "Administrator"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "签约时间",
+          "TestData": "2023/10/13"
+        },
+        {
+          "Name": "乙方客户名称",
+          "TestData": "诏安县咏蒂农药店"
+        },
+        {
+          "Name": "所属公司"
+        },
+        {
+          "Name": "收款账户"
+        },
+        {
+          "Name": "开户行"
+        },
+        {
+          "Name": "区域",
+          "TestData": "福建省漳州市诏安县"
+        },
+        {
+          "Name": "品牌",
+          "TestData": "潍坊双星"
+        },
+        {
+          "Name": "乙方法人",
+          "TestData": "沈永提"
+        },
+        {
+          "Name": "甲方代表人"
+        },
+        {
+          "Name": "法人电话",
+          "TestData": "13709329833"
+        },
+        {
+          "Name": "对账联系人",
+          "TestData": "沈永提"
+        },
+        {
+          "Name": "对账联系人电话",
+          "TestData": "13709329833"
+        },
+        {
+          "Name": "对账人微信",
+          "TestData": "18159704885"
+        },
+        {
+          "Name": "对账邮寄地址",
+          "TestData": "福建省漳州市诏安县太平镇科下村"
+        },
+        {
+          "Name": "乙方指定收货人",
+          "TestData": "沈永提"
+        },
+        {
+          "Name": "指定收货人电话",
+          "TestData": "13709329833"
+        },
+        {
+          "Name": "最迟结账日期",
+          "TestData": "10月31日"
+        },
+        {
+          "Name": "乙方户名",
+          "TestData": "沈永提"
+        },
+        {
+          "Name": "乙方账号",
+          "TestData": "6230361108003443828"
+        },
+        {
+          "Name": "乙方开户行",
+          "TestData": "福建省诏安县信用联合社太平信用社"
+        },
+        {
+          "Name": "合同有效开始日期",
+          "TestData": "2023/10/13"
+        },
+        {
+          "Name": "合同有效结束日期",
+          "TestData": "2024/11/30"
+        },
+        {
+          "Name": "业务代表",
+          "TestData": "刘磊"
+        },
+        {
+          "Name": "业务员手机号",
+          "TestData": "15753663783"
+        },
+        {
+          "Name": "乙方地址",
+          "TestData": "福建省漳州市诏安县太平镇科下村"
+        },
+        {
+          "Name": "法定代表人",
+          "TestData": "沈永提"
+        },
+        {
+          "Name": "授权代表人",
+          "TestData": "沈永提"
+        },
+        {
+          "Name": "授权代表人手机号",
+          "TestData": "13709329833"
+        },
+        {
+          "Name": "乙方接收人",
+          "TestData": "沈永提"
+        },
+        {
+          "Name": "接收人手机",
+          "TestData": "13709329833"
+        },
+        {
+          "Name": "乙方电话",
+          "TestData": "13709329833"
+        },
+        {
+          "Name": "合同id",
+          "TestData": "2988720439296741"
+        },
+        {
+          "Name": "正常1月",
+          "TestData": "1"
+        },
+        {
+          "Name": "正常2月",
+          "TestData": "2"
+        },
+        {
+          "Name": "正常3月",
+          "TestData": "3"
+        },
+        {
+          "Name": "正常4月",
+          "TestData": "4"
+        },
+        {
+          "Name": "正常5月",
+          "TestData": "5"
+        },
+        {
+          "Name": "正常6月",
+          "TestData": "6"
+        },
+        {
+          "Name": "正常7月",
+          "TestData": "7"
+        },
+        {
+          "Name": "正常8月",
+          "TestData": "8"
+        },
+        {
+          "Name": "正常9月",
+          "TestData": "9"
+        },
+        {
+          "Name": "正常10月",
+          "TestData": "10"
+        },
+        {
+          "Name": "正常11月",
+          "TestData": "11"
+        },
+        {
+          "Name": "正常12月",
+          "TestData": "12"
+        },
+        {
+          "Name": "正常1月回款率",
+          "TestData": "40%"
+        },
+        {
+          "Name": "正常2月回款率",
+          "TestData": "40%"
+        },
+        {
+          "Name": "正常3月回款率",
+          "TestData": "40%"
+        },
+        {
+          "Name": "正常4月回款率",
+          "TestData": "45%"
+        },
+        {
+          "Name": "正常5月回款率",
+          "TestData": "55%"
+        },
+        {
+          "Name": "正常6月回款率",
+          "TestData": "65%"
+        },
+        {
+          "Name": "正常7月回款率",
+          "TestData": "75%"
+        },
+        {
+          "Name": "正常8月回款率",
+          "TestData": "85%"
+        },
+        {
+          "Name": "正常9月回款率",
+          "TestData": "90%"
+        },
+        {
+          "Name": "正常10月回款率",
+          "TestData": "100%"
+        },
+        {
+          "Name": "正常11月回款率",
+          "TestData": "100%"
+        },
+        {
+          "Name": "正常12月回款率",
+          "TestData": "40%"
+        },
+        {
+          "Name": "约定类型",
+          "TestData": "正常"
+        },
+        {
+          "Name": "指定收货地址",
+          "TestData": "福建省漳州市诏安县太平镇科下村"
+        },
+        {
+          "Name": "子表信息",
+          "TestData": "[\r\n        {\r\n            \"数量\": 0.0,\r\n            \"产品名称\": \"25%大黄风SC\",\r\n            \"规格\": \"500克*20瓶\"\r\n        },\r\n        {\r\n            \"数量\": 0.0,\r\n            \"产品名称\": \"25%茶无战SC\",\r\n            \"规格\": \"200克*40瓶\"\r\n        },\r\n        {\r\n            \"数量\": 0.0,\r\n            \"产品名称\": \"Y20%战四方EW\",\r\n            \"规格\": \"500克*20瓶\"\r\n        }\r\n    ]"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+          "TryCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "合同id是否存在",
+                "TableValue": {
+                  "TableName": "合同模板主表",
+                  "TableValueType": 3,
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "合同模板主表",
+                      "ColumnName": "crm合同id",
+                      "GUID": "5394e341-a23d-4057-9b66-924534337d70"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=合同id"
+                    }
+                  }
+                },
+                "ID": "6705953f92554922b3e8ecca511dfb4c"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "获取公司类型",
+                "TableValue": {
+                  "TableName": "获取700和800中对账单和发货回执单接收人",
+                  "OnlyGetValue": true,
+                  "TableValueType": 0,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "获取700和800中对账单和发货回执单接收人",
+                        "ColumnName": "cCusDefine9",
+                        "GUID": "89b236b5-e4b7-49ce-ab10-04beffa7ae86"
+                      },
+                      "ColumnName": "cCusDefine9"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "获取700和800中对账单和发货回执单接收人",
+                      "ColumnName": "cCusName",
+                      "GUID": "f7db9be1-5891-4462-bd8a-45d6a366a557"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=乙方客户名称"
+                    }
+                  },
+                  "TopCount": "1"
+                },
+                "ID": "eeae1d285fbd410c8369b3dab4729d82"
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=合同id是否存在"
+                        }
+                      },
+                      "value": "0"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "合同模板主表",
+                        "UpdateType": "add",
+                        "ShowConfirm": false,
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "签约时间",
+                              "GUID": "0cb483ae-18e0-460d-a6a9-8403c1aa3b90"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=签约时间"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方名称",
+                              "GUID": "72b02078-6d7b-4319-be6a-f47d2d42cd1f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方客户名称"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "区域",
+                              "GUID": "a716a3c2-8d28-4dd3-b195-ccb7cf223da3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=区域"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "品牌",
+                              "GUID": "92ff5d24-f444-4046-aeeb-14118fcccd7c"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=品牌"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方法人名称",
+                              "GUID": "23d837b7-0ca5-4c9c-9a9f-85ab9d29592a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方法人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方法人电话",
+                              "GUID": "2a78bc2c-8b69-41ad-bd70-ced1e013494e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=法人电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方对账联系人",
+                              "GUID": "c1edbf2e-9e52-4d42-b4f4-933bddfe7f3e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=对账联系人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方对账联系人电话",
+                              "GUID": "4676d05a-6d74-44d2-9ea9-bd73770e2830"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=对账联系人电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "对账联系人微信",
+                              "GUID": "2ea8bd85-631a-4484-9b7e-472acce08c0f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=对账人微信"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "对账单邮寄地址",
+                              "GUID": "bdcd63f3-c206-4118-84d3-4df8105d91d0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=对账邮寄地址"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方收货人员",
+                              "GUID": "46709dc5-938f-4419-8293-92f401791f15"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方指定收货人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "收货人员联系方式",
+                              "GUID": "5fd59645-bd68-4426-a36e-9ff592b7e60f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=指定收货人电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "最迟结账时间",
+                              "GUID": "8a5e1b55-13fc-4f77-ad49-0aea1cbc374b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=最迟结账日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方户名",
+                              "GUID": "cec64649-9fd2-4dec-907a-f5faec437e83"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方户名"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方账号",
+                              "GUID": "a1be956b-275e-4b59-9b2b-0c878d08e396"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方账号"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方开户行",
+                              "GUID": "222edc6d-3e49-4e32-9b4e-fb2dba465306"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方开户行"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "合同有效期开始日期",
+                              "GUID": "5c061e1b-34b6-4da8-ad66-3542fecc1aac"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同有效开始日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "业务员名称",
+                              "GUID": "2b5de84a-cca4-4441-b873-20863ed01282"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=业务代表"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "业务员手机号",
+                              "GUID": "52cb55e4-94d5-4f67-8dfa-5cb5f22b2d30"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=业务员手机号"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方地址",
+                              "GUID": "affa5425-9858-4dc1-8ae0-aad6e19f92f0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方地址"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "法定代表人",
+                              "GUID": "490f85a7-95b6-4fa8-9510-7520fb1bcf25"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=法定代表人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "授权代表",
+                              "GUID": "c6ab40a0-c6cf-47a8-856d-5265fe9e4dab"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=授权代表人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "电话",
+                              "GUID": "3cb2504c-81af-4015-a69a-dd77e0a3a300"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "签章标识",
+                              "GUID": "35314fe0-8118-4754-8541-1b260f56bee7"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "crm合同id",
+                              "GUID": "aed92cb1-bd3e-46fc-b286-11189e7705bd"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同id"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "合同有效结束日期",
+                              "GUID": "ebf3f7f1-a281-472f-b613-c1af00e28ee9"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同有效结束日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度1",
+                              "GUID": "5b79580d-d9a4-4831-9fd1-199b6f2fcf7b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常1月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度2",
+                              "GUID": "9d67c421-5c7c-42cb-9772-1e022755afdc"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常2月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度3",
+                              "GUID": "7f9a0518-4f61-4f7f-ab59-be69dbdb9895"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常3月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度4",
+                              "GUID": "856f4309-b97d-43a1-a082-7c732275cb32"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常4月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度5",
+                              "GUID": "08a97617-258b-4f72-b720-0818e5af9a26"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常5月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度6",
+                              "GUID": "95f4471a-e0b1-4618-b3fb-59d0b4cc6134"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常6月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度7",
+                              "GUID": "4775e8c1-8a74-48cf-82c4-7c159b6d8338"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常7月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度8",
+                              "GUID": "d52d41e8-477b-4f14-aee9-f82e7d0bb30a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常8月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度9",
+                              "GUID": "efb8b0c1-824f-477e-bbbd-b32856d2461e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常9月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度10",
+                              "GUID": "0ee94fed-a048-4693-9eed-251f2c36d9c3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常10月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度11",
+                              "GUID": "6064f46e-84f2-4a93-95c7-916296886e4f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常11月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度12",
+                              "GUID": "0beb0a5e-18b9-4e26-8e5b-8e32407c6565"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常12月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常1月回款率",
+                              "GUID": "129b7c1a-f18f-4258-9e04-7f6a6810f220"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常1月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常2月回款率",
+                              "GUID": "12d1e56e-c2c8-48e9-8ac0-9186d7335ce1"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常2月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常3月回款率",
+                              "GUID": "f33a0e22-4db4-47e4-b71e-105663a062d4"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常3月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常4月回款率",
+                              "GUID": "f15ca451-51bc-403a-a81d-4976d48efe83"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常4月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常5月回款率",
+                              "GUID": "37a6f6d1-ad61-44fc-aac5-d5a3d6d7052a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常5月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常6月回款率",
+                              "GUID": "3a6bbf50-93f6-491d-b94a-c74f0ac246b0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常6月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常7月回款率",
+                              "GUID": "4f7faeca-42e3-45b4-a223-6a4a4678bdf3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常7月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常8月回款率",
+                              "GUID": "a82f39a5-b690-4534-bcd9-9ceb45811d26"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常8月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常9月回款率",
+                              "GUID": "8d6b9acd-803a-4d4d-83a6-50430009a355"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常9月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常10月回款率",
+                              "GUID": "2d0900a6-76f5-479c-988c-03fb3a409d44"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常10月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常11月回款率",
+                              "GUID": "4ab9cf3c-2b1f-4da7-bed6-399c393fdde3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常11月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常12月回款率",
+                              "GUID": "e589a9bb-90f8-4941-acd2-87454778362e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常12月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "约定类型",
+                              "GUID": "e2bdc8dd-e593-475d-ae55-1846a379f35b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=约定类型"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "指定收货地址",
+                              "GUID": "fc25137e-998b-4786-b881-9d2130ef4a9e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=指定收货地址"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "授权代表人手机号",
+                              "GUID": "86ff1e34-33c3-4c88-99c7-cb598e90398f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=授权代表人手机号"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "公司类型",
+                              "GUID": "b7a559d9-8175-4fb9-8bd5-4460f5d3ef91"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取公司类型"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方接收人",
+                              "GUID": "e52f21f4-5f83-433a-82c8-a5e7e95be8dc"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方接收人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方接收人手机号",
+                              "GUID": "48640d2f-1722-484e-8cc1-ddd901cb9a20"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=接收人手机"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "所属公司",
+                              "GUID": "4ceb035f-78c6-43be-abce-d75c3ae7c26c"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=所属公司"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "甲方收款账户",
+                              "GUID": "da45ec35-a69a-4ac6-9c9b-68d48ed42d50"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=收款账户"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "开户行",
+                              "GUID": "efe8be36-8ade-434b-a776-24c18a80c763"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=开户行"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "甲方法定代表人",
+                              "GUID": "cf3d4318-ba65-4602-a061-079cbaadb99b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=甲方代表人"
+                            }
+                          }
+                        ],
+                        "ParamNameToSaveNewRowValue": "主键id"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "获取主表ID",
+                        "ParameterValue": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=主键id.ID"
+                        },
+                        "ID": "8d3fc00ca9da400fb2059bed99bd2186"
+                      },
+                      {
+                        "$type": "GETPOST.程序类.程序_延时, GETPOST",
+                        "CanShu": "5000"
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON反序列化, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=子表信息"
+                        },
+                        "FanHuiMsg": "反序列子表信息"
+                      },
+                      {
+                        "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                        "LoopInfo": {
+                          "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                          "LoopCount": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=反序列子表信息"
+                          },
+                          "LoopItemParamName": "Item"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "合同模板子表",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "合同模板子表",
+                                  "ColumnName": "主表ID",
+                                  "GUID": "0c3caf70-6ea5-479a-b117-635df4c49603"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=获取主表ID"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "合同模板子表",
+                                  "ColumnName": "产品名称",
+                                  "GUID": "11144569-c0bc-4877-9369-e6c12dc63f6e"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.产品名称"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "合同模板子表",
+                                  "ColumnName": "规格",
+                                  "GUID": "58f25f59-adc0-4cd2-b240-33570d7d7f6e"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.规格"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "合同模板子表",
+                                  "ColumnName": "数量",
+                                  "GUID": "da7cdfea-8661-4a14-a4e3-7c3cbd08c075"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.数量"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                        "ErrorCode": "0",
+                        "Message": "添加成功！",
+                        "CustomReturns": [
+                          {
+                            "ReturnPropertyName": "主键id",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取主表ID"
+                            }
+                          },
+                          {
+                            "ReturnPropertyName": "合同id是否存在",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同id是否存在"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "ID": "c5a6927a-c068-4c3f-9eeb-ba6de3827ebf"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "主表的id",
+                        "TableValue": {
+                          "TableName": "合同模板主表",
+                          "OnlyGetValue": true,
+                          "TableValueType": 0,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "合同模板主表",
+                                "ColumnName": "ID",
+                                "GUID": "9f82dd67-ff02-45fc-a039-cc63c4396933"
+                              },
+                              "ColumnName": "ID"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "crm合同id",
+                              "GUID": "85ac48a8-d707-4d57-afa3-ad42384296a5"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同id"
+                            }
+                          }
+                        },
+                        "ID": "17ef600ad48e434e99e0ae92ccdef072"
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "合同模板主表",
+                        "ShowConfirm": false,
+                        "RowsToUpdate": 1,
+                        "RowsToUpdateCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "合同模板主表",
+                            "ColumnName": "ID",
+                            "GUID": "7690b7ad-4dc9-4854-8eeb-cc3e7c14db5c"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=主表的id"
+                          }
+                        },
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "签约时间",
+                              "GUID": "3e742dee-cb79-4a4a-ba4a-30dda048a551"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=签约时间"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方名称",
+                              "GUID": "9c3df54f-3f75-4cb4-b1e6-0aa7e6c05a1a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方客户名称"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "区域",
+                              "GUID": "98c612db-5c32-4df8-b7f8-fb004942f2f2"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=区域"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "品牌",
+                              "GUID": "588990f1-d34e-494f-ac5c-ae978e4ee813"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=品牌"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方法人名称",
+                              "GUID": "16f442d1-5173-4e1d-bfe0-ff0bd842faa9"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方法人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方法人电话",
+                              "GUID": "476c8e76-d455-4c6e-9e58-459f95921392"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=法人电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方对账联系人",
+                              "GUID": "bc68ada9-22f4-44f1-9247-81e67aecec09"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=对账联系人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方对账联系人电话",
+                              "GUID": "3f3cd23e-5e30-4721-b140-73e688ad1bd3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=对账联系人电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "对账联系人微信",
+                              "GUID": "ad5c6820-855a-4cb2-b9b7-7aedaaeafa4e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=对账人微信"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "对账单邮寄地址",
+                              "GUID": "ecdda762-144e-4285-8dde-1744b1ec487d"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=对账邮寄地址"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方收货人员",
+                              "GUID": "37c47be1-dd21-46af-bcad-38fb2a5aafc8"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方指定收货人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "收货人员联系方式",
+                              "GUID": "41892169-14a9-4fb3-9e62-dc40699bed3b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=指定收货人电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "最迟结账时间",
+                              "GUID": "9522680a-0965-471e-a065-86f54e116aa2"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=最迟结账日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方户名",
+                              "GUID": "d1a77050-628d-4e41-89a8-b15d375c636d"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方户名"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方账号",
+                              "GUID": "87fa5c04-928d-4d02-b498-93b70f09ce8c"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方账号"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方开户行",
+                              "GUID": "cd31b148-84cb-43ca-8cf4-91e0f57a397e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方开户行"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "合同有效期开始日期",
+                              "GUID": "8384ee9d-6610-413c-aa02-ec36d15c3a4c"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同有效开始日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "业务员名称",
+                              "GUID": "ffa5d03c-308e-43d6-b693-974577d1b9b1"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=业务代表"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "业务员手机号",
+                              "GUID": "9f028f76-00c9-4b54-b709-5a210851d02d"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=业务员手机号"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方地址",
+                              "GUID": "6f2214c1-79de-4cdc-ad94-d15c68f52dff"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方地址"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "法定代表人",
+                              "GUID": "e3fa311c-e43e-4fbf-a415-a80b25150a01"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=法定代表人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "授权代表",
+                              "GUID": "df1f67c5-fc6d-4409-975d-8775742e577b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=授权代表人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "电话",
+                              "GUID": "e717f602-57f5-4932-8db8-983029dd1002"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "签章标识",
+                              "GUID": "16d5e2ee-b340-4389-8e1f-2fcd22446d5b"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "crm合同id",
+                              "GUID": "85968c90-ffca-4206-93fc-fa27b0a755cb"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同id"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "合同有效结束日期",
+                              "GUID": "6b17d31d-63da-442c-9cef-de95f606d5fd"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同有效结束日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度1",
+                              "GUID": "2a5fd7b3-bf02-4cbb-a482-d400683497e1"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常1月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度2",
+                              "GUID": "f714d605-d6fe-433f-8026-9738edc96fa2"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常2月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度3",
+                              "GUID": "c9f8ac19-89a4-4f6c-8b85-6cd625a86b50"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常3月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度4",
+                              "GUID": "ebcb3bba-1b38-4003-be4e-0577440c67af"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常4月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度5",
+                              "GUID": "61ab4824-6749-4a0e-9c5e-e77435edb8ab"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常5月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度6",
+                              "GUID": "ac55abc9-379f-4e44-939c-2d5f062f43fd"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常6月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度7",
+                              "GUID": "294c3cef-07a8-4d7f-a1f2-b7896304195f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常7月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度8",
+                              "GUID": "0c13e4e3-e2e5-482a-a52f-de2c0a91432f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常8月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度9",
+                              "GUID": "97f9d4d5-f6ea-462c-8312-13c342552582"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常9月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度10",
+                              "GUID": "40db8efa-ffc6-4520-bfc6-47fff7c850df"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常10月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度11",
+                              "GUID": "b13d7e66-f518-4379-924e-cfa571ec252f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常11月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常月度12",
+                              "GUID": "78ab4c2a-8050-4bda-ac0c-e04b69c9665d"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常12月"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常1月回款率",
+                              "GUID": "07c197de-c958-495d-aba5-d990b4056969"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常1月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常2月回款率",
+                              "GUID": "073e65f4-dd3e-4471-b75b-51d628318a4e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常2月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常3月回款率",
+                              "GUID": "4bbcffea-f054-4926-a04e-85c7a09aba99"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常3月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常4月回款率",
+                              "GUID": "b0d6fc0e-a37d-461f-a3c6-b5c75fe2eb41"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常4月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常5月回款率",
+                              "GUID": "db55f689-c17d-4b56-8251-fd4645079bd2"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常5月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常6月回款率",
+                              "GUID": "c15f6acb-3adf-4710-9c49-d22327ab85b0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常6月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常7月回款率",
+                              "GUID": "516b9868-08cf-4389-b90e-a770e9954aa2"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常7月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常8月回款率",
+                              "GUID": "28c106b8-279a-44b9-88f4-207dc683afb8"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常8月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常9月回款率",
+                              "GUID": "b2feb5a8-1da0-429a-aaac-61c954e37388"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常9月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常10月回款率",
+                              "GUID": "762edf82-c667-489b-8cd1-d2adf65f3df9"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常10月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常11月回款率",
+                              "GUID": "61ed85e2-fd30-4429-8690-9e461893423d"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常11月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "正常12月回款率",
+                              "GUID": "d4f6c972-f8fb-482a-90de-febc1e28d115"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=正常12月回款率"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "约定类型",
+                              "GUID": "d8e710a3-4261-40b6-89dd-988c34c82873"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=约定类型"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "指定收货地址",
+                              "GUID": "8c22a2ae-30c0-45d9-82c6-bad918073f6e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=指定收货地址"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "授权代表人手机号",
+                              "GUID": "1f384658-7045-441a-8248-0bb7ec2be397"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=授权代表人手机号"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "公司类型",
+                              "GUID": "1f67a502-b714-4366-8dab-c0010a89f1e9"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取公司类型"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方接收人",
+                              "GUID": "a617d95f-f34e-4bab-939f-ca684e81960e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=乙方接收人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "乙方接收人手机号",
+                              "GUID": "1c43438e-cdb5-47fa-9448-25a9e5767b93"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=接收人手机"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "接口状态",
+                              "GUID": "30b66c9c-0ce0-4910-9d6d-0eb8a5d6e8a7"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "api调用次数",
+                              "GUID": "46281375-92ac-474b-8833-d79dbddee32b"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "发起日期",
+                              "GUID": "966a22f3-7cb5-4429-8afa-e810b6b3f66f"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "发起流程ID",
+                              "GUID": "e93124ee-185c-4ef3-a094-5bd68575ded7"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "所属公司",
+                              "GUID": "7a17bc7a-5910-4938-a714-f3d1d1e7fef2"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=所属公司"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "甲方收款账户",
+                              "GUID": "0f4af76e-dc6d-46d0-b741-054b34ff413a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=收款账户"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "开户行",
+                              "GUID": "1157253d-b400-45a3-8eff-267f9c44a4d9"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=开户行"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "甲方法定代表人",
+                              "GUID": "6ecb416a-f5f4-4ddb-bd1a-46e5a5757c66"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=甲方代表人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "合同模板主表",
+                              "ColumnName": "发起状态",
+                              "GUID": "dc3824af-f3e0-4d55-9d75-e18eb582230d"
+                            }
+                          }
+                        ],
+                        "ParamNameToSaveNewRowValue": "主键id"
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "子表数据",
+                        "TableValue": {
+                          "TableName": "合同模板子表",
+                          "TableValueType": 3,
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "合同模板子表",
+                              "ColumnName": "主表ID",
+                              "GUID": "b8e9773e-ba71-46c7-aac1-2520d5a1a814"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=主表的id"
+                            }
+                          }
+                        },
+                        "ID": "ff80aadd75544b58a9442fe4dbdad833"
+                      },
+                      {
+                        "$type": "GETPOST.JSON类.JSON反序列化, GETPOST",
+                        "BianmaMsg": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=子表信息"
+                        },
+                        "FanHuiMsg": "更新反序列子表信息"
+                      },
+                      {
+                        "$type": "GETPOST.程序类.程序_延时, GETPOST",
+                        "CanShu": "5000"
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "合同模板子表",
+                        "UpdateType": "delete",
+                        "ShowConfirm": true,
+                        "ConfirmText": "您确定要删除吗？",
+                        "RowsToUpdate": 1,
+                        "RowsToUpdateCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "合同模板子表",
+                            "ColumnName": "主表ID",
+                            "GUID": "e16ab61d-1e5b-4e1c-bc58-0cf796cb1a7c"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=主表的id"
+                          }
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                        "LoopInfo": {
+                          "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                          "LoopCount": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=更新反序列子表信息"
+                          },
+                          "LoopItemParamName": "Item"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "合同模板子表",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "合同模板子表",
+                                  "ColumnName": "主表ID",
+                                  "GUID": "a582afd3-12ff-4193-bcd1-ce1773876398"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=主表的id"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "合同模板子表",
+                                  "ColumnName": "产品名称",
+                                  "GUID": "41794efe-51e4-4ebb-b927-ca8f4a55de4b"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.产品名称"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "合同模板子表",
+                                  "ColumnName": "规格",
+                                  "GUID": "55c76725-f8cc-4847-b1fc-9071f7bcd250"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.规格"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "合同模板子表",
+                                  "ColumnName": "数量",
+                                  "GUID": "b7531148-3e21-4b17-bfd6-3f9e837e1921"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Item.数量"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                        "ErrorCode": "0",
+                        "Message": "更新成功！",
+                        "CustomReturns": [
+                          {
+                            "ReturnPropertyName": "主键id",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=主表的id"
+                            }
+                          },
+                          {
+                            "ReturnPropertyName": "合同id是否存在",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=合同id是否存在"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "ID": "3cadf5ed-5691-4b7a-89d7-23532e91fe89"
+                  }
+                ]
+              }
+            ]
+          },
+          "CatchCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "ErrorCode": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionCode"
+                },
+                "Message": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionMessage"
+                },
+                "CustomReturns": [
+                  {
+                    "ReturnPropertyName": "主键id",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=主表的id"
+                    }
+                  },
+                  {
+                    "ReturnPropertyName": "合同id是否存在",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=合同id是否存在"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "主键id"
+    },
+    {
+      "Name": "合同id是否存在"
+    }
+  ]
+}

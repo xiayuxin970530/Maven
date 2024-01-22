@@ -1,0 +1,53 @@
+{
+  "Name": "定时获取主子表数据",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 25.0,
+      "TimeUnit": 2,
+      "StartDateTime": 45209.475694444445,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+          "TryCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+                "ConnectionStringID": "pld",
+                "Name": "添加数据到任务主子表",
+                "DisplayNameInDesigner": "[dbo].[添加数据到任务主子表]",
+                "Parmeters": [],
+                "AllowAcessRoleList": [
+                  "FGC_LoginUser"
+                ],
+                "ID": "ced9dd478d484f489edc5a10552b6c71"
+              }
+            ]
+          },
+          "CatchCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "ErrorCode": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionCode"
+                },
+                "Message": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionMessage"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "Name": "未出库配料领料申请",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "未出库条数",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "生产单号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cinvcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "未出库配料领料申请",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  COUNT(a.AutoID) AS 未出库条数, a.cmocode AS 生产单号, a.invcode AS cinvcode\r\nFROM      UFDATA_800_2018.dbo.MaterialAppVouchs AS a LEFT OUTER JOIN\r\n                       (SELECT  imasid, SUM(出库折百数量) AS 合计扫描\r\n                        FROM       dbo.材料扫码记录\r\n                        GROUP BY imasid) AS b ON a.AutoID = b.imasid LEFT OUTER JOIN\r\n                   UFDATA_800_2018.dbo.MaterialAppVouch AS dd ON dd.ID = a.ID\r\nWHERE   (ISNULL(a.fOutQuantity, 0) < a.iQuantity) AND (a.ID IN\r\n                       (SELECT  LLSQMID\r\n                        FROM       UFDATA_800_2018.dbo.PLMX\r\n                        WHERE    (生产订单状态 = 3))) AND (a.iQuantity > ISNULL(b.合计扫描, 0)) AND (dd.cCloser IS NULL)\r\nGROUP BY a.cmocode, a.invcode",
+    "UserSetQueryColumns": [
+      "生产单号"
+    ],
+    "ViewInfo": {
+      "ViewName": "未出库配料领料申请",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "生产单号"
+      ]
+    }
+  },
+  "Indexes": [],
+  "Relations": [
+    {
+      "PrimarySchema": null,
+      "PrimaryTable": "inventory",
+      "PrimaryColumn": "cInvCode",
+      "ForeignSchema": null,
+      "ForeignTable": "未出库配料领料申请",
+      "ForeignColumn": "cInvCode",
+      "RelationTypeOnDelete": 0,
+      "RelationTypeOnUpdate": 0,
+      "IsDetailTableRelation": false
+    }
+  ]
+}

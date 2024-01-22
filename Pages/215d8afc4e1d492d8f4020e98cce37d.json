@@ -1,0 +1,202 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 3,
+    "DefaultSize": 5.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 69.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 44.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 37.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 8
+  },
+  "Values": {
+    "1,5": "条数"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "出库验料",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='215d8afc4e1d492d8f4020e98cce37d'!B2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=出库验料!B2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='215d8afc4e1d492d8f4020e98cce37d'!B2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=出库验料!主表生产单号"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true,
+            "LoadBindingDataOption": 1
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "ClickMode": 1
+      },
+      "TemplateCellSource": "生产单号"
+    },
+    "1,4": {
+      "TemplateCellSource": "cInvName"
+    },
+    "1,6": {
+      "TemplateCellSource": "未出库条数"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "Underline": true
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "WordWrap": true,
+        "Underline": true
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 3,
+        "HorizontalAlignment": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Blue",
+        "Center",
+        "#FF0070C0",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,4": 1,
+      "1,5": 2,
+      "1,6": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "1,1,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "未出库任务",
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//L3DCxwkJ5V/SpVX4oDXCnZJAJNamQDDzGurRnP0VRmnkOToCJ71x6eZqhaurUhySgfXIavxhJH/2neFdarJ4IduQvnPOfFKl7e6JRFKrJmY0x7xEXpUOw5/B+SuFpKpX1/epPYNV1rreDWgIOtvfYJFbQKN0wSu2nbCvtx5HSq6qOhN83y49jPhvzQhbxj4mPcoT5IhG2cnGzss/x5eI8tgMAV6a2gP7NtrBGj1UO3IgHaaUIyekos57/8JfW8k3MdiRnuO4N6MTi6VnUfEBMaBpfDm8jjAPC30T1RIYy2NM6+yy12ZAKiMUWJYx9m/d19c20O7foHOp41eSRXDwqgAO9u5H6OCRXpicTAT6gK7ub3IGnaHU5IirjvtLBMrcDzQeS6pQQujwKVI9dh69ljDPruQFgfW+cWieG9tQdvCqLuRSQmsUE07moT0lx2EladsoUcqa3spaI2bs/4icPHtXHdneDPWr9bFpz+osZkF7QdY9EUZY+6D0oAwwSC//dtqgFr9wPuvdFAoZRA3+DXQCz46vbtUgg9dEn5uFQHg0kVjoHUGPk2Y7uWDdjL+3P3ilDuWoJI0NPl4iOqO1rnjAiJs7qVZ8YZ4cs4nJ07sZVFQnzl8VlAsNQYkX6/nVbRvqv1Y9Za6JN2MUG9Vmja0daHsFCEV0nuWSowTWZxDrowpwXDwAy/agSjG41bPBOD23nGQgVtjVPmiCwbgycJUNLjiJsnIAWqdjSA96bj+wHbi7zpnRFE8yGAIKNT2inzUVs8rZf3pxsSd35GhbLasbZ129nT6+qDddxbWd4t0O3dKYxCxAtCL+ooqFNr8Omo2SHEIkstDXKE6HC2s7+YL1fklNMp8KixdHsKTYhQpTgFshBaD8YLvQ15vO7vwNY+8sQ8y3hDL8dPNDes25HA==|920

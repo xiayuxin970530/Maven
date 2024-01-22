@@ -1,0 +1,360 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 22
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      }
+    },
+    "Count": 47
+  },
+  "Values": {
+    "1,2": "人员信息",
+    "1,41": "保存"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "业务员信息",
+            "IsOpenInNewTab": true
+          }
+        ],
+        "Text": "人员信息",
+        "TemplateKey": "样式5"
+      }
+    },
+    "1,41": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格1",
+            "UpdateType": 3
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "样式5"
+      }
+    },
+    "5,2": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "签章API对照表",
+        "RowIndex": 5,
+        "ColumnIndex": 2,
+        "RowCount": 16,
+        "ColumnCount": 44,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "6,4": {
+      "BindingInfo": {
+        "TableName": "签章API对照表",
+        "ColumnName": "模板方案名称",
+        "GUID": "9d170e31-e474-47f5-9f2f-df42b0f3e72f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "6,9": {
+      "BindingInfo": {
+        "TableName": "签章API对照表",
+        "ColumnName": "来源类型",
+        "GUID": "77ae1e40-cbcf-4ffc-9fd9-e178305fd96e"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "IsBounding": true,
+        "DataSource": "任务主表",
+        "ValueColumnBindingInfo": {
+          "TableName": "任务主表",
+          "ColumnName": "来源类型",
+          "GUID": "9a190fe9-0b1c-45cc-b8fc-0c42169181c7"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "任务主表",
+          "ColumnName": "来源类型",
+          "GUID": "f1d2b61a-502a-4781-ad80-f80c544743d6"
+        }
+      }
+    },
+    "6,14": {
+      "BindingInfo": {
+        "TableName": "签章API对照表",
+        "ColumnName": "生效日期",
+        "GUID": "7cbdc06c-7a63-4bd7-bb18-0ca0ada459fb"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon"
+      }
+    },
+    "6,19": {
+      "BindingInfo": {
+        "TableName": "签章API对照表",
+        "ColumnName": "停止日期",
+        "GUID": "042ff3e4-f4ab-4ae0-81fa-48e7f51665d4"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon"
+      }
+    },
+    "6,24": {
+      "BindingInfo": {
+        "TableName": "签章API对照表",
+        "ColumnName": "API账号",
+        "GUID": "785bd73d-5fe3-420b-9356-b63646b782d3"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "6,29": {
+      "BindingInfo": {
+        "TableName": "签章API对照表",
+        "ColumnName": "API密码",
+        "GUID": "021ffb0f-d192-40e5-914b-07f2597fbf56"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "6,34": {
+      "BindingInfo": {
+        "TableName": "签章API对照表",
+        "ColumnName": "签章内容位置",
+        "GUID": "4b95de35-c9c5-4807-8ae1-9e067988215f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    },
+    "6,39": {
+      "BindingInfo": {
+        "TableName": "签章API对照表",
+        "ColumnName": "模板标识",
+        "GUID": "f9827ee1-84d5-4fe1-af91-09d796022f4f"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Formatter": 1,
+        "HorizontalAlignment": 0
+      },
+      {
+        "HorizontalAlignment": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "5,9": 0,
+      "5,14": 0,
+      "5,19": 0,
+      "5,24": 0,
+      "5,29": 0,
+      "5,34": 0,
+      "5,39": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 1,
+      "6,9": 2,
+      "6,14": 0,
+      "6,19": 0,
+      "6,24": 1,
+      "6,29": 1,
+      "6,34": 1,
+      "6,39": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "6,14,1,5",
+    "6,19,1,5",
+    "6,4,1,5",
+    "6,24,1,5",
+    "6,29,1,5",
+    "6,34,1,5",
+    "6,39,1,7",
+    "1,41,2,5",
+    "7,2,14,44",
+    "6,9,1,5",
+    "1,2,2,5",
+    "5,4,1,5",
+    "5,9,1,5",
+    "5,14,1,5",
+    "5,19,1,5",
+    "5,24,1,5",
+    "5,29,1,5",
+    "5,34,1,5",
+    "5,39,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//GIIrI2YvGt4r7sS7KRzds4tg5m1UDh92QhKAEBy6CUsuPtyThv6tF9CQxrbNI6Y63iBCNAxg7Sid/OmeBNMfVs7TSqsVMxUTRC5VFGizlxLW3Edcbs1v9oTRXFdp4b8GNCuDv6rCPXJmW4yoQPHdSIoi7tWxBJdaCTOpesO+Dry5BFy3uebcE6l38RYHClWYuPyjGCpX8Ip7xrWvIN2maQLFRa6Rjz/1/THJrJZWTDaGkBjRz7SpkxlLVMv967akM4UyiukAaXiG2FOuo+5xdancIhk9t42ibe6b8ScSjlZB/VvnCM2qs0zGFLpprU1I4d09tpYyZiT3EsyArMXkh9bvutZceooouTSsnKn8LYOYpNE/LlSOZXwR1orZNTXX0PdZ9y/l18pC24C76jRkvwH+7hNbD43yUGozYPd8X3XbPT7SfxvOGS7C5s1XcSH4pysUT2LigFOjrP7w6F+1fVvlP9KgXEjRoTvACr+n7m2WjWwqFlRmnt6ekK1YaDGc4qmbtH0LNUg4KDbcgbXfTENU57i6oEXxTf5dZtCtLPlZZjiJ6rh1lQ+4wxTHKt1IFwXiS5ft4x3AP+qu/+jkpXaeZl0+fdkts9zUwT8TkNc39RQ5r46xwUiIrekwHIty55bDvb+97eFVL4Qyv21AAQmRJvr1yUcnOY5n3nrTvgT94ogbL90sPm0htOpdj7RYXlE53Lmu7TYJ42E0JTUdbtlQCpvSqvBOUP1/HHhZgamWqQJZZ9PeMH1fvLfLG2cuEv0K1OX/oJzxGPr+kYUUQnNgvrdV6aR69zX4BOyLSHi9c2zZVdbOgYfLrB9tI7Z2fzY3kqGyxalEbAijDLBtsqS4SOKysTjujZ4Ke1MEAe4UhfR/dZA+MqJ9GmzQ22ROimw0kYCNGogbzICMqyXTEA==|920

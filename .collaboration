@@ -1530,7 +1530,16 @@
   },
   {
     "ModuleName": "ServerCommandPrivate/自动发起动态表格运输协议",
-    "ModuleType": 27
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T16:46:58.3621867+08:00",
+    "ModuleType": 27,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝正式接口\\物流运输\\自动发起动态表格运输协议.json"
+    ]
   },
   {
     "ModuleName": "ServerCommands/e签宝正式接口/对账单",

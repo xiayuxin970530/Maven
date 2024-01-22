@@ -1855,19 +1855,55 @@
   },
   {
     "ModuleName": "ServerCommands/e签宝测试接口",
-    "ModuleType": 20
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T11:31:00.1235032+08:00",
+    "ModuleType": 20,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝测试接口"
+    ]
   },
   {
     "ModuleName": "ServerCommand/动态表格接口运输协议判断条件备份",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T11:31:00.1161322+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝测试接口\\动态表格接口运输协议判断条件备份.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/对账单自动签署接口测试",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T11:31:00.1175095+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝测试接口\\对账单自动签署接口测试.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/对账单自动签署接口日版Test",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T11:31:00.1199929+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝测试接口\\对账单自动签署接口日版Test.json"
+    ]
   },
   {
     "ModuleName": "ServerCommands/crm接口",
@@ -2117,10 +2153,28 @@
   },
   {
     "ModuleName": "ServerCommand/对账单自动签署接口Test",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T11:31:00.1234929+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝测试接口\\对账单自动签署接口Test.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/对账单自动签署接口日版Test2",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T11:31:00.1221914+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝测试接口\\对账单自动签署接口日版Test2.json"
+    ]
   }
 ]

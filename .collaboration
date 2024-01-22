@@ -1980,59 +1980,185 @@
   },
   {
     "ModuleName": "SchedulerTasks/e签宝自动发起接口",
-    "ModuleType": 21
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8556381+08:00",
+    "ModuleType": 21,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口"
+    ]
   },
   {
     "ModuleName": "SchedulerTasks/e签宝自动发起接口/定时查询接口状态",
-    "ModuleType": 21
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8550345+08:00",
+    "ModuleType": 21,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\定时查询接口状态"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/定时查询状态",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8550237+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\定时查询接口状态\\定时查询状态.json"
+    ]
   },
   {
     "ModuleName": "SchedulerTasks/e签宝自动发起接口/执行日志",
-    "ModuleType": 21
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8551254+08:00",
+    "ModuleType": 21,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\执行日志"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/手动发起接口日志",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8550912+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\执行日志\\手动发起接口日志.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/自动发起的接口日志",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.855119+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\执行日志\\自动发起的接口日志.json"
+    ]
   },
   {
     "ModuleName": "SchedulerTasks/e签宝自动发起接口/自动发起签署流程接口",
-    "ModuleType": 21
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8555491+08:00",
+    "ModuleType": 21,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\自动发起签署流程接口"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/定时获取token",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8551376+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\自动发起签署流程接口\\定时获取token.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/自动发起客户回执",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8552867+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\自动发起签署流程接口\\自动发起客户回执.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/自动发起运输协议",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8554118+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\自动发起签署流程接口\\自动发起运输协议.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/自动发起销售合同",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8555428+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\自动发起签署流程接口\\自动发起销售合同.json"
+    ]
   },
   {
     "ModuleName": "SchedulerTasks/e签宝自动发起接口/自动添加数据到签章任务",
-    "ModuleType": 21
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8556351+08:00",
+    "ModuleType": 21,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\自动添加数据到签章任务"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/添加客户回执到签章任务",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8555897+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\自动添加数据到签章任务\\添加客户回执到签章任务.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/添加运输协议到签章任务",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:38:09.8556298+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\自动添加数据到签章任务\\添加运输协议到签章任务.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/800发货生成700采购入库",

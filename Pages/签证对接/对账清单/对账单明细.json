@@ -612,7 +612,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "c4ffe926-1acc-4baf-a508-180787617e2d"
+                "ID": "63bdfe08-ad5f-48e6-81fd-0acae76200f6"
               }
             ]
           },
@@ -646,7 +646,7 @@
                 }
               }
             },
-            "ID": "23a972a43e454225a122c6fb56425132"
+            "ID": "a205fa226e424fa6a4f9a208eaae7b4a"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -753,7 +753,7 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "9e66bd5b-393f-49b0-9763-aa1d0b7ea207"
+                        "ID": "d41f6347-e5a6-4581-a79e-6537b715330e"
                       },
                       {
                         "CommandList": [
@@ -769,12 +769,12 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "bd3477e6-ca5e-4da1-9fcd-2a356bf49926"
+                        "ID": "72ded6fb-d933-464b-8e76-68592a57951a"
                       }
                     ]
                   }
                 ],
-                "ID": "719924b3-b293-48ec-be2d-492f49189725"
+                "ID": "83d92b89-3a7d-4a2c-81d0-0e11ca4e19c6"
               },
               {
                 "CommandList": [
@@ -795,7 +795,7 @@
                     "LoadBindingDataOption": 2
                   }
                 ],
-                "ID": "1bf19d51-e46e-477f-b7a0-9684a813cf8c"
+                "ID": "085671f7-22cd-4204-baf5-2a25ab866d92"
               }
             ]
           }
@@ -835,7 +835,7 @@
                         "BindingInfo": {
                           "TableName": "任务主表",
                           "ColumnName": "来源类型",
-                          "GUID": "09b5f893-c729-4729-829e-fbc0d001ec3c"
+                          "GUID": "42e4e539-5785-4e18-b6ef-d023e41220c0"
                         },
                         "Value": "客户对账单"
                       },
@@ -843,7 +843,7 @@
                         "BindingInfo": {
                           "TableName": "任务主表",
                           "ColumnName": "账套号",
-                          "GUID": "4486f4d7-d812-4475-97e4-0156f9d76839"
+                          "GUID": "51b74814-2d25-41ea-a879-1bac81c6a112"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -919,10 +919,10 @@
                             "AllowAcessRoleList": [
                               "FGC_LoginUser"
                             ],
-                            "ID": "d61ae1d3762142fb9a3e28cfe96e17e3"
+                            "ID": "729094977cf74aed80ca3965611da62a"
                           }
                         ],
-                        "ID": "524bb1b7-dc48-488b-a1e6-1d6f2462fa78"
+                        "ID": "8b97903e-47bf-4b11-8073-36e951915c98"
                       },
                       {
                         "Condition": {
@@ -988,15 +988,15 @@
                             "AllowAcessRoleList": [
                               "FGC_LoginUser"
                             ],
-                            "ID": "ccb7bc1798e8461f87c4aafe133090ee"
+                            "ID": "f466788804a746c0a6b06ee3cde77796"
                           }
                         ],
-                        "ID": "d06af6fa-a275-4cd9-8345-ba2613dfae87"
+                        "ID": "b08ee05a-e365-4fec-840e-36921fbbc335"
                       }
                     ]
                   }
                 ],
-                "ID": "c3b16baa-5118-45f0-a552-573959946269"
+                "ID": "872ab2d9-ba98-4703-9e12-4cc261827700"
               },
               {
                 "Condition": {
@@ -1018,7 +1018,228 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "a5f46c7e-1d5a-4460-9c71-4fb901f41ff5"
+                "ID": "3e7975e0-d107-498e-8190-1e4b5bfef6a5"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=对账单明细!I9"
+                      }
+                    ]
+                  },
+                  "value": "700"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "根据客户名称获取业务员编码",
+                    "TableValue": {
+                      "TableName": "Customer700",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "Customer700",
+                            "ColumnName": "cCusPPerson",
+                            "GUID": "4d06fadf-f57d-4d27-8236-c30ea41e5841"
+                          },
+                          "ColumnName": "cCusPPerson"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "Customer700",
+                          "ColumnName": "cCusName",
+                          "GUID": "1becdcae-bfb0-4e44-8296-f517e09da182"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!I10"
+                        }
+                      },
+                      "TopCount": "1"
+                    },
+                    "ID": "f17eaf59b3e14831b7b46e42401b21b9"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "获取业务员手机号和名称",
+                    "TableValue": {
+                      "TableName": "Person700",
+                      "TableValueType": 1,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "Person700",
+                            "ColumnName": "cPersonName",
+                            "GUID": "f96f87e9-fc26-4d06-9cc6-4582708c5aff"
+                          },
+                          "ColumnName": "cPersonName"
+                        },
+                        {
+                          "BindingInfo": {
+                            "TableName": "Person700",
+                            "ColumnName": "cPersonPhone",
+                            "GUID": "dd46c8c7-59d0-462e-9d5d-45471bc68a63"
+                          },
+                          "ColumnName": "cPersonPhone"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "Person700",
+                          "ColumnName": "cPersonCode",
+                          "GUID": "520e3289-ddd2-49ed-84c7-8abdeb7d3cc1"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!根据客户名称获取业务员编码"
+                        }
+                      }
+                    },
+                    "ID": "9994d68f13dd4994832ce41d15d2ca8e"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!V18"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!获取业务员手机号和名称.cPersonName"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!AC18"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!获取业务员手机号和名称.cPersonPhone"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "45566ce2-922e-47c8-ac36-4f9d9df72206"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "根据客户名称获取业务员编码",
+                    "TableValue": {
+                      "TableName": "Customer800",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "Customer800",
+                            "ColumnName": "cCusPPerson",
+                            "GUID": "9ac19531-ad4c-41ff-bd73-289c37e549dc"
+                          },
+                          "ColumnName": "cCusPPerson"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "Customer800",
+                          "ColumnName": "cCusName",
+                          "GUID": "7e1cadc3-54f3-4b50-afca-ede0d76d8b4f"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!I10"
+                        }
+                      },
+                      "TopCount": "1"
+                    },
+                    "ID": "969add5a318b4f1cbdccb413333584ca"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "获取业务员手机号和名称",
+                    "TableValue": {
+                      "TableName": "Person800",
+                      "TableValueType": 1,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "Person800",
+                            "ColumnName": "cPersonName",
+                            "GUID": "36ae7e2f-9271-4e7a-9a66-08ff7983f42f"
+                          },
+                          "ColumnName": "cPersonName"
+                        },
+                        {
+                          "BindingInfo": {
+                            "TableName": "Person800",
+                            "ColumnName": "cPersonPhone",
+                            "GUID": "ad6d06d5-c532-4848-9485-cc2075446a60"
+                          },
+                          "ColumnName": "cPersonPhone"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "Person800",
+                          "ColumnName": "cPersonCode",
+                          "GUID": "2afde029-1093-43ba-96e9-694f907eb110"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!根据客户名称获取业务员编码"
+                        }
+                      }
+                    },
+                    "ID": "ae74b398161a4950adac698be903d99b"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!V18"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!获取业务员手机号和名称.cPersonName"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!AC18"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=对账单明细!获取业务员手机号和名称.cPersonPhone"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "4feedb3e-d373-4c0a-af5e-814f505d37cc"
               }
             ]
           },
@@ -1315,7 +1536,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "1b6400853a484d41842a4f389e8aa1a4"
+                    "ID": "a8e55aaa47d344ca8dff474f4d5798ec"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1354,7 +1575,7 @@
                         }
                       }
                     },
-                    "ID": "93e6835ca95d4f0a888288277b36088b"
+                    "ID": "e851fb219a334056a6fdc61a607849a8"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1382,7 +1603,7 @@
                     ]
                   }
                 ],
-                "ID": "e7a564f6-cc94-48f4-b310-93a213bf40da"
+                "ID": "55bd8ac0-3c50-4f48-851a-ca3667de71dc"
               },
               {
                 "CommandList": [
@@ -1417,7 +1638,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "728d8b82b8c3447fa8ba7d8dfc15f04c"
+                    "ID": "2a8821937d314644b00adaa5e7c7a005"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1456,7 +1677,7 @@
                         }
                       }
                     },
-                    "ID": "25fda069b6cc4de7969549801c75e927"
+                    "ID": "5b2ee50853ee45eb9624327c98444410"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1484,7 +1705,7 @@
                     ]
                   }
                 ],
-                "ID": "7c9bd944-73a2-449e-a3ff-049eab91cf21"
+                "ID": "205e5099-8370-41e5-b360-3705f1ed6199"
               }
             ]
           }
@@ -1532,13 +1753,13 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!BD13"
             },
-            "ID": "6e41cb01f523494c822d70620740eab6"
+            "ID": "8c280d22cdcd4537828e78e259037a0e"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
             "ParameterName": "零元整miaoshu",
             "ParameterValue": "零元整",
-            "ID": "357cedf6d4324eeeaa3b135db47e4bc5"
+            "ID": "f3a35c77532d4fe69f4fa18618d1d027"
           },
           {
             "$type": "MoneyConverter.MoneyConverter, MoneyConverter",
@@ -1555,7 +1776,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!应收账面余额大写"
             },
-            "ID": "b3da6fb22d354411bc0e5013d6920ba8"
+            "ID": "adf6236fccde46caa9505a18db3bf879"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1578,7 +1799,7 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
-                    "ID": "36033158e0f7403e9284dad6f73f3b57"
+                    "ID": "2af39b22b03f4e9bbd74819b8cfb4014"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1606,7 +1827,7 @@
                     ]
                   }
                 ],
-                "ID": "27a84bcd-7a9f-4d49-994c-227a75b2e0fb"
+                "ID": "70f7928b-b41e-484c-ab49-cbc432a4fa10"
               },
               {
                 "Condition": {
@@ -1627,7 +1848,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "负",
-                    "ID": "da993afdb3444b9bae983a45b555309b"
+                    "ID": "6f18dd29e7074750942add20dcdf24c8"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1655,7 +1876,7 @@
                     ]
                   }
                 ],
-                "ID": "ff89c70f-f092-4198-a445-c95652970aee"
+                "ID": "b5bdf48b-5b9e-47a6-8d7f-5dc5195de59e"
               },
               {
                 "Condition": {
@@ -1695,7 +1916,7 @@
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=对账单明细!零元整miaoshu"
                     },
-                    "ID": "b86a0b48dca045c29ad791b6f58845bf"
+                    "ID": "4810f9a6e07a4a21877dd344c4b638aa"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1723,7 +1944,7 @@
                     ]
                   }
                 ],
-                "ID": "6e61c2eb-6a40-4cd3-baef-fc5697151051"
+                "ID": "bbd4e5ae-5afb-4ba4-8e49-0a7ff9f35f46"
               }
             ]
           },
@@ -1769,7 +1990,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "e313926c-f770-4764-9e70-0135257ec434"
+                "ID": "23f08042-415d-403b-8bc3-174ec13b9bb7"
               }
             ]
           }
@@ -1831,7 +2052,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!BD14"
             },
-            "ID": "83e990b291e0414ca982c795f228b37c"
+            "ID": "0c34dfcb7c9344958ac721569779e8b4"
           },
           {
             "$type": "MoneyConverter.MoneyConverter, MoneyConverter",
@@ -1848,7 +2069,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!预收款大写"
             },
-            "ID": "4b05f8bd8db249a79a01bd4c320fcb45"
+            "ID": "5bdd14479a064eb68ec77e5da5c5ed12"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1871,7 +2092,7 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
-                    "ID": "e5f1a21fb70640cea05388360ce05106"
+                    "ID": "e1abc7322bb64c91ae7f0e957a883bf8"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1889,7 +2110,7 @@
                     ]
                   }
                 ],
-                "ID": "48ee7a71-d088-41e2-a59a-fc6ba477723b"
+                "ID": "61941986-75b9-40cc-be8a-6bf4255302f1"
               },
               {
                 "Condition": {
@@ -1910,7 +2131,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "负",
-                    "ID": "3ffd4a420c3c4319a89a7bc6cc26cfd7"
+                    "ID": "fe5be12fd05944ecad6b821b7f848688"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1928,7 +2149,7 @@
                     ]
                   }
                 ],
-                "ID": "6c45cad9-7b7b-4487-baa0-d557ff7b3605"
+                "ID": "5b6a73fd-9d82-4c54-9ce2-fa961966f8fd"
               },
               {
                 "Condition": {
@@ -1965,7 +2186,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "零元整",
-                    "ID": "0fec5c22fb75498d8a43addb64ef80f5"
+                    "ID": "a6d49329392545e78fd8e37b50f8d2de"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1983,7 +2204,7 @@
                     ]
                   }
                 ],
-                "ID": "a0257d58-ede3-413e-b0a6-a3ef9635611d"
+                "ID": "de2f81df-f533-46e8-8ea8-5d81d016b4b0"
               }
             ]
           },
@@ -2029,7 +2250,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "1096f500-bf3b-47a8-b868-cfc92ecc023a"
+                "ID": "be5154ce-53ba-4f15-b48e-bf7f3c7be719"
               }
             ]
           }
@@ -2090,7 +2311,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!BD15"
             },
-            "ID": "2500d2191275421cb73c4f7512625109"
+            "ID": "6c3ffb6cc8ec4f39854bcc19dc997a62"
           },
           {
             "$type": "MoneyConverter.MoneyConverter, MoneyConverter",
@@ -2107,7 +2328,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!预收款余额大写"
             },
-            "ID": "5e28e2c8a77d4452ade08f39ef256aec"
+            "ID": "9d97bec4b336463cb5d706409d1adebf"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -2130,7 +2351,7 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
-                    "ID": "6a298ad0d7f442adbff1708d6663047d"
+                    "ID": "f58d1ec576db4344861e4013cff5268a"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2148,7 +2369,7 @@
                     ]
                   }
                 ],
-                "ID": "db6b372b-eca8-4d7e-9170-200e7191035e"
+                "ID": "22a12e87-e1f1-462c-88c8-3892a997732e"
               },
               {
                 "Condition": {
@@ -2169,7 +2390,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "负",
-                    "ID": "ccaadb6f1765466182ba69fb733347cb"
+                    "ID": "75c3cd2b344e4b6e8e67e333481000a8"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2187,7 +2408,7 @@
                     ]
                   }
                 ],
-                "ID": "7f81fd2c-f562-4064-bcf3-c334c55a14fb"
+                "ID": "48e1209d-2b6d-4ce1-906f-2cdc0aeecd73"
               },
               {
                 "Condition": {
@@ -2224,7 +2445,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "零元整",
-                    "ID": "4c4ecac9a8124f17bfd723f02c91d953"
+                    "ID": "7b5a95c44b384e7fa64f259f3f8fe883"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2242,7 +2463,7 @@
                     ]
                   }
                 ],
-                "ID": "279424d8-a940-4dc3-8384-d0999e2646d8"
+                "ID": "4278660a-1213-4c8c-97f1-ea26fbf71c28"
               }
             ]
           },
@@ -2288,7 +2509,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "92379c3a-76dd-4f13-bd7d-0e3633419c0e"
+                "ID": "67ccf616-7886-4b8b-867e-4c8d3f692781"
               }
             ]
           }
@@ -2351,7 +2572,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!BD17"
             },
-            "ID": "d027f074743a4fdab60f7d89d55d9d68"
+            "ID": "805e3c9d420d42939dc2d1a6fa28bf31"
           },
           {
             "$type": "MoneyConverter.MoneyConverter, MoneyConverter",
@@ -2368,7 +2589,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!总应收余额大写"
             },
-            "ID": "f5187465972742fabc1b76a79cfde281"
+            "ID": "468f0c948f934ca6893ea1e2297e2029"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -2391,7 +2612,7 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
-                    "ID": "2c9aa686568c4c7ea8c507fc0ba40470"
+                    "ID": "8c26a11377ee499aa8d301b61f8f9c43"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2409,7 +2630,7 @@
                     ]
                   }
                 ],
-                "ID": "30098994-5923-4ca2-a00d-7138b4484b79"
+                "ID": "f8ab023a-951e-4e73-a17d-3d65c602ae82"
               },
               {
                 "Condition": {
@@ -2430,7 +2651,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "负",
-                    "ID": "399c852873924a4a850698fdd7984cde"
+                    "ID": "15f2cab051f54205b9b1598b95823d8a"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2448,7 +2669,7 @@
                     ]
                   }
                 ],
-                "ID": "5fd6d9f1-de35-4793-9320-279c14277bc0"
+                "ID": "d734a16c-67d5-4b8d-8068-958735e0e409"
               },
               {
                 "Condition": {
@@ -2485,7 +2706,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "零元整",
-                    "ID": "70a6ea54eb984d27ae28b2b061c04563"
+                    "ID": "625c6b6a9311418cb812d365e114d124"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2503,7 +2724,7 @@
                     ]
                   }
                 ],
-                "ID": "d2fb5f94-ad6d-48c8-ba17-8694d56639c8"
+                "ID": "1fe4126b-7eb8-4e4e-8419-007818f2f591"
               }
             ]
           },
@@ -2549,7 +2770,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "6cd4261f-4cdf-434b-ac26-6cc952f72be2"
+                "ID": "df987a9e-5094-4268-8b80-5b0e25460357"
               }
             ]
           }
@@ -6561,7 +6782,7 @@
                 ]
               }
             ],
-            "ID": "8bf7b1fb-6f40-41ea-918f-c2b722945b72"
+            "ID": "5db16c31-8307-46a5-a512-8d6d50582b5d"
           }
         ]
       },
@@ -6594,7 +6815,7 @@
                 ]
               }
             ],
-            "ID": "7ae90587-b005-46f1-84cd-985efb19d713"
+            "ID": "52fe2780-7b5c-406a-955a-6873e513e541"
           }
         ]
       }
@@ -6657,4 +6878,4 @@
       "Formula": "对账单明细!$A$2"
     }
   ]
-}//j176r6qa+cUaRPhwcPH6/CVa0O4XaUU51/ZoGvQ/vNxspj7oXB92tjXbxFmrNiORO8zZjI9/M5/VjAKtVUEcWoNcIaAkpcWx9bkFXqMPpJloS8Dx52q3sEKyPOtJKq/P65i7tuj1y2mtfK8JZ4PhpppeDaDLKVMPc4YIiKeodArM3XDwoXlflnhYdOwAz6EoLbUC0mdjyj8N27YfbCWV6dAP6BgJYqfsn6eiVtDKM6z/eFbieKkK3mgpWIcue7Kbat+pIYweV+WSJIuiTTN3MRaGgALbxMxblYo1+G1k2A0rnAemm+Gy2rDTEouW7BLPjnPYVt7fNNFrC4JcW0Mq23WIMncuG40RUYWF6Gn4L2jR/BKkcgv7u8CfHA7CAluyS9O2NtAgestg5kBtDJtGtqdqLPljklv5ZHe9IVOjT9+HbHLhQiKN8QW3z7vuDAtrCQK3Ua9anOv2tCeG5BDT+SjW/fSjEXkMc9fgQZ6d5QPDLznc7cEsaYPAXHq6rRnAbfArIg3gqiiSooGiF1s9/NIpwhFLpZuwRGOTu2hqMNCAZwpdYIkd3wGwPIrM2MV1QwlleP6+aDucCPUps8F7jYHez84AoVPz6MhrwDAs7KNmeZ9mAkA0k6QIE4GmnjXFIESu1pWGiKaYQtx0EPa5JZoNmnMN+KUk31dDofk0vKea10KB1KWvaQpNqCe1S2QUsDu/ZrRNYW5hClm2F5dHxeXZ4qaNnOQLG4tvhN0Wm/zT+mGbyO/4dz8bJTnCu2vKnXumyxysj2q0Kgtkkr1LuZBvLS0lGy+k3z2TcpZq6yFXet4epmAApx/Wl3AtuUW7eZ8aud1rlCShZtprfOoaNq+Xj/oE1DnXU/QD+k6xjb2Gw2GVMjzY4+BsXxWYFDXRlYdWXjLrZR20ae9LLcBhnw==|920
+}//gYUUh+A7UB2yOEEBqy8LaGsf9UHFw56QE/OCKbYpcirM327Z8I+PKrNeLUQ/neq8TQYALC7Yh+ptThfC5eTshhtlXt0+ZiDeXqFS4qRu4PvMaCw6EFlgeQliJmKq/OcAopWiVdDG3FFeaOV623SFOSAPvD9Vl8ZstSQyEJOLvro1WJWXtPJfWLmkbh3wJXqDtyNFu6BgKOTBu8zYMvzmdUKNsVGFXqgfFY+comtI21ScA/FVYcE9xVGWhWW7tTzdMaho11qUYzuyFASFWnXlFHt3iCa9suslgTpeqhoyi1W257QjpcOfoiYwN6W+7c3v8KA4UITRJP35tFfUo5ZwAVTZfhuxiOQSu/Le2bpJ0NgzGeXUHRcUaUo05HOqm+n+co/b6TmDcQsN63NAjJ2V38wUlpd7UU6yXAHjm0DlNYZ1e+pzSlrtRL2daP8Cbj2C3CotsxppZVwuU9ext+p0L6raoXP4eptvOA4put2KfwG7GErPdbe7ird34hFlIrigz3TyHYxhBmv6iWz50p9MNi6PMte1VJyTxNM+/D5TaWq5xOODgovdJtNF97RtalFmgqh7mbWCjLwIfAVZeQ2abbd+RgJLr6FkdcL0RVpLJ2ddtCvTtlwR/l5Ww5x40US5reCmAhEm/a9QPQlKZwEq1xV83jNKu4sxiNZKy7JB+8j3x+a4/E7fLXZku1L/UwS5nYAj6ImyGtp63/5hB4UqmAVrWmI6w1nTKHw0aN1Fc3iT5DVqrlGQWoUl3rLbwYBzF+/MEU4U03uX8OnAsteckWDBs5D/oR+4u+OMFS8j6ArgNf8NLZR3ug20ZUdFdurhfFRUDS6XIxoS4zeyxpvVmZHbzedCIoGn/vW4wyC1nq5saqpRJxlBayAx9IU243tg7a8r9UmQWoGhAQeL7nXVgw==|920

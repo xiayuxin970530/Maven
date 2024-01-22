@@ -1,5 +1,5 @@
 {
-  "Name": "自动发起客户回执接口自动签署",
+  "Name": "自动发起客户回执接口自动签署Test",
   "Enabled": true,
   "Triggers": [
     {
@@ -34,7 +34,7 @@
               "ColumnBindingInfo": {
                 "TableName": "签章任务",
                 "ColumnName": "任务主表id",
-                "GUID": "0fad421e-bb53-4918-bfb3-774d3e93ae74"
+                "GUID": "c11d70a9-8fee-4aa8-8a98-8e5cba94baa8"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -46,7 +46,7 @@
                 "BindingInfo": {
                   "TableName": "签章任务",
                   "ColumnName": "发起状态",
-                  "GUID": "9af12691-0eb0-4b49-a7c7-57480021d7e9"
+                  "GUID": "588b703d-4c81-4b4d-80a5-8b1fb9309aa6"
                 },
                 "Value": "1"
               }
@@ -67,7 +67,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务",
                         "ColumnName": "客户名称",
-                        "GUID": "ded82dc4-018d-4d00-b212-397a1618a064"
+                        "GUID": "011e7cfb-c520-48a3-bee4-866c2c9a1995"
                       },
                       "ColumnName": "客户名称"
                     }
@@ -77,7 +77,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "任务主表id",
-                      "GUID": "e1c94206-6e1f-40fd-b205-a10b0601a097"
+                      "GUID": "1c3e104f-f612-4a51-ae2f-c6eabe1566c2"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -86,7 +86,7 @@
                   },
                   "TopCount": "1"
                 },
-                "ID": "5b1a4e183d954e20af5ce806d321521d"
+                "ID": "acbace86ec9a4f669a8f6589c7a41f74"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -99,7 +99,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "cCusName",
-                        "GUID": "e144ad74-4cbd-4178-af5c-9fe19d544d65"
+                        "GUID": "c13c133b-c416-4a74-8438-6218f08403b1"
                       },
                       "ColumnName": "cCusName"
                     },
@@ -107,7 +107,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "cCusDefine9",
-                        "GUID": "fc9b4df5-919d-4a47-8d82-f594b9d9b62a"
+                        "GUID": "2ede2dd7-fbc2-4ced-8521-21bf1d462dfa"
                       },
                       "ColumnName": "cCusDefine9"
                     },
@@ -115,7 +115,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "cCusCode",
-                        "GUID": "7009cace-1a0e-4d87-a27f-f4f3a30431a4"
+                        "GUID": "e8d5567b-d0b7-428e-95cd-2d9af8563dd5"
                       },
                       "ColumnName": "cCusCode"
                     },
@@ -123,7 +123,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "ccdefine1",
-                        "GUID": "f10e36f1-40f4-4a2d-b60c-1dc7b7538098"
+                        "GUID": "9bb27dcd-891a-4210-a01e-dd79b83a531d"
                       },
                       "ColumnName": "ccdefine1"
                     },
@@ -131,7 +131,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "ccdefine2",
-                        "GUID": "10978b45-afbe-4ef2-8d5c-d1517d102ce6"
+                        "GUID": "a7c2a2b1-37c5-4ee0-a2cf-b5e3ed750eef"
                       },
                       "ColumnName": "ccdefine2"
                     },
@@ -139,7 +139,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "ccdefine3",
-                        "GUID": "b970813a-d55e-4401-80f7-6dc463c471e5"
+                        "GUID": "2fad20e7-0987-4355-b3c8-eeca0a5d28ed"
                       },
                       "ColumnName": "ccdefine3"
                     },
@@ -147,7 +147,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "ccdefine4",
-                        "GUID": "f2d46373-70d9-4f4e-a40c-b396a96602a9"
+                        "GUID": "80e6a941-1c97-4773-a1ea-26f20908be59"
                       },
                       "ColumnName": "ccdefine4"
                     },
@@ -155,7 +155,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "ccdefine5",
-                        "GUID": "ede2eb36-7b2e-4eaf-9ba5-06ce3c43f196"
+                        "GUID": "54d79e5f-bab7-4662-9f10-5a7fcd39dfb8"
                       },
                       "ColumnName": "ccdefine5"
                     },
@@ -163,7 +163,7 @@
                       "BindingInfo": {
                         "TableName": "获取700和800中对账单和发货回执单接收人",
                         "ColumnName": "ccdefine6",
-                        "GUID": "64bd2341-dc23-497a-a443-fd2aaaf3c0bf"
+                        "GUID": "78500595-486f-461e-bdcd-4fd204872f9d"
                       },
                       "ColumnName": "ccdefine6"
                     }
@@ -173,7 +173,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "获取700和800中对账单和发货回执单接收人",
                       "ColumnName": "cCusName",
-                      "GUID": "afef3060-e0d6-40c4-b4ee-8d291509ba47"
+                      "GUID": "f6a3f0df-8552-4410-a705-bbf9c429948e"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -182,7 +182,7 @@
                   },
                   "TopCount": "1"
                 },
-                "ID": "22c2a320610b4d7fb65f2717f6eb0eae"
+                "ID": "eaa114f09da147b09fe9a90c8ad64f63"
               },
               {
                 "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
@@ -194,7 +194,7 @@
                   "ColumnBindingInfo": {
                     "TableName": "签章任务",
                     "ColumnName": "任务主表id",
-                    "GUID": "7feb79fc-97fd-40d3-a38b-bca4fa5701c6"
+                    "GUID": "867803d9-c122-4e35-b794-87621fadf21e"
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -206,7 +206,7 @@
                     "BindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "对方签署人",
-                      "GUID": "c82db3a3-869d-44ee-84cf-6c4635f135c6"
+                      "GUID": "999c758c-7386-47f7-b3e6-52a2634f6440"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -217,7 +217,7 @@
                     "BindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "对方电话",
-                      "GUID": "9041710e-e24f-4bbe-a7e1-57d5ae390dbf"
+                      "GUID": "28d0e9b9-873e-4341-b65b-6f955da75a23"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -228,7 +228,7 @@
                     "BindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "公司类型",
-                      "GUID": "901ebc17-ccf2-482e-bc06-ddb7ff0d5f61"
+                      "GUID": "45a5cf05-8cf5-4afd-968c-53a0ee474824"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -248,7 +248,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "签章任务ID",
-                        "GUID": "8908732e-8c60-4861-b407-bca95c44977c"
+                        "GUID": "dc6fd2c2-3eb7-4d06-abe1-57e4cfe8fb61"
                       },
                       "ColumnName": "签章任务ID"
                     },
@@ -256,7 +256,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "任务主表id",
-                        "GUID": "9ca43060-a39b-4b52-9ffe-87d45b57f50e"
+                        "GUID": "4c2d2aa8-90c2-4266-b4d3-6596ff0a9b0f"
                       },
                       "ColumnName": "任务主表id"
                     },
@@ -264,7 +264,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "我方签署人",
-                        "GUID": "925e2a87-e23e-4dd7-9558-24d47919d1d8"
+                        "GUID": "d2bfbaa8-001d-4246-99cf-3dbf5a24cda8"
                       },
                       "ColumnName": "我方签署人"
                     },
@@ -272,7 +272,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "我方电话",
-                        "GUID": "df36dd97-b82b-4d4c-bc2f-a98da788df78"
+                        "GUID": "fe849c4b-b229-4bd7-877c-99adfa028bb6"
                       },
                       "ColumnName": "我方电话"
                     },
@@ -280,7 +280,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "对方签署人",
-                        "GUID": "1e10461f-fe5a-4d4c-ab4d-78515c038c29"
+                        "GUID": "b012cba6-5a7f-4db7-8753-96c76ed37772"
                       },
                       "ColumnName": "对方签署人"
                     },
@@ -288,7 +288,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "对方电话",
-                        "GUID": "461e003b-d641-412a-8a9f-12064ace803b"
+                        "GUID": "a1dfb76c-e45e-4233-b832-a9cc17c60196"
                       },
                       "ColumnName": "对方电话"
                     },
@@ -296,7 +296,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "签章内容",
-                        "GUID": "15ba7594-a9eb-4ac4-8554-24f472bf4c35"
+                        "GUID": "f4d13eeb-2e86-4dcb-befb-fa2aca762023"
                       },
                       "ColumnName": "签章内容"
                     },
@@ -304,7 +304,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "匹配模板id",
-                        "GUID": "3e7cc3f3-fbb8-40e9-95b8-414e9ed91797"
+                        "GUID": "59dad9a5-1aaf-4d5d-88c7-d4ca41b6e289"
                       },
                       "ColumnName": "匹配模板id"
                     },
@@ -312,7 +312,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "匹配模板名称",
-                        "GUID": "8b22c069-2843-4a8c-9774-1cb7ed61be03"
+                        "GUID": "f700e6fb-1fbb-4ea3-ac16-9df60c7f8cd9"
                       },
                       "ColumnName": "匹配模板名称"
                     },
@@ -320,7 +320,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "任务类型",
-                        "GUID": "58e76827-f303-439c-a27b-ca13325ccc6d"
+                        "GUID": "be67f9ce-0d5c-4f96-b152-19bd24c98402"
                       },
                       "ColumnName": "任务类型"
                     },
@@ -328,7 +328,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "承运方",
-                        "GUID": "84afeba6-8d5e-4239-b0fa-9ff0d479ab0f"
+                        "GUID": "e3263efa-4b3c-4c7d-bf77-2679411eb6e7"
                       },
                       "ColumnName": "承运方"
                     },
@@ -336,7 +336,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "客户名称",
-                        "GUID": "fe799d3a-d8aa-4714-b9aa-e3fe24683dd9"
+                        "GUID": "5de96493-00e1-47b1-b113-5efb6fc8e9cd"
                       },
                       "ColumnName": "客户名称"
                     },
@@ -344,7 +344,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "客户地址",
-                        "GUID": "296baf49-5081-4e37-b7be-1ff3b072a436"
+                        "GUID": "e610576d-2a95-4bc5-87ff-7027c33a05d9"
                       },
                       "ColumnName": "客户地址"
                     },
@@ -352,7 +352,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "发货日期",
-                        "GUID": "0040a304-a3c6-4e76-af6f-90ec784bd4c1"
+                        "GUID": "557875d1-867f-4227-9917-bece5fffbc04"
                       },
                       "ColumnName": "发货日期"
                     },
@@ -360,7 +360,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "备注",
-                        "GUID": "921cac31-e45b-45bd-81af-3bc3933d7d0f"
+                        "GUID": "de0ba353-d7fd-42ec-a363-c7c48cfb872a"
                       },
                       "ColumnName": "备注"
                     },
@@ -368,7 +368,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "数量合计",
-                        "GUID": "34e6d290-2ab0-4aab-959e-b60a26e79a7d"
+                        "GUID": "e43670ce-2713-4df9-b277-e5bbcb909c4f"
                       },
                       "ColumnName": "数量合计"
                     },
@@ -376,7 +376,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "运费合计",
-                        "GUID": "183ef64f-b447-435f-8771-8fc202f19bf3"
+                        "GUID": "6663c266-25a8-4714-b410-a0dc367f5b01"
                       },
                       "ColumnName": "运费合计"
                     },
@@ -384,7 +384,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "客户回执法人",
-                        "GUID": "01de95ac-159c-46bc-970d-074035ae02d2"
+                        "GUID": "710d5949-c2dc-49f6-83d8-a8e66f585a73"
                       },
                       "ColumnName": "客户回执法人"
                     },
@@ -392,7 +392,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "客户回执法人手机",
-                        "GUID": "ec2d3c5d-a912-4cc0-be9b-7e8096a7b12d"
+                        "GUID": "5269eb0c-66ef-4b73-9770-507b5e17fdc7"
                       },
                       "ColumnName": "客户回执法人手机"
                     },
@@ -400,7 +400,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "签收人",
-                        "GUID": "8fc41ecb-0214-4fd7-ae70-9c14b413d1e5"
+                        "GUID": "7e1d964c-c95b-4c83-8c9e-f1ffaaf4b967"
                       },
                       "ColumnName": "签收人"
                     },
@@ -408,7 +408,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "签收人电话",
-                        "GUID": "f48b0f5c-25ac-42f7-b2ed-6c8006b38459"
+                        "GUID": "7188065c-e292-464b-adfe-20b6f59af483"
                       },
                       "ColumnName": "签收人电话"
                     },
@@ -416,7 +416,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "crm单号",
-                        "GUID": "3eadbce1-77ec-41f7-9bdb-a67a15135e8f"
+                        "GUID": "ccb5a291-a1c3-427f-a385-eedc2036d094"
                       },
                       "ColumnName": "crm单号"
                     },
@@ -424,7 +424,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "接口发起状态",
-                        "GUID": "dfe001b9-e8a1-4a04-9204-dd251a0f6d7a"
+                        "GUID": "e8e35893-e005-40bc-b47d-1100a69b00b2"
                       },
                       "ColumnName": "接口发起状态"
                     },
@@ -432,7 +432,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "公司类型",
-                        "GUID": "a8c05e73-7394-4053-ad84-d1b581cdcec1"
+                        "GUID": "b7e2e123-73e0-4b74-a61b-07d2d62a37ec"
                       },
                       "ColumnName": "公司类型"
                     },
@@ -440,7 +440,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝获取自动发起客户参数数据",
                         "ColumnName": "年月",
-                        "GUID": "5fc606db-55b6-4449-98c5-7e4f5af7150d"
+                        "GUID": "5ffda7d7-db9c-4699-8d66-990692dafca6"
                       },
                       "ColumnName": "年月"
                     }
@@ -450,7 +450,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "e签宝获取自动发起客户参数数据",
                       "ColumnName": "任务主表id",
-                      "GUID": "6c43aa9d-1175-4bc2-862f-eb1bfe55ce11"
+                      "GUID": "2b884670-2fb2-4f59-8999-a3b4a62c0574"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -459,7 +459,7 @@
                   },
                   "TopCount": "1"
                 },
-                "ID": "5f0ffea4e16947f98c93a4186866f1c5"
+                "ID": "12daa0ef47654c8b914ed5a6bb0dd6a8"
               },
               {
                 "$type": "CollectionOperationKit.ServerSideArrayOp, CollectionOperationKit",
@@ -469,7 +469,7 @@
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                 "ParameterName": "setinsertRow",
                 "ParameterValue": "true",
-                "ID": "2155752ecf754155a6351430e64d7437"
+                "ID": "1ed3d62903ba409aa141e08c383b538f"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -481,7 +481,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝客户回执动态表格",
                         "ColumnName": "column1",
-                        "GUID": "6224fe6b-bc5c-4567-ab80-452242b595ad"
+                        "GUID": "6078c90f-7fda-4408-911d-8f6058630a2f"
                       },
                       "ColumnName": "column1"
                     },
@@ -489,7 +489,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝客户回执动态表格",
                         "ColumnName": "column2",
-                        "GUID": "1c7fe07d-180d-41b7-81ad-4aa008e49c8a"
+                        "GUID": "21156d6e-7620-424e-9948-9fc4590c5fe4"
                       },
                       "ColumnName": "column2"
                     },
@@ -497,7 +497,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝客户回执动态表格",
                         "ColumnName": "column3",
-                        "GUID": "638f26a8-7938-4e1b-bb35-bd91239d848d"
+                        "GUID": "ad49bf07-de6f-4e6e-aa40-3c5f372a4343"
                       },
                       "ColumnName": "column3"
                     },
@@ -505,7 +505,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝客户回执动态表格",
                         "ColumnName": "column4",
-                        "GUID": "1f441fd5-0ec9-45d3-a76b-56c8820ec9b1"
+                        "GUID": "c1b0f045-0847-4ce9-931f-5461a075ae92"
                       },
                       "ColumnName": "column4"
                     },
@@ -513,7 +513,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝客户回执动态表格",
                         "ColumnName": "column5",
-                        "GUID": "5732975c-d53d-437c-82a0-22736f19f9bd"
+                        "GUID": "f9082326-b34d-42ed-a6d4-d3bc1023fd63"
                       },
                       "ColumnName": "column5"
                     },
@@ -521,7 +521,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝客户回执动态表格",
                         "ColumnName": "column6",
-                        "GUID": "470bd16e-1606-413e-b097-907fbda12010"
+                        "GUID": "1714aa7a-8512-4b01-af68-7e02d9fc09d5"
                       },
                       "ColumnName": "column6"
                     },
@@ -529,7 +529,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝客户回执动态表格",
                         "ColumnName": "column7",
-                        "GUID": "f7bd26b1-b5f3-47b0-96f6-319293970770"
+                        "GUID": "78f6b7ed-7d5d-4824-aca7-8ae717edc8ef"
                       },
                       "ColumnName": "column7"
                     }
@@ -539,7 +539,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "e签宝客户回执动态表格",
                       "ColumnName": "任务主表id",
-                      "GUID": "b2f4504a-409c-4132-8f1c-d801ba81c6e7"
+                      "GUID": "38147f7f-b2df-4a9f-8f90-70481dcf3d76"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -547,7 +547,7 @@
                     }
                   }
                 },
-                "ID": "c51fa89ad45d47a49ea0962e29a49a4e"
+                "ID": "f340f9090d7041e789250f5f7b8bdd2a"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -560,7 +560,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝动态表格表头",
                         "ColumnName": "column1",
-                        "GUID": "a8b4bbbc-d124-4e37-adf9-d57c0d4789e5"
+                        "GUID": "aa1975b0-b9e2-4b98-b997-4ef7f85453f5"
                       },
                       "ColumnName": "column1"
                     },
@@ -568,7 +568,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝动态表格表头",
                         "ColumnName": "column2",
-                        "GUID": "c3434a17-c847-4856-8cfd-0e4d822eba70"
+                        "GUID": "fc2c0667-cede-4cef-bc59-04f23284fddf"
                       },
                       "ColumnName": "column2"
                     },
@@ -576,7 +576,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝动态表格表头",
                         "ColumnName": "column3",
-                        "GUID": "d8246b0a-2e68-4911-9e51-67a936a0cf2d"
+                        "GUID": "5a3ccb74-84a5-4793-83d4-7c650cb9a638"
                       },
                       "ColumnName": "column3"
                     },
@@ -584,7 +584,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝动态表格表头",
                         "ColumnName": "column4",
-                        "GUID": "e8077eef-682d-4d6c-9353-a1a0850e5be9"
+                        "GUID": "51619e27-91a5-4dec-be85-170affbd983c"
                       },
                       "ColumnName": "column4"
                     },
@@ -592,7 +592,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝动态表格表头",
                         "ColumnName": "column5",
-                        "GUID": "36bc936d-3227-489d-a760-7e70f9da999e"
+                        "GUID": "300c4970-c5c3-4331-a095-5122de1cb8a0"
                       },
                       "ColumnName": "column5"
                     },
@@ -600,7 +600,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝动态表格表头",
                         "ColumnName": "column6",
-                        "GUID": "67470486-d44b-47a8-a415-0c49ad6adc82"
+                        "GUID": "a43847a1-0fed-4483-8db7-aed385b38411"
                       },
                       "ColumnName": "column6"
                     },
@@ -608,7 +608,7 @@
                       "BindingInfo": {
                         "TableName": "e签宝动态表格表头",
                         "ColumnName": "column7",
-                        "GUID": "2a349cdf-d3ad-4947-a2b0-0c5f146d2e67"
+                        "GUID": "3ac67f3a-919f-47d8-b403-452a2da1fd1e"
                       },
                       "ColumnName": "column7"
                     }
@@ -618,12 +618,12 @@
                     "ColumnBindingInfo": {
                       "TableName": "e签宝动态表格表头",
                       "ColumnName": "模板类型",
-                      "GUID": "a8931e85-75d7-43d4-8dc3-4b339cca647c"
+                      "GUID": "d39482ea-f2d5-4dd7-a0fc-b9f3917ce7d9"
                     },
                     "Value": "客户回执"
                   }
                 },
-                "ID": "249e254ecd1a42df9d36d5bf43679820"
+                "ID": "c5068fb07ae84b4a81256718646c053b"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -636,7 +636,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务子表",
                         "ColumnName": "column1",
-                        "GUID": "f9856986-4556-440c-9e22-b3e891929a97"
+                        "GUID": "12ea4a62-d521-4483-826c-bfc07d366111"
                       },
                       "ColumnName": "column1"
                     },
@@ -644,7 +644,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务子表",
                         "ColumnName": "column2",
-                        "GUID": "2402a48e-76a0-4e18-9fc9-29370a9b4924"
+                        "GUID": "2904a816-7696-49ba-b5a9-dfe403246843"
                       },
                       "ColumnName": "column2"
                     },
@@ -652,7 +652,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务子表",
                         "ColumnName": "column3",
-                        "GUID": "a85099f6-1f12-4487-8f68-64217a01e83d"
+                        "GUID": "5a1d01e3-a662-486a-b0a1-ec5efae93db7"
                       },
                       "ColumnName": "column3"
                     },
@@ -660,7 +660,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务子表",
                         "ColumnName": "column4",
-                        "GUID": "37c9e5f1-e429-44c4-9fba-fcaaf7bf1ae1"
+                        "GUID": "440935db-f156-4e64-b48b-b44d8f4d41a7"
                       },
                       "ColumnName": "column4"
                     },
@@ -668,7 +668,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务子表",
                         "ColumnName": "column5",
-                        "GUID": "0e1bf279-6097-4066-83d4-1fd418098357"
+                        "GUID": "127fafc4-99fc-4a14-b44c-dcc1f1763059"
                       },
                       "ColumnName": "column5"
                     },
@@ -676,7 +676,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务子表",
                         "ColumnName": "column6",
-                        "GUID": "70590607-cfe5-4d9b-b3ee-e99fa99c9842"
+                        "GUID": "6d59cc9b-63d0-4729-8ca4-99d180d3ab69"
                       },
                       "ColumnName": "column6"
                     },
@@ -684,7 +684,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务子表",
                         "ColumnName": "column7",
-                        "GUID": "d4803f96-0f9f-4a99-914d-5e803483cd52"
+                        "GUID": "f7e3ac90-7940-41e0-b522-d16edca66590"
                       },
                       "ColumnName": "column7"
                     }
@@ -694,7 +694,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务子表",
                       "ColumnName": "任务主表ID",
-                      "GUID": "c16dbb9a-b9e3-41d5-9ade-0423155e3966"
+                      "GUID": "a7361025-6920-410a-8ecf-047c174e4926"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -708,14 +708,14 @@
                         "ColumnBindingInfo": {
                           "TableName": "签章任务子表",
                           "ColumnName": "ID",
-                          "GUID": "e64b7a49-6883-429d-b722-0af094a9ce39"
+                          "GUID": "f31631f8-38fb-4d0e-8208-5c4f5e6ddc2e"
                         },
                         "Order": 1
                       }
                     ]
                   }
                 },
-                "ID": "70dd6db6bdcb4e23ba0f69b6578fc901"
+                "ID": "2ea86f71c87548998d9a57924e702bf4"
               },
               {
                 "$type": "ObjectOperationCommand.CreateObjectCommand, ObjectOperationCommand",
@@ -1176,7 +1176,7 @@
                 "AllowAcessRoleList": [
                   "FGC_LoginUser"
                 ],
-                "ID": "4f9a995e40f949e89c3826fdd0637ca4"
+                "ID": "8637288a724442ebb1d6f9df719c2803"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1190,7 +1190,7 @@
                       "BindingInfo": {
                         "TableName": "客户回执和销售合同时间戳计算",
                         "ColumnName": "时间戳毫秒",
-                        "GUID": "51ea7a7e-c27b-4606-a736-f28bf9560b5a"
+                        "GUID": "e2c2945e-1c77-4c46-bf58-915d8810f371"
                       },
                       "ColumnName": "时间戳毫秒"
                     }
@@ -1200,7 +1200,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "客户回执和销售合同时间戳计算",
                       "ColumnName": "任务id",
-                      "GUID": "50fdd9d3-2bfd-4f64-be4e-d899ea457708"
+                      "GUID": "c09b22df-57b1-4c09-813a-009b7a798484"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1214,14 +1214,14 @@
                         "ColumnBindingInfo": {
                           "TableName": "客户回执和销售合同时间戳计算",
                           "ColumnName": "ID",
-                          "GUID": "b181a5bc-0654-4f77-a559-726062913196"
+                          "GUID": "af6fec9b-782d-4c17-a9cf-350c213ee981"
                         },
                         "Order": 1
                       }
                     ]
                   }
                 },
-                "ID": "8a4900a2f66540ae8f416e03cc0c43f0"
+                "ID": "dfdcfb59b1ab4d809d814338fcdd6879"
               },
               {
                 "$type": "CollectionOperationKit.ServerSideArrayOp, CollectionOperationKit",
@@ -1231,13 +1231,13 @@
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                 "ParameterName": "查询关键字位置api前缀",
                 "ParameterValue": "https://openapi.esign.cn/v3/files/",
-                "ID": "6bc2a6424ade4324aecb6ca9361a57ac"
+                "ID": "b30080a723744fa182eb149276b5b792"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                 "ParameterName": "查询关键字位置api后缀",
                 "ParameterValue": "/keyword-positions",
-                "ID": "60ae186d7a4e4e868bc0883de0446c3f"
+                "ID": "18e947ccc2f14a0eadef1b778439e9ab"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1246,7 +1246,7 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=查询关键字位置api前缀&fileId&查询关键字位置api后缀"
                 },
-                "ID": "b95ab22760484a788cd529d9b060f96f"
+                "ID": "1fd8dbc2ac4c4a0a8e15109dc8cde832"
               },
               {
                 "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
@@ -1612,13 +1612,13 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=客户回执参数数据.年月"
                 },
-                "ID": "554f1a19bd2f4a2e86c4d076172826a5"
+                "ID": "025cc677759e401e8f093347f9c6a95c"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                 "ParameterName": "合同名称",
                 "ParameterValue": "客户收货回执确认函",
-                "ID": "93e3e5c578514ce6815541edfd47544b"
+                "ID": "b749b27a41434cfc806d55d4303fea04"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1627,7 +1627,7 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=年月&合同名称"
                 },
-                "ID": "d371080c08c54d3f9825007c7f6a691a"
+                "ID": "2bd184cf6150469380d79148c889cf84"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1641,7 +1641,7 @@
                       "BindingInfo": {
                         "TableName": "授权印章ID",
                         "ColumnName": "印章ID",
-                        "GUID": "08b9819b-7234-4ee6-8125-87a2341e6492"
+                        "GUID": "648b8e5b-711c-426c-9d29-f0b6c81b4a64"
                       },
                       "ColumnName": "印章ID"
                     }
@@ -1654,7 +1654,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "授权印章ID",
                           "ColumnName": "公司名称",
-                          "GUID": "beffaac3-0110-45b8-9181-28c15b6ae68a"
+                          "GUID": "eb517980-3c40-4617-b1db-4edaf9d6b653"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1666,14 +1666,14 @@
                         "ColumnBindingInfo": {
                           "TableName": "授权印章ID",
                           "ColumnName": "印章类型",
-                          "GUID": "8fb297b4-9860-4158-ac30-0bf5b0f702a2"
+                          "GUID": "78ae84bc-b019-4bfe-a670-3f9ce96d50b6"
                         },
                         "Value": "发货回执章"
                       }
                     ]
                   }
                 },
-                "ID": "ce8ccba682b642b4a9fd76410b967689",
+                "ID": "c1da0293ee194152b9daaca3503dc3aa",
                 "Disabled": true
               },
               {
@@ -1714,7 +1714,7 @@
                         "Message": "公司类型数值是空的，需要录入"
                       }
                     ],
-                    "ID": "0d777ec1-6d87-4b1d-b0a9-27b241126fcf"
+                    "ID": "92d22b6d-3820-4434-a07c-7981fdb628f2"
                   },
                   {
                     "Condition": {
@@ -2421,7 +2421,7 @@
                                 "Timeout": 100.0
                               }
                             ],
-                            "ID": "133eaa85-9877-4e4a-bff0-c2bde458f94f"
+                            "ID": "3837f3f4-69a4-4f52-9a33-a0596741d1e0"
                           },
                           {
                             "Condition": {
@@ -3223,12 +3223,12 @@
                                 "Timeout": 100.0
                               }
                             ],
-                            "ID": "4a7aefdd-477a-4755-b8e0-4716961e83ca"
+                            "ID": "eb6e3e20-e732-489f-af65-bb69179dd134"
                           }
                         ]
                       }
                     ],
-                    "ID": "1a4f8691-ac19-4525-814b-771cd557463e"
+                    "ID": "b1a53cde-599c-4e60-896f-ea345cae3998"
                   },
                   {
                     "Condition": {
@@ -3923,7 +3923,7 @@
                         "Timeout": 100.0
                       }
                     ],
-                    "ID": "eae29f47-f03b-4b04-986c-0efaf44f6b38"
+                    "ID": "9dfa8110-5574-4af9-a34d-0708ece428f6"
                   }
                 ],
                 "Disabled": true
@@ -3966,7 +3966,7 @@
                         "Message": "公司类型数值是空的，需要录入"
                       }
                     ],
-                    "ID": "7e777629-b321-4db5-928a-82de37e6b5e9"
+                    "ID": "729402f7-5eff-417f-8467-cd6abba876aa"
                   },
                   {
                     "Condition": {
@@ -4334,10 +4334,7 @@
                                                         {
                                                           "Name": "psnAccount",
                                                           "DataItemType": 0,
-                                                          "Data": {
-                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                            "SerializeProperty": "=客户回执参数数据.我方电话"
-                                                          }
+                                                          "Data": 18765192922
                                                         },
                                                         {
                                                           "Name": "psnInfo",
@@ -4348,10 +4345,7 @@
                                                               {
                                                                 "Name": "psnName",
                                                                 "DataItemType": 0,
-                                                                "Data": {
-                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                                  "SerializeProperty": "=客户回执参数数据.我方签署人"
-                                                                }
+                                                                "Data": "夏雨鑫"
                                                               }
                                                             ]
                                                           }
@@ -4486,10 +4480,7 @@
                                                         {
                                                           "Name": "orgName",
                                                           "DataItemType": 0,
-                                                          "Data": {
-                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                            "SerializeProperty": "=客户回执参数数据.客户名称"
-                                                          }
+                                                          "Data": "山东亿嘉农业科技有限公司"
                                                         },
                                                         {
                                                           "Name": "transactorInfo",
@@ -4500,10 +4491,7 @@
                                                               {
                                                                 "Name": "psnAccount",
                                                                 "DataItemType": 0,
-                                                                "Data": {
-                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                                  "SerializeProperty": "=客户回执参数数据.对方电话"
-                                                                }
+                                                                "Data": 18765192922
                                                               }
                                                             ]
                                                           }
@@ -4670,7 +4658,7 @@
                                 "Timeout": 100.0
                               }
                             ],
-                            "ID": "f9f79b71-aa04-433a-96ca-d58ee6edae8e"
+                            "ID": "98b2602d-feb6-48d8-967d-71dc750b53af"
                           },
                           {
                             "Condition": {
@@ -5081,10 +5069,7 @@
                                                         {
                                                           "Name": "psnAccount",
                                                           "DataItemType": 0,
-                                                          "Data": {
-                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                            "SerializeProperty": "=客户回执参数数据.我方电话"
-                                                          }
+                                                          "Data": 18765192922
                                                         },
                                                         {
                                                           "Name": "psnInfo",
@@ -5095,10 +5080,7 @@
                                                               {
                                                                 "Name": "psnName",
                                                                 "DataItemType": 0,
-                                                                "Data": {
-                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                                  "SerializeProperty": "=客户回执参数数据.我方签署人"
-                                                                }
+                                                                "Data": "夏雨鑫"
                                                               }
                                                             ]
                                                           }
@@ -5233,10 +5215,7 @@
                                                         {
                                                           "Name": "orgName",
                                                           "DataItemType": 0,
-                                                          "Data": {
-                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                            "SerializeProperty": "=客户回执参数数据.客户名称"
-                                                          }
+                                                          "Data": "山东亿嘉农业科技有限公司"
                                                         },
                                                         {
                                                           "Name": "transactorInfo",
@@ -5247,10 +5226,7 @@
                                                               {
                                                                 "Name": "psnAccount",
                                                                 "DataItemType": 0,
-                                                                "Data": {
-                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                                  "SerializeProperty": "=客户回执参数数据.对方电话"
-                                                                }
+                                                                "Data": 18765192922
                                                               }
                                                             ]
                                                           }
@@ -5466,12 +5442,12 @@
                                 "Timeout": 100.0
                               }
                             ],
-                            "ID": "18920860-3cb0-449a-966f-355fbc1e2940"
+                            "ID": "3d827521-21d9-4d02-90e9-1b3b62640dbb"
                           }
                         ]
                       }
                     ],
-                    "ID": "25c9780c-cfb2-408a-81b6-f808d93bb0f8"
+                    "ID": "8d473d2c-c3df-429a-99d1-3a6161ce4d15"
                   },
                   {
                     "Condition": {
@@ -5822,10 +5798,7 @@
                                                 {
                                                   "Name": "psnAccount",
                                                   "DataItemType": 0,
-                                                  "Data": {
-                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                    "SerializeProperty": "=客户回执参数数据.我方电话"
-                                                  }
+                                                  "Data": 18765192922
                                                 },
                                                 {
                                                   "Name": "psnInfo",
@@ -5836,10 +5809,7 @@
                                                       {
                                                         "Name": "psnName",
                                                         "DataItemType": 0,
-                                                        "Data": {
-                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                          "SerializeProperty": "=客户回执参数数据.我方签署人"
-                                                        }
+                                                        "Data": "夏雨鑫"
                                                       }
                                                     ]
                                                   }
@@ -5974,10 +5944,7 @@
                                                 {
                                                   "Name": "psnAccount",
                                                   "DataItemType": 0,
-                                                  "Data": {
-                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                    "SerializeProperty": "=客户回执参数数据.对方电话"
-                                                  }
+                                                  "Data": 18765192922
                                                 },
                                                 {
                                                   "Name": "psnInfo",
@@ -5988,10 +5955,7 @@
                                                       {
                                                         "Name": "psnName",
                                                         "DataItemType": 0,
-                                                        "Data": {
-                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                          "SerializeProperty": "=客户回执参数数据.对方签署人"
-                                                        }
+                                                        "Data": "夏雨鑫"
                                                       }
                                                     ]
                                                   }
@@ -6163,7 +6127,7 @@
                         "Timeout": 100.0
                       }
                     ],
-                    "ID": "700a29bd-cde2-4d4e-ad70-0ba8292c1745"
+                    "ID": "7754cac1-d4a9-4f27-ad31-097289876115"
                   }
                 ]
               },
@@ -6207,7 +6171,7 @@
                       "BindingInfo": {
                         "TableName": "签章任务",
                         "ColumnName": "API调用次数",
-                        "GUID": "f42f7cda-7f64-4c30-bd03-31a7c12443e1"
+                        "GUID": "9a738799-afe3-479b-9db8-be14b13ce438"
                       },
                       "ColumnName": "API调用次数"
                     }
@@ -6217,7 +6181,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "任务主表id",
-                      "GUID": "a9b6c7da-208d-4c17-b4f9-9081c7531137"
+                      "GUID": "894c4a41-3f50-4762-9f2e-6892038bd8c8"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6225,7 +6189,7 @@
                     }
                   }
                 },
-                "ID": "a72ce7d1d4d14f9ba317bec085c30392"
+                "ID": "c9016f4e8eb94fd7a733d4ece57bfd2b"
               },
               {
                 "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -6269,7 +6233,7 @@
                           "ColumnBindingInfo": {
                             "TableName": "签章任务",
                             "ColumnName": "任务主表id",
-                            "GUID": "ebea270e-f389-4fa1-86c7-46f8296778ae"
+                            "GUID": "72da5368-03e1-4b9e-9f1e-32328409ef54"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6281,7 +6245,7 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "API调用日期",
-                              "GUID": "626db96f-e7ca-4b3d-bd2e-534ddff1f36f"
+                              "GUID": "ad28c5d4-b9ac-4adf-be6d-df6356cb6665"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6292,7 +6256,7 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "API调用次数",
-                              "GUID": "00b41d96-e83c-42ed-8dab-4ea5799cbe1f"
+                              "GUID": "083e8c71-3693-4f77-9a95-6c7c47b05e37"
                             },
                             "Value": "1"
                           },
@@ -6300,7 +6264,7 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "接口发起状态",
-                              "GUID": "5b1479fa-f4ef-4b80-807d-9373d8e538c8"
+                              "GUID": "94d19d54-2ca5-4822-881a-2a979881dd77"
                             },
                             "Value": "1"
                           },
@@ -6308,7 +6272,7 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "发起流程ID",
-                              "GUID": "fe05dca7-0a70-40b6-8b17-aa86d75a65cc"
+                              "GUID": "0b258b8d-f9af-4094-bb26-4ef2c7e97f5f"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6319,14 +6283,14 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "发起类型",
-                              "GUID": "49c97274-d2b5-4e6d-9fc2-b7b74cb7ddf1"
+                              "GUID": "5762372e-6350-4956-9758-6c1b387bce3c"
                             },
                             "Value": "自动发起"
                           }
                         ]
                       }
                     ],
-                    "ID": "515ed729-d084-4f9e-bfc7-c14e06f0f2a8"
+                    "ID": "cd86e54b-cbc8-4cb4-adfc-23eb06e262a0"
                   },
                   {
                     "CommandList": [
@@ -6340,7 +6304,7 @@
                           "ColumnBindingInfo": {
                             "TableName": "签章任务",
                             "ColumnName": "任务主表id",
-                            "GUID": "a970e44b-28c1-42b6-a44b-ff2755c06726"
+                            "GUID": "0907d226-ece1-475b-9087-a724af5f48c2"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6352,7 +6316,7 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "API调用日期",
-                              "GUID": "55441b48-54e7-47bd-949b-d54c25594b78"
+                              "GUID": "787698f8-6d27-4df4-8c5f-90b8e8256a76"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6363,7 +6327,7 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "API调用次数",
-                              "GUID": "ad6cf75a-00e6-4f5e-aa3a-495d93a84364"
+                              "GUID": "be8cb9dd-5763-4728-9ad0-95d6212ede54"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6374,7 +6338,7 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "接口发起状态",
-                              "GUID": "90cb4240-9370-4296-824c-f1a26c5ab8f6"
+                              "GUID": "da036c15-fd78-40fb-b364-7dca5eacbe3f"
                             },
                             "Value": "1"
                           },
@@ -6382,7 +6346,7 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "发起流程ID",
-                              "GUID": "9e387844-4c0b-4a77-a5a8-a881a22e7a5c"
+                              "GUID": "48b9710a-dcda-4a45-9341-99ae6b05b2d8"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6393,14 +6357,14 @@
                             "BindingInfo": {
                               "TableName": "签章任务",
                               "ColumnName": "发起类型",
-                              "GUID": "5cbce235-0d35-4f15-b0ba-50468be854e9"
+                              "GUID": "41cfeee4-f5a7-423b-8724-ec3cbddbeafa"
                             },
                             "Value": "自动发起"
                           }
                         ]
                       }
                     ],
-                    "ID": "2401065f-de32-4a56-bc75-ba5fc50eb746"
+                    "ID": "ab97dc6f-303f-405b-ae8a-d2ff7ff0cfa7"
                   }
                 ]
               },
@@ -6414,7 +6378,7 @@
                     "BindingInfo": {
                       "TableName": "调用记录",
                       "ColumnName": "流程ID",
-                      "GUID": "7c1f81e9-d40a-464c-af05-596a2c4107cc"
+                      "GUID": "36949617-d6aa-42f3-b9b9-5e04a0457c21"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6425,7 +6389,7 @@
                     "BindingInfo": {
                       "TableName": "调用记录",
                       "ColumnName": "流程返回值",
-                      "GUID": "f9195d7f-b529-4f48-85ae-2a4c14452cb2"
+                      "GUID": "15d3b645-4fbc-4103-9f58-e65685372288"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6436,7 +6400,7 @@
                     "BindingInfo": {
                       "TableName": "调用记录",
                       "ColumnName": "结束时间",
-                      "GUID": "d293516c-3080-4266-99e6-1e8431d7d5d0"
+                      "GUID": "ebfe1009-67cd-4cd2-acf7-c86de55fa08d"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6447,7 +6411,7 @@
                     "BindingInfo": {
                       "TableName": "调用记录",
                       "ColumnName": "添加模板返回值",
-                      "GUID": "e3a11a14-8fc6-4da7-b2f1-943a6703f40a"
+                      "GUID": "2427d878-4f00-418b-b730-ab05f70ff846"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6458,7 +6422,7 @@
                     "BindingInfo": {
                       "TableName": "调用记录",
                       "ColumnName": "任务主表ID",
-                      "GUID": "4b7805c1-d08f-4c74-9f28-e1d1ce510cc5"
+                      "GUID": "d94d4092-3285-453e-a483-c9e4a8a5226d"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6469,7 +6433,7 @@
                     "BindingInfo": {
                       "TableName": "调用记录",
                       "ColumnName": "发起时间",
-                      "GUID": "f692cd48-7226-4330-9dd4-784137fcd1be"
+                      "GUID": "f1dfb1f2-c80b-4b1a-9174-0d74cf86cc9c"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6482,7 +6446,7 @@
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                 "ParameterName": "发起查询合同连接地址前缀",
                 "ParameterValue": "https://openapi.esign.cn/v3/files/",
-                "ID": "cb8f91775c8d4104a002afe5924b8570"
+                "ID": "a1db5ad900094775b53204e306b7e3bf"
               },
               {
                 "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -6491,7 +6455,7 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=发起查询合同连接地址前缀&fileId"
                 },
-                "ID": "11ab96cbb9494f969e78e7281c649b91"
+                "ID": "6f11ec4fe8f54390ba121d717a423f9f"
               },
               {
                 "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
@@ -6641,7 +6605,7 @@
                 "BindingInfo": {
                   "TableName": "调用记录",
                   "ColumnName": "流程返回值",
-                  "GUID": "e1a6137b-98b2-4b70-915e-0f6d3866684c"
+                  "GUID": "c6e65113-10f5-4c08-a9e7-8b4a0f11d991"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6652,7 +6616,7 @@
                 "BindingInfo": {
                   "TableName": "调用记录",
                   "ColumnName": "任务主表ID",
-                  "GUID": "40012b6e-4620-467f-be2b-a6f64aff66ef"
+                  "GUID": "850c2298-94f5-4ee8-a30e-c379651ebb2a"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -6663,7 +6627,7 @@
                 "BindingInfo": {
                   "TableName": "调用记录",
                   "ColumnName": "结束时间",
-                  "GUID": "17face78-a16e-4b13-b591-610450bab544"
+                  "GUID": "77a1f0c7-22ce-43d5-ba16-41ad3d0f000c"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",

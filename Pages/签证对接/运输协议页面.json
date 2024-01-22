@@ -298,37 +298,44 @@
       },
       "48": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 24.0,
+          "IsHidden": true
         }
       },
       "49": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 24.0,
+          "IsHidden": true
         }
       },
       "50": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 24.0,
+          "IsHidden": true
         }
       },
       "51": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 24.0,
+          "IsHidden": true
         }
       },
       "52": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 24.0,
+          "IsHidden": true
         }
       },
       "53": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 24.0,
+          "IsHidden": true
         }
       },
       "54": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
+          "DesignLengthInPixel": 24.0,
+          "IsHidden": true
         }
       },
       "55": {
@@ -532,7 +539,7 @@
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "签章任务",
-            "ID": "c1c141f54fa64c658ac59c866206c608"
+            "ID": "49152a1c23984a8eb7349d7d1bf4ce04"
           }
         ],
         "Text": "重置",
@@ -618,7 +625,7 @@
                             }
                           }
                         },
-                        "ID": "ac2b4076817b410bacf99071629f6a7e"
+                        "ID": "1210cf0adeae495c89c4542b7347a227"
                       },
                       {
                         "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -663,7 +670,7 @@
                                 "Position": "top-right"
                               }
                             ],
-                            "ID": "3cb65b42-7b33-4d66-8b80-9d3837a4cc96"
+                            "ID": "a2c19519-166f-47ab-babd-71f58639147f"
                           },
                           {
                             "Condition": {
@@ -705,7 +712,7 @@
                                 "Position": "top-right"
                               }
                             ],
-                            "ID": "ff35ab68-5927-432e-9bfc-c730cc30e3e3"
+                            "ID": "e5d0f86b-70bd-4c50-9704-24b5a3d8173f"
                           },
                           {
                             "CommandList": [
@@ -726,18 +733,18 @@
                                 "Position": "top-right"
                               }
                             ],
-                            "ID": "713be803-0913-4869-ad4b-a76e7e38e66b"
+                            "ID": "8ed8d503-c484-492a-a935-be4e05301a5a"
                           }
                         ]
                       }
                     ]
                   }
                 ],
-                "ID": "fefc7299-4ed2-4e15-b04c-f2beb0f09201"
+                "ID": "490c81c1-1daf-4996-9eb7-66a758b10d60"
               },
               {
                 "CommandList": [],
-                "ID": "383d7dc8-4518-47c4-a8c2-3e5e70cb1990"
+                "ID": "f435af1a-68e4-4f1a-9b95-02cecb2d2e60"
               }
             ]
           }
@@ -1013,7 +1020,7 @@
                     "Position": "top-right"
                   }
                 ],
-                "ID": "1a5af7c4-ccc5-4d07-8160-a512ccb1b3c7"
+                "ID": "69fb8172-cc8c-48cc-9f22-0c597598c51d"
               },
               {
                 "CommandList": [
@@ -1028,6 +1035,11 @@
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                           "SerializeProperty": "=运输协议页面!BD5"
                         }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "任务类型",
+                        "Value": "签章任务"
                       }
                     ],
                     "ResultErrorCodeTo": {
@@ -1076,7 +1088,7 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "bd01a094-e91a-4c35-9836-70c022df8101"
+                        "ID": "90cbf838-1693-42dc-b364-60f8f585c074"
                       },
                       {
                         "CommandList": [
@@ -1092,12 +1104,12 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "c072372a-7125-43b6-b95f-ac1c70b76495"
+                        "ID": "579031ac-a0b8-41ff-a5ac-d2ea78c90b1d"
                       }
                     ]
                   }
                 ],
-                "ID": "525be18e-740a-4718-a858-7b60fe2ac3d8"
+                "ID": "a5b1fb10-76bc-4540-b7c5-4037fb76b373"
               }
             ]
           }
@@ -1136,7 +1148,7 @@
                     "Position": "top-right"
                   }
                 ],
-                "ID": "b9a4a9a8-7529-440e-9d08-3db857c63bdb"
+                "ID": "77c57c04-9bbd-429e-b6ab-5ec79c19b7fe"
               },
               {
                 "Condition": {
@@ -1161,7 +1173,7 @@
                     "Position": "top-right"
                   }
                 ],
-                "ID": "0048a6ab-0269-43e6-afff-7632023427ad"
+                "ID": "8eadb392-e07b-4fb0-a74f-6b70003d7850"
               },
               {
                 "CommandList": [
@@ -1207,7 +1219,7 @@
                             "CheckDataValidation": true
                           }
                         ],
-                        "ID": "ff88d253-7c79-4b5f-b050-20a2e1394bfd"
+                        "ID": "ba3f036c-3515-4223-95c6-22801791fab6"
                       },
                       {
                         "CommandList": [
@@ -1231,7 +1243,7 @@
                             "CheckDataValidation": true
                           }
                         ],
-                        "ID": "adda3d32-332a-4016-a95a-847db11fa31d"
+                        "ID": "53fe4589-e9fe-4496-aad3-d65d38859e64"
                       }
                     ]
                   },
@@ -1275,7 +1287,7 @@
                             "MessageFormula": "发送成功！"
                           }
                         ],
-                        "ID": "33795542-6a45-4faa-be00-75219c76ead9"
+                        "ID": "e024ff67-57b6-4df9-b3f1-a74da28bf321"
                       },
                       {
                         "CommandList": [
@@ -1284,12 +1296,12 @@
                             "MessageFormula": "发送失败！"
                           }
                         ],
-                        "ID": "afde8af6-4b06-4303-ac13-b6469b7e1840"
+                        "ID": "fd0f692c-b84f-4827-b8ab-04bc5c480541"
                       }
                     ]
                   }
                 ],
-                "ID": "ff72b753-4270-4727-a9bd-f2c3f247f634"
+                "ID": "72b3bd65-6cf3-4437-8203-e487e4f8bdb8"
               }
             ]
           }
@@ -1633,4 +1645,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//98J+4e1DEHHC5Ni0HzVJ9oUNaSywAeTYLKG/v22rK1krybLLK3xsfU2TGc51cogj0zVjjjuf4v6Pez8ghqx0hytrN6loPjCv+qTxqGLVODDbLt8bAvwYuEs+5VfExTISgMkHCxBNPb/MXJ67iUYseZamNU8NuKN+fAu4cVmQU8GcP7y1SKUgOBivmEDaI5g4x1ha9h5VwEKJLRBi8orMvE7XXrS0Sr2UQHkKmEtuPNseq86830zUGM4wfob+0nI9dx+NmF0oaqtgeB8xjLdGcnaG1p3zarar7HH2M/256GB/qTSkqfsFDFNOOZHE9wrQ/25rG+H9P9v2Jc9zgF6rA2KLX9fuwPHvtv+NS3xTKjrGjAxeu8HZwK1bquTUD9wZfs1hgXZj9fbYJ4Wq+1GDwkRwVZcR++4T6kakhWWRJs+9dPQynyUnsHVC2EcjIVsQ8G3OUMyXqWNH4n9K+s+MEo8TXdzclf1gFXeodiE+k1svKIWBYNUJ+I83AT6hPXGWzI9pbxTbUOTPsKiYhU3WPaGeIWpzpLQ9umsmKCHO+FYPJLwJubLosGcrfG/Aed6G7pqcmExhHpzJnHD67rcl/zx6ywOuHXotg2ZpIogEZwG6v6B7fPAH31DBMxeBp3lKrfRLgPRtazL0kyVYmY648O3LLCYmI/gKbpzmLugsaXqmzrzoxA4V7HjDTL0e0IcMlKHZhaPkM7w3/OtZMZdp0msWlLzva01q8GYAU3+t4SZZR1jqwVUWmnmT2vXgPf+8b6ks/xRpE8TWiTuDI3usLD4CuP/r1T5RAKWdLA85zDUmyr/ZX9CwA87vuk5a1fvyb7GRr88JrQ51OKFic3q+LAFliRyR1eGJH5MYmIrmULhlBKKNW7/R89c2t3BmCuzpPahXeT6kelfI0B1oq0aJhw==|920
+}//cXXx6pAHaOQbMh00jFqAlCNXmCHNPByZwOgfYSMfLDTEvSF8DsNYegUJFHGJlxc7yTZDIUvicJO7QwsnTKAhFPY/dZdckiRmgXAfz52kwZeuqXPEP6eQqRNl35S9PQ0CQF+BTCcHm1WqxrZ/OE12OTxcTn2Yv2X41QmagPKcIqvdVY811Y6htieDrMI9O9bMDr617QCc7bM1I/RWHvVSvvPf/JorEy0tf0nHoLCRnN0qW4ZrJ3TGynNRjofvYSC5Ba4jpaLP3mCDdoXD3tTxhAT9EquZYV/kKEhJTHxaqA4Be8MxEZjfp3YqGNy1VrxDIlQV7oCBohHQvOH3CosUOSCWbazh+mdJM1VxENaGKEQNVudHoKX6JcUeS4m1qI+VeXcyaArtkbkT6HiFSji0izgF4ruMi6r/K0FVwlBUiX+1IYZ48a3q/qctHAU6upOREl1EGv8jPoVxZ+KAwRbl/XPDCF60u5BWRXmxrHm0sCNC/nAtp8KPKptktFTfJGw8U5FkkVHJAcdUADA1dMd3ULeNUgyDiJDM5SmhzbsqmaOPRoPI12flry+9PtQ39kDjxu3l7MwkeTEQbAEaiPmCqYdpbL7j1X4aONkQbg5UCYSlYcH1UiKH3c/uSudMd8mS6WfUuiMy62wQp0hkpigQltoOrcR1OMs2OJ2Zo8x41OntzI7BDQWLenIRT8SpC+evsUbo4qgqrwQI9jModMJhkAJHwBgHKpMB0CreGUxyKRzDpWGZvHS9eKn/bAciR4JeF8ABO3FNybUSFScbxUcS7mHMTOkLIVzlsI4bEQ0Uy5X3nmGq09AAdLIr1qWFJ2nmZRSqTQQIQkx5BoRCTCW33X8FUjXELH17Dr+d3AQE43qOpkX6XvGc7lSYoFNUV4m3eCDKtIZVqTqqsIcZslpQdA==|920

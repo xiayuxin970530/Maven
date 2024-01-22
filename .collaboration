@@ -1484,7 +1484,16 @@
   },
   {
     "ModuleName": "ServerCommandPrivate/自动发起客户回执接口自动签署",
-    "ModuleType": 27
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T16:45:55.8567013+08:00",
+    "ModuleType": 27,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝正式接口\\发货回执\\自动发起客户回执接口自动签署.json"
+    ]
   },
   {
     "ModuleName": "ServerCommands/e签宝正式接口/销售合同",

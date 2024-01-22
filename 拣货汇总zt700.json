@@ -1,0 +1,143 @@
+{
+  "Name": "拣货汇总zt700",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "PICKID",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "dlcinvcod",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "拣货总数",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cwhcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "pdate",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "carcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "mark",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "code",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "maker",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "cdlcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "客户编码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "客户名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "dlinvstd",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "Expr1",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "dlcivname",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "ztcode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "标识",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "拣货汇总zt700",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  a.PICKID, a.dlcinvcod, SUM(a.dlqty) - SUM(ISNULL(a.出库数, 0)) AS 拣货总数, a.cwhcode, b.pdate, b.carcode, b.mark, \r\n                   b.code, b.maker, '发货编号' AS cdlcode, '客户编码' AS 客户编码, '客户名称' AS 客户名称, a.dlinvstd, 'a.cdlcode' AS Expr1, \r\n                   a.dlcivname, a.ztcode, a.标识\r\nFROM      dbo.PICKS AS a LEFT OUTER JOIN\r\n                   dbo.PICK AS b ON a.PICKID = b.pickID LEFT OUTER JOIN\r\n                   dbo.发货单不过滤zt700 AS c ON a.dlautoid = c.AutoID\r\nWHERE   (ISNULL(a.出库比例, 0) < '1') AND (a.ztcode = 'ZT700')\r\nGROUP BY a.PICKID, a.dlcinvcod, a.cwhcode, b.pdate, b.carcode, b.mark, b.code, b.maker, a.dlinvstd, a.dlcivname, a.ztcode, a.标识",
+    "ViewInfo": {
+      "ViewName": "拣货汇总zt700",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

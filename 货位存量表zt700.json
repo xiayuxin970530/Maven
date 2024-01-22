@@ -1,0 +1,305 @@
+{
+  "Name": "货位存量表zt700",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "autoid",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cWhCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cWhName",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cPosCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cPosName",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cBatch",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cvmivencode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cvmivenname",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "dMDate",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "iMassDate",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "smallint",
+      "MaxLength": -1,
+      "Name": "cMassUnit",
+      "ColumnType": "System.Int16, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cMassUnitName",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "datetime",
+      "MaxLength": -1,
+      "Name": "dVDate",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "iQuantityold",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "iQuantity",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "现存量",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "iNum",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvAddCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvName",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree1",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree2",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree3",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree4",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree5",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree6",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree7",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree8",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree9",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cFree10",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "有效期推算方式",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "有效期至",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvStd",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvCCode",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "cInvCName",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "已下达任务",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "货位实际可用",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "批次净可用",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "货位占用",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "ZTCODE",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "货位存量表zt700",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT  TOP (100) PERCENT a.autoid, a.cWhCode, a.cWhName, a.cPosCode, a.cPosName, a.cInvCode, a.cBatch, a.cvmivencode, \r\n                   a.cvmivenname, a.dMDate, a.iMassDate, a.cMassUnit, a.cMassUnitName, a.dVDate, a.iQuantity AS iQuantityold, \r\n                   a.iQuantity - ISNULL(c.已下达任务, 0) AS iQuantity, a.iQuantity AS 现存量, a.iNum, a.cInvAddCode, a.cInvName, a.cFree1, \r\n                   a.cFree2, a.cFree3, a.cFree4, a.cFree5, a.cFree6, a.cFree7, a.cFree8, a.cFree9, a.cFree10, a.有效期推算方式, a.有效期至, \r\n                   a.cInvStd, a.cInvCCode, a.cInvCName, c.已下达任务, a.iQuantity AS 货位实际可用, a.iQuantity - ISNULL(c.已下达任务, 0) \r\n                   AS 批次净可用, ISNULL(d.已下达任务, 0) AS 货位占用, a.ZTCODE\r\nFROM      dbo.货位存量表U8zt700 AS a LEFT OUTER JOIN\r\n                       (SELECT  ISNULL(SUM(contentqty * (1 - ISNULL(标识出库比例, 0))), 0) AS 已下达任务, pcinvcode, ctposcode, 仓库, \r\n                                           ctbbatch\r\n                        FROM       dbo.任务绑定明细\r\n                        WHERE    (ISNULL(标识出库比例, 0) < '1')\r\n                        GROUP BY pcinvcode, ctposcode, 仓库, ctbbatch) AS c ON a.cInvCode = c.pcinvcode AND \r\n                   a.cPosCode = c.ctposcode AND a.cWhCode = c.仓库 AND c.ctbbatch = a.cBatch LEFT OUTER JOIN\r\n                       (SELECT  ISNULL(SUM(contentqty * (1 - ISNULL(标识出库比例, 0))), 0) AS 已下达任务, pcinvcode, ctposcode, 仓库\r\n                        FROM       dbo.任务绑定明细 AS 任务绑定明细_1\r\n                        WHERE    (ISNULL(标识出库比例, 0) < '1')\r\n                        GROUP BY pcinvcode, ctposcode, 仓库) AS d ON a.cInvCode = d.pcinvcode AND a.cPosCode = d.ctposcode AND \r\n                   a.cWhCode = d.仓库\r\nORDER BY c.已下达任务",
+    "ViewInfo": {
+      "ViewName": "货位存量表zt700",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

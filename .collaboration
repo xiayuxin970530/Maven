@@ -1484,16 +1484,7 @@
   },
   {
     "ModuleName": "ServerCommandPrivate/自动发起客户回执接口自动签署",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AF-APP06\\afapp",
-      "Email": "mkvuot07865@chacuo.net"
-    },
-    "LockDateTime": "2024-01-22T16:45:55.8567013+08:00",
-    "ModuleType": 27,
-    "ToRemoveFiles": [
-      "ServerCommands\\e签宝正式接口\\发货回执\\自动发起客户回执接口自动签署.json"
-    ]
+    "ModuleType": 27
   },
   {
     "ModuleName": "ServerCommands/e签宝正式接口/销售合同",
@@ -1505,16 +1496,7 @@
   },
   {
     "ModuleName": "ServerCommandPrivate/自动签署销售合同接口",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AF-APP06\\afapp",
-      "Email": "mkvuot07865@chacuo.net"
-    },
-    "LockDateTime": "2024-01-22T16:46:28.4556019+08:00",
-    "ModuleType": 27,
-    "ToRemoveFiles": [
-      "ServerCommands\\e签宝正式接口\\销售合同\\自动签署销售合同接口.json"
-    ]
+    "ModuleType": 27
   },
   {
     "ModuleName": "ServerCommands/e签宝正式接口/物流运输",
@@ -1530,16 +1512,7 @@
   },
   {
     "ModuleName": "ServerCommandPrivate/自动发起动态表格运输协议",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AF-APP06\\afapp",
-      "Email": "mkvuot07865@chacuo.net"
-    },
-    "LockDateTime": "2024-01-22T16:46:58.3621867+08:00",
-    "ModuleType": 27,
-    "ToRemoveFiles": [
-      "ServerCommands\\e签宝正式接口\\物流运输\\自动发起动态表格运输协议.json"
-    ]
+    "ModuleType": 27
   },
   {
     "ModuleName": "ServerCommands/e签宝正式接口/对账单",
@@ -1547,29 +1520,11 @@
   },
   {
     "ModuleName": "ServerCommand/对账单自动签署接口",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AF-APP06\\afapp",
-      "Email": "mkvuot07865@chacuo.net"
-    },
-    "LockDateTime": "2024-01-22T16:47:22.056328+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\e签宝正式接口\\对账单\\对账单自动签署接口.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/对账单自动签署接口日版",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AF-APP06\\afapp",
-      "Email": "mkvuot07865@chacuo.net"
-    },
-    "LockDateTime": "2024-01-22T16:48:09.4709007+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\e签宝正式接口\\对账单\\对账单自动签署接口日版.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/添加对账单数据到签章任务",
@@ -1717,16 +1672,7 @@
   },
   {
     "ModuleName": "ServerCommand/crm单号发起历史回执数据",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "AF-APP06\\afapp",
-      "Email": "mkvuot07865@chacuo.net"
-    },
-    "LockDateTime": "2024-01-22T16:27:59.6168778+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\crm接口\\crm单号发起历史回执数据.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/e签宝调用撤销接口",

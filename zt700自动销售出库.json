@@ -1,0 +1,25 @@
+{
+  "Name": "zt700自动销售出库",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "TimeUnit": 1,
+      "StartDateTime": 44989.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "zt700自动出库",
+      "DisplayNameInDesigner": "[dbo].[zt700自动出库]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "119a90349328463ba7cbb6fdc147693a"
+    }
+  ]
+}

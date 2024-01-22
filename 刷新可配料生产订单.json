@@ -1,0 +1,25 @@
+{
+  "Name": "刷新可配料生产订单",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "TimeUnit": 1,
+      "StartDateTime": 44869.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "更新配料状态定时任务",
+      "DisplayNameInDesigner": "[dbo].[更新配料状态定时任务]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "0e306f69d52647519c64229da5c1511c"
+    }
+  ]
+}

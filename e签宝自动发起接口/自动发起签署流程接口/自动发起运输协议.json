@@ -1,0 +1,277 @@
+{
+  "Name": "自动发起运输协议",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 30.0,
+      "TimeUnit": 2,
+      "StartDateTime": 45288.350694444445,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+      "TryCommandPart": {
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "是否有发起任务id",
+            "TableValue": {
+              "TableName": "签章任务",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "签章任务",
+                      "ColumnName": "任务类型",
+                      "GUID": "af5810dd-55ff-4d69-bbd6-8d324b6b54e5"
+                    },
+                    "Value": "物流运输协议"
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "签章任务",
+                      "ColumnName": "接口发起状态",
+                      "GUID": "88e9714a-61f9-4b54-bacf-db856d4a51e1"
+                    },
+                    "Value": "%Null%"
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "签章任务",
+                      "ColumnName": "发起状态",
+                      "GUID": "0a4291ce-f7d6-48db-9207-090475802a24"
+                    },
+                    "Value": "1"
+                  }
+                ]
+              },
+              "TopCount": "1"
+            },
+            "ID": "1e35ff64ee33433d8a2f7e27bf8ae8e2"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "发起任务id",
+            "TableValue": {
+              "TableName": "签章任务",
+              "TableValueType": 1,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "签章任务",
+                    "ColumnName": "任务主表id",
+                    "GUID": "7ae91405-2b65-4855-9e91-87894487eb43"
+                  },
+                  "ColumnName": "任务主表id"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "签章任务",
+                    "ColumnName": "公司类型",
+                    "GUID": "5447d36d-3b18-4c44-83c2-189a95db2d4b"
+                  },
+                  "ColumnName": "公司类型"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "SubConditions": [
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "签章任务",
+                      "ColumnName": "任务类型",
+                      "GUID": "70aa43d1-0096-44fa-ae2c-f56cff8feea4"
+                    },
+                    "Value": "物流运输协议"
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "签章任务",
+                      "ColumnName": "接口发起状态",
+                      "GUID": "48293c68-d59a-43f8-9caa-7e1609c7b20c"
+                    },
+                    "Value": "%Null%"
+                  },
+                  {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 1,
+                    "ColumnBindingInfo": {
+                      "TableName": "签章任务",
+                      "ColumnName": "发起状态",
+                      "GUID": "6e63b5bd-a381-4440-ab6a-1d3ab06ebec0"
+                    },
+                    "Value": "1"
+                  }
+                ]
+              },
+              "TopCount": "1"
+            },
+            "ID": "c4baee83d3eb4d7c8c8ba1da5025c2b6"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "发起状态",
+            "TableValue": {
+              "TableName": "签章任务",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "签章任务",
+                    "ColumnName": "发起状态",
+                    "GUID": "ef432461-e124-4e5b-9fb2-b62db5819eec"
+                  },
+                  "ColumnName": "发起状态"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "签章任务",
+                  "ColumnName": "任务主表id",
+                  "GUID": "a961bed1-eb92-4dbe-b348-d3df1f2ec6b8"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=发起任务id.任务主表id"
+                }
+              },
+              "TopCount": "1"
+            },
+            "ID": "ef2e9cbb41684ca9ba8de89cfcb6d0ed"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                    "ParamObject": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=是否有发起任务id"
+                    }
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                    "ErrorCode": "0",
+                    "Message": "暂无数据发起！"
+                  }
+                ],
+                "ID": "029f6caf-4ff5-411f-b04c-94cb920f33ad"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                            "ParamObject": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=发起状态"
+                            }
+                          },
+                          "value": "1"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                            "ErrorCode": "0",
+                            "Message": "发起过！"
+                          }
+                        ],
+                        "ID": "c233af11-f7eb-4272-8fe8-d5f87f8ba0e2"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "自动发起动态表格运输协议",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "ParamName": "任务主表ID",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=发起任务id.任务主表id"
+                                }
+                              }
+                            ],
+                            "ResultErrorCodeTo": {
+                              "SerializeProperty": "res"
+                            },
+                            "ResultMessageTo": {
+                              "SerializeProperty": "data"
+                            },
+                            "ReturnPropertiesTo": [
+                              {
+                                "ResultPropertyName": "任务主表id",
+                                "ResultTo": {
+                                  "SerializeProperty": "id"
+                                }
+                              }
+                            ],
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                            "ErrorCode": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=res"
+                            },
+                            "Message": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=data&发起任务id.任务主表id"
+                            }
+                          }
+                        ],
+                        "ID": "fb37b7ff-1e49-4119-bf08-48121cd7b99b"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "da581107-478b-4ac8-80aa-b9d76f979aea"
+              }
+            ]
+          }
+        ]
+      },
+      "CatchCommandPart": {
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+            "ErrorCode": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExceptionCode"
+            },
+            "Message": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ExceptionMessage"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

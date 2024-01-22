@@ -1,0 +1,26 @@
+{
+  "Name": "生成生产批号",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 4.0,
+      "TimeUnit": 2,
+      "StartDateTime": 45001.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "生成生产订单生产批号",
+      "DisplayNameInDesigner": "[dbo].[生成生产订单生产批号]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "d73e82e32c60476db0325445c4c342a1"
+    }
+  ]
+}

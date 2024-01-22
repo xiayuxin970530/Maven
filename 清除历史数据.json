@@ -1,0 +1,24 @@
+{
+  "Name": "清除历史数据",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.DailyScheduleTrigger, ServerDesignerCommon",
+      "StartDateTime": 44983.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "清除历史数据",
+      "DisplayNameInDesigner": "[dbo].[清除历史数据]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "4c0e580d7c884fed9a2c956e19dd21d6"
+    }
+  ]
+}

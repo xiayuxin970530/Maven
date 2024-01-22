@@ -1,0 +1,57 @@
+{
+  "Name": "定时查询状态",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 20.0,
+      "TimeUnit": 2,
+      "StartDateTime": 45218.69375,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "获取token",
+      "TableValue": {
+        "TableName": "token",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "token",
+              "ColumnName": "token",
+              "GUID": "c2742bd4-ac26-4cc4-b649-2fa1164f7720"
+            },
+            "ColumnName": "token"
+          }
+        ]
+      },
+      "ID": "877190d6dd3d46b79a068aa23e06415a"
+    },
+    {
+      "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+      "ServerCommandName": "查询流程接口状态",
+      "Parameters": [
+        {
+          "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+          "ParamName": "token",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=获取token"
+          }
+        }
+      ],
+      "ResultErrorCodeTo": {
+        "SerializeProperty": "res"
+      },
+      "ResultMessageTo": {
+        "SerializeProperty": "data"
+      },
+      "RefreshAfterFinish": true,
+      "CheckDataValidation": true
+    }
+  ]
+}

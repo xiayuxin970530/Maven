@@ -1,0 +1,43 @@
+{
+  "Name": "更新发货单备注",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 5.0,
+      "TimeUnit": 1,
+      "StartDateTime": 44858.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "更新标识",
+      "DisplayNameInDesigner": "[dbo].[更新标识]",
+      "Parmeters": [
+        {
+          "Name": "pickid",
+          "Value": "1",
+          "DataType": "int"
+        }
+      ],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "3c98e1c19bdb44db992455527b75373d"
+    },
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "计算配料物料比例",
+      "DisplayNameInDesigner": "[dbo].[计算配料物料比例]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "cc9f90807ee1411e9e72240420001c5e"
+    }
+  ]
+}

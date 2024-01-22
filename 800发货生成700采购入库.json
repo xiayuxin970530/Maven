@@ -1,0 +1,26 @@
+{
+  "Name": "800发货生成700采购入库",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 6.0,
+      "TimeUnit": 2,
+      "StartDateTime": 45142.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "账套800发货单生成700采购入库单",
+      "DisplayNameInDesigner": "[dbo].[账套800发货单生成700采购入库单]",
+      "Parmeters": [],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "3847af6e10ef4e549f080d1579156eec"
+    }
+  ]
+}

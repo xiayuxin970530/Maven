@@ -1,0 +1,49 @@
+{
+  "Name": "生成销售出库单",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
+      "Interval": 25.0,
+      "TimeUnit": 2,
+      "StartDateTime": 44976.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "生成销售出库单NEW",
+      "DisplayNameInDesigner": "[dbo].[生成销售出库单NEW]",
+      "Parmeters": [
+        {
+          "Name": "来源",
+          "Value": "活字格定时任务25s",
+          "DataType": "nvarchar"
+        }
+      ],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "5f3b8f5082e24bd1b6ddd0fbb9e38d1e"
+    },
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "pld",
+      "Name": "生成销售出库单700NEW",
+      "DisplayNameInDesigner": "[dbo].[生成销售出库单700NEW]",
+      "Parmeters": [
+        {
+          "Name": "来源",
+          "Value": "活字格700",
+          "DataType": "nvarchar"
+        }
+      ],
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "c1783433da5f44b1b0278ea83e595b93"
+    }
+  ]
+}

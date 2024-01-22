@@ -1,0 +1,312 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "Count": 32
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 9,
+    "DefaultSize": 33.0
+  },
+  "Values": {
+    "1,1": "清空"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "材料扫码记录",
+            "UpdateType": "delete",
+            "ShowConfirm": true,
+            "ConfirmText": "您确定要删除吗？",
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "材料扫码记录",
+                "ColumnName": "imasid",
+                "GUID": "4720f086-7325-4b7b-85e3-d8a09305fa68"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=扫码明细!$B$31"
+              }
+            }
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "出库验料",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=扫码明细!生产单号"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=出库验料!生产单号主页"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "清空",
+        "TemplateKey": "样式5"
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "TemplatePageName": "496bd0a50a444542bcbbfbc18f12ede",
+        "ListviewName": "表格1",
+        "TemplateKey": "_RS_Selectable"
+      }
+    },
+    "15,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "材料扫码记录",
+        "RowIndex": 15,
+        "ColumnIndex": 1,
+        "RowCount": 14,
+        "ColumnCount": 7,
+        "DetailListViewInfo": {
+          "ColumnOfDetailTable": "imasid",
+          "MasterTable": "未出库领料申请明细",
+          "ColumnOfMasterTable": "AutoID",
+          "DataCommitType": 2
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "16,1": {
+      "NameUsedInJavaScript": "barcode",
+      "BindingInfo": {
+        "TableName": "材料扫码记录",
+        "ColumnName": "barcode",
+        "GUID": "2b2eeccf-a648-4cfd-8b38-4a68c2a0aa20"
+      }
+    },
+    "16,2": {
+      "NameUsedInJavaScript": "条码数",
+      "BindingInfo": {
+        "TableName": "材料扫码记录",
+        "ColumnName": "条码折百数",
+        "GUID": "98e1c855-cdbc-41f0-8b59-108a3324c1f9"
+      }
+    },
+    "16,3": {
+      "NameUsedInJavaScript": "折百数量",
+      "BindingInfo": {
+        "TableName": "材料扫码记录",
+        "ColumnName": "出库折百数量",
+        "GUID": "62728f8b-1580-49cd-a912-6c7a94bc3966"
+      }
+    },
+    "16,4": {
+      "NameUsedInJavaScript": "换算率",
+      "BindingInfo": {
+        "TableName": "材料扫码记录",
+        "ColumnName": "出库换算率",
+        "GUID": "aa81d90f-7bd6-4d44-a39a-073438d1fb96"
+      }
+    },
+    "16,5": {
+      "NameUsedInJavaScript": "实物数",
+      "BindingInfo": {
+        "TableName": "材料扫码记录",
+        "ColumnName": "出库实物数",
+        "GUID": "6efadd6e-9c17-4eeb-a7ee-18a44c02c74c"
+      }
+    },
+    "16,6": {
+      "NameUsedInJavaScript": "mocode",
+      "BindingInfo": {
+        "TableName": "材料扫码记录",
+        "ColumnName": "mocode",
+        "GUID": "34c13047-ade2-4808-a604-6f299629b750"
+      }
+    },
+    "16,7": {
+      "NameUsedInJavaScript": "库存实物",
+      "BindingInfo": {
+        "TableName": "材料扫码记录",
+        "ColumnName": "库存实物",
+        "GUID": "d1eebbf3-bcbd-4017-8fb1-47d4902f30ea"
+      }
+    },
+    "29,1": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "生产单号",
+        "GUID": "b3be9ef3-6f5e-46e3-b66d-3768c3aa86d0"
+      }
+    },
+    "30,1": {
+      "BindingInfo": {
+        "TableName": "未出库领料申请明细",
+        "ColumnName": "AutoID",
+        "GUID": "ed729c0a-31a2-4b13-a3ba-cff1b5d414dd"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0
+      },
+      {
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "3,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,1,11,7",
+    "29,1,1,7",
+    "30,1,1,7",
+    "17,1,12,7",
+    "1,1,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "Administrator",
+            "查询包材差异及仓库"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "生产单号",
+      "Formula": "扫码明细!$B$30"
+    }
+  ]
+}//dJKt0dVBrcpO4PKDFBN7UjShpWfNws4XzXUQDXWA5Pf9p+cN/tcZuxZJ3wj+JHGGsR4YQkRqTFv13A4q3iJl+FwA0DidoV8RNxeOQVwpgPLdrj4i5ULERAqQ/AJwhn1ztJRLHhO+CHQNyLf2mry3QCDSVDDd8AJmRXvNPP9Pka7uJkTkqKJ/YfQsGYDTNO/OVrEJ7+jbvzv88Cs8Ehlu+XvNycbvAzmgYzt5M/UcNFSkW54+TRmJhZXTeh20LI1jAnX3NQ1PdmjAUZv7PoPtMGwjjXs20d1X2hxXYMxUCtRhyHdTOueuboAW5dk6FjbozHBeXPtL3xyvcsn4AwT7ELPE+0/LcfMNvtpC4y01GnNxboO92AXymD8TYtF4d9QXsnKIDsc9cW+fK7pXorFjn1aEJkkV6P5xDoHucLn3os0v8spjphiQ7vJNTE4Pi7wR9je9qBhy7U0RDSnK1nnJtpCWAcnp/z68eLT52ZdlrjrbzHxIS7xGvib7X4DIsUG0Py7y9SPbJuo3hYARd8UixkA4bhQ8N3tVu3cECZcuNLG3pP4+OEc3ZAnGJmLf3CNuPkoa/0r6RaXcCUO9xu9atiXI4CEWjSqfB4pDZrLZagHwTexMPDzqWkQSfXokZ5qD7b691MQwpiQvCk53lIW+zRTj869a1isBGqDpq4GPNMWg7mFfAA7hq3szreLNhHZPFYz6FvV9uIolP214yS4tanuIjwanQ6WXEkiuAy7ags7G1EgyMsZkdNCCkFhdJeJI8zT4L6+E2dHYYZVns8Gv7a+a0e2StDFt8Iy9WPeSKKBplL24tnsztrDkzSIzqavT+qqbbs7TtK+3NhK4F0i+ghhwG13pLYKbihYAugIAUkI9a5FR1/znDliRn4YXc3V/KLtap11YImWKbxbY8p59Ig==|920

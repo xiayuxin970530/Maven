@@ -1,0 +1,281 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 35,
+    "DefaultSize": 30.0
+  },
+  "Values": {
+    "1,2": "批次日期保存",
+    "1,7": "最小日期",
+    "1,16": "最大日期"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "批次日期控制",
+            "ShowConfirm": false
+          }
+        ],
+        "Text": "批次日期保存",
+        "TemplateKey": "样式5"
+      }
+    },
+    "1,10": {
+      "BindingInfo": {
+        "TableName": "批次日期控制",
+        "ColumnName": "最小日期",
+        "GUID": "ee06965e-1dfe-4838-ae11-6ba0eacf0440"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式2"
+      }
+    },
+    "1,19": {
+      "BindingInfo": {
+        "TableName": "批次日期控制",
+        "ColumnName": "最大日期",
+        "GUID": "af634383-5ed7-4b24-8729-d8877ae0c4bd"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "样式2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,7": 0,
+      "1,16": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,2,2,4",
+    "1,7,2,3",
+    "1,16,2,3",
+    "1,10,2,5",
+    "1,19,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "Administrator",
+            "查询包材差异及仓库"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//641VyZpYbcVgqcOqRFHJWv79bJg93VpJ2R54kCGttswEjQOkIFFG3rNPWEop7xFEFkDjiL7UbVlBRFC6brCLXMnqLULsLXDDXGx9d6gTD/PfJPfa6Vd9HxP/iuRjVH9ooCRnuqfDIMc57ugRgMHCGFia0zO5R9EVnyJZ2b98BacYq7X4+78O6vJrMydbZl+KLbpYdoMfHiEDm3+c2kvSs9rCztk+3qhSUP0KjUbVE8heW0OPownQitwJfUtY29VSSrRO7HhylETuAfNMHMsgOstp5lrHh5C2c2o8paukGmsOV8M2fTPiOQo3s4vwdVnPHLjDgvezDk/BW+hBNZOtk0zx+CRJfK76UmH+SXwcp6ijimvl+GRQrJr6gzc+NXuhgf5tUHrKLtkvG6UJ0pwdkz18rvn66nzMtZBACog/LopG7V/q2D8KGEX+VexNK8NaE4v07M+SGtrUijiiSIcAzTDAMX+ck0tgmsVJwpQZpaCaoyBytTuAXkrRAsw6p/1JftsAJzXDEBDldI05yyxJ3SEULnIMZ5at8jPo3JhbYtnQaDuy0mzTIGdsEuEy/CieSqXvt5kUyBFF77vHe4O0XToRRTMReA6gTwZ2xrgNjSXrI8VIQhSTYRTgezuqCZBA0RLAvFocuAzkDrTTHJ8UHUuQrIZ42HvPkS2Wc9cPyNzSynH1lG3J4S6U4vY+f7eybdtgDlYVRPxUunxa8V1ldA00154uIs/GrBHNZbnfHlfkh+z/+dwgKyXw+e3dO3hMVT9geZRDN8xZKe7jcBEp2Vl8FVxMO5HElyUt4LHLthKfeQZhWAJ6xy53SPIcfDmJ1rpOPTDS4gazMK/AAdZEml7fHNE2cAgCueJ+rwNIkOiYpZKUCmTYhk43zgJJaJpJzIpOwpnxr7+os1urXk5uew==|920

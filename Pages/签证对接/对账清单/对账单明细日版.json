@@ -597,7 +597,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "670e3667-82f6-4b17-af47-fab0e36a44bf"
+                "ID": "26b2b5ff-e3da-4b35-915d-4cd38941aaec"
               }
             ]
           },
@@ -613,13 +613,13 @@
                   "BindingInfo": {
                     "TableName": "任务主表",
                     "ColumnName": "发起电子对账日期",
-                    "GUID": "eb3d3676-0e46-4d5a-b717-e979f57d2055"
+                    "GUID": "767e233b-9fc8-4e2a-8381-2b5e2e798d6f"
                   },
                   "ColumnName": "发起电子对账日期"
                 }
               ]
             },
-            "ID": "a01a65fea1e74edf910fc08a1f03f0a2"
+            "ID": "1fe3af6d4d4b4f83b5ef841a77b6848f"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -637,6 +637,24 @@
                   }
                 },
                 "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "任务主表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "任务主表",
+                          "ColumnName": "发起电子对账日期",
+                          "GUID": "a79731b5-e9cb-4981-809f-126129c9952c"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=NOW()"
+                        }
+                      }
+                    ]
+                  },
                   {
                     "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
                     "ServerCommandName": "对账单自动签署接口日版",
@@ -658,24 +676,6 @@
                     },
                     "RefreshAfterFinish": true,
                     "CheckDataValidation": true
-                  },
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "任务主表",
-                    "ShowConfirm": false,
-                    "UpdateBindingValues": [
-                      {
-                        "BindingInfo": {
-                          "TableName": "任务主表",
-                          "ColumnName": "发起电子对账日期",
-                          "GUID": "d1c240b5-ae46-4c34-a978-48dd4211e3ff"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=NOW()"
-                        }
-                      }
-                    ]
                   },
                   {
                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -703,7 +703,7 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "07df78e2-3c36-49a7-ac7f-18256f56251d"
+                        "ID": "298b5553-586b-4383-a874-956329a428ff"
                       },
                       {
                         "CommandList": [
@@ -719,12 +719,12 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "910e52c3-5103-49d3-ac9d-1edaca9d9ad6"
+                        "ID": "6ee935eb-97dd-49d4-ab14-2aa412e19fab"
                       }
                     ]
                   }
                 ],
-                "ID": "83cbc280-2f57-4206-9ecc-d78d3fcb1a06"
+                "ID": "3b0ff252-5dc1-49ec-ad23-72f3e66727cb"
               },
               {
                 "CommandList": [
@@ -745,7 +745,7 @@
                     "LoadBindingDataOption": 2
                   }
                 ],
-                "ID": "727155f5-1c1a-4710-87a3-2d4fabcaad72"
+                "ID": "8467c7b3-cf8a-46a4-a70e-ab5eafa83b51"
               }
             ]
           }
@@ -869,10 +869,10 @@
                             "AllowAcessRoleList": [
                               "FGC_LoginUser"
                             ],
-                            "ID": "b2e8307373574ddbaaaaf87ddf13a5a1"
+                            "ID": "78276e769abb4b85bce48f1e732c7815"
                           }
                         ],
-                        "ID": "32df9302-130f-4f65-a983-8b82774eeaed"
+                        "ID": "87236428-42d9-4fb6-b35f-ae02bcca1b13"
                       },
                       {
                         "Condition": {
@@ -938,15 +938,15 @@
                             "AllowAcessRoleList": [
                               "FGC_LoginUser"
                             ],
-                            "ID": "b2299da537424a669f554ba6e207b4e5"
+                            "ID": "0a98472231544e9b9830af59667b5ff7"
                           }
                         ],
-                        "ID": "85c8e726-550d-4357-8189-eb14d3072b72"
+                        "ID": "215d6851-186d-4507-b91f-635c2b3ad459"
                       }
                     ]
                   }
                 ],
-                "ID": "1dc284a2-dfda-4058-b5fb-19dd802952fc"
+                "ID": "76e91c50-65b3-4923-be51-3e772197f471"
               },
               {
                 "Condition": {
@@ -968,7 +968,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "c73a0a57-6552-4d07-abe4-f60d9e11829d"
+                "ID": "7ac6fc8f-40df-450b-aa72-a9d476699903"
               }
             ]
           },
@@ -1265,7 +1265,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "6d0c0712880e406cb92d50dcb644c599"
+                    "ID": "857430581d4748fd85ad80d57db4a214"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1304,7 +1304,7 @@
                         }
                       }
                     },
-                    "ID": "29faa3e9b6f64de8990e77799ef413be"
+                    "ID": "6fee8d5587fa43e8945375d1f0be0b76"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1322,7 +1322,7 @@
                     ]
                   }
                 ],
-                "ID": "188d0c87-ae0b-44f8-9bcb-1794481d28b2"
+                "ID": "c2ea00b5-3a90-4f47-b4f0-773e48acbc8e"
               },
               {
                 "CommandList": [
@@ -1357,7 +1357,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "f547158acb744abba79bef89ae6a70fd"
+                    "ID": "2587b01d314244d8a9625e0adcff1b4e"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1396,7 +1396,7 @@
                         }
                       }
                     },
-                    "ID": "d04d2412f24b4966b37f3b876d0602d9"
+                    "ID": "16c78d4ee9934286b09f1d171e047549"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1414,7 +1414,7 @@
                     ]
                   }
                 ],
-                "ID": "1d4b807a-316f-46e8-9f3a-2d4c2759008d"
+                "ID": "8c92adf1-ddc0-4082-8b42-037540d10b55"
               }
             ]
           }
@@ -5841,7 +5841,7 @@
                 ]
               }
             ],
-            "ID": "ad716cb7-0249-4ffc-8c13-0edbedabf020"
+            "ID": "bebfe925-e6b5-44a2-8baa-833a90fa7ad8"
           }
         ]
       },
@@ -5874,7 +5874,7 @@
                 ]
               }
             ],
-            "ID": "d1e240b7-0254-488a-b32a-c2371d07b3cc"
+            "ID": "7bfc4804-7e34-4361-9df7-363a599faba8"
           }
         ]
       }
@@ -5937,4 +5937,4 @@
       "Formula": "对账单明细日版!$A$2"
     }
   ]
-}//k1Pn3AWh0ke3PtMC3liFZ1gX6aIbMaZ3ZvVxzjMG89ieDW+9ekHRvLhlBdfzAuNOcp1Bf8CLKCqQ/WlEYUB1IF1n2i8QGj/03Y7UupIN4GnAVWLICbRbTzlp98OweL69Diw1Ib6+5i6fNio4MKmpGL65cMvY0B9MghG1p7Lme7Br3/47jiidGafR+/bXucFW/9j9wB1GXU/5pcxnwQpJ3o32xO11S3NPp5dsaW3Gj7w/SjTH8ST7se2g1VZCTkHZOnAQXbjRr+Zeo3TKAc3VxdY4Ic1Ogeugus7JSL5IX8KXFileiBViSAL30U8R+CayoPPXUCfjrVtZQmirDnr5KmWX8iEz+tc+02wN6E934ukTxnqBdL+dcRCwwI3cW5GX2u4JaGOEnSgDmb/QJqpmCaSuk/N/2dKw8VZdKYzKe0hUQa3VSf8Ji5zs/qYz63SRUcsAQlag3qcjj3KPhqBv+RAayXqbonroSpwN+Jb3yJupPUQasyvy5HdEPA8N+bJvIcJC0rJv93oZSCRM31WX7WBhy++rg4/OzSnsEym3awHiRK9KYUJ9IhVtsc0eSb+EFADwXIHzrY77A/q5oehMjmuORYYzwCqXS3uUmzCST6670OoiusnfjbsBFQe4vKTWYDa/5ZN7BiWXmD6nNcc4PRG9FL4GjdYmDNgC8ISWJhzeFDdtDHybyQpFIoZLG+QD18oeRXjZUeZIysYpLweQFkHv2Yrg4m2xscMQeJb1pWfeP2d/LXwR9dz0+mFcxCcuxNrPZa13+HTXNbJeJeAXuHmYfAlauqC8e0H2KHcJbOZ3Ausf6VZUQxAp+klo88XPXV6nHhoVaL3uZ5g9fz6s13tAh/6w7k1b9uXkkLFS0k/255wUDAnBd9X+R/cYlGdMPlL2CiCa/GMerszqFezkWg==|920
+}//nFEjpDmlLlG5VRhCUZK4QI4ZTXB9mDo6M8HYvnwOYLEJAXGGfA6aAuHJ4q4Aye3jxhREz9zbHiYMqXoLc/jBXlsuodPWr4Lqg6HOS6PcG2p6o0Ext7kx5UBrZYiU0ZcxUxEPXRTJ1Iesyo0mqkmZmr9kz0eYr9mLFnWG1XJapTa+esQ/ABDGiJoslOChQ2+2Tl3+2jHAsCOZ1f5bZb3KTzQdImBExmuCccv5DFM8ZB899iwzUHabxYiNPmhu/iUIHN2DSo74FrQzljxsCh5BUssp3lR2wLj1f3TBnnUoGrzEwQm5wkCxCxv2LlKYk8LuHzwTcB6cS+lNzY7VqXGNgaUH2xSTlpIxQGTksWjLt6/kSKh7N0sfm47RsRz3SYUaatrWyuYVCdQ6Prg6MHvEsXwjlDJ60CYkeZxBKx5eWknuGhWkdXpqbesvlpJDF+s4rceXVqnePnNiRpp+CpE0JRxr6/sNIGiBDbkYqLJtSFubxkqFhLrzb6gjpNidk7lyNMS42qKFHUF0O4YffULNS6f55uxJ8cJ4txMj5giE1TBSteMhYKwDQwKDbCV25/ftxWlc2UFAekCp0XYZRMPUp4qlbxm4lebsUlFIKoh52u25zjGS+2FM2FJxv/ukzZz3wfBxpMNpoZPjS+ln5hFG+bMzOjSwY00QW0qf/OQD4PmgFepBwaIJSoClCHk7qV5ijD9kc5KWnEDYavHRsLf2W5AHYfLiCXIJ+Z1lwNVQSRi/eV4pzPPxRsXuLiVcYbEShLK60BpiTarPHZoZLLbtSVXvgZXcrW0eQw0GAyPGf8SPz2HazSMHQDFiFGGb9Q3SmdhgPLRqzLE0HPNnyz67g4bdLP9vt4XG5S0InAqWBxHz+tv9+OyNR9rJVdhtN9EP+e7sxtUtgQEZ9FhJdqZiew==|920

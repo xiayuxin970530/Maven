@@ -612,7 +612,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "5b5be43e-35ec-4008-9ccb-03fcbf22f79e"
+                "ID": "c4ffe926-1acc-4baf-a508-180787617e2d"
               }
             ]
           },
@@ -628,7 +628,7 @@
                   "BindingInfo": {
                     "TableName": "任务主表",
                     "ColumnName": "发起电子对账日期",
-                    "GUID": "43fe309f-0f2c-4816-aafa-c3f3ecd733c8"
+                    "GUID": "428e61bb-f00d-4526-b62e-c1d9dc109da5"
                   },
                   "ColumnName": "发起电子对账日期"
                 }
@@ -638,7 +638,7 @@
                 "ColumnBindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "任务主表ID",
-                  "GUID": "bed6d278-78e9-4be7-908f-c8cce72a0d98"
+                  "GUID": "c067d012-166f-4593-84ff-85362d95f045"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -646,7 +646,7 @@
                 }
               }
             },
-            "ID": "f3ad36e4525e4833891d192dbfc67ebf"
+            "ID": "23a972a43e454225a122c6fb56425132"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -683,6 +683,24 @@
                 },
                 "CommandList": [
                   {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "任务主表",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "任务主表",
+                          "ColumnName": "发起电子对账日期",
+                          "GUID": "2becfdf8-ef1e-4109-89dc-4070b8702714"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=NOW()"
+                        }
+                      }
+                    ]
+                  },
+                  {
                     "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
                     "ServerCommandName": "对账单自动签署接口",
                     "Parameters": [
@@ -710,24 +728,6 @@
                     "CheckDataValidation": true
                   },
                   {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "任务主表",
-                    "ShowConfirm": false,
-                    "UpdateBindingValues": [
-                      {
-                        "BindingInfo": {
-                          "TableName": "任务主表",
-                          "ColumnName": "发起电子对账日期",
-                          "GUID": "b9c80341-f8af-4ece-881d-5429db2081fe"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=NOW()"
-                        }
-                      }
-                    ]
-                  },
-                  {
                     "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
                     "ConditionAndCommandPairList": [
                       {
@@ -753,7 +753,7 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "f7143c7e-ade1-4721-847f-7d9d64d7395c"
+                        "ID": "9e66bd5b-393f-49b0-9763-aa1d0b7ea207"
                       },
                       {
                         "CommandList": [
@@ -769,12 +769,12 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "43b813ef-88d0-47cf-b80f-494e1ca00174"
+                        "ID": "bd3477e6-ca5e-4da1-9fcd-2a356bf49926"
                       }
                     ]
                   }
                 ],
-                "ID": "682ef023-5bee-4906-b66a-ad299fb05f15"
+                "ID": "719924b3-b293-48ec-be2d-492f49189725"
               },
               {
                 "CommandList": [
@@ -795,7 +795,7 @@
                     "LoadBindingDataOption": 2
                   }
                 ],
-                "ID": "9a9f346d-4860-43cd-a825-a80327625860"
+                "ID": "1bf19d51-e46e-477f-b7a0-9684a813cf8c"
               }
             ]
           }
@@ -919,10 +919,10 @@
                             "AllowAcessRoleList": [
                               "FGC_LoginUser"
                             ],
-                            "ID": "dd47a6db333f45c483d17d175426a7bf"
+                            "ID": "d61ae1d3762142fb9a3e28cfe96e17e3"
                           }
                         ],
-                        "ID": "2589830c-719f-49d6-b1af-15adb89b3809"
+                        "ID": "524bb1b7-dc48-488b-a1e6-1d6f2462fa78"
                       },
                       {
                         "Condition": {
@@ -988,15 +988,15 @@
                             "AllowAcessRoleList": [
                               "FGC_LoginUser"
                             ],
-                            "ID": "696a5231f0c94d00af6438c1fcf0cb10"
+                            "ID": "ccb7bc1798e8461f87c4aafe133090ee"
                           }
                         ],
-                        "ID": "8e128584-9c18-4540-a45b-57e867333ad3"
+                        "ID": "d06af6fa-a275-4cd9-8345-ba2613dfae87"
                       }
                     ]
                   }
                 ],
-                "ID": "1e5774f2-6fef-4edb-9435-769119b8db17"
+                "ID": "c3b16baa-5118-45f0-a552-573959946269"
               },
               {
                 "Condition": {
@@ -1018,7 +1018,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "f8681939-988b-4a70-b931-b088deceb4d3"
+                "ID": "a5f46c7e-1d5a-4460-9c71-4fb901f41ff5"
               }
             ]
           },
@@ -1315,7 +1315,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "6f70a97576524bb0a543d635145390bd"
+                    "ID": "1b6400853a484d41842a4f389e8aa1a4"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1354,7 +1354,7 @@
                         }
                       }
                     },
-                    "ID": "201853f8615f4eb784b966bf9f7ab6ad"
+                    "ID": "93e6835ca95d4f0a888288277b36088b"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1382,7 +1382,7 @@
                     ]
                   }
                 ],
-                "ID": "15ba081f-d661-488a-8834-b140313fdb64"
+                "ID": "e7a564f6-cc94-48f4-b310-93a213bf40da"
               },
               {
                 "CommandList": [
@@ -1417,7 +1417,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "a2168e20f6e14819a15093d57c25f6f1"
+                    "ID": "728d8b82b8c3447fa8ba7d8dfc15f04c"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1456,7 +1456,7 @@
                         }
                       }
                     },
-                    "ID": "3150ba8aef5041cf98efaa7f5ba9c960"
+                    "ID": "25fda069b6cc4de7969549801c75e927"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1484,7 +1484,7 @@
                     ]
                   }
                 ],
-                "ID": "57c0a27b-57d6-4dc5-a69e-dee1aeff4a74"
+                "ID": "7c9bd944-73a2-449e-a3ff-049eab91cf21"
               }
             ]
           }
@@ -1532,13 +1532,13 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!BD13"
             },
-            "ID": "00bce485891b4206a56ed90818c9a07f"
+            "ID": "6e41cb01f523494c822d70620740eab6"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
             "ParameterName": "零元整miaoshu",
             "ParameterValue": "零元整",
-            "ID": "302d9f8399bd454c8b744e75888a4d70"
+            "ID": "357cedf6d4324eeeaa3b135db47e4bc5"
           },
           {
             "$type": "MoneyConverter.MoneyConverter, MoneyConverter",
@@ -1555,7 +1555,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!应收账面余额大写"
             },
-            "ID": "6709ca58f51948928217a286fe9daf94"
+            "ID": "b3da6fb22d354411bc0e5013d6920ba8"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1578,7 +1578,7 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
-                    "ID": "a29e6603108741d6a3c5c1b6651db74b"
+                    "ID": "36033158e0f7403e9284dad6f73f3b57"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1606,7 +1606,7 @@
                     ]
                   }
                 ],
-                "ID": "50a8feb7-d4fd-4c9b-9af5-3de709a50bed"
+                "ID": "27a84bcd-7a9f-4d49-994c-227a75b2e0fb"
               },
               {
                 "Condition": {
@@ -1627,7 +1627,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "负",
-                    "ID": "29b93b32c845418bb8b5f328633c6849"
+                    "ID": "da993afdb3444b9bae983a45b555309b"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1655,7 +1655,7 @@
                     ]
                   }
                 ],
-                "ID": "2d9f7881-0e45-4aaf-b03f-d8c80ca8acb4"
+                "ID": "ff89c70f-f092-4198-a445-c95652970aee"
               },
               {
                 "Condition": {
@@ -1695,7 +1695,7 @@
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=对账单明细!零元整miaoshu"
                     },
-                    "ID": "71fa84fbb8774f6faef9c18df3fa4966"
+                    "ID": "b86a0b48dca045c29ad791b6f58845bf"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1723,7 +1723,7 @@
                     ]
                   }
                 ],
-                "ID": "788cb56c-b29b-47e4-a451-6bc87f006476"
+                "ID": "6e61c2eb-6a40-4cd3-baef-fc5697151051"
               }
             ]
           },
@@ -1769,7 +1769,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "55fb2be1-ce66-4e84-b197-93ebb936ca81"
+                "ID": "e313926c-f770-4764-9e70-0135257ec434"
               }
             ]
           }
@@ -1831,7 +1831,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!BD14"
             },
-            "ID": "24c51c59cc64470a94a44cd7960ac61d"
+            "ID": "83e990b291e0414ca982c795f228b37c"
           },
           {
             "$type": "MoneyConverter.MoneyConverter, MoneyConverter",
@@ -1848,7 +1848,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!预收款大写"
             },
-            "ID": "fb45bae9b21640fc9614daf1c4c977f5"
+            "ID": "4b05f8bd8db249a79a01bd4c320fcb45"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -1871,7 +1871,7 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
-                    "ID": "1e5d330455d44f96a1362f0650025942"
+                    "ID": "e5f1a21fb70640cea05388360ce05106"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1889,7 +1889,7 @@
                     ]
                   }
                 ],
-                "ID": "a6e8acff-7c56-44b5-be47-32dd84e76015"
+                "ID": "48ee7a71-d088-41e2-a59a-fc6ba477723b"
               },
               {
                 "Condition": {
@@ -1910,7 +1910,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "负",
-                    "ID": "4d55d480181d4bfea3e81e8c45be94f7"
+                    "ID": "3ffd4a420c3c4319a89a7bc6cc26cfd7"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1928,7 +1928,7 @@
                     ]
                   }
                 ],
-                "ID": "e4979d0a-9d62-433c-b9d7-75ed1a0460ad"
+                "ID": "6c45cad9-7b7b-4487-baa0-d557ff7b3605"
               },
               {
                 "Condition": {
@@ -1965,7 +1965,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "零元整",
-                    "ID": "fbfc87f291db4096a8dc8101b5da4596"
+                    "ID": "0fec5c22fb75498d8a43addb64ef80f5"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1983,7 +1983,7 @@
                     ]
                   }
                 ],
-                "ID": "c3fc7791-ebe4-45f8-ad56-f4456eb674dc"
+                "ID": "a0257d58-ede3-413e-b0a6-a3ef9635611d"
               }
             ]
           },
@@ -2029,7 +2029,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "4241b780-1a20-4c19-9909-f3834c9ac406"
+                "ID": "1096f500-bf3b-47a8-b868-cfc92ecc023a"
               }
             ]
           }
@@ -2090,7 +2090,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!BD15"
             },
-            "ID": "dbdbc27ec08a48028b63a717c2989920"
+            "ID": "2500d2191275421cb73c4f7512625109"
           },
           {
             "$type": "MoneyConverter.MoneyConverter, MoneyConverter",
@@ -2107,7 +2107,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!预收款余额大写"
             },
-            "ID": "4c06e74ef57a41728d3b40b4a7c90cb9"
+            "ID": "5e28e2c8a77d4452ade08f39ef256aec"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -2130,7 +2130,7 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
-                    "ID": "a0352cc3de88458ca361c071144892f9"
+                    "ID": "6a298ad0d7f442adbff1708d6663047d"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2148,7 +2148,7 @@
                     ]
                   }
                 ],
-                "ID": "70fc728e-509d-4e2a-9ff1-7f559df06d8a"
+                "ID": "db6b372b-eca8-4d7e-9170-200e7191035e"
               },
               {
                 "Condition": {
@@ -2169,7 +2169,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "负",
-                    "ID": "f52c74de0c58495ebbace900507a8484"
+                    "ID": "ccaadb6f1765466182ba69fb733347cb"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2187,7 +2187,7 @@
                     ]
                   }
                 ],
-                "ID": "070f58be-6d62-4ecf-8888-d12f92dd8358"
+                "ID": "7f81fd2c-f562-4064-bcf3-c334c55a14fb"
               },
               {
                 "Condition": {
@@ -2224,7 +2224,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "零元整",
-                    "ID": "f9e78f4e6e33468ea1b0271032652c68"
+                    "ID": "4c4ecac9a8124f17bfd723f02c91d953"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2242,7 +2242,7 @@
                     ]
                   }
                 ],
-                "ID": "b5d66cf5-aa98-4df2-a4d2-50d43bbb5ac4"
+                "ID": "279424d8-a940-4dc3-8384-d0999e2646d8"
               }
             ]
           },
@@ -2288,7 +2288,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "103eec2a-ea10-45d3-b3b9-a7a033435c8e"
+                "ID": "92379c3a-76dd-4f13-bd7d-0e3633419c0e"
               }
             ]
           }
@@ -2351,7 +2351,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!BD17"
             },
-            "ID": "03ff2f30b7b947029d33c7b9eb54c324"
+            "ID": "d027f074743a4fdab60f7d89d55d9d68"
           },
           {
             "$type": "MoneyConverter.MoneyConverter, MoneyConverter",
@@ -2368,7 +2368,7 @@
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=对账单明细!总应收余额大写"
             },
-            "ID": "82f4b494e086431abb95ac205605934e"
+            "ID": "f5187465972742fabc1b76a79cfde281"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -2391,7 +2391,7 @@
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
-                    "ID": "67aa37cfe88b4d59a7d909d29962cffe"
+                    "ID": "2c9aa686568c4c7ea8c507fc0ba40470"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2409,7 +2409,7 @@
                     ]
                   }
                 ],
-                "ID": "520e54df-97a3-4e3c-a14c-fc2e2b7da6f1"
+                "ID": "30098994-5923-4ca2-a00d-7138b4484b79"
               },
               {
                 "Condition": {
@@ -2430,7 +2430,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "负",
-                    "ID": "af1564e9492e47559b14a8f1eb75f492"
+                    "ID": "399c852873924a4a850698fdd7984cde"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2448,7 +2448,7 @@
                     ]
                   }
                 ],
-                "ID": "9a308a34-9e4d-40c6-a7d6-d282e7a9e6a5"
+                "ID": "5fd6d9f1-de35-4793-9320-279c14277bc0"
               },
               {
                 "Condition": {
@@ -2485,7 +2485,7 @@
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
                     "ParameterName": "正负标志",
                     "ParameterValue": "零元整",
-                    "ID": "05a692f85d4c4f529544cf13265faf27"
+                    "ID": "70a6ea54eb984d27ae28b2b061c04563"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -2503,7 +2503,7 @@
                     ]
                   }
                 ],
-                "ID": "0fb0d127-1b8e-4b21-81d4-62932ff174c5"
+                "ID": "d2fb5f94-ad6d-48c8-ba17-8694d56639c8"
               }
             ]
           },
@@ -2549,7 +2549,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "2ae7d177-7f7a-4011-97db-5b64611806f0"
+                "ID": "6cd4261f-4cdf-434b-ac26-6cc952f72be2"
               }
             ]
           }
@@ -6561,7 +6561,7 @@
                 ]
               }
             ],
-            "ID": "812d501d-37c6-4b68-b3de-792949a06246"
+            "ID": "8bf7b1fb-6f40-41ea-918f-c2b722945b72"
           }
         ]
       },
@@ -6594,7 +6594,7 @@
                 ]
               }
             ],
-            "ID": "decaf840-1951-4962-891c-8267f07e1428"
+            "ID": "7ae90587-b005-46f1-84cd-985efb19d713"
           }
         ]
       }
@@ -6657,4 +6657,4 @@
       "Formula": "对账单明细!$A$2"
     }
   ]
-}//vRDz5ygYnq4AbP1vMKkcWdnN40AZcLFFHX2WCPiCY1rgJseCFBAC2gE9/J79R/obLzupBaF/+chxf9eg5No2sl/NQGql5+8Ym8RzJXpoumfeaAQsG6asvMSVf8RA49u5hsg3aZgSgyJcE2RCHK+XlwgLEFnktek/IJoqXA9d63cNlN8eOtLfCaiuBnHgtpcdTls5ugbYadOcWQUjzAN1LWVjtpyj2nKHcyKz9K+7wICTqAc/XooEcU1MO9cqwlu7eLhu+bd4+fi7aegtRpVLc3/w9XVyZMIPBNL4V8ZLhF/tApu4lNsYQsD0cpRZ6XBsarCJaS6OAB9Jv1JvjTfCfLacPkiSRtJBPXcf5ReqlqdBfmynMOkvcmYTC9NYxVNPllXEE10Dm086JEkSR5qf/iHhC80yi5JIUXT9ZD3BRHjlyweSqT0nOatlnDgk0Jso1yKc+XgLAPKydclcOd1iTjZ7JFI9s0DwtCv6sSs9YmEYNrjLN3URYs+AGCmbsvzLfU4BHNmsoDKnB3kuDSUAQwxwXthBxPBAa7SpwLauLDIQpDMMH9y+3C9jS8iPogfjSE5jjQxsMDymb0LkgH9bGTEocWhEuBRzga3KoKKg3UxwtHWItqgqev8ErYO6FyDrEqxEbwbDWC/BMCRYbQQ+fvBt3ntHWNWGJgar8v/Zyn9oc6yQPcSIwlwkZxahto0TXgtr9hB83DQ70janZT48nhvb8PEMJBp3ie4j5DxFbLzjjOuN+Vz1lW/7uKCzhlPY/mASDv8nbXgT2jUdd5ixDBLLfZHW54Enqswyrqra5Wqfls0i3vJpRVHruj7LS3z0YOyIteIe+3CWB6jEaffEMPxzYrcjLNUnf8pcINKlM/o+2xVWxNGaNtRl+Bs0hRArfCQowdGU0tGI+R9CWQiCPg==|920
+}//j176r6qa+cUaRPhwcPH6/CVa0O4XaUU51/ZoGvQ/vNxspj7oXB92tjXbxFmrNiORO8zZjI9/M5/VjAKtVUEcWoNcIaAkpcWx9bkFXqMPpJloS8Dx52q3sEKyPOtJKq/P65i7tuj1y2mtfK8JZ4PhpppeDaDLKVMPc4YIiKeodArM3XDwoXlflnhYdOwAz6EoLbUC0mdjyj8N27YfbCWV6dAP6BgJYqfsn6eiVtDKM6z/eFbieKkK3mgpWIcue7Kbat+pIYweV+WSJIuiTTN3MRaGgALbxMxblYo1+G1k2A0rnAemm+Gy2rDTEouW7BLPjnPYVt7fNNFrC4JcW0Mq23WIMncuG40RUYWF6Gn4L2jR/BKkcgv7u8CfHA7CAluyS9O2NtAgestg5kBtDJtGtqdqLPljklv5ZHe9IVOjT9+HbHLhQiKN8QW3z7vuDAtrCQK3Ua9anOv2tCeG5BDT+SjW/fSjEXkMc9fgQZ6d5QPDLznc7cEsaYPAXHq6rRnAbfArIg3gqiiSooGiF1s9/NIpwhFLpZuwRGOTu2hqMNCAZwpdYIkd3wGwPIrM2MV1QwlleP6+aDucCPUps8F7jYHez84AoVPz6MhrwDAs7KNmeZ9mAkA0k6QIE4GmnjXFIESu1pWGiKaYQtx0EPa5JZoNmnMN+KUk31dDofk0vKea10KB1KWvaQpNqCe1S2QUsDu/ZrRNYW5hClm2F5dHxeXZ4qaNnOQLG4tvhN0Wm/zT+mGbyO/4dz8bJTnCu2vKnXumyxysj2q0Kgtkkr1LuZBvLS0lGy+k3z2TcpZq6yFXet4epmAApx/Wl3AtuUW7eZ8aud1rlCShZtprfOoaNq+Xj/oE1DnXU/QD+k6xjb2Gw2GVMjzY4+BsXxWYFDXRlYdWXjLrZR20ae9LLcBhnw==|920

@@ -2510,23 +2510,68 @@
   },
   {
     "ModuleName": "ServerCommands/crm接口",
-    "ModuleType": 20
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T15:09:25.9837863+08:00",
+    "ModuleType": 20,
+    "ToRemoveFiles": [
+      "ServerCommands\\crm接口"
+    ]
   },
   {
     "ModuleName": "ServerCommand/添加合同模块的数据",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T15:09:25.9812872+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\crm接口\\添加合同模块的数据.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/crm单号发起历史回执数据",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T15:09:25.9835497+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\crm接口\\crm单号发起历史回执数据.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/e签宝调用撤销接口",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T15:09:25.9837203+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\crm接口\\e签宝调用撤销接口.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/crm添加客户回执签章任务",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T15:09:25.9837789+08:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\crm接口\\crm添加客户回执签章任务.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/导出pdf",

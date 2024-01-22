@@ -1068,7 +1068,16 @@
   },
   {
     "ModuleName": "PCPage/原料虚拟库存 (半成品)",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:45:43.8569441+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\配料\\原料虚拟库存 (半成品).json"
+    ]
   },
   {
     "ModuleName": "PCPage/119和120原料虚拟库存",

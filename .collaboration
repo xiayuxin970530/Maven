@@ -1357,19 +1357,55 @@
   },
   {
     "ModuleName": "PCPage/运输协议页面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T14:47:57.3525671+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\签证对接\\运输协议页面.json"
+    ]
   },
   {
     "ModuleName": "PCPage/客户回执页面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T14:47:57.351598+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\签证对接\\客户回执页面.json"
+    ]
   },
   {
     "ModuleName": "PCPage/对账单页面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T14:47:57.3521361+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\签证对接\\对账单页面.json"
+    ]
   },
   {
     "ModuleName": "PCPage/销售合同任务列表",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T14:47:57.3530368+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\签证对接\\销售合同任务列表.json"
+    ]
   },
   {
     "ModuleName": "PCPage/签章设置",
@@ -1389,7 +1425,16 @@
   },
   {
     "ModuleName": "PCPage/对账单列表",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T14:47:57.3511405+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\签证对接\\对账清单\\对账单列表.json"
+    ]
   },
   {
     "ModuleName": "PCPage/对账单明细",
@@ -1752,7 +1797,7 @@
       "UserName": "AF-APP06\\afapp",
       "Email": "mkvuot07865@chacuo.net"
     },
-    "LockDateTime": "2024-01-22T11:30:20.7208603+08:00",
+    "LockDateTime": "2024-01-22T14:47:57.3500901+08:00",
     "ModuleType": 15,
     "ToRemoveFiles": [
       "ServerCommands\\e签宝正式接口\\撤销接口\\撤销接口发起流程.json"

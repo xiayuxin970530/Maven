@@ -1,0 +1,98 @@
+{
+  "Name": "邮件发送",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser",
+                "FGC_Anonymous"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "任务主表id",
+          "TestData": "45567"
+        },
+        {
+          "Name": "收件地址"
+        },
+        {
+          "Name": "收件人"
+        },
+        {
+          "Name": "客户名称"
+        },
+        {
+          "Name": "日期"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ExportPageToExcelCommand, ServerDesignerCommon",
+      "TargetPageName": "对账单明细",
+      "ServerExportFileName": "D:\\活字格文件导出勿删除\\文件.xlsx",
+      "ExportCellValueInfos": [
+        {
+          "CellName": "任务主表id",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=任务主表id"
+          }
+        }
+      ],
+      "ExportListViewCurrentRowInfos": [
+        {
+          "BindingTable": "任务主表",
+          "CurrentRowCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "任务主表",
+              "ColumnName": "任务主表ID",
+              "GUID": "455f2f63-d35b-4b9c-9078-dfa04aca4c18"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=任务主表id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+      "From": "对账单通知",
+      "EnhancedRecipient": {
+        "CommonValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=收件地址"
+        }
+      },
+      "Subject": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=客户名称+日期"
+      },
+      "Content": "[=收件人]，请查看附件",
+      "Attachments": "D:\\活字格文件导出勿删除\\文件.xlsx",
+      "SendAsPlainText": true,
+      "ID": "48921e05578b431fa01cf434479be29b"
+    }
+  ]
+}

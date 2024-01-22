@@ -1,0 +1,145 @@
+{
+  "Name": "e签宝token",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.InvokeTrigger, ServerDesignerCommon",
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+          "TryCommandPart": {
+            "CommandList": [
+              {
+                "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                "PostData": {
+                  "DataItemType": 1,
+                  "Data": {
+                    "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                    "Data": [
+                      {
+                        "Name": "appId",
+                        "DataItemType": 0,
+                        "Data": 5111834261
+                      },
+                      {
+                        "Name": "secret",
+                        "DataItemType": 0,
+                        "Data": "461f4026da0dd843d1d67f9288f70d76"
+                      },
+                      {
+                        "Name": "grantType",
+                        "DataItemType": 0,
+                        "Data": "client_credentials"
+                      }
+                    ]
+                  }
+                },
+                "WebUrl": "https://openapi.esign.cn/v1/oauth2/access_token",
+                "Method": "GET",
+                "SuccessCallback": "// 请求成功返回的数据存储在“result”变量中\r\n// 请使用“result”变量来完成请求成功的回调 \r\n//console.log(result);",
+                "ErrorCallback": "// 请求中发生的错误存储在“error”变量中\r\n// 请使用“error”变量来处理异常情况 \r\nconsole.error(error);",
+                "NewParameter": "res",
+                "Header": []
+              },
+              {
+                "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                "BianmaMsg": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=res"
+                },
+                "JsonLu": "data",
+                "Noobj": true,
+                "FanHuiMsg": "data"
+              },
+              {
+                "$type": "GETPOST.JSON类.JSON取通用属性, GETPOST",
+                "BianmaMsg": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=data"
+                },
+                "JsonLu": "token",
+                "FanHuiMsg": "token"
+              },
+              {
+                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                "TableName": "token",
+                "ShowConfirm": false,
+                "RowsToUpdate": 1,
+                "RowsToUpdateCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "token",
+                    "ColumnName": "ID",
+                    "GUID": "3eea4914-7364-4257-a1cd-39f03794cbc3"
+                  },
+                  "Value": "23"
+                },
+                "UpdateBindingValues": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "token",
+                      "ColumnName": "token",
+                      "GUID": "c8fd9027-3cfe-4b55-a8f6-762d1f29e44e"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=token"
+                    }
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "token",
+                      "ColumnName": "获取时间",
+                      "GUID": "c72c7b40-3edc-4f0d-99de-20612fba8c5c"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=NOW()"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "CatchCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "ErrorCode": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionCode"
+                },
+                "Message": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionMessage"
+                },
+                "CustomReturns": [
+                  {
+                    "ReturnPropertyName": "token",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ExceptionMessage"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "token"
+    }
+  ]
+}

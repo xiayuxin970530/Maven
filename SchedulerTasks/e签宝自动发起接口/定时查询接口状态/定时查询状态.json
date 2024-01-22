@@ -6,7 +6,7 @@
       "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
       "Interval": 20.0,
       "TimeUnit": 2,
-      "StartDateTime": 45218.69375,
+      "StartDateTime": 45313.4375,
       "ScheduleRunInDebugServer": false
     }
   ],
@@ -23,13 +23,13 @@
             "BindingInfo": {
               "TableName": "token",
               "ColumnName": "token",
-              "GUID": "c2742bd4-ac26-4cc4-b649-2fa1164f7720"
+              "GUID": "e2d86fee-5c60-46df-9893-d6d00d7c43d7"
             },
             "ColumnName": "token"
           }
         ]
       },
-      "ID": "877190d6dd3d46b79a068aa23e06415a"
+      "ID": "9d9756b1b9d846cb8d476624c0bfbbeb"
     },
     {
       "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",

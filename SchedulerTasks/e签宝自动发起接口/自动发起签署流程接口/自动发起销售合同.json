@@ -6,7 +6,7 @@
       "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
       "Interval": 50.0,
       "TimeUnit": 2,
-      "StartDateTime": 45288.350694444445,
+      "StartDateTime": 45313.4375,
       "ScheduleRunInDebugServer": false
     }
   ],
@@ -29,7 +29,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "合同模板主表",
                       "ColumnName": "接口状态",
-                      "GUID": "9fabd7f7-a2f4-4bb4-bcbe-5dd9d1622aac"
+                      "GUID": "13e86c43-89ef-4e51-8c20-02d9b611d18b"
                     },
                     "Value": "%Null%"
                   },
@@ -42,7 +42,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "合同模板主表",
                           "ColumnName": "乙方名称",
-                          "GUID": "084bcc6f-b44b-4ae8-b5a0-ff39cc62babc"
+                          "GUID": "71a0a9ec-0408-4ae8-87a1-0a9d7dc94813"
                         },
                         "LeftBracket": 1
                       },
@@ -52,7 +52,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "合同模板主表",
                           "ColumnName": "乙方名称",
-                          "GUID": "dbc677cc-3076-4a78-b99b-c037c3ba9010"
+                          "GUID": "7e5634e0-1144-45ab-836a-323de16989a3"
                         },
                         "Value": "%Null%",
                         "RightBracket": 1
@@ -66,7 +66,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "合同模板主表",
                       "ColumnName": "发起状态",
-                      "GUID": "30fca9cd-467d-43d4-ba6c-43ff81c6b310"
+                      "GUID": "3e514f92-493c-4002-a26e-b0a9d500b0e0"
                     },
                     "Value": "1"
                   }
@@ -74,7 +74,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "ceb43da92d8248799ace0491e1faf0ec"
+            "ID": "b8142a96160447fa924421a7808d5d36"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -87,7 +87,7 @@
                   "BindingInfo": {
                     "TableName": "合同模板主表",
                     "ColumnName": "ID",
-                    "GUID": "6c3c224f-6615-4752-b7a6-eff8779cff4e"
+                    "GUID": "785c126a-4916-4676-af1a-222d8cf0cadd"
                   },
                   "ColumnName": "ID"
                 },
@@ -95,7 +95,7 @@
                   "BindingInfo": {
                     "TableName": "合同模板主表",
                     "ColumnName": "公司类型",
-                    "GUID": "3325c8e4-724d-4da1-b17b-8253107e2f07"
+                    "GUID": "cbe7b039-b00e-4eee-8998-eb7fac073f36"
                   },
                   "ColumnName": "公司类型"
                 }
@@ -108,7 +108,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "合同模板主表",
                       "ColumnName": "接口状态",
-                      "GUID": "fe776e58-d7fd-4ff6-bfb9-ae153bb203f5"
+                      "GUID": "d3475e6f-e5cb-4373-835c-a8f1ab4ff57f"
                     },
                     "Value": "%Null%"
                   },
@@ -121,7 +121,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "合同模板主表",
                           "ColumnName": "乙方名称",
-                          "GUID": "de133d9e-76d2-4676-958e-7e2de87cb3d2"
+                          "GUID": "11408261-4cb1-40b7-95c3-818d6b78ab2d"
                         },
                         "LeftBracket": 1
                       },
@@ -131,7 +131,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "合同模板主表",
                           "ColumnName": "乙方名称",
-                          "GUID": "8434620c-ac01-44c9-9eb4-84d3b4f7e6a8"
+                          "GUID": "19cfe5ce-de03-42ea-9022-4e0f72acb788"
                         },
                         "Value": "%Null%",
                         "RightBracket": 1
@@ -145,7 +145,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "合同模板主表",
                       "ColumnName": "发起状态",
-                      "GUID": "186f437d-2db2-41d5-b89b-24d8608f2432"
+                      "GUID": "3f4c6966-034e-44c9-98ed-d5e0f75dc19c"
                     },
                     "Value": "1"
                   }
@@ -153,7 +153,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "fac01b501a434c2d9649ed2efeebddb2"
+            "ID": "7de4f0fbbe7a45d4bc61bb3389e7b18d"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -167,7 +167,7 @@
                   "BindingInfo": {
                     "TableName": "合同模板主表",
                     "ColumnName": "发起状态",
-                    "GUID": "526f2ede-1b59-4f48-9a5b-89e519f937f8"
+                    "GUID": "f63d476f-babc-4637-ab40-4d6111f2fdbe"
                   },
                   "ColumnName": "发起状态"
                 }
@@ -177,7 +177,7 @@
                 "ColumnBindingInfo": {
                   "TableName": "合同模板主表",
                   "ColumnName": "ID",
-                  "GUID": "0a6ebb6f-a65e-4528-a0bf-358bfc1261d5"
+                  "GUID": "802e497b-5d98-459f-b00f-bd591e36c281"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -186,7 +186,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "c5e2261a61b64a04999e985823674ef9"
+            "ID": "b6c7107d0e334c5da26d55f900db3c22"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -210,7 +210,7 @@
                     "Message": "暂无数据发送！"
                   }
                 ],
-                "ID": "95356ec2-fd8e-450f-94d4-6a23272b4479"
+                "ID": "d08f89f7-e372-4f37-bb10-506bc24618cd"
               },
               {
                 "CommandList": [
@@ -236,7 +236,7 @@
                             "Message": "已发起过！"
                           }
                         ],
-                        "ID": "57e7546b-8499-476c-a8ed-fcb11bc0b22b"
+                        "ID": "3df73040-4428-4e48-9ffd-852f23fa36ca"
                       },
                       {
                         "CommandList": [
@@ -252,13 +252,13 @@
                                   "BindingInfo": {
                                     "TableName": "token",
                                     "ColumnName": "token",
-                                    "GUID": "68f6fb81-5994-43fe-990b-78fc9642a5d4"
+                                    "GUID": "e7f2d91d-f83e-4cd2-8b15-9cd94a29e5bd"
                                   },
                                   "ColumnName": "token"
                                 }
                               ]
                             },
-                            "ID": "ae5457eb34504c52baa2e87c383f4d2b"
+                            "ID": "510d96dd162b4dd79d617b5bfe2b23f9"
                           },
                           {
                             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
@@ -302,12 +302,12 @@
                             }
                           }
                         ],
-                        "ID": "7b5aef8e-0610-4a2e-ac66-b1cf48376d5c"
+                        "ID": "238c4346-6b0d-4502-a349-cc302bf88c7d"
                       }
                     ]
                   }
                 ],
-                "ID": "df227d89-ea9e-4cca-97d8-e8dcf4a5884b"
+                "ID": "8cea70bc-140a-484d-af4c-5d54cc3ef0a9"
               }
             ]
           }

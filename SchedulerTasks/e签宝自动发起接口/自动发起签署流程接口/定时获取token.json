@@ -4,9 +4,9 @@
   "Triggers": [
     {
       "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
-      "Interval": 30.0,
+      "Interval": 50.0,
       "TimeUnit": 1,
-      "StartDateTime": 45281.36111111111,
+      "StartDateTime": 45313.4375,
       "ScheduleRunInDebugServer": false
     }
   ],

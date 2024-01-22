@@ -16,105 +16,161 @@
   ],
   "Commands": [
     {
-      "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-      "TableName": "接口发起日志",
-      "UpdateType": "add",
-      "ShowConfirm": false,
-      "UpdateBindingValues": [
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
         {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "发起时间",
-            "GUID": "f7bdf160-1031-4eef-a5c0-1d86e66c3ce0"
+          "Condition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "SubConditions": [
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回信息"
+                  }
+                },
+                "value": "暂无发起数据",
+                "compareType": 10
+              },
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回信息"
+                  }
+                },
+                "value": "暂无数据发起",
+                "compareType": 10
+              },
+              {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回信息"
+                  }
+                },
+                "value": "暂无数据发送",
+                "compareType": 10
+              }
+            ],
+            "RelationType": 1
           },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=执行开始时间"
-          }
+          "CommandList": [],
+          "ID": "9a6641a5-152a-4990-9392-15923b7ab53d"
         },
         {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "结束时间",
-            "GUID": "addfa5dc-13c9-4b7e-a806-064510fb4967"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=执行结束时间"
-          }
-        },
-        {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "执行结果",
-            "GUID": "7ccdb945-9023-4c44-b5c5-0d0eb663dfd8"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=执行结果"
-          }
-        },
-        {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "日志",
-            "GUID": "89122355-282f-4b0d-8d08-de7a640c4b4b"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=日志"
-          }
-        },
-        {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "返回信息",
-            "GUID": "ec8b4958-8148-4b39-afe8-1e7c0879fbb3"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=返回信息"
-          }
-        },
-        {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "返回码",
-            "GUID": "c422f129-b673-4876-a5a3-f1459b7f80a9"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=返回码"
-          }
-        },
-        {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "命令名称",
-            "GUID": "0ba03331-f4a3-44c8-86f5-24c5fe20fbb7"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=命令名称"
-          }
-        },
-        {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "文件夹名",
-            "GUID": "3efc9e12-007f-487a-988a-3d3168241400"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=文件夹名"
-          }
-        },
-        {
-          "BindingInfo": {
-            "TableName": "接口发起日志",
-            "ColumnName": "任务主表id",
-            "GUID": "b0a40ea7-0aa9-4bf1-a240-8807a20da449"
-          }
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "接口发起日志",
+              "UpdateType": "add",
+              "ShowConfirm": false,
+              "UpdateBindingValues": [
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "发起时间",
+                    "GUID": "a5718620-4a0f-4df4-aa4c-ce9b05180afe"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=执行开始时间"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "结束时间",
+                    "GUID": "40b1059e-9b77-4846-97b2-8111143fbc1e"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=执行结束时间"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "执行结果",
+                    "GUID": "3abb859c-a683-4cef-83e3-6278f51dfa5f"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=执行结果"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "日志",
+                    "GUID": "bb1821f1-f28f-4416-b283-38ab89de353f"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=日志"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "返回信息",
+                    "GUID": "84513b2b-1a85-4e2a-9bbc-6e9353d516e8"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回信息"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "返回码",
+                    "GUID": "5cc2f632-26d0-4ff4-8c59-291f23080ffb"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回码"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "命令名称",
+                    "GUID": "bcfb7d28-5fd4-4a16-98b6-a28cedd0433b"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=命令名称"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "文件夹名",
+                    "GUID": "bbf415d3-14d4-4543-b84c-981949626c60"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=文件夹名"
+                  }
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "接口发起日志",
+                    "ColumnName": "任务主表id",
+                    "GUID": "4547eadd-05e1-490e-9680-a3ef73e90dd0"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "a50b880c-0507-4390-bc44-c9a2c3f3bdea"
         }
       ]
     }

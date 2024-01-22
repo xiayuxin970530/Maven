@@ -6,7 +6,7 @@
       "$type": "Forguncy.ServerCommands.Models.ScheduleTrigger, ServerDesignerCommon",
       "Interval": 40.0,
       "TimeUnit": 2,
-      "StartDateTime": 45288.350694444445,
+      "StartDateTime": 45313.4375,
       "ScheduleRunInDebugServer": false
     }
   ],
@@ -29,7 +29,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "接口发起状态",
-                      "GUID": "5a9369c1-5f16-495d-9281-b9ec848a3c1c"
+                      "GUID": "ba7180b9-6ae8-4e36-b293-868b5c95678d"
                     },
                     "Value": "%Null%"
                   },
@@ -39,7 +39,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "客户名称",
-                      "GUID": "3c4635c0-6a27-4df0-a128-d653d9e08254"
+                      "GUID": "d3b26a7a-a0bd-43b3-9706-0a53ab14f335"
                     },
                     "Value": "山东亿嘉农资连锁销售有限公司"
                   },
@@ -49,7 +49,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "发起状态",
-                      "GUID": "e54bba2f-8b1c-4dd5-bf69-5d5d3f86ec32"
+                      "GUID": "5a70d2b7-2be8-485f-a526-0452c1435d48"
                     },
                     "Value": "1"
                   },
@@ -58,7 +58,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "任务类型",
-                      "GUID": "361520c2-0c49-4e50-925a-b34d3770228a"
+                      "GUID": "4e647741-7879-456b-8c08-b845d4dd50b4"
                     },
                     "Value": "客户回执"
                   }
@@ -66,7 +66,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "829a87461c094260adb9c631e6766bab"
+            "ID": "ffc030d0ac7e4eea8a4d26b453a4d9bc"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -79,7 +79,7 @@
                   "BindingInfo": {
                     "TableName": "签章任务",
                     "ColumnName": "任务主表id",
-                    "GUID": "d6f848be-07e9-4bd9-a1c6-926c936e41c4"
+                    "GUID": "91759501-ac63-4e8c-b964-88f54205b8ac"
                   },
                   "ColumnName": "任务主表id"
                 },
@@ -87,7 +87,7 @@
                   "BindingInfo": {
                     "TableName": "签章任务",
                     "ColumnName": "发起状态",
-                    "GUID": "72cfca4b-2593-413c-83a4-3c44756bc63a"
+                    "GUID": "5eed8f47-56be-4823-b86d-bed56f26800b"
                   },
                   "ColumnName": "发起状态"
                 }
@@ -100,7 +100,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "接口发起状态",
-                      "GUID": "ce41d2c9-9e41-4448-8363-bd569d22cb85"
+                      "GUID": "9e8a6b45-6fcf-4059-bc8f-56fbc0d05e7b"
                     },
                     "Value": "%Null%"
                   },
@@ -110,7 +110,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "客户名称",
-                      "GUID": "4bbbb0c2-24dd-44fa-93e0-de3a3cd95d11"
+                      "GUID": "3d7ea3b0-a63a-4169-8c24-b3b75c5063d0"
                     },
                     "Value": "山东亿嘉农资连锁销售有限公司"
                   },
@@ -120,7 +120,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "发起状态",
-                      "GUID": "af4ee7b9-59f1-4e1e-bfd6-3ebf72487178"
+                      "GUID": "29b6d6db-635a-4987-8d74-1598ac4eaeac"
                     },
                     "Value": "1"
                   },
@@ -129,7 +129,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "任务类型",
-                      "GUID": "b5a1f6b0-5ae5-4e4e-bb77-7e201db2e488"
+                      "GUID": "15e68604-64fc-49e0-a68b-b8bcc78c6d1f"
                     },
                     "Value": "客户回执"
                   }
@@ -137,7 +137,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "1c49f7bebcb14f6c8b954ec6105c581c"
+            "ID": "49174b8f5a794882aa85c55fa6160240"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -151,7 +151,7 @@
                   "BindingInfo": {
                     "TableName": "签章任务",
                     "ColumnName": "发起状态",
-                    "GUID": "24191492-d630-400c-835c-716de6474419"
+                    "GUID": "a1dcd84b-6452-4b0f-9aa9-89b9d53751db"
                   },
                   "ColumnName": "发起状态"
                 }
@@ -161,7 +161,7 @@
                 "ColumnBindingInfo": {
                   "TableName": "签章任务",
                   "ColumnName": "任务主表id",
-                  "GUID": "a7036a0e-ae5f-4f4d-92f6-791473bdbfb9"
+                  "GUID": "b9658225-b92d-4596-8e91-6ccf8f430eb9"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -170,7 +170,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "ff4d47266f3b4e42bc92f8d68b526c60"
+            "ID": "ff02cf1d3a49499ea67b64a11375c3dd"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -194,7 +194,7 @@
                     "Message": "暂无发起数据！"
                   }
                 ],
-                "ID": "2a082c1e-f149-4034-977f-ef60d6e03901"
+                "ID": "1a6a6aef-13c9-4dad-a6f8-c640e058ccd6"
               },
               {
                 "CommandList": [
@@ -220,7 +220,7 @@
                             "Message": "发起过！"
                           }
                         ],
-                        "ID": "61ed9be5-e971-4c8d-9bcb-bfac173b2490"
+                        "ID": "bf861ca6-9be3-4ba2-a51b-c92a4cfcf38d"
                       },
                       {
                         "CommandList": [
@@ -236,13 +236,13 @@
                                   "BindingInfo": {
                                     "TableName": "token",
                                     "ColumnName": "token",
-                                    "GUID": "3a82e96f-760a-4714-aeb8-b17a214fc8e8"
+                                    "GUID": "94634f1b-611e-4d59-a9e2-976f052137e2"
                                   },
                                   "ColumnName": "token"
                                 }
                               ]
                             },
-                            "ID": "f28658684287460b942b40cf99948825"
+                            "ID": "3f177a89f0234fcabd0052b766728ecc"
                           },
                           {
                             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
@@ -286,12 +286,12 @@
                             }
                           }
                         ],
-                        "ID": "20aba340-0c3b-4cf7-b6fc-037d00439e86"
+                        "ID": "3eebf821-47f0-4dc2-9e01-f789b345fb3e"
                       }
                     ]
                   }
                 ],
-                "ID": "d824a97a-9322-4c29-aedd-e4ba1eb912d4"
+                "ID": "cf7b1034-f1f7-4476-aec4-76edcb19d011"
               }
             ]
           }

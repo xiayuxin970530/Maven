@@ -49,7 +49,17 @@
   },
   {
     "ModuleName": "Table/更新客户联系人属性",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T10:48:11.282759+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\其他功能\\更新客户联系人属性.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -522,7 +532,16 @@
   },
   {
     "ModuleName": "Table/Customer700",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T10:48:11.282909+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\签证对接\\对账单视图\\700\\Customer700.json"
+    ]
   },
   {
     "ModuleName": "Table/Person700",
@@ -534,7 +553,16 @@
   },
   {
     "ModuleName": "Table/Customer800",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T10:48:11.282932+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\签证对接\\对账单视图\\800\\Customer800.json"
+    ]
   },
   {
     "ModuleName": "Table/Person800",
@@ -774,7 +802,16 @@
   },
   {
     "ModuleName": "Table/OM_MOMain",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T10:48:11.2829648+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\OM_MOMain.json"
+    ]
   },
   {
     "ModuleName": "TableView/业务员邮箱",
@@ -782,12 +819,32 @@
   },
   {
     "ModuleName": "Table/委外可用仓库",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T10:48:11.2829887+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\委外可用仓库.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/委外配料记录",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T10:48:11.2830029+08:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\委外配料记录.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {

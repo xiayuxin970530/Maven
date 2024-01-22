@@ -2627,7 +2627,16 @@
   },
   {
     "ModuleName": "TaskScheduler/定时查询状态",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T15:30:46.815623+08:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\e签宝自动发起接口\\定时查询接口状态\\定时查询状态.json"
+    ]
   },
   {
     "ModuleName": "SchedulerTasks/e签宝自动发起接口/执行日志",

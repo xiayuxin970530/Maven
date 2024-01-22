@@ -1418,7 +1418,16 @@
   },
   {
     "ModuleName": "PCPage/对账单明细日版",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-22T13:49:59.7086518+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\签证对接\\对账清单\\对账单明细日版.json"
+    ]
   },
   {
     "ModuleName": "PCPage/信息提示日版",

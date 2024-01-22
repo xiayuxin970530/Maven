@@ -29,7 +29,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "任务类型",
-                      "GUID": "d18898e0-58ce-4095-bb85-dc7d5e3fa572"
+                      "GUID": "35260684-73c4-4aa1-8e64-ca24e0b7c013"
                     },
                     "Value": "物流运输协议"
                   },
@@ -41,7 +41,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "签章任务",
                           "ColumnName": "接口发起状态",
-                          "GUID": "956ebb66-f876-43f1-a1bc-64991e419951"
+                          "GUID": "33902c1a-1938-4207-81cb-bb5ab2bc5077"
                         },
                         "Value": "%Null%",
                         "LeftBracket": 1
@@ -51,7 +51,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "签章任务",
                           "ColumnName": "接口发起状态",
-                          "GUID": "525c8b86-f437-4c44-a2ca-e7f35c1c3dbb"
+                          "GUID": "5deaa4d4-7c5e-4741-91e4-8a2dcbac83e1"
                         },
                         "RightBracket": 1
                       }
@@ -64,7 +64,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "发起状态",
-                      "GUID": "de67af0b-7453-4cc8-bb13-9cbad42a98ce"
+                      "GUID": "5c47a435-cf8c-431b-8d33-05efe2b5256c"
                     },
                     "Value": "1"
                   }
@@ -72,7 +72,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "666ab0455f1a44f2b70b3e86ad434734"
+            "ID": "60e729de53d54637afc51210db6ec7bb"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -85,7 +85,7 @@
                   "BindingInfo": {
                     "TableName": "签章任务",
                     "ColumnName": "任务主表id",
-                    "GUID": "7725d26d-15b2-40ae-96ad-24879ef04af8"
+                    "GUID": "7ff160b4-f431-43bb-90a4-bab7b3e82e38"
                   },
                   "ColumnName": "任务主表id"
                 },
@@ -93,7 +93,7 @@
                   "BindingInfo": {
                     "TableName": "签章任务",
                     "ColumnName": "公司类型",
-                    "GUID": "1c2b7902-c8f0-4d11-93f7-7880491eb6ec"
+                    "GUID": "51bfca4c-6cd9-4be0-ba35-d534125ec76a"
                   },
                   "ColumnName": "公司类型"
                 }
@@ -106,7 +106,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "任务类型",
-                      "GUID": "b97b0aa9-5d38-430d-a79c-e6e1e717290b"
+                      "GUID": "b37b359d-07b9-4b54-8d04-ca2974969418"
                     },
                     "Value": "物流运输协议"
                   },
@@ -118,7 +118,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "签章任务",
                           "ColumnName": "接口发起状态",
-                          "GUID": "e1c0ccda-0bd7-4514-9d20-2068fe96081c"
+                          "GUID": "1c9d60da-a811-440d-bc1b-f641dda1e6a2"
                         },
                         "Value": "%Null%",
                         "LeftBracket": 1
@@ -128,7 +128,7 @@
                         "ColumnBindingInfo": {
                           "TableName": "签章任务",
                           "ColumnName": "接口发起状态",
-                          "GUID": "0725f475-e6d3-4b11-ba14-320eb9c87cf8"
+                          "GUID": "14f4d56d-3889-44ac-921e-1a86f803009a"
                         },
                         "RightBracket": 1
                       }
@@ -141,7 +141,7 @@
                     "ColumnBindingInfo": {
                       "TableName": "签章任务",
                       "ColumnName": "发起状态",
-                      "GUID": "f342348f-0caa-4dbb-9e1e-ea33d73bc673"
+                      "GUID": "266ba0aa-d74b-4604-bcce-59b7416bac04"
                     },
                     "Value": "1"
                   }
@@ -149,7 +149,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "933be763edea4432b2e9c4e36a8165d0"
+            "ID": "4b696a52ac894c34acb7339a8c88963f"
           },
           {
             "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -163,7 +163,7 @@
                   "BindingInfo": {
                     "TableName": "签章任务",
                     "ColumnName": "发起状态",
-                    "GUID": "2f1cdf7e-47f2-4c89-82fa-9b5aff70598f"
+                    "GUID": "22315780-9e5a-44ae-baf7-05e981d5b417"
                   },
                   "ColumnName": "发起状态"
                 }
@@ -173,7 +173,7 @@
                 "ColumnBindingInfo": {
                   "TableName": "签章任务",
                   "ColumnName": "任务主表id",
-                  "GUID": "08edcb4e-3c88-4808-bb1d-2010460fab33"
+                  "GUID": "8e951cb7-ec07-4814-89bd-2219efecf741"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -182,7 +182,7 @@
               },
               "TopCount": "1"
             },
-            "ID": "24b160a0c55b42e3bdb6c7d1af5f665f"
+            "ID": "ab1d8bc13ba64ab2befb9d453a2c80a2"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -206,7 +206,7 @@
                     "Message": "暂无数据发起！"
                   }
                 ],
-                "ID": "4c3335eb-5157-481d-8d9c-63a55898dcb5"
+                "ID": "4b27c405-597f-49a0-9af8-66269d59ebed"
               },
               {
                 "CommandList": [
@@ -232,7 +232,7 @@
                             "Message": "发起过！"
                           }
                         ],
-                        "ID": "b6137546-f1d0-4803-bea3-7146f5250cb7"
+                        "ID": "48a546c0-176f-4d81-a06d-0655a33bb172"
                       },
                       {
                         "CommandList": [
@@ -278,12 +278,12 @@
                             }
                           }
                         ],
-                        "ID": "9fc4d929-cc6e-46e6-be2e-12868c547e26"
+                        "ID": "a3677358-f38e-4f82-96c8-b13458c064f2"
                       }
                     ]
                   }
                 ],
-                "ID": "b2f827be-f5ae-4006-804d-91234fff6497"
+                "ID": "4c508804-e409-4443-8adb-fe9bcdf8a69f"
               }
             ]
           }

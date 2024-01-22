@@ -1,0 +1,1591 @@
+{
+  "Name": "添加对账单数据到签章任务日版",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser",
+                "Administrator"
+              ]
+            }
+          ]
+        }
+      },
+      "HttpMethod": 3,
+      "Parameters": [
+        {
+          "Name": "任务主表id"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+          "TryCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "任务主表id是否存在签章任务",
+                "TableValue": {
+                  "TableName": "签章任务",
+                  "TableValueType": 3,
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "签章任务",
+                      "ColumnName": "任务主表id",
+                      "GUID": "2c4f7fca-8bde-47a7-a5f3-d0b3632e7b1c"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=任务主表id"
+                    }
+                  }
+                },
+                "ID": "c350403908824398a6802ffcd0d2b9b1"
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=任务主表id是否存在签章任务"
+                        }
+                      },
+                      "value": "0"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "获取插入数据",
+                        "TableValue": {
+                          "TableName": "e签宝对账单主表数据视图",
+                          "TableValueType": 1,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "我方公司名称",
+                                "GUID": "b7021112-c394-4b43-be2b-77e837f910e7"
+                              },
+                              "ColumnName": "我方公司名称"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "对账开始日期",
+                                "GUID": "d1fb65ff-f71e-4883-a609-1b5e1e5eb914"
+                              },
+                              "ColumnName": "对账开始日期"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "对账结束日期",
+                                "GUID": "988f920d-8c9e-434e-89c2-bff8adde60d6"
+                              },
+                              "ColumnName": "对账结束日期"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "年",
+                                "GUID": "f0c8e2c1-3713-4f78-b53a-2fcf416cdaf7"
+                              },
+                              "ColumnName": "年"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "交付客户",
+                                "GUID": "3866063d-27fa-4d74-a65c-318065bc8ebe"
+                              },
+                              "ColumnName": "交付客户"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "应收账面余额",
+                                "GUID": "0b4ddbab-b050-4668-b8e7-a6d05d6c3af7"
+                              },
+                              "ColumnName": "应收账面余额"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "应收账面余额大写",
+                                "GUID": "cc44a270-b0ad-4c28-9cff-81cd4f84017d"
+                              },
+                              "ColumnName": "应收账面余额大写"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "日期1",
+                                "GUID": "3080e2d6-e937-44ee-a9c3-85e7d32c3b27"
+                              },
+                              "ColumnName": "日期1"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "年度1",
+                                "GUID": "cc3b83c9-c0b7-419e-8de9-c703d5c8da1a"
+                              },
+                              "ColumnName": "年度1"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款描述",
+                                "GUID": "733cd25e-c4dc-443d-ae97-82243c46a756"
+                              },
+                              "ColumnName": "预收款描述"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款",
+                                "GUID": "915b79e0-6222-4d06-b359-2387a1c555a0"
+                              },
+                              "ColumnName": "预收款"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款大写",
+                                "GUID": "450d6086-ccc4-431f-ac3f-04fc4886d5ca"
+                              },
+                              "ColumnName": "预收款大写"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "日期2",
+                                "GUID": "fb0ffc3c-c19c-467f-a706-06e159b3b7fe"
+                              },
+                              "ColumnName": "日期2"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "年度2",
+                                "GUID": "6f956e9f-3f24-49ff-b77a-f9b69f238ec2"
+                              },
+                              "ColumnName": "年度2"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收余额描述",
+                                "GUID": "96058811-18cd-4519-a229-b81cf521f8b1"
+                              },
+                              "ColumnName": "预收余额描述"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款余额",
+                                "GUID": "3fb71033-ac61-427f-87a8-e2baaba62fdb"
+                              },
+                              "ColumnName": "预收款余额"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款余额大写",
+                                "GUID": "0c9dcf5f-aee7-4c6d-bc5a-82d32fec4d87"
+                              },
+                              "ColumnName": "预收款余额大写"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "日期3",
+                                "GUID": "a45cf3b2-6728-4ede-996c-b7b23f2ecf94"
+                              },
+                              "ColumnName": "日期3"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "应收余额",
+                                "GUID": "35949024-3707-4e34-965a-6ead9c87c1bb"
+                              },
+                              "ColumnName": "应收余额"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "应收余额大写",
+                                "GUID": "fd62e095-0171-4d60-bf1c-18fc56e76e0f"
+                              },
+                              "ColumnName": "应收余额大写"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "经办人",
+                                "GUID": "a4b112f6-8464-4a1e-a443-136acebf9ea9"
+                              },
+                              "ColumnName": "经办人"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "经办人手机号",
+                                "GUID": "d8370cb5-27fe-48b4-939d-b18032cb446a"
+                              },
+                              "ColumnName": "经办人手机号"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "发货日期",
+                                "GUID": "55df6623-eb9c-47fe-9528-18dd16d85bcc"
+                              },
+                              "ColumnName": "发货日期"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "任务主表ID",
+                                "GUID": "53a01643-b105-413c-a815-edc7184926a4"
+                              },
+                              "ColumnName": "任务主表ID"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "业务员名称",
+                                "GUID": "404c20a7-a3aa-4fac-a436-4fbf59eb8fe3"
+                              },
+                              "ColumnName": "业务员名称"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "业务员电话",
+                                "GUID": "cedcdfba-72c2-4df4-9601-89ec970c8474"
+                              },
+                              "ColumnName": "业务员电话"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "对账类型",
+                                "GUID": "c308fc10-7f8f-492b-9ccd-ebc96c980cad"
+                              },
+                              "ColumnName": "对账类型"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "公司类型",
+                                "GUID": "309947c2-cc5c-4c05-b285-34eaafa35f9a"
+                              },
+                              "ColumnName": "公司类型"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "e签宝对账单主表数据视图",
+                              "ColumnName": "任务主表ID",
+                              "GUID": "e8f33091-88ce-476a-baa6-c2449e5e33bd"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            }
+                          }
+                        },
+                        "ID": "375eaeb3136c4af184ca1e256db4192d"
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "签章任务",
+                        "UpdateType": "add",
+                        "ShowConfirm": false,
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "任务类型",
+                              "GUID": "3c5b461e-bab4-449a-a21f-189c4e88e9b7"
+                            },
+                            "Value": "通用对账模板"
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "任务主表id",
+                              "GUID": "ffc940de-8343-4a94-9481-bae6cd4cce3d"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "客户名称",
+                              "GUID": "4f8ec013-3820-42a2-8bf1-eaf92d3342f4"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.交付客户"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "我方公司名称",
+                              "GUID": "419c9cce-520a-4dda-acd0-4523e9827e91"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.我方公司名称"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对账开始日期",
+                              "GUID": "ce5f3802-71b9-441f-be34-6c941efba2f4"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.对账开始日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对账结束日期",
+                              "GUID": "26df1e9c-d9eb-486c-bbea-eca436ccc559"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.对账结束日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "年",
+                              "GUID": "d1def00d-5a9b-4b57-9ba0-683ee6d369c6"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.年"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "账面日期",
+                              "GUID": "e3ef9586-b38c-4f4d-bc3e-6961ca541a7e"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.对账结束日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "应收账面余额",
+                              "GUID": "5b2b0f81-3633-4d08-8576-ccb9e86f73c5"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.应收账面余额"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "应收账面余额大写",
+                              "GUID": "16528bbb-d43d-44b0-b824-3e4b3fa9dcdf"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.应收账面余额大写"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "日期1",
+                              "GUID": "dc3781ce-68a8-47c6-aba0-4609ff79bd82"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.日期1"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "年度1",
+                              "GUID": "7aa2cf39-b9c7-4fd1-bc13-80a4f3570202"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.年度1"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款描述",
+                              "GUID": "511dc52e-9a83-4f72-b3f6-69b4eeb1256f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款描述"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款",
+                              "GUID": "fc7ee676-45d4-4825-a728-6b0af41666e0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款大写",
+                              "GUID": "55e4841f-7235-46c5-bcb7-46f55f9a8f75"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款大写"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "日期2",
+                              "GUID": "d1312618-18b9-4e4c-b550-cc8075d8e35f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.日期2"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "年度2",
+                              "GUID": "c08b57a8-5413-4e01-b6f1-4e534cc7c24a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.年度2"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收余额描述",
+                              "GUID": "ea0d5b43-ef2c-4cf2-9922-ea060077126a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收余额描述"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款余额",
+                              "GUID": "76dc2581-9adf-48fe-855c-508c2cc9b09b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款余额"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款余额大写",
+                              "GUID": "2b3c4e5f-4e95-4e20-9fef-840b7e5dc547"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款余额大写"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "日期3",
+                              "GUID": "c2982511-e2c2-42de-9498-96452ae64c36"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.日期3"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "应收余额",
+                              "GUID": "f24dcfdb-a604-4379-a08c-286477ee3e38"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.应收余额"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "应收余额大写",
+                              "GUID": "44eebbd0-a751-498e-9dfe-190601a3a19a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.应收余额大写"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对账单发货日期",
+                              "GUID": "571ac626-ee3d-4116-86d4-40ae2a3719e5"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.发货日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对账单类型",
+                              "GUID": "7664f4fc-0339-470f-a7e4-430af8415d73"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.对账类型"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "业务员名称",
+                              "GUID": "590e44f1-80bc-4699-b57a-b56809abfd90"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.业务员名称"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "业务员电话",
+                              "GUID": "f66885df-b0a5-47fd-ac60-6d832f00e5d3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.业务员电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对方签署人",
+                              "GUID": "9cbb0f48-758c-4671-84f4-ce2aaf21dfe2"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.经办人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对方电话",
+                              "GUID": "1e9c4d13-e7f2-42bd-a285-85c5b874fb97"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.经办人手机号"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "公司类型",
+                              "GUID": "01422b8e-d190-4314-a2c1-868556ae3eab"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.公司类型"
+                            }
+                          }
+                        ],
+                        "ParamNameToSaveNewRowValue": "签章任务"
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "签章任务子表",
+                        "UpdateType": "add",
+                        "ShowConfirm": false,
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "签章任务ID",
+                              "GUID": "93da7da8-5073-4379-ad6d-0a80f1396cb7"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=签章任务.签章任务ID"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column1",
+                              "GUID": "07cf4edf-c042-471d-b6a1-578b8dc7fa29"
+                            },
+                            "Value": "合计"
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column2",
+                              "GUID": "0a3edaf3-2030-48b6-b5e7-c21c458a732b"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column3",
+                              "GUID": "eaea3710-3e50-4124-9592-63ad0a838333"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column4",
+                              "GUID": "9e11df03-aadb-4cac-8a5a-674a61b190cf"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column5",
+                              "GUID": "1ea3ff27-9562-4ea6-8657-d436c2bc6e87"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column6",
+                              "GUID": "0f0a012d-8e14-434b-8001-4188933e2c7c"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "任务主表ID",
+                              "GUID": "230ae756-8333-461b-87e4-d60508370cbb"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column7",
+                              "GUID": "0aff2b34-f384-42f4-86e7-3a8e24473255"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column8",
+                              "GUID": "c88d7cfe-73f7-410f-b759-a971249d3955"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column9",
+                              "GUID": "f9565d29-7635-4635-bd85-43eaedc6aa6d"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column10",
+                              "GUID": "741247f8-2a03-4891-bd7d-1a9ecbcff672"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "数据类型",
+                              "GUID": "57c5eae2-fd60-40aa-a0a2-acae362d42cf"
+                            },
+                            "Value": "对账单"
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+                        "ConnectionStringID": "pld",
+                        "Name": "对账单合计计算",
+                        "DisplayNameInDesigner": "[dbo].[对账单合计计算]",
+                        "Parmeters": [
+                          {
+                            "Name": "主表ID",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            },
+                            "DataType": "bigint"
+                          }
+                        ],
+                        "ReturningValue": "",
+                        "ReturnsName": "",
+                        "AllowAcessRoleList": [
+                          "FGC_LoginUser"
+                        ],
+                        "ID": "19b262f2a0f747bd8ea090d08d851be9"
+                      }
+                    ],
+                    "ID": "49c27c10-9b86-49ff-a567-2779fc732515"
+                  },
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=任务主表id是否存在签章任务"
+                        }
+                      },
+                      "value": "0",
+                      "compareType": 1
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "获取插入数据",
+                        "TableValue": {
+                          "TableName": "e签宝对账单主表数据视图",
+                          "TableValueType": 1,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "我方公司名称",
+                                "GUID": "a95b19e2-2f48-4a12-95a9-499bef4b73e2"
+                              },
+                              "ColumnName": "我方公司名称"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "对账开始日期",
+                                "GUID": "4d98b6e1-f787-41d5-8531-b012824035d3"
+                              },
+                              "ColumnName": "对账开始日期"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "对账结束日期",
+                                "GUID": "df4384c9-ed65-4b81-b3fa-b2293b9a9213"
+                              },
+                              "ColumnName": "对账结束日期"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "年",
+                                "GUID": "b4db7164-9f1b-4b72-9fc5-65ae114fb271"
+                              },
+                              "ColumnName": "年"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "交付客户",
+                                "GUID": "b074d88c-ae42-455e-98a4-d7832ad56b26"
+                              },
+                              "ColumnName": "交付客户"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "应收账面余额",
+                                "GUID": "c809c413-83fc-45a6-a7d5-6499793d1d78"
+                              },
+                              "ColumnName": "应收账面余额"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "应收账面余额大写",
+                                "GUID": "4afb97e0-6488-4fba-827c-d3a2cfa5fd59"
+                              },
+                              "ColumnName": "应收账面余额大写"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "日期1",
+                                "GUID": "e47bfce0-4657-45a8-921f-28b5dd4c2877"
+                              },
+                              "ColumnName": "日期1"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "年度1",
+                                "GUID": "7d0e93ac-b151-45fb-a859-93ef456853f1"
+                              },
+                              "ColumnName": "年度1"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款描述",
+                                "GUID": "f5a34dfd-1479-490c-9a97-06701642573a"
+                              },
+                              "ColumnName": "预收款描述"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款",
+                                "GUID": "dc55e794-1127-4845-b0e5-92d7fba5d38d"
+                              },
+                              "ColumnName": "预收款"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款大写",
+                                "GUID": "ae4cd6d8-6506-46d3-8777-a6a3c91db18e"
+                              },
+                              "ColumnName": "预收款大写"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "日期2",
+                                "GUID": "da614f00-08c0-4c9e-b53a-2e812ca3f3a8"
+                              },
+                              "ColumnName": "日期2"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "年度2",
+                                "GUID": "3a052bcb-a7da-4f1d-9906-db3cbc6109b3"
+                              },
+                              "ColumnName": "年度2"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收余额描述",
+                                "GUID": "f7d4e991-937a-4a97-a3d6-65e844e2d3e5"
+                              },
+                              "ColumnName": "预收余额描述"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款余额",
+                                "GUID": "43106f1d-f4ce-4479-9b0e-156cd70ef124"
+                              },
+                              "ColumnName": "预收款余额"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "预收款余额大写",
+                                "GUID": "5e61271e-2f76-41a1-a1a2-514dcfc5ddfb"
+                              },
+                              "ColumnName": "预收款余额大写"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "日期3",
+                                "GUID": "4d1900a3-75be-47d3-af91-fa8c0fe2fcad"
+                              },
+                              "ColumnName": "日期3"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "应收余额",
+                                "GUID": "5f4fa252-a92f-491b-acab-80b9766152c9"
+                              },
+                              "ColumnName": "应收余额"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "应收余额大写",
+                                "GUID": "f505a2f5-52f3-4086-be2b-53153e579b7b"
+                              },
+                              "ColumnName": "应收余额大写"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "经办人",
+                                "GUID": "a2ca1ecb-bfd4-42b8-a297-9107baaa89b0"
+                              },
+                              "ColumnName": "经办人"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "经办人手机号",
+                                "GUID": "c4dc5d9a-34ee-4514-9a17-6ab0c3e6015c"
+                              },
+                              "ColumnName": "经办人手机号"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "发货日期",
+                                "GUID": "4c65541e-0a17-4dcf-871f-e9c6378315a9"
+                              },
+                              "ColumnName": "发货日期"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "任务主表ID",
+                                "GUID": "e1b6c495-f035-4160-a0d7-6a35edc7a3e6"
+                              },
+                              "ColumnName": "任务主表ID"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "业务员名称",
+                                "GUID": "c75a397f-1c0c-432d-b4dd-8856628bd790"
+                              },
+                              "ColumnName": "业务员名称"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "业务员电话",
+                                "GUID": "2e041883-02cc-4ded-9513-9854e96575f4"
+                              },
+                              "ColumnName": "业务员电话"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "对账类型",
+                                "GUID": "14b4107f-d610-4537-a899-6e359ab2767b"
+                              },
+                              "ColumnName": "对账类型"
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "e签宝对账单主表数据视图",
+                                "ColumnName": "公司类型",
+                                "GUID": "594fd759-e516-4b4b-94cd-9297bd75cb86"
+                              },
+                              "ColumnName": "公司类型"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "e签宝对账单主表数据视图",
+                              "ColumnName": "任务主表ID",
+                              "GUID": "60aea75c-2412-47d9-a7b5-08384e2bc22c"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            }
+                          }
+                        },
+                        "ID": "2306726d02a3490da2118d3a593d104f"
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "签章任务",
+                        "ShowConfirm": false,
+                        "RowsToUpdate": 1,
+                        "RowsToUpdateCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "签章任务",
+                            "ColumnName": "任务主表id",
+                            "GUID": "9407b506-780d-4d33-91fc-d650fef5c5d4"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=任务主表id"
+                          }
+                        },
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "任务类型",
+                              "GUID": "b46458fb-4768-425a-a277-3755c7604ec6"
+                            },
+                            "Value": "通用对账模板"
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "任务主表id",
+                              "GUID": "1011cfe3-5672-4e4a-a795-a9e314442804"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "客户名称",
+                              "GUID": "89b8b2b8-c1ff-43c7-ad0e-372ed0165399"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.交付客户"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "我方公司名称",
+                              "GUID": "c22ef9e4-da7c-42dd-b743-8eedbc15edc0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.我方公司名称"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对账开始日期",
+                              "GUID": "0f90b136-9ff8-48ae-8cce-b604d4b3331a"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.对账开始日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对账结束日期",
+                              "GUID": "39523ceb-2a92-427f-b1a5-63c598c2520f"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.对账结束日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "年",
+                              "GUID": "d971dc1d-f2a3-47fb-aaeb-19250afb1064"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.年"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "账面日期",
+                              "GUID": "10d7ec92-ecf6-447b-9586-861997bc972b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.对账结束日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "应收账面余额",
+                              "GUID": "ea36c841-42a6-4870-b95a-96b6d9a33af1"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.应收账面余额"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "应收账面余额大写",
+                              "GUID": "ee0e9b18-fa3b-42b3-bd4e-d50fca7e1b50"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.应收账面余额大写"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "日期1",
+                              "GUID": "acc5c3a8-839e-4c37-8fe8-1731a896a8cc"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.日期1"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "年度1",
+                              "GUID": "4902b465-aa39-4e3d-b775-53b85d24dc7b"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.年度1"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款描述",
+                              "GUID": "b0f0aefc-c071-4de4-8267-268812e0abf0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款描述"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款",
+                              "GUID": "7d4fecac-7ea7-40c2-9e5e-316c1f3187e1"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款大写",
+                              "GUID": "37949d65-6577-4e23-bb30-934163941083"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款大写"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "日期2",
+                              "GUID": "cae23fd8-c1d5-4631-93b7-568be22f66eb"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.日期2"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "年度2",
+                              "GUID": "62b7d979-7c2f-479a-ad12-1de6dee0b3b5"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.年度2"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收余额描述",
+                              "GUID": "eddb7fb2-9036-46d8-813b-e8e971d61883"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收余额描述"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款余额",
+                              "GUID": "579b014d-55c2-47b3-b6be-b1b3292d9144"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款余额"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "预收款余额大写",
+                              "GUID": "13c33ee4-d125-43b4-85f9-f89f12fc8d97"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.预收款余额大写"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "日期3",
+                              "GUID": "5b6f5059-55b2-422d-b5e5-740b9a3448a9"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.日期3"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "应收余额",
+                              "GUID": "02615e3e-9ca5-4659-a8f1-3124ed6c0c64"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.应收余额"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "应收余额大写",
+                              "GUID": "05d49532-0198-4053-b094-a856123f07ba"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.应收余额大写"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对账单发货日期",
+                              "GUID": "62272407-4703-4be9-82cd-22035743eafb"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.发货日期"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对账单类型",
+                              "GUID": "42565f3e-7412-41cb-a76c-70962c00fbda"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.对账类型"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "业务员名称",
+                              "GUID": "98b67804-8af2-4979-8e3d-e274485843bb"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.业务员名称"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "业务员电话",
+                              "GUID": "84a0843e-7981-4a19-aae5-42442ddc5aba"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.业务员电话"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对方签署人",
+                              "GUID": "faf1c8bd-1c17-4df8-a9d8-f439ee921011"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.经办人"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "对方电话",
+                              "GUID": "2e041054-47d0-45f7-ab62-ca6ba9fd34b8"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.经办人手机号"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "公司类型",
+                              "GUID": "5316de86-eab3-4ca4-8d63-70b9980501b0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取插入数据.公司类型"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "获取签章ID",
+                        "TableValue": {
+                          "TableName": "签章任务",
+                          "OnlyGetValue": true,
+                          "TableValueType": 0,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "签章任务",
+                                "ColumnName": "签章任务ID",
+                                "GUID": "5e81cdaf-2714-4dca-aff2-64ace50e9860"
+                              },
+                              "ColumnName": "签章任务ID"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "签章任务",
+                              "ColumnName": "任务主表id",
+                              "GUID": "5ea997a7-a34e-4ae6-987e-0575fa110f52"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            }
+                          }
+                        },
+                        "ID": "49cf8c9952e34a6a8f7f0e7edcedce7f"
+                      },
+                      {
+                        "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                        "TableName": "签章任务子表",
+                        "UpdateType": "add",
+                        "ShowConfirm": false,
+                        "UpdateBindingValues": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "签章任务ID",
+                              "GUID": "94cbe3ea-3bcd-443c-a49a-e74131a46df3"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取签章ID"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column1",
+                              "GUID": "3c692e85-6ff9-477c-8996-26c9899ba546"
+                            },
+                            "Value": "合计"
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column2",
+                              "GUID": "f2247fdc-4fe5-4d0d-ab85-ae542d309aeb"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column3",
+                              "GUID": "3eb382f5-546c-4ef8-94c1-fd4c547d1dc4"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column4",
+                              "GUID": "731a5e8c-75ba-461a-9b6e-73659e2edeeb"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column5",
+                              "GUID": "4d756b32-f6fb-4f05-8c69-2a18c7b6b9ba"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column6",
+                              "GUID": "eef8cac5-7d95-4c6b-b6f4-e916a3e84432"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "任务主表ID",
+                              "GUID": "7d604385-3833-4238-8fb8-02921a3b8743"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column7",
+                              "GUID": "20bf0d04-eff3-4f38-ad46-6debfe932745"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column8",
+                              "GUID": "648dd9fe-abea-466e-9ff3-b33dec747c28"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column9",
+                              "GUID": "687fb49c-4efb-4189-9069-e291d792aa7c"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "column10",
+                              "GUID": "11f31447-779b-4624-8fc2-227d5866d8d8"
+                            }
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "签章任务子表",
+                              "ColumnName": "数据类型",
+                              "GUID": "bc6e7fae-70fd-44a1-88f5-33f158af8e53"
+                            },
+                            "Value": "对账单"
+                          }
+                        ]
+                      },
+                      {
+                        "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+                        "ConnectionStringID": "pld",
+                        "Name": "对账单合计计算",
+                        "DisplayNameInDesigner": "[dbo].[对账单合计计算]",
+                        "Parmeters": [
+                          {
+                            "Name": "主表ID",
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=任务主表id"
+                            },
+                            "DataType": "bigint"
+                          }
+                        ],
+                        "ReturningValue": "",
+                        "ReturnsName": "",
+                        "AllowAcessRoleList": [
+                          "FGC_LoginUser"
+                        ],
+                        "ID": "9f99592a262a414e92717fb70c0443f5"
+                      }
+                    ],
+                    "ID": "98d8eaae-759f-4721-9cc8-c3fc4ba8e2ef"
+                  }
+                ]
+              }
+            ]
+          },
+          "CatchCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "ErrorCode": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionCode"
+                },
+                "Message": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ExceptionMessage"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

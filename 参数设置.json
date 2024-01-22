@@ -1,0 +1,956 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      }
+    },
+    "Count": 38
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 43.0
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 105.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 97.0
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 34.0
+        }
+      },
+      "51": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "53": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 66.0
+        }
+      },
+      "55": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 57.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 116.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 111.0
+        }
+      },
+      "58": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 141.0
+        }
+      },
+      "59": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 71.0
+        }
+      }
+    },
+    "Count": 60
+  },
+  "Values": {
+    "1,1": "存货档案同步对照表",
+    "1,11": "导入",
+    "1,19": "存货分类同步属性对照",
+    "1,32": "导入",
+    "1,39": "配料单审核人分配",
+    "1,43": "保存",
+    "1,47": "车间验料对照",
+    "1,49": "导入",
+    "1,51": "保存",
+    "1,56": "更新",
+    "1,58": "导入",
+    "3,40": "配料单审核人",
+    "16,19": "配料可用仓库",
+    "27,51": "保存职责",
+    "29,43": "保存"
+  },
+  "AttachInfos": {
+    "1,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "表格1",
+            "ImportExcelToListViewMode": 2,
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=参数设置!C5"
+                },
+                "ColumnName": "来源仓库编码",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=参数设置!I5"
+                },
+                "ColumnName": "同步后仓库编码"
+              }
+            ]
+          }
+        ],
+        "Text": "导入",
+        "TemplateKey": "样式5"
+      }
+    },
+    "1,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "导入",
+        "TemplateKey": "样式5"
+      }
+    },
+    "1,43": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "审核用户",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": true,
+                "clearSort": true
+              }
+            }
+          },
+          {
+            "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+            "ConnectionStringID": "pld",
+            "Name": "更新配料状态定时任务",
+            "DisplayNameInDesigner": "[dbo].[更新配料状态定时任务]",
+            "Parmeters": [],
+            "AllowAcessRoleList": [
+              "FGC_LoginUser"
+            ],
+            "ID": "68af78bdcbf24f1db211698d5fe12171"
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "样式5"
+      }
+    },
+    "1,49": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "存货分类对照",
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=参数设置!AV5"
+                },
+                "ColumnName": "存货编码"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=参数设置!AX5"
+                },
+                "ColumnName": "属性"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=参数设置!AZ5"
+                },
+                "ColumnName": "负责部门"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "Excel文件导入成功！"
+          }
+        ],
+        "Text": "导入",
+        "TemplateKey": "样式5"
+      }
+    },
+    "1,51": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "存货分类对照",
+            "UpdateType": 3
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "样式5"
+      }
+    },
+    "1,56": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "更新",
+        "TemplateKey": "样式5"
+      }
+    },
+    "1,58": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "更新属性",
+            "ImportExcelToListViewMode": 2,
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=参数设置!BE5"
+                },
+                "ColumnName": "存货编码",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=参数设置!BF5"
+                },
+                "ColumnName": "属性",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=参数设置!BG5"
+                },
+                "ColumnName": "值"
+              }
+            ]
+          }
+        ],
+        "Text": "导入",
+        "TemplateKey": "样式5"
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "表格1",
+        "TableName": "仓库同步对照表",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 34,
+        "ColumnCount": 15,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AlwaysInEditMode": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,19": {
+      "ListViewInfo": {
+        "Name": "表格2",
+        "TableName": "同步分类属性",
+        "RowIndex": 3,
+        "ColumnIndex": 19,
+        "RowCount": 12,
+        "ColumnCount": 19,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AlwaysInEditMode": true,
+        "AllowDragFill": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,39": {
+      "ListViewInfo": {
+        "Name": "审核用户",
+        "TableName": "审核关键词",
+        "RowIndex": 3,
+        "ColumnIndex": 39,
+        "RowCount": 23,
+        "ColumnCount": 6,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AlwaysInEditMode": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,46": {
+      "ListViewInfo": {
+        "Name": "存货分类对照",
+        "TableName": "存货验料属性",
+        "RowIndex": 3,
+        "ColumnIndex": 46,
+        "RowCount": 23,
+        "ColumnCount": 7,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "3,54": {
+      "ListViewInfo": {
+        "Name": "更新属性",
+        "TableName": "更新属性",
+        "RowIndex": 3,
+        "ColumnIndex": 54,
+        "RowCount": 34,
+        "ColumnCount": 5,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "插入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "删除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "复制并插入",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2
+      }
+    },
+    "4,2": {
+      "BindingInfo": {
+        "TableName": "仓库同步对照表",
+        "ColumnName": "来源仓库编码",
+        "GUID": "ed5b94af-6428-4775-8799-8daf16f27612"
+      }
+    },
+    "4,8": {
+      "BindingInfo": {
+        "TableName": "仓库同步对照表",
+        "ColumnName": "同步后仓库编码",
+        "GUID": "fc38a7b0-5c79-4702-9ca7-dc7c2c6662d0"
+      }
+    },
+    "4,20": {
+      "BindingInfo": {
+        "TableName": "同步分类属性",
+        "ColumnName": "存货分类",
+        "GUID": "684b1017-b0ad-4711-8efd-05f346cac7da"
+      }
+    },
+    "4,26": {
+      "BindingInfo": {
+        "TableName": "同步分类属性",
+        "ColumnName": "是否批次",
+        "GUID": "bb49a829-ecf1-4f00-a172-87b19f47b482"
+      },
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      }
+    },
+    "4,32": {
+      "BindingInfo": {
+        "TableName": "同步分类属性",
+        "ColumnName": "是否质检",
+        "GUID": "48dfa3bd-ce74-44bd-bc6e-35b7ca010dfe"
+      },
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      }
+    },
+    "4,40": {
+      "BindingInfo": {
+        "TableName": "审核关键词",
+        "ColumnName": "审核用户",
+        "GUID": "c48f591c-57c0-41c5-b2fa-84bbf20fa2aa"
+      },
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "Columns": 2
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "4,43": {
+      "BindingInfo": {
+        "TableName": "审核关键词",
+        "ColumnName": "关键词",
+        "GUID": "4e066c68-4430-4d7f-ab4e-b0f7fa9803b8"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "inventory",
+        "ValueColumnBindingInfo": {
+          "TableName": "inventory",
+          "ColumnName": "cInvStd",
+          "GUID": "c4b64247-b37a-4620-b74b-2f88d2e50b20"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "inventory",
+          "ColumnName": "cInvStd",
+          "GUID": "ec7104fb-49c6-4a83-8330-5a03041024fa"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 2,
+          "ColumnBindingInfo": {
+            "TableName": "inventory",
+            "ColumnName": "cInvCode",
+            "GUID": "2755156d-7f84-46bc-bde7-5fa41675652e"
+          },
+          "Value": "04"
+        }
+      }
+    },
+    "4,47": {
+      "BindingInfo": {
+        "TableName": "存货验料属性",
+        "ColumnName": "存货编码",
+        "GUID": "a573f507-7b6d-4319-a772-244413b45d5b"
+      }
+    },
+    "4,49": {
+      "BindingInfo": {
+        "TableName": "存货验料属性",
+        "ColumnName": "属性",
+        "GUID": "6e3a0d5a-1541-463c-8ed1-2f57a8f0338e"
+      }
+    },
+    "4,51": {
+      "BindingInfo": {
+        "TableName": "存货验料属性",
+        "ColumnName": "负责部门",
+        "GUID": "c6796cae-337c-4e7a-addb-7e4ff10a2f27"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "Items": [
+          {
+            "Value": "仓库",
+            "DisplayValue": "仓库"
+          },
+          {
+            "Value": "生产",
+            "DisplayValue": "生产"
+          }
+        ]
+      }
+    },
+    "4,56": {
+      "BindingInfo": {
+        "TableName": "更新属性",
+        "ColumnName": "存货编码",
+        "GUID": "8e5de523-5862-4b88-8f3e-87a3b2bdca82"
+      }
+    },
+    "4,57": {
+      "BindingInfo": {
+        "TableName": "更新属性",
+        "ColumnName": "属性",
+        "GUID": "d2e04060-bdc9-499f-aaca-7834a300b999"
+      }
+    },
+    "4,58": {
+      "BindingInfo": {
+        "TableName": "更新属性",
+        "ColumnName": "值",
+        "GUID": "e55d64c6-ebca-41ae-8b88-e6e2058496e8"
+      }
+    },
+    "18,19": {
+      "ListViewInfo": {
+        "Name": "表格4",
+        "TableName": "配料可用仓库",
+        "RowIndex": 18,
+        "ColumnIndex": 19,
+        "RowCount": 19,
+        "ColumnCount": 18,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "19,20": {
+      "BindingInfo": {
+        "TableName": "配料可用仓库",
+        "ColumnName": "仓库编码",
+        "GUID": "c6eb4ccf-7ebb-4bc3-a3d9-54e66542e4dd"
+      }
+    },
+    "27,51": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "人员职责",
+            "UpdateType": 3
+          }
+        ],
+        "Text": "保存职责",
+        "TemplateKey": "样式5"
+      }
+    },
+    "29,43": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "表格3",
+            "UpdateType": 3
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "样式5"
+      }
+    },
+    "29,46": {
+      "ListViewInfo": {
+        "Name": "人员职责",
+        "TableName": "人员验料职责",
+        "RowIndex": 29,
+        "ColumnIndex": 46,
+        "RowCount": 8,
+        "ColumnCount": 7,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "30,39": {
+      "ListViewInfo": {
+        "Name": "表格3",
+        "TableName": "验料密码",
+        "RowIndex": 30,
+        "ColumnIndex": 39,
+        "RowCount": 7,
+        "ColumnCount": 6,
+        "TopCondition": null,
+        "ListViewStyleName": "样式1",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "30,47": {
+      "BindingInfo": {
+        "TableName": "人员验料职责",
+        "ColumnName": "姓名",
+        "GUID": "f3d8c270-931e-4d1d-8100-186bd46a913f"
+      },
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "Columns": 2
+      }
+    },
+    "30,49": {
+      "BindingInfo": {
+        "TableName": "人员验料职责",
+        "ColumnName": "分类",
+        "GUID": "e13307a1-8434-426c-95c1-a8e630decb5f"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "Items": [
+          {
+            "Value": "生产",
+            "DisplayValue": "生产"
+          },
+          {
+            "Value": "仓库",
+            "DisplayValue": "仓库"
+          }
+        ]
+      }
+    },
+    "31,40": {
+      "BindingInfo": {
+        "TableName": "验料密码",
+        "ColumnName": "日期",
+        "GUID": "43ba66fe-6915-439f-9b0f-c7be0d085478"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon"
+      }
+    },
+    "31,42": {
+      "BindingInfo": {
+        "TableName": "验料密码",
+        "ColumnName": "密码",
+        "GUID": "e9820ee7-f683-41ff-8821-9e505faae5bb"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "Formatter": 1,
+        "HorizontalAlignment": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,1": 0,
+      "3,2": 0,
+      "3,8": 0,
+      "3,19": 0,
+      "3,20": 0,
+      "3,26": 0,
+      "3,32": 0,
+      "3,46": 0,
+      "3,47": 0,
+      "3,49": 0,
+      "3,51": 0,
+      "4,1": 0,
+      "4,2": 0,
+      "4,8": 0,
+      "4,19": 0,
+      "4,20": 0,
+      "4,26": 0,
+      "4,32": 0,
+      "4,40": 0,
+      "4,43": 0,
+      "4,46": 0,
+      "4,47": 0,
+      "4,49": 0,
+      "4,51": 0,
+      "4,56": 0,
+      "4,57": 0,
+      "4,58": 0,
+      "19,20": 0,
+      "29,46": 0,
+      "29,47": 0,
+      "29,49": 0,
+      "30,46": 0,
+      "30,47": 0,
+      "30,49": 0,
+      "31,40": 0,
+      "31,42": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "4,2,1,6",
+    "4,8,1,8",
+    "4,20,1,6",
+    "1,11,1,5",
+    "1,32,1,6",
+    "4,26,1,6",
+    "4,32,1,6",
+    "4,40,1,3",
+    "1,43,1,2",
+    "4,43,1,2",
+    "1,1,1,9",
+    "1,19,1,12",
+    "1,39,1,3",
+    "1,51,1,2",
+    "4,51,1,2",
+    "4,49,1,2",
+    "4,47,1,2",
+    "27,51,1,2",
+    "30,47,1,2",
+    "30,49,1,4",
+    "5,1,32,15",
+    "5,39,21,6",
+    "5,46,21,7",
+    "31,46,6,7",
+    "32,39,5,6",
+    "31,40,1,2",
+    "31,42,1,2",
+    "29,43,1,2",
+    "5,19,10,19",
+    "20,19,17,18",
+    "19,20,1,11",
+    "16,19,2,12",
+    "5,54,32,5",
+    "3,2,1,6",
+    "3,8,1,8",
+    "3,20,1,6",
+    "3,26,1,6",
+    "3,32,1,6",
+    "3,40,1,3",
+    "3,43,1,2",
+    "3,47,1,2",
+    "3,49,1,2",
+    "3,51,1,2",
+    "18,20,1,11",
+    "29,47,1,2",
+    "29,49,1,4",
+    "30,40,1,2",
+    "30,42,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "网页母板",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "Administrator",
+            "配料单复核"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//kmqdtPwHDwlszNvM4MiIyfxPYDZ2WiUTk8ZajELp485q/9ELufNe3pjnIDSpLUEKy9dGT7bxyGyrPpRGBlxhjjXtg6naxXkXE9jXIe0aURLrYnA4JLPCwKr9EYmeqXOeiOogRJVRhRYA7Ew2PKQrxjCP1fuyx8w4bMLLJroQG6SD4UU0w3Y0QY8/yWKzWjWQVVAm0Icie8D1YX0tiIbNeohygiUdnQCqGmc7BOHR1qxQ68A2GxnQGOhJor2IyjU2tGvhxTWaWaIt9+QjbtA+XHGr1VjwIaUfyFsxwFZI8KoaOo6k8a9KcD40secXpfD2q+slVboMCP/tAHCPR06W8BS62aXa/3x0raeDlbkm4CPbu6qeAu5VU8l4j3ofKxoFvdTzCCs7IEChUC0AkSqgQ1bI+w3MSp5f3CgiqhIHDhgYqma449l56+j8Hc4okp9O5s9rwUMI3T0imeCPz3/rG3qD6ZRYaoj1AyZw2NIxocrHwjlYJTvMY5/DvvbyDOjKNlG6+rs41TSJwwcs5qVkpArKNpPyKeONQihTMBRE8GtIFKgXoP90n2tHBsycFqC9tpu4uuONRZoLnlr4IBc4XgowWO0qJXUPoywSGZCsM0CBzdbG9DGuELdV1WXBI6ssdwG21NadVZ0kZudzYlgl9MZO2T3yZFG1o3JAZR7MuMrfQSVXNzNyTtf+dPqa6/xD7fjGUe1qEHiJb/i+H+hqcSfw2Oek6KdIkqA8YiVLZKzfvtYa0DSVCDghfQcljB/knQtHl9j4A0uSuqitiMA9MiOrMH596MjtObbxf9qpGTpEcN1fDbFaiOkIeapR5JUTXB9cgFpcCjb8xR3BXRi4z7oPAkDhl9PALqHooBf8oCZyI+tn+HRW9/bgWpg+HfhuXC8Ou218mIo2roeixEIUfA==|920

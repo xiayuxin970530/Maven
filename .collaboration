@@ -522,7 +522,16 @@
   },
   {
     "ModuleName": "Table/Customer700",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-24T10:38:18.7860294+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\签证对接\\对账单视图\\700\\Customer700.json"
+    ]
   },
   {
     "ModuleName": "Table/Person700",
@@ -534,7 +543,16 @@
   },
   {
     "ModuleName": "Table/Customer800",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-24T10:38:18.7860514+08:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\签证对接\\对账单视图\\800\\Customer800.json"
+    ]
   },
   {
     "ModuleName": "Table/Person800",

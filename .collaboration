@@ -1578,7 +1578,16 @@
   },
   {
     "ModuleName": "ServerCommandPrivate/自动签署销售合同接口",
-    "ModuleType": 27
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-24T16:40:13.8308172+08:00",
+    "ModuleType": 27,
+    "ToRemoveFiles": [
+      "ServerCommands\\e签宝正式接口\\销售合同\\自动签署销售合同接口.json"
+    ]
   },
   {
     "ModuleName": "ServerCommands/e签宝正式接口/物流运输",

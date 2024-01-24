@@ -1056,7 +1056,17 @@
   },
   {
     "ModuleName": "PCPage/产品齐套分析",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-24T10:41:56.8985289+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\配料\\产品齐套分析.json",
+      "Pages\\7b1ee1c186ce445b8d7c39ae97002fc.json"
+    ]
   },
   {
     "ModuleName": "PCPage/配料单审核未复核",

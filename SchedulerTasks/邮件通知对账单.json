@@ -29,7 +29,7 @@
                 "BindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "任务主表ID",
-                  "GUID": "016e646e-2556-4056-aec6-6b600d2fde5f"
+                  "GUID": "81204482-c7e8-4cb7-bc24-337f1cf0eec2"
                 },
                 "ColumnName": "任务主表ID"
               },
@@ -37,7 +37,7 @@
                 "BindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "交付客户",
-                  "GUID": "1414e44a-5abc-4aa4-bc1b-9451e5ba5d7b"
+                  "GUID": "e91772d1-d398-4d7d-a00b-f4b73f14355c"
                 },
                 "ColumnName": "交付客户"
               },
@@ -45,7 +45,7 @@
                 "BindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "业务日期",
-                  "GUID": "25f346fa-3790-496f-9643-43368530ba23"
+                  "GUID": "8295fa0b-86e6-4364-b894-684615d1f0fe"
                 },
                 "ColumnName": "业务日期"
               },
@@ -53,7 +53,7 @@
                 "BindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "业务员名称",
-                  "GUID": "0405c08e-36cf-4c09-a830-3c98f1d2bb96"
+                  "GUID": "8cadc83f-2818-444d-b981-78eac6b825bc"
                 },
                 "ColumnName": "业务员名称"
               },
@@ -61,7 +61,7 @@
                 "BindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "通知邮箱",
-                  "GUID": "71e731e9-c34f-4d08-babd-bfdac2e1e904"
+                  "GUID": "951bdd4e-7ca7-4f61-8728-285bdd150d47"
                 },
                 "ColumnName": "通知邮箱"
               },
@@ -69,7 +69,7 @@
                 "BindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "对账开始日期",
-                  "GUID": "38b14192-cff3-45af-a39a-9a1630610ddc"
+                  "GUID": "9bf01001-078a-4c54-b132-a797dc284b4a"
                 },
                 "ColumnName": "对账开始日期"
               },
@@ -77,7 +77,7 @@
                 "BindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "对账结束日期",
-                  "GUID": "cc01c032-1cbf-4517-95c6-41ef3842de80"
+                  "GUID": "dd823ff5-16e1-4568-b048-cd28be4fbc1a"
                 },
                 "ColumnName": "对账结束日期"
               },
@@ -85,9 +85,17 @@
                 "BindingInfo": {
                   "TableName": "任务主表",
                   "ColumnName": "发起电子对账日期",
-                  "GUID": "eeea2aad-bf86-4185-afba-99b89a752d38"
+                  "GUID": "087b2186-9cb9-453e-8ca8-d38f1496fe8c"
                 },
                 "ColumnName": "发起电子对账日期"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "任务主表",
+                  "ColumnName": "对账类型",
+                  "GUID": "40ec8b98-5786-4eec-a190-742a0cfc7156"
+                },
+                "ColumnName": "对账类型"
               }
             ],
             "SqlCondition": {
@@ -98,7 +106,7 @@
                   "ColumnBindingInfo": {
                     "TableName": "任务主表",
                     "ColumnName": "来源类型",
-                    "GUID": "47aa70a1-35dc-4464-9f68-d1beabd090e0"
+                    "GUID": "3778b920-073c-474a-a514-23a695ba0838"
                   },
                   "Value": "客户对账单"
                 },
@@ -110,7 +118,7 @@
                       "ColumnBindingInfo": {
                         "TableName": "任务主表",
                         "ColumnName": "邮件发送时间",
-                        "GUID": "1f3db64d-8517-4715-a6c9-80dde0b9cc29"
+                        "GUID": "8221bdc8-d93f-484c-b941-02bbb70a640b"
                       },
                       "LeftBracket": 1
                     },
@@ -119,7 +127,7 @@
                       "ColumnBindingInfo": {
                         "TableName": "任务主表",
                         "ColumnName": "邮件发送时间",
-                        "GUID": "1526a805-32b4-406a-9d39-40660130196f"
+                        "GUID": "392c3138-e1f1-46dd-b3d6-ec58fd461976"
                       },
                       "Value": "%Null%",
                       "RightBracket": 1
@@ -133,7 +141,7 @@
                   "ColumnBindingInfo": {
                     "TableName": "任务主表",
                     "ColumnName": "业务日期",
-                    "GUID": "c6bef723-ad13-4261-9659-9313041deb11"
+                    "GUID": "3493aa91-2614-4e18-968b-d01b4e46b135"
                   },
                   "Value": "2023-10-18"
                 },
@@ -143,7 +151,7 @@
                   "ColumnBindingInfo": {
                     "TableName": "任务主表",
                     "ColumnName": "通知邮箱",
-                    "GUID": "594496ef-14a0-4fd6-949e-288e6a888e81"
+                    "GUID": "c343fe8a-df86-4208-9331-4205db296a12"
                   }
                 },
                 {
@@ -152,7 +160,7 @@
                   "ColumnBindingInfo": {
                     "TableName": "任务主表",
                     "ColumnName": "通知邮箱",
-                    "GUID": "0afe3b4d-c55a-4e0a-a90e-bce8867d3bad"
+                    "GUID": "8b5c2a37-c2e5-44b0-b59c-6dadeda1cfef"
                   },
                   "Value": "%Null%"
                 }
@@ -165,14 +173,14 @@
                   "ColumnBindingInfo": {
                     "TableName": "任务主表",
                     "ColumnName": "任务主表ID",
-                    "GUID": "23f60bd8-8c77-4fdc-b318-3e0dd29d7cdb"
+                    "GUID": "91355790-9084-4663-a17b-2b5f30c2bec7"
                   },
                   "Order": 1
                 }
               ]
             }
           },
-          "ID": "a65b59bcd9774bf99b4201b38925e8ab"
+          "ID": "73863d094b1644d5902f8ee319cb7148"
         },
         {
           "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -181,7 +189,7 @@
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=TEXT(获取需要通知的数据.业务日期,\"YYYY-MM-DD\")"
           },
-          "ID": "46273c6cf98d4a76bdbeed77ca5719e2"
+          "ID": "cfe2a201d70d402b97fba66a7c6403bb"
         },
         {
           "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -190,7 +198,7 @@
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=TEXT(获取需要通知的数据.对账开始日期,\"YYYY-MM-DD\")"
           },
-          "ID": "0c8ed1844786421aa3433cc2f87f9d11"
+          "ID": "84b341fdd16f4cb88e4d233f5041c511"
         },
         {
           "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -199,7 +207,7 @@
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=TEXT(获取需要通知的数据.对账结束日期,\"YYYY-MM-DD\")"
           },
-          "ID": "c6226495096549feafbcf1c0f07cdb6b"
+          "ID": "59d39b7d1cab47a88720f7b58fe20913"
         },
         {
           "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -266,98 +274,215 @@
               },
               "CommandList": [
                 {
-                  "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
-                  "TargetPageName": "对账单明细",
-                  "ServerExportFileName": "D:\\活字格文件导出勿删除\\文件.pdf",
-                  "ExportCellValueInfos": [
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
                     {
-                      "CellName": "任务主表id",
-                      "CellValue": {
-                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                        "SerializeProperty": "=获取需要通知的数据.任务主表ID"
-                      }
-                    }
-                  ],
-                  "ExportListViewCurrentRowInfos": [
-                    {
-                      "BindingTable": "任务主表",
-                      "CurrentRowCondition": {
-                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                        "ColumnBindingInfo": {
-                          "TableName": "任务主表",
-                          "ColumnName": "任务主表ID",
-                          "GUID": "964a726d-a63f-4015-9419-1097c6a82cb2"
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=获取需要通知的数据.对账类型"
+                          }
                         },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=获取需要通知的数据.任务主表ID"
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
-                  "From": "haodeying@afineagro.com",
-                  "EnhancedRecipient": {
-                    "CommonValue": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=获取需要通知的数据.通知邮箱"
-                    }
-                  },
-                  "Subject": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=获取需要通知的数据.交付客户"
-                  },
-                  "Content": "[=获取需要通知的数据.业务员名称],对账明细请查看附件,业务日期，[=变量转业务日期]，\r\n对账期间：[=变量转对账开始]-[=变量转对账结束]\r\n\r\n\r\n\r\n对账唯一序列号：[=获取需要通知的数据.任务主表ID]\r\n\r\n\r\n是否同一对账单以唯一序列号为准\r\n\r\n本邮件只做签署前对账便利性查看用，最终结果以电子签为准！！！\r\n本邮件只做签署前对账便利性查看用，最终结果以电子签为准！！！\r\n\r\n发送日期：[%Date.Today%]",
-                  "EnhancedCC": {
-                    "CommonValue": "867361697@qq.com;haodeying@afineagro.com"
-                  },
-                  "Attachments": "D:\\活字格文件导出勿删除\\文件.pdf",
-                  "Priority": "high",
-                  "ID": "ca3b34d59eb444d9bcb3da401154f912"
-                },
-                {
-                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                  "TableName": "任务主表",
-                  "ShowConfirm": false,
-                  "RowsToUpdate": 1,
-                  "RowsToUpdateCondition": {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "ColumnBindingInfo": {
-                      "TableName": "任务主表",
-                      "ColumnName": "任务主表ID",
-                      "GUID": "97ffe4c1-d61c-4c05-974f-76598dfc6bf8"
-                    },
-                    "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=获取需要通知的数据.任务主表ID"
-                    }
-                  },
-                  "UpdateBindingValues": [
-                    {
-                      "BindingInfo": {
-                        "TableName": "任务主表",
-                        "ColumnName": "邮件发送时间",
-                        "GUID": "177dca9d-1090-48a8-9cc3-ca4cfaa36d53"
+                        "value": "年终结账"
                       },
-                      "Value": {
-                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                        "SerializeProperty": "=NOW()"
-                      }
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
+                          "TargetPageName": "对账单明细",
+                          "ServerExportFileName": "D:\\活字格文件导出勿删除\\文件.pdf",
+                          "ExportCellValueInfos": [
+                            {
+                              "CellName": "任务主表id",
+                              "CellValue": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=获取需要通知的数据.任务主表ID"
+                              }
+                            }
+                          ],
+                          "ExportListViewCurrentRowInfos": [
+                            {
+                              "BindingTable": "任务主表",
+                              "CurrentRowCondition": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "任务主表",
+                                  "ColumnName": "任务主表ID",
+                                  "GUID": "ca693fbf-a8aa-4f30-91cf-2c2ddd223ea0"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=获取需要通知的数据.任务主表ID"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                          "From": "haodeying@afineagro.com",
+                          "EnhancedRecipient": {
+                            "CommonValue": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取需要通知的数据.通知邮箱"
+                            }
+                          },
+                          "Subject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=获取需要通知的数据.交付客户"
+                          },
+                          "Content": "[=获取需要通知的数据.业务员名称],对账明细请查看附件,业务日期，[=变量转业务日期]，\r\n对账期间：[=变量转对账开始]-[=变量转对账结束]\r\n\r\n\r\n\r\n对账唯一序列号：[=获取需要通知的数据.任务主表ID]\r\n\r\n\r\n是否同一对账单以唯一序列号为准\r\n\r\n本邮件只做签署前对账便利性查看用，最终结果以电子签为准！！！\r\n本邮件只做签署前对账便利性查看用，最终结果以电子签为准！！！\r\n\r\n发送日期：[%Date.Today%]",
+                          "EnhancedCC": {
+                            "CommonValue": "867361697@qq.com;haodeying@afineagro.com"
+                          },
+                          "Attachments": "D:\\活字格文件导出勿删除\\文件.pdf",
+                          "Priority": "high",
+                          "ID": "233fa15f9b1945809e1d65421383c66c"
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "任务主表",
+                          "ShowConfirm": false,
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "任务主表",
+                              "ColumnName": "任务主表ID",
+                              "GUID": "96743262-aaa7-40ee-9be9-522fcb7480b6"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取需要通知的数据.任务主表ID"
+                            }
+                          },
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "任务主表",
+                                "ColumnName": "邮件发送时间",
+                                "GUID": "cfe7caa4-a0bb-44e1-ad79-43f11d4f265d"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=NOW()"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "OperateFilesCommand.RenameFileCommand, OperateFilesCommand",
+                          "FilePath": "D:\\活字格文件导出勿删除\\文件.pdf",
+                          "NewName": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=获取需要通知的数据.任务主表ID"
+                          }
+                        }
+                      ],
+                      "ID": "c73d3bf2-fab3-41cb-8d75-5e046e9d269c"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
+                          "TargetPageName": "对账单明细日版",
+                          "ServerExportFileName": "D:\\活字格文件导出勿删除\\文件.pdf",
+                          "ExportCellValueInfos": [
+                            {
+                              "CellName": "任务主表id",
+                              "CellValue": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=获取需要通知的数据.任务主表ID"
+                              }
+                            }
+                          ],
+                          "ExportListViewCurrentRowInfos": [
+                            {
+                              "BindingTable": "任务主表",
+                              "CurrentRowCondition": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "任务主表",
+                                  "ColumnName": "任务主表ID",
+                                  "GUID": "587e2243-4aa8-4de0-8e18-de9bba234c2a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=获取需要通知的数据.任务主表ID"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                          "From": "haodeying@afineagro.com",
+                          "EnhancedRecipient": {
+                            "CommonValue": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取需要通知的数据.通知邮箱"
+                            }
+                          },
+                          "Subject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=获取需要通知的数据.交付客户"
+                          },
+                          "Content": "[=获取需要通知的数据.业务员名称],对账明细请查看附件,业务日期，[=变量转业务日期]，\r\n对账期间：[=变量转对账开始]-[=变量转对账结束]\r\n\r\n\r\n\r\n对账唯一序列号：[=获取需要通知的数据.任务主表ID]\r\n\r\n\r\n是否同一对账单以唯一序列号为准\r\n\r\n本邮件只做签署前对账便利性查看用，最终结果以电子签为准！！！\r\n本邮件只做签署前对账便利性查看用，最终结果以电子签为准！！！\r\n\r\n发送日期：[%Date.Today%]",
+                          "EnhancedCC": {
+                            "CommonValue": "867361697@qq.com;haodeying@afineagro.com"
+                          },
+                          "Attachments": "D:\\活字格文件导出勿删除\\文件.pdf",
+                          "Priority": "high",
+                          "ID": "a80e7e10d55c40999e87ba85e92ebbb9"
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "任务主表",
+                          "ShowConfirm": false,
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "任务主表",
+                              "ColumnName": "任务主表ID",
+                              "GUID": "4165a79d-8233-4dab-a619-0ec011f09ca0"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=获取需要通知的数据.任务主表ID"
+                            }
+                          },
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "任务主表",
+                                "ColumnName": "邮件发送时间",
+                                "GUID": "5c869850-16c4-4f86-a72a-5651f5c6a1b4"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=NOW()"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "OperateFilesCommand.RenameFileCommand, OperateFilesCommand",
+                          "FilePath": "D:\\活字格文件导出勿删除\\文件.pdf",
+                          "NewName": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=获取需要通知的数据.任务主表ID"
+                          }
+                        }
+                      ],
+                      "ID": "2fef2db7-088a-44b9-8002-15b6b55a02be"
                     }
                   ]
-                },
-                {
-                  "$type": "OperateFilesCommand.RenameFileCommand, OperateFilesCommand",
-                  "FilePath": "D:\\活字格文件导出勿删除\\文件.pdf",
-                  "NewName": {
-                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                    "SerializeProperty": "=获取需要通知的数据.任务主表ID"
-                  }
                 }
               ],
-              "ID": "1cd06d68-e3b0-4c73-9a9f-19d420986d86"
+              "ID": "87fe6574-96bf-4cf4-a5b2-22367cfbac68"
             }
           ]
         }

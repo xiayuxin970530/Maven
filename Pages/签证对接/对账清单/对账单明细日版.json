@@ -597,7 +597,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "9db37bea-962e-461d-af14-c599996de02a"
+                "ID": "856c71ed-ea51-4057-a5ed-fb5f5a9c998d"
               }
             ]
           },
@@ -613,13 +613,13 @@
                   "BindingInfo": {
                     "TableName": "任务主表",
                     "ColumnName": "发起电子对账日期",
-                    "GUID": "767e233b-9fc8-4e2a-8381-2b5e2e798d6f"
+                    "GUID": "7b60c731-34bb-4a07-85e1-adc81218c92b"
                   },
                   "ColumnName": "发起电子对账日期"
                 }
               ]
             },
-            "ID": "ad31567cb4af41a7873fc174418ea1ff"
+            "ID": "33942827e95b4ed48d80775257514f05"
           },
           {
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
@@ -641,12 +641,25 @@
                     "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
                     "TableName": "任务主表",
                     "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "任务主表",
+                        "ColumnName": "任务主表ID",
+                        "GUID": "98c463dc-d390-44ad-b4c3-6702a949e9ee"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=对账单明细日版!E72"
+                      }
+                    },
                     "UpdateBindingValues": [
                       {
                         "BindingInfo": {
                           "TableName": "任务主表",
                           "ColumnName": "发起电子对账日期",
-                          "GUID": "a79731b5-e9cb-4981-809f-126129c9952c"
+                          "GUID": "9e94628e-9c6b-47db-a278-922a70c61810"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -703,7 +716,7 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "03bca6bf-f07e-4c01-a631-c903e9828513"
+                        "ID": "cc44eac0-9846-4915-b147-30b479bdf3ec"
                       },
                       {
                         "CommandList": [
@@ -719,12 +732,12 @@
                             "Position": "top-right"
                           }
                         ],
-                        "ID": "ebf1a77b-491f-412c-afba-3802a96009f3"
+                        "ID": "83072890-e9ce-48e1-9132-b1526959fc02"
                       }
                     ]
                   }
                 ],
-                "ID": "2c1538d4-2825-4f97-a4b4-af0c04e913a2"
+                "ID": "7b5a8d0d-8b0f-409d-957e-0176c8c62340"
               },
               {
                 "CommandList": [
@@ -745,7 +758,7 @@
                     "LoadBindingDataOption": 2
                   }
                 ],
-                "ID": "42a7e201-c059-435b-8787-c3ba966c1fb0"
+                "ID": "b248c973-9103-4c10-a68c-162af992c233"
               }
             ]
           }
@@ -869,10 +882,10 @@
                             "AllowAcessRoleList": [
                               "FGC_LoginUser"
                             ],
-                            "ID": "4c5dcb823d6d45f6b6d798fffc9054c7"
+                            "ID": "150e22b126214eaab0920dbd6f221b3d"
                           }
                         ],
-                        "ID": "fe6308f5-2760-428d-945f-f54237dc4046"
+                        "ID": "204403f4-ad00-4ef1-bf0c-95c5f6a4b571"
                       },
                       {
                         "Condition": {
@@ -938,15 +951,15 @@
                             "AllowAcessRoleList": [
                               "FGC_LoginUser"
                             ],
-                            "ID": "c1472cf8944445fcbb7affbc2b284d88"
+                            "ID": "06278611d31e442584cbb9140760cf73"
                           }
                         ],
-                        "ID": "cf2b3cac-c421-4f37-8fea-0cd78ac92153"
+                        "ID": "b1b2bf62-ea64-4529-8b43-8b0f9160f7f7"
                       }
                     ]
                   }
                 ],
-                "ID": "53b4bd37-d623-449a-b864-506cfd21e214"
+                "ID": "d53cdd6d-dfed-4e3a-a2d6-30e0b9b461ce"
               },
               {
                 "Condition": {
@@ -968,7 +981,7 @@
                     "ShowConfirm": false
                   }
                 ],
-                "ID": "3d77bd55-4789-430f-b781-4cd23d2af1e2"
+                "ID": "6b97617e-6cf3-49dd-a4ac-98f11c47ac92"
               }
             ]
           },
@@ -1020,7 +1033,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "da3eedfb92c041a0923c54ad69294a6d"
+                    "ID": "a268dd5810d04e1ea1f117bb6acb7f87"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1059,7 +1072,7 @@
                         }
                       }
                     },
-                    "ID": "ecbc4e4c5f82470283a4c6670cb80373"
+                    "ID": "81e5da3791e1424faa6a32f08cddd295"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1087,7 +1100,7 @@
                     ]
                   }
                 ],
-                "ID": "9eb7f135-6951-4060-a1f8-1f38b75fa893"
+                "ID": "a1dde165-fdff-4dd5-91f9-2c218dd1714f"
               },
               {
                 "CommandList": [
@@ -1122,7 +1135,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "14ec38e86c4a4241a464d52dda91ec9e"
+                    "ID": "7b3a16e97fa3461285187dc4bffb3304"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1161,7 +1174,7 @@
                         }
                       }
                     },
-                    "ID": "b6501ae4001147c5a2c6abbb141640e0"
+                    "ID": "7912e392ce044debaa04bfc5213b5d58"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1189,7 +1202,7 @@
                     ]
                   }
                 ],
-                "ID": "31461ad0-cec2-46fc-98f4-d80a1e660fbc"
+                "ID": "77c1b922-8a98-452e-8700-0251f9bad2f3"
               }
             ]
           },
@@ -1486,7 +1499,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "67ed18c679714d3380b798597ad6e1ff"
+                    "ID": "a150c4e92e0f4880ba965f6d04c4e4d3"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1525,7 +1538,7 @@
                         }
                       }
                     },
-                    "ID": "4cb1216f1db64cf88d59dec8a7ab2d96"
+                    "ID": "eeb18fe6678243ef82418ddde4cc676d"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1543,7 +1556,7 @@
                     ]
                   }
                 ],
-                "ID": "9cbc8a57-e760-48ec-8802-12f88adb3eae"
+                "ID": "e1850170-b524-4790-9bf8-367181359c46"
               },
               {
                 "CommandList": [
@@ -1578,7 +1591,7 @@
                       },
                       "TopCount": "1"
                     },
-                    "ID": "161bbb34e6854dd2aa5c5e16c48d5c5b"
+                    "ID": "bd5fd7fcc472433b944a7243085b11fc"
                   },
                   {
                     "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
@@ -1617,7 +1630,7 @@
                         }
                       }
                     },
-                    "ID": "4d4ad6294bb14248bd330195342783b2"
+                    "ID": "19333c7a6aae4658afa87bf053e79a11"
                   },
                   {
                     "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1635,7 +1648,7 @@
                     ]
                   }
                 ],
-                "ID": "4346a713-be3a-4c3f-8a2b-76fc1e67d511"
+                "ID": "3475c97e-9855-4add-95d7-555c7902adb7"
               }
             ]
           }
@@ -6039,6 +6052,8 @@
     "71,30,1,5",
     "49,2,17,52",
     "21,24,1,27",
+    "25,8,1,3",
+    "25,18,1,6",
     "47,4,1,4",
     "47,8,1,2",
     "47,10,1,2",
@@ -6051,9 +6066,7 @@
     "47,32,1,11",
     "47,43,1,4",
     "47,47,1,3",
-    "47,50,1,3",
-    "25,8,1,3",
-    "25,18,1,6"
+    "47,50,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -6089,7 +6102,7 @@
                 ]
               }
             ],
-            "ID": "7e63a115-cbf1-453e-b4f3-9e514a9c50f0"
+            "ID": "66278247-3e80-417f-a4ab-9b6401526e91"
           }
         ]
       },
@@ -6122,7 +6135,7 @@
                 ]
               }
             ],
-            "ID": "33c81928-6fdd-4c87-aa72-0600f218ea93"
+            "ID": "1e15c5be-7e39-43f6-b96c-8cba9de7d0c9"
           }
         ]
       }
@@ -6185,4 +6198,4 @@
       "Formula": "对账单明细日版!$A$2"
     }
   ]
-}//t1xs7HJWZK8XBXIg7+13jECFdxz7H5pj2quHAe94W1wEVDVN7kp6wUqiCV2cdlmy8veAZCcfKLhJcHEMHL2ueDXR4LKwfe984XM2+gNCKxLvj6khaej+3pb/uiFlTKxP3PEvM3DM+IWWuxTBbSR/llyGGXOLypXCOnPlY07YM/RwjORoBBndvsnUzCb4LLS0QdrB2zlIzvsrawOcD7rHAA3DjueO9IVTa1mkU8T/vSpm3s71NscZa2MYJEicpwzUEG1ccY89+ojU8/EFKxniT/bs9PLCYagL+SxdyOkHuI5K0wbtMTQ/zQgZi+Zt1Zp8npA3T1tlsePnj5z/3gC8d9b//sTnF8CWGfb0scz/ansK/uCFxZ8tvvSK8mL5QZmckE1GAledY9f/ymFFLaN53/ukdaX+HYnxJKJBp521919xbaqL0QPONRwFLOIsYUx6G3LsjcWTA3bBtVQQH5NqenVvHFf2hNfqs4gTivggu3OfrRjoB92D2ecajds9nhmAZd2opw0eMwcLBZGu9Z1gWh0e8HmnOE53L449LnUdkTIiIaDNgu+w0D2dH5UQvFmkfcpJ9lzGIv93DpB7Bf4GWXhtmI4+JQD843rnVhGFZEP8zFxBMgKio0Z+gjlu4l3wFas253eOo9hH3TrU8OOC7xSXqn81IK9ZHJ9TqlTmLLrWssQMoWxiq4RQNk4CZyeziD6hnmCprOljHGfSrgh8DlOYPfPJSh68QOJ1Cok+GDyLXn8+WQXAAwGptTLFNUrCpcAnwoHh5IrzY9sQv4Y0V4qKl2h4pftTrQPaE/nHibS1MyF4MNTMsdoQ3TzEv0lGOWAu1SabKao5WLrnWisvnYtaSHiEWTlvR7yToDCacJreC2IA2rfnXJ+tDixBtyH0PJhi6OJYLRhPTWhPCbl2VA==|920
+}//fOe7t8iSmZ6aSC6M2tMALUVprrqN7QloBZOSLSgE7sOLIERbew377pgXqhgTCowFnezQIiYaMdj64qpkWrJhLGl4ihVRCsvNhhby9UKxCBJzxSx/htKytGsvnU0kqhaaRYD2MlpypdrOyIRlfm2OM2By23EadlAYFt+CzrStze9HXGku3ZA+Sa6gzE1ZXAeHWsz1RV+0SqJSZfzjzexGBjFDpJRE/m80XqARxZ+olxxsgkBlZ7pr36LEfK404UzVW/PbAPr9f7algktwZYFNq3YOyfaw/WmhwMMESI6aO4LESgK5YMg2NVFwRU1/fSxZDid7Cw5s+QNMG93duvwkJK6Efd/tqCEtPZ1EFI9Qsi7Dh+Qso7kUuPiMZYNTeCzsbrtk9EVoUnaIEgfnGyznWclImO6v22k+UJyCFhI+p6VgsvUvrcKWMKaHztUql8WTd9UjLFbsRSr7QRrK2Iop0gms+SSBMkXg8sMP3PCCf1D6pB/q3qayTnoTgyHSEj/oraIM9xaisqAnpdyIh6sK+KHfEMBgGAz4iuhwoOpXbPi+1wr66sHF4xp+9LWNyesosHTNJtVXrYE38pdG6DY7saExEaaFuwmUf92u6HC2M5PD7UH3WdE8MIQHI5EHUbD7bp84jpxHrJUkW5y3usHMcZRe3RXjD8Ot/AEfckFr4kTlAm0y3j8ksK662MgZjGUFI1MMoJrnKvUlccZrqW2q6ztDBJy4+OmGIlaxNEUgOfubarQpnqvEBNWEKseBwYIkbARQSu4bCf0CcfhjxFlBbqx8Au80qTf4EO/TVz0eg8fLN/Fro9pyWoxzrvXFZNeEMsG9YbgT6k3TPUoUSyYihVdw1pL4tSJNrmniRrB35NfYiiZT+Fuyz5gEX3iyeg0q7u8+zy7NuGIWWdVmgDG3Aw==|920

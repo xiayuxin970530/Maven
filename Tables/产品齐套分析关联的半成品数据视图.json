@@ -1,0 +1,74 @@
+{
+  "Name": "产品齐套分析关联的半成品数据视图",
+  "Columns": [
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "总需求",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "子件编码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "合计可用",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "合计实际库存",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "合计占用",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "nvarchar",
+      "MaxLength": -1,
+      "Name": "成品编码",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "float",
+      "MaxLength": -1,
+      "Name": "在库差额",
+      "ColumnType": "System.Double, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.Model.Tables.BindingColumn, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "合计待入库",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "ConnectionId": "pld",
+    "SourceTableName": "产品齐套分析关联的半成品数据视图",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "SELECT   SUM(a_2.总需求) AS 总需求, a_2.子件编码, SUM(b.合计可用) AS 合计可用, SUM(b.合计实际库存) AS 合计实际库存, \r\n                SUM(b.合计占用) AS 合计占用, a_2.成品编码, SUM(ISNULL(b.合计可用, 0) - ISNULL(a_2.总需求, 0)) AS 在库差额, \r\n                SUM(b.合计待入库) AS 合计待入库\r\nFROM      (SELECT   SUM(需求数) AS 总需求, 子件编码, 末级物料编码, 成品编码\r\n                 FROM      (SELECT   b.BomType, b.InvName AS 成品名, b.InvCode AS 成品编码, b.InvStd AS 成品规格, \r\n                                                  b.Version AS 成品版本, b.VersionEffDate AS 成品有效日期, c.InvCode AS 子件编码, \r\n                                                  SUM(CASE WHEN b2.InvCode IS NULL \r\n                                                  THEN a.[数量] * c.BaseQtyN / c.BaseQtyD WHEN b2.InvCode IS NOT NULL \r\n                                                  THEN a.[数量] * c.BaseQtyN / c.BaseQtyD * c2.BaseQtyN / c2.BaseQtyD END) AS 需求数, \r\n                                                  CASE WHEN b2.InvCode IS NULL THEN c.InvCode WHEN b2.InvCode IS NOT NULL \r\n                                                  THEN c2.InvCode END AS 末级物料编码\r\n                                  FROM      dbo.物料齐套分析 AS a LEFT OUTER JOIN\r\n                                                  UFDATA_800_2018.dbo.v_BOM_BomParent AS b ON a.存货编码 = b.InvCode AND \r\n                                                  ISNULL(a.BOM版本, 1) = b.BomType AND a.替代bomid IS NULL OR\r\n                                                  a.替代bomid IS NOT NULL AND a.替代bomid = b.BomId LEFT OUTER JOIN\r\n                                                  UFDATA_800_2018.dbo.v_bom_opcomponent_rpt AS c ON b.BomId = c.BomId LEFT OUTER JOIN\r\n                                                  UFDATA_800_2018.dbo.v_BOM_BomParent AS b2 ON c.InvCode = b2.InvCode AND \r\n                                                  b2.BomType = '1' LEFT OUTER JOIN\r\n                                                  UFDATA_800_2018.dbo.v_bom_opcomponent_rpt AS c2 ON b2.BomId = c2.BomId\r\n                                  WHERE   (b.BomId IS NOT NULL)\r\n                                  GROUP BY b.BomType, b.InvName, b.InvCode, b.InvStd, b.Version, b.VersionEffDate, c.InvCode, b2.InvCode, \r\n                                                  c2.InvCode) AS a_1\r\n                 GROUP BY 子件编码, 末级物料编码, 成品编码) AS a_2 LEFT OUTER JOIN\r\n                dbo.可用库存汇总表 AS b ON a_2.末级物料编码 = b.cInvCode LEFT OUTER JOIN\r\n                UFDATA_800_2018.dbo.Inventory AS i ON a_2.末级物料编码 = i.cInvCode\r\nGROUP BY a_2.子件编码, a_2.成品编码",
+    "ViewInfo": {
+      "ViewName": "产品齐套分析关联的半成品数据视图",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": [],
+  "Relations": []
+}

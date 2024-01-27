@@ -1424,7 +1424,16 @@
   },
   {
     "ModuleName": "MasterPCPage/网页母板",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "AF-APP06\\afapp",
+      "Email": "mkvuot07865@chacuo.net"
+    },
+    "LockDateTime": "2024-01-27T10:19:20.357418+08:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\网页母板.json"
+    ]
   },
   {
     "ModuleName": "MasterMobilePage/手机母板",
